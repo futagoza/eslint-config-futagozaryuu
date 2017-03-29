@@ -19,13 +19,18 @@
   "scripts": {
     "test": "eslint --cache ."
   },
+  "dependencies": {
+    "babel-eslint": "7.2.1",
+    "globals": "9.17.0",
+    "eslint-plugin-node": "4.2.2"
+  },
   "peerDependencies": {
-    "eslint": ">=3.10.0"
+    "eslint": ">= 3"
   },
   "devDependencies": {
     "eslint": "3.18.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">= 4"
   }
 }
