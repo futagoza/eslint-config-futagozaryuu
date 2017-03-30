@@ -17,6 +17,8 @@
   "author": "Futago-za Ryuu",
   "main": "index.js",
   "scripts": {
+    "preversion": "npm install && npm test",
+    "postversion": "git push --follow-tags && npm publish",
     "test": "eslint --cache ."
   },
   "dependencies": {
