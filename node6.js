@@ -1,7 +1,13 @@
-'use strict'
+"use strict";
 
 module.exports = {
 
-  // TODO...
+  "extends": "./node5.js",
 
-}
+  "rules": {
+
+    "node/no-unsupported-features": [ "error", { "version": 6 } ]
+
+  }
+
+};

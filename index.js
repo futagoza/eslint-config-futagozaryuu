@@ -1,7 +1,14 @@
-'use strict'
+"use strict";
 
 module.exports = {
 
-  // TODO...
+  "extends": [
 
-}
+    "./possible-errors.js",
+    "./best-practices.js",
+    "./stylistic-issues.js",
+    "./variables.js"
+
+  ]
+
+};

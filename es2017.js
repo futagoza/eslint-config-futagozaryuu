@@ -1,7 +1,13 @@
-'use strict'
+"use strict";
 
 module.exports = {
 
-  // TODO...
+  "extends": "./es2016.js",
 
-}
+  "parserOptions": {
+
+    "ecmaVersion": 8
+
+  }
+
+};

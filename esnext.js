@@ -1,7 +1,19 @@
-'use strict'
+"use strict";
 
 module.exports = {
 
-  // TODO...
+  "extends": "./es2017.js",
 
-}
+  "ecmaFeatures": {
+
+    "experimentalObjectRestSpread": true
+
+  },
+
+  "rules": {
+
+    "strict": 0
+
+  }
+
+};

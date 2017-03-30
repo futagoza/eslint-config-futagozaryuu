@@ -1,7 +1,12 @@
-'use strict'
+"use strict";
 
 module.exports = {
 
-  // TODO...
+  "rules": {
 
-}
+    "no-undef": "error",
+    "no-unused-vars": "warn"
+
+  }
+
+};
