@@ -17,7 +17,7 @@
   "author": "Futago-za Ryuu",
   "main": "index.js",
   "scripts": {
-    "preversion": "npm install && npm test",
+    "preversion": "npm install && npm test -- --quiet",
     "postversion": "git push --follow-tags && npm publish",
     "test": "eslint --cache ."
   },
@@ -27,7 +27,7 @@
     "eslint-plugin-node": "4.2.2"
   },
   "peerDependencies": {
-    "eslint": ">= 3"
+    "eslint": ">= 3.17"
   },
   "devDependencies": {
     "eslint": "3.18.0"
@@ -36,9 +36,7 @@
     "node": ">= 4"
   },
   "eslintConfig": {
-    "extends": [
-      "./index.js",
-      "./node4.js"
-    ]
+    "extends": "./node4.js",
+    "root": true
   }
 }
