@@ -2,18 +2,18 @@
 
 module.exports = {
 
-  "extends": "./es2017.js",
+    "extends": "./es2017.js",
 
-  "ecmaFeatures": {
+    "ecmaFeatures": {
 
-    "experimentalObjectRestSpread": true
+        "experimentalObjectRestSpread": true
 
-  },
+    },
 
-  "rules": {
+    "rules": {
 
-    "strict": 0
+        "strict": 0
 
-  }
+    }
 
 };

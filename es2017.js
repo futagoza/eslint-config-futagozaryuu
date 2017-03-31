@@ -2,12 +2,12 @@
 
 module.exports = {
 
-  "extends": "./es2016.js",
+    "extends": "./es2016.js",
 
-  "parserOptions": {
+    "parserOptions": {
 
-    "ecmaVersion": 8
+        "ecmaVersion": 8
 
-  }
+    }
 
 };

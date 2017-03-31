@@ -2,12 +2,12 @@
 
 module.exports = {
 
-  "extends": "./es2015.js",
+    "extends": "./es2015.js",
 
-  "parserOptions": {
+    "parserOptions": {
 
-    "ecmaVersion": 7
+        "ecmaVersion": 7
 
-  }
+    }
 
 };

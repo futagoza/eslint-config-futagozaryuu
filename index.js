@@ -2,13 +2,13 @@
 
 module.exports = {
 
-  "extends": [
+    "extends": [
 
-    "./possible-errors.js",
-    "./best-practices.js",
-    "./stylistic-issues.js",
-    "./variables.js"
+        "./possible-errors.js",
+        "./best-practices.js",
+        "./stylistic-issues.js",
+        "./variables.js"
 
-  ]
+    ]
 
 };
