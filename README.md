@@ -1,3 +1,10 @@
+[![Build status](https://img.shields.io/travis/futagoza/eslint-config-futagozaryuu)](https://travis-ci.org/futagoza/eslint-config-futagozaryuu)
+[![npm version](https://img.shields.io/npm/v/eslint-config-futagozaryuu.svg)](https://www.npmjs.com/package/eslint-config-futagozaryuu)
+[![dependencies](https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg)](https://david-dm.org/futagoza/eslint-config-futagozaryuu)
+[![peerDependencies](https://img.shields.io/david/peer/futagoza/eslint-config-futagozaryuu.svg)](https://david-dm.org/futagoza/eslint-config-futagozaryuu#info=peerDependencies)
+[![devDependencies](https://img.shields.io/david/dev/futagoza/eslint-config-futagozaryuu.svg)](https://david-dm.org/futagoza/eslint-config-futagozaryuu#info=devDependencies)
+[![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
+
 ## about
 
 These are ESLint configurations I use in my JavaScript projects. They mostly assume development in ES2015+ compatible enviroments, unless otherwise stated.
