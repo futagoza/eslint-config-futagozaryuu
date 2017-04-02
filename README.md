@@ -1,4 +1,4 @@
-[![Build status](https://img.shields.io/travis/futagoza/eslint-config-futagozaryuu)](https://travis-ci.org/futagoza/eslint-config-futagozaryuu)
+[![Build status](https://api.travis-ci.org/futagoza/eslint-config-futagozaryuu.svg?branch=master)](https://travis-ci.org/futagoza/eslint-config-futagozaryuu)
 [![npm version](https://img.shields.io/npm/v/eslint-config-futagozaryuu.svg)](https://www.npmjs.com/package/eslint-config-futagozaryuu)
 [![dependencies](https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg)](https://david-dm.org/futagoza/eslint-config-futagozaryuu)
 [![peerDependencies](https://img.shields.io/david/peer/futagoza/eslint-config-futagozaryuu.svg)](https://david-dm.org/futagoza/eslint-config-futagozaryuu#info=peerDependencies)
