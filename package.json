@@ -30,7 +30,7 @@
     "eslint": ">= 3.17"
   },
   "devDependencies": {
-    "eslint": "3.18.0"
+    "eslint": "3.19.0"
   },
   "engines": {
     "node": ">= 4"
