@@ -4,23 +4,24 @@ const globals = require( "globals" );
 
 module.exports = {
 
-  "globals": globals.es5,
+    "extends": "./index.js",
+    "globals": globals.es5,
 
-  "parserOptions": {
+    "parserOptions": {
 
-    "ecmaVersion": 5,
-    "ecmaFeatures": {
+        "ecmaVersion": 5,
+        "ecmaFeatures": {
 
-      "globalReturn": false
+            "globalReturn": false
+
+        }
+
+    },
+
+    "rules": {
+
+        "strict": [ "error", "safe" ]
 
     }
-
-  },
-
-  "rules": {
-
-    "strict": [ "error", "safe" ]
-
-  }
 
 };
