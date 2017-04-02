@@ -36,7 +36,7 @@
     "node": ">= 4"
   },
   "eslintConfig": {
-    "extends": "./node4.js",
+    "extends": "./node-v4.js",
     "root": true
   }
 }
