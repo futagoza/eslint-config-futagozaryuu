@@ -2,73 +2,239 @@
 
 module.exports = {
 
-  "rules": {
+    "rules": {
 
-    /* Disallow names_with_underscore */
-    // "camelcase": 0,
+        /**
+         * disallow `await` inside of loops
+         *
+         * @see http://eslint.org/docs/rules/no-await-in-loop
+         */
+        "no-await-in-loop": "error",
 
-    /* Don't require all if statements to have curly braces */
-    // "curly": 0,
+        /**
+         * disallow comparing against -0
+         *
+         * @see http://eslint.org/docs/rules/no-compare-neg-zero
+         */
+        "no-compare-neg-zero": "error",
 
-    /* Don't care if it's obj["prop"] instead of obj.prop */
-    // "dot-notation": 0,
+        /**
+         * disallow assignment operators in conditional expressions
+         *
+         * @see http://eslint.org/docs/rules/no-cond-assign
+         */
+        "no-cond-assign": [ "error", "always" ],
 
-    "no-cond-assign": [ "error", "always" ],
+        /**
+         * disallow the use of `console`
+         *
+         * @see http://eslint.org/docs/rules/no-console
+         */
+        "no-console": 0,
 
-    /* allow the use of console */
-    // "no-console": 0,
+        /**
+         * disallow constant expressions in conditions
+         *
+         * @see http://eslint.org/docs/rules/no-constant-condition
+         */
+        "no-constant-condition": [ "error", { "checkLoops": false } ],
 
-    "no-debugger": "error",
-    "no-dupe-args": "error",
-    "no-dupe-keys": "error",
-    "no-duplicate-case": "error",
+        /**
+         * disallow control characters in regular expressions
+         *
+         * @see http://eslint.org/docs/rules/no-control-regex
+         */
+        "no-control-regex": 0,
 
-    /* Don't care if we have empty blocks */
-    // "no-empty": 0,
+        /**
+         * disallow the use of `debugger`
+         *
+         * @see http://eslint.org/docs/rules/no-debugger
+         */
+        "no-debugger": "error",
 
-    "no-extra-boolean-cast": "error",
+        /**
+         * disallow duplicate arguments in `function` definitions
+         *
+         * @see http://eslint.org/docs/rules/no-dupe-args
+         */
+        "no-dupe-args": "error",
 
-    /* Disallow extra semicolons. Example function foo() { }; */
-    "no-extra-semi": "error",
+        /**
+         * disallow duplicate keys in object literals
+         *
+         * @see http://eslint.org/docs/rules/no-dupe-keys
+         */
+        "no-dupe-keys": "error",
 
-    "no-func-assign": "error",
-    "no-invalid-regexp": "error",
+        /**
+         * disallow duplicate case labels
+         *
+         * @see http://eslint.org/docs/rules/no-duplicate-case
+         */
+        "no-duplicate-case": "error",
 
-    /* Disallow both spaces and tabs in the same line for indenting */
-    // "no-mixed-spaces-and-tabs": 0,
+        /**
+         * disallow empty block statements
+         *
+         * @see http://eslint.org/docs/rules/no-empty
+         */
+        "no-empty": "warn",
 
-    "no-prototype-builtins": "error",
+        /**
+         * disallow empty character classes in regular expressions
+         *
+         * @see http://eslint.org/docs/rules/no-empty-character-class
+         */
+        "no-empty-character-class": "warn",
 
-    /* Don't care if var declared more than once in same scope. eg for (var x, ...) for (var x, ...); */
-    // "no-redeclare": 0,
+        /**
+         * disallow reassigning exceptions in `catch` clauses
+         *
+         * @see http://eslint.org/docs/rules/no-ex-assign
+         */
+        "no-ex-assign": "error",
 
-    /* Don't care if the same variable name is used in an inner scope. */
-    // "no-shadow": 0,
+        /**
+         * 📝 disallow unnecessary boolean casts
+         *
+         * @see http://eslint.org/docs/rules/no-extra-boolean-cast
+         */
+        "no-extra-boolean-cast": "error",
 
-    "no-sparse-arrays": "error",
+        /**
+         * 📝 disallow unnecessary parentheses
+         *
+         * @see http://eslint.org/docs/rules/no-extra-parens
+         */
+        "no-extra-parens": [ "error", "all", {
 
-    /* don't care if var starts with underscore */
-    // "no-underscore-dangle": 0,
+            "conditionalAssign": false,
+            "returnAssign": false,
+            "nestedBinaryExpressions": false,
+            "ignoreJSX": "none"
 
-    "no-unreachable": "error",
-    "no-unsafe-finally": "error",
-    "no-unsafe-negation": "error",
+        } ],
 
-    /* don't care if something is used before it's defined. */
-    // "no-use-before-define": 0,
+        /**
+         * 📝 disallow unnecessary semicolons
+         *
+         * @see http://eslint.org/docs/rules/no-extra-semi
+         */
+        "no-extra-semi": "error",
 
-    /* Don't care if quotes are double or single */
-    // "quotes": 0,
+        /**
+         * disallow reassigning `function` declarations
+         *
+         * @see http://eslint.org/docs/rules/no-func-assign
+         */
+        "no-func-assign": 0,
 
-    /* Require "use strict" */
-    // "strict": 0,
+        /**
+         * disallow variable or `function` declarations in nested blocks
+         *
+         * @see http://eslint.org/docs/rules/no-inner-declarations
+         */
+        "no-inner-declarations": 0,
 
-    "use-isnan": "error",
-    "valid-typeof": "error"
+        /**
+         * disallow invalid regular expression strings in `RegExp` constructors
+         *
+         * @see http://eslint.org/docs/rules/no-invalid-regexp
+         */
+        "no-invalid-regexp": "error",
 
-    /* Don't care if it's "if (1 == v)" or "if (v == 123)". */
-    // "yoda": 0,
+        /**
+         * disallow irregular whitespace outside of strings and comments
+         *
+         * @see http://eslint.org/docs/rules/no-irregular-whitespace
+         */
+        "no-irregular-whitespace": [ "error", {
 
-  }
+            "skipComments": true,
+            "skipRegExps": true,
+            "skipStrings": true,
+            "skipTemplates": true
+
+        } ],
+
+        /**
+         * disallow calling global object properties as functions
+         *
+         * @see http://eslint.org/docs/rules/no-obj-calls
+         */
+        "no-obj-calls": 0,
+
+        /**
+         * disallow calling some `Object.prototype` methods directly on objects
+         *
+         * @see http://eslint.org/docs/rules/no-prototype-builtins
+         */
+        "no-prototype-builtins": 0,
+
+        /**
+         * 📝 disallow multiple spaces in regular expressions
+         *
+         * @see http://eslint.org/docs/rules/no-regex-spaces
+         */
+        "no-regex-spaces": "warn",
+
+        /**
+         * disallow sparse arrays
+         *
+         * @see http://eslint.org/docs/rules/no-sparse-arrays
+         */
+        "no-sparse-arrays": "error",
+
+        /**
+         * disallow template literal placeholder syntax in regular strings
+         *
+         * @see http://eslint.org/docs/rules/no-template-curly-in-string
+         */
+        "no-template-curly-in-string": 0,
+
+        /**
+         * disallow confusing multiline expressions
+         *
+         * @see http://eslint.org/docs/rules/no-unexpected-multiline
+         */
+        "no-unexpected-multiline": 0,
+
+        /**
+         * disallow unreachable code after `return`, `throw`, `continue`, and `break` statements
+         *
+         * @see http://eslint.org/docs/rules/no-unreachable
+         */
+        "no-unreachable": "warn",
+
+        /**
+         * disallow control flow statements in `finally` blocks
+         *
+         * @see http://eslint.org/docs/rules/no-unsafe-finally
+         */
+        "no-unsafe-finally": "error",
+
+        /**
+         * 📝 disallow negating the left operand of relational operators
+         *
+         * @see http://eslint.org/docs/rules/no-unsafe-negation
+         */
+        "no-unsafe-negation": "error",
+
+        /**
+         * require calls to `isNaN()` when checking for `NaN`
+         *
+         * @see http://eslint.org/docs/rules/use-isnan
+         */
+        "use-isnan": 0,
+
+        /**
+         * enforce comparing `typeof` expressions against valid strings
+         *
+         * @see http://eslint.org/docs/rules/no-valid-typeof
+         */
+        "valid-typeof": [ "error", { "requireStringLiterals": false } ]
+
+    }
 
 };
