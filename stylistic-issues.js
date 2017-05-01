@@ -152,7 +152,7 @@ module.exports = {
         /**
          * 📝 enforce consistent spacing between keys and values in object literal properties
          *
-         * @see http://eslint.org/docs/rules/indent
+         * @see http://eslint.org/docs/rules/key-spacing
          */
         "key-spacing": [ "error", {
 
@@ -164,7 +164,7 @@ module.exports = {
         /**
          * 📝 enforce consistent spacing before and after keywords
          *
-         * @see http://eslint.org/docs/rules/indent
+         * @see http://eslint.org/docs/rules/keyword-spacing
          */
         "keyword-spacing": [ "error", {
 
