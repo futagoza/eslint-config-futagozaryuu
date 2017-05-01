@@ -22,7 +22,7 @@
         "test": "eslint --cache ."
     },
     "dependencies": {
-        "babel-eslint": "7.2.1",
+        "babel-eslint": "7.2.3",
         "globals": "9.17.0",
         "eslint-plugin-node": "4.2.2"
     },
