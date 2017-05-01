@@ -10,6 +10,12 @@ module.exports = {
 
     },
 
+    "parserOptions": {
+
+        "sourceType": "module"
+
+    },
+
     "rules": {
 
         "strict": 0
