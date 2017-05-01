@@ -157,7 +157,8 @@ module.exports = {
         "key-spacing": [ "error", {
 
             "beforeColon": false,
-            "afterColon": true
+            "afterColon": true,
+            "mode": "minimum"
 
         } ],
 
