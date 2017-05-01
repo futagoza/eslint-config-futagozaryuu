@@ -1,43 +1,43 @@
 {
-    "name": "eslint-config-futagozaryuu",
-    "version": "2.1.0",
-    "description": "Futago-za Ryuu's ESLint configurations",
-    "keywords": [
-        "eslint",
-        "configuration",
-        "babel",
-        "nodejs",
-        "es2015",
-        "es2016",
-        "es2017"
-    ],
-    "repository": "futagoza/eslint-config-futagozaryuu",
-    "bugs": "https://github.com/futagoza/eslint-config-futagozaryuu/issues",
-    "license": "MIT",
-    "author": "Futago-za Ryuu",
-    "main": "index.js",
-    "scripts": {
-        "preversion": "npm install && npm test -- --quiet",
-        "postversion": "git push --follow-tags && npm publish",
-        "test": "eslint --cache ."
-    },
-    "dependencies": {
-        "babel-eslint": "7.2.3",
-        "globals": "9.17.0",
-        "eslint-plugin-node": "4.2.2"
-    },
-    "peerDependencies": {
-        "eslint": "^ 3.17",
-        "eslint-plugin-node": "^ 4.2"
-    },
-    "devDependencies": {
-        "eslint": "3.19.0"
-    },
-    "engines": {
-        "node": ">= 4"
-    },
-    "eslintConfig": {
-        "extends": "./node-v4.js",
-        "root": true
-    }
+  "name": "eslint-config-futagozaryuu",
+  "version": "2.2.0",
+  "description": "Futago-za Ryuu's ESLint configurations",
+  "keywords": [
+    "eslint",
+    "configuration",
+    "babel",
+    "nodejs",
+    "es2015",
+    "es2016",
+    "es2017"
+  ],
+  "repository": "futagoza/eslint-config-futagozaryuu",
+  "bugs": "https://github.com/futagoza/eslint-config-futagozaryuu/issues",
+  "license": "MIT",
+  "author": "Futago-za Ryuu",
+  "main": "index.js",
+  "scripts": {
+    "preversion": "npm install && npm test -- --quiet",
+    "postversion": "git push --follow-tags && npm publish",
+    "test": "eslint --cache ."
+  },
+  "dependencies": {
+    "babel-eslint": "7.2.3",
+    "globals": "9.17.0",
+    "eslint-plugin-node": "4.2.2"
+  },
+  "peerDependencies": {
+    "eslint": "^ 3.17",
+    "eslint-plugin-node": "^ 4.2"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "eslintConfig": {
+    "extends": "./node-v4.js",
+    "root": true
+  }
 }
