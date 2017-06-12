@@ -96,6 +96,20 @@ module.exports = {
         "node/no-deprecated-api": 0,
 
         /**
+         * Disallow `import` declarations of extraneous packages.
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md
+         */
+        "node/no-extraneous-import": 0,
+
+        /**
+         * Disallow `require()` expressions of extraneous packages.
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md
+         */
+        "node/no-extraneous-require": 0,
+
+        /**
          * ⚠️ Disallow `import` declarations for files that don't exist.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md
