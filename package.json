@@ -23,12 +23,12 @@
   },
   "dependencies": {
     "babel-eslint": "7.2.3",
-    "globals": "9.17.0",
-    "eslint-plugin-node": "4.2.2"
+    "globals": "10.0.0",
+    "eslint-plugin-node": "5.0.0"
   },
   "peerDependencies": {
     "eslint": "^ 3.17",
-    "eslint-plugin-node": "^ 4.2"
+    "eslint-plugin-node": "^ 5"
   },
   "devDependencies": {
     "eslint": "3.19.0"
