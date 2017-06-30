@@ -4,15 +4,14 @@ module.exports = {
 
     "extends": "./es2017.js",
 
-    "ecmaFeatures": {
-
-        "experimentalObjectRestSpread": true
-
-    },
-
     "parserOptions": {
 
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+
+            "experimentalObjectRestSpread": true
+
+        },
 
     },
 
