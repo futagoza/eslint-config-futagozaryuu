@@ -5,6 +5,13 @@ module.exports = {
     "rules": {
 
         /**
+         * enforce `for` loop update clause moving the counter in the right direction
+         *
+         * @see http://eslint.org/docs/rules/for-direction
+         */
+        "for-direction": 0,
+
+        /**
          * disallow `await` inside of loops
          *
          * @see http://eslint.org/docs/rules/no-await-in-loop
@@ -47,7 +54,7 @@ module.exports = {
         "no-control-regex": 0,
 
         /**
-         * disallow the use of `debugger`
+         * 📝 disallow the use of `debugger`
          *
          * @see http://eslint.org/docs/rules/no-debugger
          */
@@ -112,7 +119,8 @@ module.exports = {
             "conditionalAssign": false,
             "returnAssign": false,
             "nestedBinaryExpressions": false,
-            "ignoreJSX": "none"
+            "ignoreJSX": "none",
+            "enforceForArrowConditionals": false
 
         } ],
 

@@ -263,7 +263,9 @@ module.exports = {
          */
         "no-multi-spaces": [ "error", {
 
+            "ignoreEOLComments": true,
             "exceptions": {
+                "BinaryExpression": false,
                 "ImportDeclaration": true,
                 "Property": true,
                 "VariableDeclarator": true

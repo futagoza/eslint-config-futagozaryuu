@@ -6,6 +6,7 @@ module.exports = {
 
     "rules": {
 
+        "no-buffer-constructor": "error",
         "node/no-unsupported-features": [ "error", { "version": 6 } ]
 
     }

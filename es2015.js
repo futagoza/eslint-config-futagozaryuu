@@ -68,7 +68,7 @@ module.exports = {
         "no-class-assign": "error",
 
         /**
-         * disallow arrow functions where they could be confused with comparisons
+         * 📝 disallow arrow functions where they could be confused with comparisons
          *
          * @see http://eslint.org/docs/rules/no-confusing-arrow
          */

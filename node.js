@@ -33,6 +33,13 @@ module.exports = {
         "handle-callback-err": 0,
 
         /**
+         * disallow use of the Buffer() constructor
+         *
+         * @see http://eslint.org/docs/rules/no-buffer-constructor
+         */
+        "no-buffer-constructor": 0,
+
+        /**
          * disallow `require` calls to be mixed with regular variable declarations
          *
          * @see http://eslint.org/docs/rules/no-mixed-requires

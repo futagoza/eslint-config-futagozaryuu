@@ -5,16 +5,25 @@ module.exports = {
     "rules": {
 
         /**
+         * 📝 enforce linebreaks after opening and before closing array brackets
+         *
+         * @see http://eslint.org/docs/rules/array-bracket-newline
+         */
+        "array-bracket-newline": 0,
+
+        /**
          * 📝 enforce consistent spacing inside array brackets
          *
          * @see http://eslint.org/docs/rules/array-bracket-spacing
          */
-        "array-bracket-spacing": [ "error", "always", {
+        "array-bracket-spacing": [ "error", "always" ],
 
-            "singleValue": true,
-            "arraysInArrays": false
-
-        } ],
+        /**
+         * 📝 enforce line breaks after each array element
+         *
+         * @see http://eslint.org/docs/rules/array-element-newline
+         */
+        "array-element-newline": 0,
 
         /**
          * 📝 enforce consistent spacing inside single-line blocks
@@ -136,7 +145,7 @@ module.exports = {
         "id-match": 0,
 
         /**
-         * 📝 enforce consistent indentation
+         * 📝 enforce consistent indentation (rewrote in ESLint 4.0.0)
          *
          * @see http://eslint.org/docs/rules/indent
          */
@@ -199,13 +208,6 @@ module.exports = {
          * @see http://eslint.org/docs/rules/lines-around-comment
          */
         "lines-around-comment": 0,
-
-        /**
-         * 📝 require or disallow newlines around directives
-         *
-         * @see http://eslint.org/docs/rules/lines-around-directive
-         */
-        "lines-around-directive": 0,
 
         /**
          * enforce a maximum depth that blocks can be nested
@@ -276,20 +278,6 @@ module.exports = {
          * @see http://eslint.org/docs/rules/new-parens
          */
         "new-parens": "error",
-
-        /**
-         * 📝 require or disallow an empty line after variable declarations
-         *
-         * @see http://eslint.org/docs/rules/newline-after-var
-         */
-        "newline-after-var": 0,
-
-        /**
-         * 📝 require an empty line before `return` statements
-         *
-         * @see http://eslint.org/docs/rules/newline-before-return
-         */
-        "newline-before-return": 0,
 
         /**
          * require a newline after each call in a method chain
@@ -414,10 +402,13 @@ module.exports = {
          * 📝 disallow trailing whitespace at the end of lines
          *
          * @see http://eslint.org/docs/rules/no-trailing-spaces
-         *      https://github.com/eslint/eslint/issues/1229
-         *      https://github.com/eslint/eslint/pull/8061
          */
-        "no-trailing-spaces": [ "error", { "skipBlankLines": false } ],
+        "no-trailing-spaces": [ "error", {
+
+            "ignoreComments": true,
+            "skipBlankLines": false
+
+        } ],
 
         /**
          * disallow dangling underscores in identifiers
@@ -431,7 +422,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-unneeded-ternary
          */
-        "no-unneeded-ternary": 0,
+        "no-unneeded-ternary": [ "warn", { "defaultAssignment": false } ],
 
         /**
          * 📝 disallow whitespace before properties
@@ -510,6 +501,13 @@ module.exports = {
         } ],
 
         /**
+         * 📝 require or disallow padding lines between statements
+         *
+         * @see http://eslint.org/docs/rules/padding-line-between-statements
+         */
+        "padding-line-between-statements": 0,
+
+        /**
          * 📝 require quotes around object literal property names
          *
          * @see http://eslint.org/docs/rules/quote-props
@@ -536,6 +534,13 @@ module.exports = {
          * @see http://eslint.org/docs/rules/semi-spacing
          */
         "semi-spacing": [ "error", { "before": false, "after": true } ],
+
+        /**
+         * 📝 enforce location of semicolons
+         *
+         * @see http://eslint.org/docs/rules/semi-style
+         */
+        "semi-style": [ "error", "last" ],
 
         /**
          * require object keys to be sorted
@@ -612,7 +617,24 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/spaced-comment
          */
-        "spaced-comment": [ "error", "always", { "exceptions": [ "-", "+" ] } ],
+        "spaced-comment": [ "error", "always", {
+
+            "markers": [ "/", "!", "#" ],
+            "exceptions": [ "-", "+", "*" ]
+
+        } ],
+
+        /**
+         * 📝 enforce spacing around colons of switch statements
+         *
+         * @see http://eslint.org/docs/rules/switch-colon-spacing
+         */
+        "switch-colon-spacing": [ "error", {
+
+            "after": true,
+            "before": false
+
+        } ],
 
         /**
          * 📝 require or disallow spacing between template tags and their literals
