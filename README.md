@@ -19,7 +19,7 @@ Put the following into your `.eslintrc.json` file:
 
 ```json
 {
-  "extends": "futagozaryuu"
+    "extends": "futagozaryuu"
 }
 ```
 
@@ -52,7 +52,7 @@ Put the following into your `.eslintrc.json` file:
 - __`futagozaryuu/test`__
 - __`futagozaryuu/dev`__ (includes: _esnext_, _node_ and _test_)
 
-## development
+## license
 
-I will update the configuration files as I change my style, but this will mostly just change the `minor` number.
-Any change to the `major` number means that I have added or removed either rules or configuration files.
+Copyright (c) 2017 Futago-za Ryuu<br>
+Realesed under the MIT License, [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
