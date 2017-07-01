@@ -4,7 +4,7 @@ module.exports = {
 
     "extends": [
 
-        "./node-v8.js",
+        "./node-v7.js",
         "./es2017.js" // TODO: As of 06/2017, support is at 50%+
 
     ],
