@@ -45,7 +45,8 @@ Put the following into your `.eslintrc.json` file:
 - __`futagozaryuu/node-v5`__ (includes: _node-v4_)
 - __`futagozaryuu/node-v6`__ (includes: _node-v5_)
 - __`futagozaryuu/node-v7`__ (includes: _node-v6_ and _es2016_)
-- __`futagozaryuu/node-v8`__ (includes: _node-v7_ and _es2017_)
+- __`futagozaryuu/node-v7.6`__ (includes: _node-v7_ and _es2017_)
+- __`futagozaryuu/node-v8`__ (includes: _node-v7.6_)
 - __`futagozaryuu/jsdoc`__
 - __`futagozaryuu/deprecated`__
 - __`futagozaryuu/test`__

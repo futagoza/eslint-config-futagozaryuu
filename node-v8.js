@@ -2,12 +2,7 @@
 
 module.exports = {
 
-    "extends": [
-
-        "./node-v7.js",
-        "./es2017.js" // TODO: As of 06/2017, support is at 50%+
-
-    ],
+    "extends": "./node-v7.6.js",
 
     "rules": {
 
