@@ -11,9 +11,7 @@ module.exports = {
 
     "rules": {
 
-        "node/no-deprecated-api": "warn",
-        "node/no-unsupported-features": [ "error", { "version": 4 } ],
-        "node/shebang": "error"
+        "node/no-unsupported-features": [ "error", { "version": 4 } ]
 
     }
 

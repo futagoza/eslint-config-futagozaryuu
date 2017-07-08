@@ -10,13 +10,14 @@ module.exports = {
 
     "extends": [
 
-        "./node-v7.js",
-        "./es2017.js"
+        "./es2017.js",
+        "./node.js"
 
     ],
 
     "rules": {
 
+        "no-buffer-constructor": "error",
         "node/no-unsupported-features": [ "error", { "version": 7.6 } ]
 
     }

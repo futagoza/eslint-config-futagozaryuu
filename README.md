@@ -5,7 +5,7 @@
 
 ## about
 
-These are ESLint configurations I use in my JavaScript projects. They mostly assume development in ES2015+ compatible enviroments, unless otherwise stated.
+These are ESLint configurations I use in my JavaScript projects. They mostly assume development in ES2015+ compatible environments, unless otherwise stated.
 
 ## installation
 
@@ -44,8 +44,8 @@ Put the following into your `.eslintrc.json` file:
 - __`futagozaryuu/node-v4`__ (includes: _es2015_ and _node_)
 - __`futagozaryuu/node-v5`__ (includes: _node-v4_)
 - __`futagozaryuu/node-v6`__ (includes: _node-v5_)
-- __`futagozaryuu/node-v7`__ (includes: _node-v6_ and _es2016_)
-- __`futagozaryuu/node-v7.6`__ (includes: _node-v7_ and _es2017_)
+- __`futagozaryuu/node-v7`__ (includes: _es2016_ and _node_)
+- __`futagozaryuu/node-v7.6`__ (includes: _es2017_ and _node_)
 - __`futagozaryuu/node-v8`__ (includes: _node-v7.6_)
 - __`futagozaryuu/jsdoc`__
 - __`futagozaryuu/deprecated`__
@@ -55,4 +55,4 @@ Put the following into your `.eslintrc.json` file:
 ## license
 
 Copyright (c) 2017 Futago-za Ryuu<br>
-Realesed under the MIT License, [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
+Released under the MIT License, [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)

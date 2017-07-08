@@ -100,7 +100,7 @@ module.exports = {
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
          */
-        "node/no-deprecated-api": 0,
+        "node/no-deprecated-api": "warn",
 
         /**
          * Disallow `import` declarations of extraneous packages.
@@ -170,7 +170,7 @@ module.exports = {
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md
          */
-        "node/shebang": 0
+        "node/shebang": "error"
 
     }
 
