@@ -12,6 +12,13 @@ module.exports = {
         "for-direction": 0,
 
         /**
+         * enforce `return` statements in getters
+         *
+         * @see http://eslint.org/docs/rules/getter-return
+         */
+        "getter-return": [ "error", { "allowImplicit": true } ],
+
+        /**
          * disallow `await` inside of loops
          *
          * @see http://eslint.org/docs/rules/no-await-in-loop
