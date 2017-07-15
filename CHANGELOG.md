@@ -1,3 +1,13 @@
+<a name="3.3.0"></a>
+## [v3.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.2.1...v3.3.0) (2017-07-15)
+
+* Set minimum version of ESLint required to `v4.2`
+* Updated devDependency `eslint` to `v4.2.0`
+* Added new rule `getter-return` to `possible-errors.js` (`futagozaryuu/possible-errors`)
+* Added an up to date `CHANGELOG.md`, and a badge for it in `README.md`
+* Updated license blurb in the `LICENSE` file
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.3.0
+
 <a name="3.2.1"></a>
 ## [v3.2.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.2.0...v3.2.1) (2017-07-08)
 
