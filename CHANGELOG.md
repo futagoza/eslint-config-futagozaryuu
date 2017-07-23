@@ -1,3 +1,8 @@
+<a name="unreleased"></a>
+## Unreleased
+
+* Confirmed compatibility with ESLint v4.3
+
 <a name="3.3.0"></a>
 ## [v3.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.2.1...v3.3.0) (2017-07-15)
 

@@ -178,7 +178,7 @@ module.exports = {
         "prefer-destructuring": 0,
 
         /**
-         * 📝 disallow `parseInt()` in favor of binary, octal, and hexadecimal literals
+         * 📝 disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
          *
          * @see http://eslint.org/docs/rules/prefer-numeric-literals
          */
