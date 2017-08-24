@@ -1,7 +1,7 @@
 ## Unreleased
 
-* Confirmed compatibility with ESLint v4.5
 * Use `indent`, disabling `indent-legacy` ([eslint/eslint#8847](https://github.com/eslint/eslint/issues/8847), [eslint/eslint#8594](https://github.com/eslint/eslint/issues/8594), [eslint/eslint#9105](https://github.com/eslint/eslint/issues/9105))
+* Set minimum version of ESLint required to `v4.5`
 
 <a name="3.3.1"></a>
 ## [v3.3.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.3.0...v3.3.1) (2017-08-05)
