@@ -13,7 +13,7 @@ module.exports = {
          * @deprecated ESLint 4.0.0-alpha.0
          * @see http://eslint.org/docs/rules/indent-legacy
          */
-        "indent-legacy": [ "error", 4, { "SwitchCase": 1 } ],
+        "indent-legacy": 0,
 
         /**
          * 📝 require or disallow newlines around directives

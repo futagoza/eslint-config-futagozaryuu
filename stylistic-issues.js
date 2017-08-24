@@ -149,7 +149,14 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/indent
          */
-        "indent": 0,
+        "indent": [ "error", 4, {
+
+            "SwitchCase": 1,
+            "ignoredNodes": [
+                "ConditionalExpression"
+            ]
+
+        } ],
 
         /**
          * 📝 enforce the consistent use of either double or single quotes in JSX attributes
