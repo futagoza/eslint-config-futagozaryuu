@@ -58,7 +58,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/generator-star-spacing
          */
-        "generator-star-spacing": 0,
+        "generator-star-spacing": [ "error", { "before": true, "after": false } ],
 
         /**
          * disallow reassigning class members
