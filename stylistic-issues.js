@@ -124,6 +124,13 @@ module.exports = {
         "func-style": 0,
 
         /**
+         * 📝 enforce consistent line breaks inside function parentheses
+         *
+         * @see http://eslint.org/docs/rules/function-paren-newline
+         */
+        "function-paren-newline": 0,
+
+        /**
          * disallow specified identifiers
          *
          * @see http://eslint.org/docs/rules/id-blacklist
