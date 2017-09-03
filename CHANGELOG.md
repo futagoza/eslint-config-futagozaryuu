@@ -3,6 +3,7 @@
 * Enable the `generator-star-spacing` rule, and set it's options
 * Set minimum version of ESLint required to `v4.6`
 * Added new rule `function-paren-newline` to `stylistic-issues.js` (`futagozaryuu/stylistic-issues`)
+* DEV: Dropped CI support for non-LTS releases (Node.js v5 and Node.js v7)
 
 <a name="3.4.0"></a>
 ## [v3.4.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.3.1...v3.4.0) (2017-08-24)
