@@ -1,6 +1,7 @@
 ## Unreleased
 
 * Updated dependency `babel-eslint` to `8.0.x`
+* Confirmed compatibility with ESLint v4.7
 
 <a name="3.5.0"></a>
 ## [v3.5.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.4.0...v3.5.0) (2017-09-03)

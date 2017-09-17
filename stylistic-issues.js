@@ -294,8 +294,10 @@ module.exports = {
         "new-parens": "error",
 
         /**
-         * require a newline after each call in a method chain
-         *
+         * 📝 require a newline after each call in a method chain
+         * 
+         * _NOTE:_ Only fixable in ESlint 4.7+
+         * 
          * @see http://eslint.org/docs/rules/newline-per-chained-call
          */
         "newline-per-chained-call": [ "warn", { "ignoreChainWithDepth": 3 } ],
