@@ -1,7 +1,9 @@
-## Unreleased
+<a name="3.5.1"></a>
+## [v3.5.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.5.0...v3.5.1) (2017-09-17)
 
 * Updated dependency `babel-eslint` to `8.0.x`
 * Confirmed compatibility with ESLint v4.7
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.5.1
 
 <a name="3.5.0"></a>
 ## [v3.5.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.4.0...v3.5.0) (2017-09-03)
