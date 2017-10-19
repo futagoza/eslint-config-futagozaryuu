@@ -1,10 +1,12 @@
-## Unreleased Changes
+<a name="3.6.0"></a>
+## [v3.6.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.5.1...v3.6.0) (2017-10-19)
 
 * Updated dependency `eslint-plugin-node` to `5.2.x`
 * Set minimum version of ESLint required to `v4.9`
 * Added new option `FunctionExpression` for rule `require-jsdoc` (`futagozaryuu/jsdoc`)
 * Added new rule `lines-between-class-members` to `stylistic-issues.js` (`futagozaryuu/stylistic-issues`)
 * Added new rule `multiline-comment-style` to `stylistic-issues.js` (`futagozaryuu/stylistic-issues`)
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.6.0
 
 <a name="3.5.1"></a>
 ## [v3.5.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.5.0...v3.5.1) (2017-09-17)
