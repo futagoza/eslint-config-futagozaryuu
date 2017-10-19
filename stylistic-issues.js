@@ -224,6 +224,13 @@ module.exports = {
         "lines-around-comment": 0,
 
         /**
+         * 📝 require or disallow an empty line between class members
+         *
+         * @see http://eslint.org/docs/rules/lines-between-class-members
+         */
+        "lines-between-class-members": [ "error", "always" ],
+
+        /**
          * enforce a maximum depth that blocks can be nested
          *
          * @see http://eslint.org/docs/rules/max-depth
