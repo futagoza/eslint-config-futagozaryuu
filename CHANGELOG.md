@@ -1,3 +1,7 @@
+## Unreleased Changes
+
+* Updated dependency `eslint-plugin-node` to `5.2.x`
+
 <a name="3.5.1"></a>
 ## [v3.5.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.5.0...v3.5.1) (2017-09-17)
 
