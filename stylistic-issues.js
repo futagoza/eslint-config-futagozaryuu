@@ -280,6 +280,13 @@ module.exports = {
         "max-statements-per-line": 0,
 
         /**
+         * 📝 enforce a particular style for multiline comments
+         *
+         * @see http://eslint.org/docs/rules/multiline-comment-style
+         */
+        "multiline-comment-style": 0,
+
+        /**
          * enforce newlines between operands of ternary expressions
          *
          * @see http://eslint.org/docs/rules/multiline-ternary
