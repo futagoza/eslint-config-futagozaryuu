@@ -1,6 +1,7 @@
 ## Unreleased Changes
 
 * Updated dependency `eslint-plugin-node` to `5.2.x`
+* Set minimum version of ESLint required to `v4.9`
 
 <a name="3.5.1"></a>
 ## [v3.5.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.5.0...v3.5.1) (2017-09-17)
