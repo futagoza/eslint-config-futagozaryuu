@@ -1,6 +1,7 @@
 ## Unreleased changes
 
 * Confirmed compatibility with ESLint v4.10
+* Confirmed compatibility with ESLint v4.11
 
 <a name="3.6.0"></a>
 ## [v3.6.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.5.1...v3.6.0) (2017-10-19)
