@@ -587,7 +587,7 @@ module.exports = {
         "sort-keys": 0,
 
         /**
-         * require variables within the same declaration block to be sorted
+         * 📝 require variables within the same declaration block to be sorted
          *
          * @see http://eslint.org/docs/rules/sort-vars
          */
