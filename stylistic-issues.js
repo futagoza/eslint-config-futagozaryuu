@@ -152,6 +152,13 @@ module.exports = {
         "id-match": 0,
 
         /**
+         * 📝 enforce the location of arrow function bodies
+         *
+         * @see http://eslint.org/docs/rules/implicit-arrow-linebreak
+         */
+        "implicit-arrow-linebreak": 0,
+
+        /**
          * 📝 enforce consistent indentation (rewrote in ESLint 4.0.0)
          *
          * @see http://eslint.org/docs/rules/indent
