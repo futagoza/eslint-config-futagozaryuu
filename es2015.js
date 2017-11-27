@@ -6,7 +6,7 @@ module.exports = {
 
     "extends": "./es5.js",
     "parser": "babel-eslint",
-    "globals": globals.es6,
+    "globals": globals.es2015,
 
     "parserOptions": {
 
