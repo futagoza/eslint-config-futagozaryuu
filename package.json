@@ -23,7 +23,7 @@
     },
     "dependencies": {
         "babel-eslint": "8.0.x",
-        "globals": ">= 10.0.0",
+        "globals": ">= 11.0.0",
         "eslint-plugin-node": "5.2.x"
     },
     "peerDependencies": {
