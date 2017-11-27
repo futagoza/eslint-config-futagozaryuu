@@ -1,7 +1,12 @@
-## Unreleased changes
+<a name="3.7.0"></a>
+## [v3.7.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.6.0...v3.7.0) (2017-11-27)
 
-* Confirmed compatibility with ESLint v4.10
-* Confirmed compatibility with ESLint v4.11
+* Set minimum version of ESLint required to `v4.12`
+* Added new rule `implicit-arrow-linebreak` to `stylistic-issues.js` (`futagozaryuu/stylistic-issues`)
+* Updated JSDoc for `sort-vars` (`futagozaryuu/stylistic-issues`)
+* Updated dependency `globals` to `>= 11.0.0`
+* Updated list of global's used (`futagozaryuu/es2015` and `futagozaryuu/es2017`)
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.7.0
 
 <a name="3.6.0"></a>
 ## [v3.6.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.5.1...v3.6.0) (2017-10-19)
