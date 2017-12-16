@@ -1,3 +1,10 @@
+<a name="3.7.1"></a>
+## [v3.7.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.7.0...v3.7.1) (2017-12-16)
+
+* Fix NPM v2 (Node.js v4) compatibility issue by resolving plugin `babel-eslint` using `require.resolve`
+* Confirmed compatibility with ESLint v4.13
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.7.1
+
 <a name="3.7.0"></a>
 ## [v3.7.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.6.0...v3.7.0) (2017-11-27)
 
