@@ -5,7 +5,7 @@ const globals = require( "globals" );
 module.exports = {
 
     "extends": "./es5.js",
-    "parser": "babel-eslint",
+    "parser": require.resolve( "babel-eslint" ),
     "globals": globals.es2015,
 
     "parserOptions": {
