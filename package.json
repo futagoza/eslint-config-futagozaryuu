@@ -19,7 +19,7 @@
     "scripts": {
         "preversion": "npm install && npm test -- --quiet",
         "postversion": "git push --follow-tags && npm publish",
-        "test": "eslint *.js"
+        "test": "eslint *.js -c node-v4.js"
     },
     "dependencies": {
         "babel-eslint": "8.1.x",
@@ -35,9 +35,5 @@
     },
     "engines": {
         "node": ">= 4"
-    },
-    "eslintConfig": {
-        "extends": "./node-v4.js",
-        "root": true
     }
 }
