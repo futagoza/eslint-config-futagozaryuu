@@ -19,7 +19,7 @@
     "scripts": {
         "preversion": "npm install && npm test -- --quiet",
         "postversion": "git push --follow-tags && npm publish",
-        "test": "eslint --cache ."
+        "test": "eslint *.js"
     },
     "dependencies": {
         "babel-eslint": "8.1.x",
