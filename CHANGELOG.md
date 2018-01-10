@@ -1,3 +1,10 @@
+<a name="3.8.1"></a>
+## [v3.8.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.8.0...v3.8.1) (2018-01-10)
+
+* Confirmed compatibility with ESLint v4.15
+* Updated dependency `babel-eslint` to `8.2.x`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.8.1
+
 <a name="3.8.0"></a>
 ## [v3.8.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.7.1...v3.8.0) (2018-01-03)
 
@@ -6,7 +13,7 @@
 * DEV: Stopped using the `--cache` option for ESLint in test
 * DEV: Moved config path into test script using ESLint's `-c` option
 * DEV: Removed `preversion` script
-* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.7.1
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.8.0
 
 <a name="3.7.1"></a>
 ## [v3.7.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.7.0...v3.7.1) (2017-12-16)
