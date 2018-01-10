@@ -21,7 +21,7 @@
         "test": "eslint *.js -c node-v4.js"
     },
     "dependencies": {
-        "babel-eslint": "8.1.x",
+        "babel-eslint": "8.2.x",
         "globals": ">= 11.0.0",
         "eslint-plugin-node": "5.2.x"
     },
