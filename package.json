@@ -19,7 +19,7 @@
     "main": "index.js",
     "scripts": {
         "postversion": "git push --follow-tags && npm publish",
-        "test": "eslint *.js -c node-v4.js"
+        "test": "eslint *.js -c .eslintrc.js"
     },
     "dependencies": {
         "babel-eslint": "8.2.x",
