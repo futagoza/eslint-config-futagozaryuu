@@ -1,3 +1,13 @@
+<a name="3.9.0"></a>
+## [v3.9.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.8.1...v3.9.0) (2018-01-26)
+
+* Confirmed compatibility with ESLint v4.16
+* Added support for _ES2018_
+* DEV: Re-introduce `.eslintrc.js` for VS Code
+* Remove `futagozaryuu/esnext`, as _ES2018_ has made it temporarily redundant
+* Move content from `futagozaryuu/esnext` to `futagozaryuu/esdev`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.9.0
+
 <a name="3.8.1"></a>
 ## [v3.8.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.8.0...v3.8.1) (2018-01-10)
 
