@@ -4,10 +4,22 @@ module.exports = {
 
     "extends": [
 
-        "./esnext.js",
+        "./es2018.js",
         "./node.js",
         "./test.js"
 
-    ]
+    ],
+
+    "parserOptions": {
+
+        "sourceType": "module",
+
+    },
+
+    "rules": {
+
+        "strict": 0
+
+    }
 
 };

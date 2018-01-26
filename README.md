@@ -41,7 +41,6 @@ Put the following into your `.eslintrc.json` file:
 - __`futagozaryuu/es2016`__ (includes: _es2015_)
 - __`futagozaryuu/es2017`__ (includes: _es2016_)
 - __`futagozaryuu/es2018`__ (includes: _es2017_)
-- __`futagozaryuu/esnext`__ (includes: _es2018_)
 - __`futagozaryuu/node`__
 - __`futagozaryuu/node-v4`__ (includes: _es2015_ and _node_)
 - __`futagozaryuu/node-v5`__ (includes: _node-v4_)
@@ -52,7 +51,7 @@ Put the following into your `.eslintrc.json` file:
 - __`futagozaryuu/jsdoc`__
 - __`futagozaryuu/deprecated`__
 - __`futagozaryuu/test`__
-- __`futagozaryuu/dev`__ (includes: _esnext_, _node_ and _test_)
+- __`futagozaryuu/dev`__ (includes: _es2018_, _node_ and _test_)
 
 ## license
 
