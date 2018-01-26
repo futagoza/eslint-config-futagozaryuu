@@ -22,7 +22,7 @@ module.exports = {
         } ],
 
         /**
-         * enforce valid JSDoc comments
+         * 📝 enforce valid JSDoc comments
          *
          * @see http://eslint.org/docs/rules/valid-jsdoc
          */
