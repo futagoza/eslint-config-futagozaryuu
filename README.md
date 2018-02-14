@@ -16,18 +16,13 @@ $ npm install --save-dev eslint-config-futagozaryuu
 
 ## usage
 
-Put the following into your `.eslintrc.json` file:
+Put the following into your configuration (`.eslintrc.json` file or the _"eslintConfig"_ field in `package.json`):
 
 ```json
 {
     "extends": "futagozaryuu"
 }
 ```
-
-## notes
-
-- ⚠️ means a feature that has not been widely implemented
-- 📝 means a rule that can be fixed using the `--fix` flag
 
 ## configurations
 
@@ -49,6 +44,11 @@ Put the following into your `.eslintrc.json` file:
 - __`futagozaryuu/deprecated`__
 - __`futagozaryuu/test`__
 - __`futagozaryuu/dev`__ (includes: _es2018_, _node_ and _test_)
+
+If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have icons:
+
+- ⚠️ means a feature that has not been widely implemented
+- 📝 means a rule that can be fixed using the `--fix` flag
 
 ## license
 
