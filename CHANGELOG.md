@@ -1,10 +1,15 @@
-### Unreleased
+<a name="4.0.0"></a>
+## [v4.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.9.0...v4.0.0) (2018-02-14)
+
 
 * DEV: Only run travis on master branch
 * Confirmed compatibility with ESLint v4.17
 * Updated dependency `eslint-plugin-node` to `6.0.x`
 * Removed configurations for non-LTS versions of Node.js
 * Updated configurations for LTS versions of Node.js
+* Updated `README.md` to be slightly more clear about configurations
+* Updated license year from `2017` to `2017+`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v4.0.0
 
 <a name="3.9.0"></a>
 ## [v3.9.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.8.1...v3.9.0) (2018-01-26)
