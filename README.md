@@ -52,5 +52,5 @@ If you open the source files for these configurations, you will find each rule h
 
 ## license
 
-Copyright (c) 2017 Futago-za Ryuu<br>
+Copyright (c) 2017+ Futago-za Ryuu<br>
 Released under the MIT License, [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
