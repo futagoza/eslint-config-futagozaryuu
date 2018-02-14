@@ -1,6 +1,7 @@
 ### Unreleased
 
 * DEV: Only run travis on master branch
+* Confirmed compatibility with ESLint v4.17
 
 <a name="3.9.0"></a>
 ## [v3.9.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.8.1...v3.9.0) (2018-01-26)

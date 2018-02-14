@@ -31,7 +31,7 @@
         "eslint-plugin-node": "5.2.x"
     },
     "devDependencies": {
-        "eslint": "4.16.x"
+        "eslint": "4.17.x"
     },
     "engines": {
         "node": ">= 4"
