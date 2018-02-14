@@ -2,10 +2,16 @@
 
 module.exports = {
 
-    "extends": "./node-v7.6.js",
+    "extends": [
+
+        "./es2017.js",
+        "./node.js"
+
+    ],
 
     "rules": {
 
+        "no-buffer-constructor": "error",
         "node/no-unsupported-features": [ "error", { "version": 8 } ]
 
     }

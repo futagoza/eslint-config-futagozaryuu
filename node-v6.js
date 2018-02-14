@@ -2,7 +2,12 @@
 
 module.exports = {
 
-    "extends": "./node-v5.js",
+    "extends": [
+
+        "./es2015.js",
+        "./node.js"
+
+    ],
 
     "rules": {
 

@@ -43,8 +43,8 @@ Put the following into your `.eslintrc.json` file:
 - __`futagozaryuu/es2018`__ (includes: _es2017_)
 - __`futagozaryuu/node`__
 - __`futagozaryuu/node-v4`__ (includes: _es2015_ and _node_)
-- __`futagozaryuu/node-v6`__ (includes: _node-v5_)
-- __`futagozaryuu/node-v8`__ (includes: _node-v7.6_)
+- __`futagozaryuu/node-v6`__ (includes: _es2015_ and _node_)
+- __`futagozaryuu/node-v8`__ (includes: _es2017_ and _node_)
 - __`futagozaryuu/jsdoc`__
 - __`futagozaryuu/deprecated`__
 - __`futagozaryuu/test`__
