@@ -36,6 +36,7 @@ Put the following into your configuration (`.eslintrc.json` file or the _"eslint
 - __`futagozaryuu/es2016`__ (includes: _es2015_)
 - __`futagozaryuu/es2017`__ (includes: _es2016_)
 - __`futagozaryuu/es2018`__ (includes: _es2017_)
+- __`futagozaryuu/typescript`__ (includes: _es2018_)
 - __`futagozaryuu/node`__
 - __`futagozaryuu/node-v4`__ (includes: _es2015_ and _node_)
 - __`futagozaryuu/node-v6`__ (includes: _es2015_ and _node_)
