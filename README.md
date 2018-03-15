@@ -6,7 +6,7 @@
 
 ## about
 
-These are ESLint configurations I use in my JavaScript projects. They mostly assume development in ES2015+ compatible environments, unless otherwise stated.
+These are configurations for ESLint that I use in my JavaScript and TypeScript projects. Most of the configurations assume development in ES2015+ compatible environments, but the default configuration does not do this.
 
 ## installation
 
@@ -25,6 +25,8 @@ Put the following into your configuration (`.eslintrc.json` file or the _"eslint
 ```
 
 ## configurations
+
+A list of usable configurations as well the configurations they use:
 
 - __`futagozaryuu`__ (_default_, includes: _possible-errors_, _best-practices_, _stylistic-issues_ and _variables_)
 - __`futagozaryuu/possible-errors`__
@@ -50,6 +52,21 @@ If you open the source files for these configurations, you will find each rule h
 
 - ⚠️ means a feature that has not been widely implemented
 - 📝 means a rule that can be fixed using the `--fix` flag
+
+## versioning
+
+Since v2 of this package I tried to follow semver versioning, but from v4.17 I will follow these rules:
+
+`4.17.0` = `RELEASE.REVISION.PATCH`
+
+1. `RELEASE` denotes the version of ESLint this package supports
+2. `PATCH` is only incremented when
+    - a bug is fixed
+    - docs are updated between revisions
+    - dependency updates between revisions
+    - confirmed compatibility with minor ESLint release's
+3. `REVISION` is incremented for all other changes
+4. `PATCH` is reset when `REVISION` increments
 
 ## license
 
