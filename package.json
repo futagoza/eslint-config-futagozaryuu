@@ -27,11 +27,11 @@
         "eslint-plugin-node": "6.0.x"
     },
     "peerDependencies": {
-        "eslint": ">= 4.12.0",
+        "eslint": ">= 4.18.0",
         "eslint-plugin-node": ">= 6.0.0"
     },
     "devDependencies": {
-        "eslint": "4.17.x"
+        "eslint": "4.18.x"
     },
     "engines": {
         "node": ">= 4"
