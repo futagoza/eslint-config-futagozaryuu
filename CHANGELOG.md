@@ -1,6 +1,20 @@
+<a name="4.17.0"></a>
+## [v4.17.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.0.0...v4.17.0) (2018-03-15)
+
+* Set minimum ESLint requirement to `v4.18`
+* DEV: Added a lock-file for Yarn
+* DEV: Ignore `*.log` files in the root
+* DEV: Use `yarn` on CI
+* Removed `ecmaFeatures#experimentalObjectRestSpread` option in `futagozaryuu/es2018`
+* DEV: Remove `.npmrc` as I'm now using Yarn
+* Added support for TypeScript via `futagozaryuu/typescript`
+* Updated the `about` section in `README.md`
+* Updated the `configurations` section in `README.md`
+* Added the `versioning` section to `README.md`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v4.17.0
+
 <a name="4.0.0"></a>
 ## [v4.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.9.0...v4.0.0) (2018-02-14)
-
 
 * DEV: Only run travis on master branch
 * Confirmed compatibility with ESLint v4.17
@@ -18,7 +32,7 @@
 * Added support for _ES2018_
 * DEV: Re-introduce `.eslintrc.js` for VS Code
 * Removed `futagozaryuu/esnext`, as _ES2018_ has made it temporarily redundant
-* Move content from `futagozaryuu/esnext` to `futagozaryuu/esdev`
+* Move content from `futagozaryuu/esnext` to `futagozaryuu/dev`
 * Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v3.9.0
 
 <a name="3.8.1"></a>
