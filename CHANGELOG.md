@@ -1,3 +1,10 @@
+<a name="4.17.1"></a>
+## [v4.17.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.17.0...v4.17.1) (2018-03-17)
+
+* Confirmed compatibility with ESLint v4.19
+* Fix unmet peer dependency warning for TypeScript
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v4.17.1
+
 <a name="4.17.0"></a>
 ## [v4.17.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.0.0...v4.17.0) (2018-03-15)
 
