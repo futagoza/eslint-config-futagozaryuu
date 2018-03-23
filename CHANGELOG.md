@@ -1,3 +1,12 @@
+<a name="4.17.2"></a>
+## [v4.17.2](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.17.1...v4.17.2) (2018-03-23)
+
+* Switch to use of tildes (`~`) and carets (`^`) in `dependencies` and `devDependencies`
+* Removed `peerDependencies`, fixes annoying warning from NPM/Yarn
+* DEV: Updated `yarn.lock`
+* Confirmed compatibility with ESLint v4.19.1
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v4.17.2
+
 <a name="4.17.1"></a>
 ## [v4.17.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.17.0...v4.17.1) (2018-03-17)
 
