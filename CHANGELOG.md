@@ -1,3 +1,21 @@
+<a name="4.18.1"></a>
+## [v4.18.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.18.0...v4.18.1) (2018-05-13)
+
+* Use NPM and not Yarn when running the `version` command
+* DEV: Updated changelog
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v4.18.1
+
+<a name="4.18.0"></a>
+## [v4.18.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.17.2...v4.18.0) (2018-05-13)
+
+* Rule `prefer-rest-params` for ES2015+ is now disabled when using `futagozaryuu/node-v4`
+* Rule `prefer-spread` for ES2015+ is now disabled when using `futagozaryuu/node-v4`
+* Updated dependency `typescript-eslint-parser` to `^15.0.0`
+* Updated dependency `typescript` to `~2.8.0`
+* Updated the `versioning` section in `README.md` to include a note about tildes and carets
+* DEV: Updated `yarn.lock`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v4.18.0
+
 <a name="4.17.2"></a>
 ## [v4.17.2](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.17.1...v4.17.2) (2018-03-23)
 
