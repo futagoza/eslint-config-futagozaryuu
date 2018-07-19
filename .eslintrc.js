@@ -2,7 +2,7 @@
 
 module.exports = {
 
-    "extends": "./node-v4.js",
+    "extends": "./node-v6.js",
     "root": true,
 
 };
