@@ -89,6 +89,13 @@ module.exports = {
         "guard-for-in": "warn",
 
         /**
+         * enforce a maximum number of classes per file
+         *
+         * @see http://eslint.org/docs/rules/max-classes-per-file
+         */
+        "max-classes-per-file": 0,
+
+        /**
          * disallow the use of `alert`, `confirm`, and `prompt`
          *
          * @see http://eslint.org/docs/rules/no-alert
@@ -149,7 +156,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-eval
          */
-        "no-eval": 0,
+        "no-eval": "warn",
 
         /**
          * disallow extending native types
@@ -212,7 +219,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-implied-eval
          */
-        "no-implied-eval": 0,
+        "no-implied-eval": "warn",
 
         /**
          * disallow `this` keywords outside of classes or class-like objects
@@ -369,7 +376,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-self-assign
          */
-        "no-self-assign": "error",
+        "no-self-assign": [ "error", { "props": false } ],
 
         /**
          * disallow comparisons where both sides are exactly the same

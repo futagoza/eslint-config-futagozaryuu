@@ -35,9 +35,10 @@ module.exports = {
                 "return": "returns"
             },
             "requireReturn": false,
-            "requireReturnType": false,
+            "requireReturnType": true,
             "requireParamDescription": false,
-            "requireReturnDescription": false
+            "requireReturnDescription": false,
+            "requireParamType": true
 
         } ]
 

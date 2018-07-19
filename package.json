@@ -30,7 +30,7 @@
         "typescript-eslint-parser": "^16.0.0"
     },
     "devDependencies": {
-        "eslint": "~4.19.0"
+        "eslint": "~5.1.0"
     },
     "engines": {
         "node": ">= 6"

@@ -61,7 +61,7 @@ module.exports = {
         "no-control-regex": 0,
 
         /**
-         * 📝 disallow the use of `debugger`
+         * disallow the use of `debugger`
          *
          * @see http://eslint.org/docs/rules/no-debugger
          */

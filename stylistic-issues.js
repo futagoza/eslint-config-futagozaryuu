@@ -259,6 +259,13 @@ module.exports = {
         "max-lines": 0,
 
         /**
+         * enforce a maximum number of line of code in a function
+         * 
+         * @see http://eslint.org/docs/rules/max-lines-per-function
+         */
+        "max-lines-per-function": 0,
+
+        /**
          * enforce a maximum depth that callbacks can be nested
          *
          * @see http://eslint.org/docs/rules/max-nested-callbacks
@@ -497,11 +504,16 @@ module.exports = {
         "object-property-newline": 0,
 
         /**
-         * enforce variables to be declared either together or separately in functions
+         * 📝 enforce variables to be declared either together or separately in functions
          *
          * @see http://eslint.org/docs/rules/one-var
          */
-        "one-var": [ "error", { "initialized": "never" } ],
+        "one-var": [ "error", {
+
+            "initialized": "never",
+            "uninitialized": "consecutive"
+
+        } ],
 
         /**
          * 📝 require or disallow newlines around variable declarations
@@ -543,6 +555,14 @@ module.exports = {
          * @see http://eslint.org/docs/rules/padding-line-between-statements
          */
         "padding-line-between-statements": 0,
+
+        /**
+         * 📝 disallow using Object.assign with an object literal as the first argument and prefer
+         * the use of object spread instead.
+         *
+         * @see http://eslint.org/docs/rules/prefer-object-spread
+         */
+        "prefer-object-spread": 0,
 
         /**
          * 📝 require quotes around object literal property names

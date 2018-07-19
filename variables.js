@@ -12,13 +12,6 @@ module.exports = {
         "init-declarations": 0,
 
         /**
-         * disallow `catch` clause parameters from shadowing variables in the outer scope
-         *
-         * @see http://eslint.org/docs/rules/no-catch-shadow
-         */
-        "no-catch-shadow": 0,
-
-        /**
          * disallow deleting variables
          *
          * @see http://eslint.org/docs/rules/no-delete-var
@@ -79,7 +72,15 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-unused-vars
          */
-        "no-unused-vars": "warn",
+        "no-unused-vars": [ "error", {
+
+            "vars": "local",
+            "args": "after-used",
+            "ignoreRestSiblings": true,
+            "argsIgnorePattern": "^_",
+            "caughtErrors": "none"
+
+        } ],
 
         /**
          * disallow the use of variables before they are defined

@@ -46,7 +46,18 @@ module.exports = {
          * @deprecated ESLint 4.0.0-beta.0
          * @see http://eslint.org/docs/rules/newline-before-return
          */
-        "newline-before-return": 0
+        "newline-before-return": 0,
+
+        /**
+         * disallow `catch` clause parameters from shadowing variables in the outer scope
+         * 
+         * This rule has been deprecated in favor of `no-shadow`, another rule within the
+         * `futagozaryuu/variables` configuration.
+         *
+         * @deprecated ESLint 5.1.0
+         * @see http://eslint.org/docs/rules/no-catch-shadow
+         */
+        "no-catch-shadow": 0,
 
     }
 
