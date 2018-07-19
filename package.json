@@ -27,7 +27,7 @@
         "eslint-plugin-node": "~6.0.0",
         "globals": "^11.0.0",
         "typescript": "~2.9.0",
-        "typescript-eslint-parser": "^15.0.0"
+        "typescript-eslint-parser": "^16.0.0"
     },
     "devDependencies": {
         "eslint": "~4.19.0"
