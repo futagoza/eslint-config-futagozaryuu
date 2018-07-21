@@ -4,7 +4,7 @@ module.exports = {
 
     "extends": [
 
-        "./es2018.js",
+        "./es2019.js",
         "./node.js",
         "./test.js"
 
