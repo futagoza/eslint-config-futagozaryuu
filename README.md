@@ -4,6 +4,8 @@
 [![History](https://img.shields.io/badge/history-CHANGELOG.md-orange.svg)](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
+> This package contains configuration files for ESLint v5.1+
+
 ## about
 
 These are configurations for ESLint that I use in my JavaScript and TypeScript projects. Most of the configurations assume development in ES2015+ compatible environments, but the default configuration does not do this.
