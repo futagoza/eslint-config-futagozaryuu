@@ -9,6 +9,8 @@ module.exports = {
 
     "rules": {
 
+        /* --------------- ESLint Core Rules --------------- */
+
         "strict": [ "error", "global" ],
 
         /**
@@ -88,19 +90,7 @@ module.exports = {
          */
         "no-sync": 0,
 
-        /**
-         * Enforce either `module.exports` or `exports`.
-         *
-         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
-         */
-        "node/exports-style": 0,
-
-        /**
-         * Disallow deprecated API.
-         *
-         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
-         */
-        "node/no-deprecated-api": "warn",
+        /* --------------- eslint-plugin-node | Possible Errors --------------- */
 
         /**
          * Disallow `import` declarations of extraneous packages.
@@ -152,11 +142,25 @@ module.exports = {
         "node/no-unpublished-require": 0,
 
         /**
-         * Disallow unsupported ECMAScript features on the specified version.
-         *
-         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features.md
+         * Disallow unsupported ECMAScript built-ins on the specified version.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-builtins.md
          */
-        "node/no-unsupported-features": 0,
+        "node/no-unsupported-features/es-builtins": 0,
+
+        /**
+         * Disallow unsupported ECMAScript syntax on the specified version.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
+         */
+        "node/no-unsupported-features/es-syntax": 0,
+
+        /**
+         * Disallow unsupported Node.js built-in APIs on the specified version.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md
+         */
+        "node/no-unsupported-features/node-builtins": 0,
 
         /**
          * Make the same code path as throw at `process.exit()`.
@@ -170,7 +174,60 @@ module.exports = {
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md
          */
-        "node/shebang": "error"
+        "node/shebang": "error",
+
+        /* --------------- eslint-plugin-node | Best Practices --------------- */
+
+        /**
+         * Disallow deprecated API.
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
+         */
+        "node/no-deprecated-api": "warn",
+
+        /* --------------- eslint-plugin-node | Stylistic Issues --------------- */
+
+        /**
+         * Enforce either `module.exports` or `exports`.
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
+         */
+        "node/exports-style": 0,
+
+        /**
+         * Enforce either `Buffer` or `require("buffer").Buffer`.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/buffer.md
+         */
+        "node/prefer-global/buffer": 0,
+
+        /**
+         * Enforce either `console` or `require("console")`.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/console.md
+         */
+        "node/prefer-global/console": 0,
+
+        /**
+         * Enforce either `process` or `require("process")`.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/process.md
+         */
+        "node/prefer-global/process": 0,
+
+        /**
+         * Enforce either `URLSearchParams` or `require("url").URLSearchParams`.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/url-search-params.md
+         */
+        "node/prefer-global/url-search-params": 0,
+
+        /**
+         * Enforce either `URL` or `require("url").URL`.
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/url.md
+         */
+        "node/prefer-global/url": 0,
 
     }
 

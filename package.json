@@ -24,7 +24,7 @@
     },
     "dependencies": {
         "babel-eslint": "~8.2.0",
-        "eslint-plugin-node": "~6.0.0",
+        "eslint-plugin-node": "~7.0.0",
         "globals": "^11.0.0",
         "typescript": "~2.9.0",
         "typescript-eslint-parser": "^16.0.0"
