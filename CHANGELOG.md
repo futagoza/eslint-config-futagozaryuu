@@ -1,8 +1,40 @@
+<a name="5.0.0"></a>
+## [v5.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.18.1...v5.0.0) (2018-07-22)
+
+* DEV: Added Node.js v10 to the list of LTS release's checked against
+* DEV: Set Travis to run the latest release of each Node.js LTS
+* Fixed spelling and grammar error in `README.md`
+* Removed support for running in Node.js v4 _(linting to check if script can run in Node.js v4 is still supported)_
+* Set minimum version of Node.js required to `>= 6`
+* Updated dependency `typescript` to `~2.9.0`
+* Updated dependency `typescript-eslint-parser` to `^16.0.0`
+* Upgraded configuration files for ESLint `v5.0` and `v5.1`
+  * Added options for rule `no-self-assign` to ensure self-assigned properties are excluded
+  * Updated options for rule `no-unused-vars` to always throw errors on local unused variables
+  * Added new rule `prefer-object-spread` to `stylistic-issues.js` (`futagozaryuu/stylistic-issues`)
+  * Added new rule `max-classes-per-file` to `best-practices.js` (`futagozaryuu/best-practices`)
+  * Updated comment for rule `one-var` to indicate that it is now fixable
+  * Updated options for rule `one-var` to ensure uninitialized variables can be defined consecutively
+  * Added option `requireParamType` to rule `valid-jsdoc` in `jsdoc.js` (`futagozaryuu/jsdoc`)
+  * Updated option `requireReturnType` for rule `valid-jsdoc` to be `true` (`requireReturn` is still `false`)
+  * Added new rule `max-lines-per-function` to `stylistic-issues.js` (`futagozaryuu/stylistic-issues`)
+  * Moved `no-catch-shadow` from `variables.js` (`futagozaryuu/variables`) to `deprecated.js` (`futagozaryuu/deprecated`)
+  * Removed the autofixer icon in the comment for `no-debugger`; It is not fixable anymore
+  * Update options for `no-implied-eval` and `no-eval` to throw a warning
+* Added support for ES2019 (`futagozaryuu/es2019`), and updated dev (`futagozaryuu/dev`)
+* Updated dependency `eslint-plugin-node` to `~7.0.0`
+* Updated `node-v*` configuration files to support changes in `eslint-plugin-node`
+* Added configuration file for Node.js v10 (`futagozaryuu/node-v10`)
+* Confirmed compatibility with _ESLint v5.2_
+* Added note to `README.md` about minimum ESLint required to `v5.1`
+* DEV: Updated `yarn.lock`
+* Updated the `configurations` section in `README.md`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.0.0
+
 <a name="4.18.1"></a>
 ## [v4.18.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.18.0...v4.18.1) (2018-05-13)
 
-* Use NPM and not Yarn when running the `version` command
-* DEV: Updated changelog
+* Use NPM and not Yarn when running the `version` command _(Released on NPM now)_
 * Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v4.18.1
 
 <a name="4.18.0"></a>
