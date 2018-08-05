@@ -174,6 +174,13 @@ module.exports = {
         } ],
 
         /**
+         * disallow characters which are made with multiple code points in character class syntax
+         *
+         * @see http://eslint.org/docs/rules/no-misleading-character-class
+         */
+        "no-misleading-character-class": "warn",
+
+        /**
          * disallow calling global object properties as functions
          *
          * @see http://eslint.org/docs/rules/no-obj-calls
