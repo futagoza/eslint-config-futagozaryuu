@@ -1,3 +1,15 @@
+<a name="5.1.0"></a>
+## [v5.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.0.0...v5.1.0) (2018-08-05)
+
+* Added new rule `no-misleading-character-class` to `futagozaryuu/possible-errors`
+* Added new rule `require-atomic-updates` to `futagozaryuu/possible-errors`
+* Added new rule `no-async-promise-executor` to `futagozaryuu/possible-errors`
+* Added new rule `require-unicode-regexp` to `futagozaryuu/best-practices`
+* Set minimum ESLint requirement to `v5.3`
+* Updated dependency `typescript-eslint-parser` to `^17.0.0`
+* DEV: Updated `yarn.lock`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.1.0
+
 <a name="5.0.0"></a>
 ## [v5.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.18.1...v5.0.0) (2018-07-22)
 
