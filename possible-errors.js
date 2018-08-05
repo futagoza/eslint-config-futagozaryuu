@@ -19,6 +19,13 @@ module.exports = {
         "getter-return": [ "error", { "allowImplicit": true } ],
 
         /**
+         * disallow using an async function as a Promise executor
+         *
+         * @see http://eslint.org/docs/rules/no-async-promise-executor
+         */
+        "no-async-promise-executor": "error",
+
+        /**
          * disallow `await` inside of loops
          *
          * @see http://eslint.org/docs/rules/no-await-in-loop
