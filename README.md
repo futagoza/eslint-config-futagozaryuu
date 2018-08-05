@@ -4,7 +4,7 @@
 [![History](https://img.shields.io/badge/history-CHANGELOG.md-orange.svg)](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
-> This package contains configuration files for ESLint v5.1+
+> This package contains configuration files for ESLint v5.3+
 
 ## about
 
