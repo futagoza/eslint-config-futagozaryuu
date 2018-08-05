@@ -244,6 +244,13 @@ module.exports = {
         "no-unsafe-negation": "error",
 
         /**
+         * disallow assignments that can lead to race conditions due to usage of `await` or `yield`
+         *
+         * @see http://eslint.org/docs/rules/require-atomic-updates
+         */
+        "require-atomic-updates": "error",
+
+        /**
          * require calls to `isNaN()` when checking for `NaN`
          *
          * @see http://eslint.org/docs/rules/use-isnan
