@@ -491,6 +491,13 @@ module.exports = {
         "require-await": "warn",
 
         /**
+         * enforce the use of `u` flag on RegExp
+         *
+         * @see http://eslint.org/docs/rules/require-unicode-regexp
+         */
+        "require-unicode-regexp": 0,
+
+        /**
          * 📝 require or disallow strict mode directives
          *
          * @see http://eslint.org/docs/rules/strict
