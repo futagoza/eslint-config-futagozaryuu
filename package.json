@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-futagozaryuu",
-    "version": "5.1.0",
+    "version": "5.2.0",
     "description": "Futago-za Ryuu's ESLint configurations",
     "keywords": [
         "eslint",
