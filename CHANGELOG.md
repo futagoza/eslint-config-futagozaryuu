@@ -1,3 +1,12 @@
+<a name="5.2.0"></a>
+## [v5.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.1.0...v5.2.0) (2018-08-24)
+
+* Updated dependency `typescript` to `~3.0.0`
+* Updated dependency `typescript-eslint-parser` to `^18.0.0`
+* Confirmed compatibility with ESLint v5.4
+* DEV: Updated `yarn.lock`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.2.0
+
 <a name="5.1.0"></a>
 ## [v5.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.0.0...v5.1.0) (2018-08-05)
 
