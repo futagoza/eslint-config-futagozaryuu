@@ -1,3 +1,12 @@
+<a name="5.3.0"></a>
+## [v5.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.2.0...v5.3.0) (2018-10-05)
+
+* Confirmed compatibility with ESLint v5.6
+* Updated dependency `babel-eslint` to `^10.0.0`
+* Removed support for TypeScript, use [eslint-config-typescript](https://www.npmjs.com/package/eslint-config-typescript) instead
+* DEV: Updated `yarn.lock`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.3.0
+
 <a name="5.2.0"></a>
 ## [v5.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.1.0...v5.2.0) (2018-08-24)
 
