@@ -1,3 +1,5 @@
 .eslintcache
+.eslintrc.js
 .travis.yml
 *.log
+yarn.lock
