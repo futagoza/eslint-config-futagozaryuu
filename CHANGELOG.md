@@ -1,13 +1,15 @@
-## unreleased
+<a name="5.4.0"></a>
+## [v5.4.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.3.0...v5.4.0) (2018-12-03)
 
 * Confirmed compatibility with ESLint v5.9
 * Ensure NPM does not publish this package's `.eslintrc.js` and `yarn.lock`
-* Deprecated JSDoc rules (see post on [ESLint blog](https://eslint.org/blog/2018/11/jsdoc-end-of-life).)
+* Deprecated JSDoc rules (see [this ESLint blog post](https://eslint.org/blog/2018/11/jsdoc-end-of-life) for more details.)
 * Enable rule `linebreak-style`, setting it to `[ "error", "unix" ]`
 * DEV: Removed `-c .eslintrc.js` from `npm run test` script
 * DEV: Added `npm run fix` script
 * Updated dependency `eslint-plugin-node` to `~8.0.0`
 * Added new `node/prefer-global/text-*` rules from `eslint-plugin-node` to `futagozaryuu/node`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.4.0
 
 <a name="5.3.0"></a>
 ## [v5.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.2.0...v5.3.0) (2018-10-05)
