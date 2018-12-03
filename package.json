@@ -18,8 +18,9 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "scripts": {
+        "fix": "eslint *.js --fix",
         "postversion": "git push --follow-tags && npm publish",
-        "test": "eslint *.js -c .eslintrc.js"
+        "test": "eslint *.js"
     },
     "dependencies": {
         "babel-eslint": "^10.0.0",

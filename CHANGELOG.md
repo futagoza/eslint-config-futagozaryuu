@@ -4,6 +4,8 @@
 * Ensure NPM does not publish this package's `.eslintrc.js` and `yarn.lock`
 * Deprecated JSDoc rules (see post on [ESLint blog](https://eslint.org/blog/2018/11/jsdoc-end-of-life).)
 * Enable rule `linebreak-style`, setting it to `[ "error", "unix" ]`
+* DEV: Removed `-c .eslintrc.js` from `npm run test` script
+* DEV: Added `npm run fix` script
 
 <a name="5.3.0"></a>
 ## [v5.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.2.0...v5.3.0) (2018-10-05)
