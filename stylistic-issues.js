@@ -221,7 +221,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/linebreak-style
          */
-        "linebreak-style": 0,
+        "linebreak-style": [ "error", "unix" ],
 
         /**
          * 📝 require empty lines around comments
