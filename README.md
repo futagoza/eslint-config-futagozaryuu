@@ -46,7 +46,6 @@ A list of usable configurations as well the configurations they use:
 - __`futagozaryuu/node-v6`__ (includes: _es2015_ and _node_)
 - __`futagozaryuu/node-v8`__ (includes: _es2017_ and _node_)
 - __`futagozaryuu/node-v10`__ (includes: _es2018_ and _node_)
-- __`futagozaryuu/jsdoc`__
 - __`futagozaryuu/deprecated`__
 - __`futagozaryuu/test`__
 - __`futagozaryuu/dev`__ (includes: _es2019_, _node_ and _test_)

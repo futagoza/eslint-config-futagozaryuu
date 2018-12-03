@@ -70,6 +70,22 @@ module.exports = {
          */
         "node/no-unsupported-features": 0,
 
+        /**
+         * require JSDoc comments
+         *
+         * @deprecated https://eslint.org/blog/2018/11/jsdoc-end-of-life
+         * @see http://eslint.org/docs/rules/require-jsdoc
+         */
+        "require-jsdoc": 0,
+
+        /**
+         * 📝 enforce valid JSDoc comments
+         *
+         * @deprecated https://eslint.org/blog/2018/11/jsdoc-end-of-life
+         * @see http://eslint.org/docs/rules/valid-jsdoc
+         */
+        "valid-jsdoc": 0,
+
     }
 
 };
