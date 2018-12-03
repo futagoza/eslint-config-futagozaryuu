@@ -216,6 +216,20 @@ module.exports = {
         "node/prefer-global/process": 0,
 
         /**
+         * Enforce either `TextDecoder` or `require("util").TextDecoder`
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-decoder.md
+         */
+        "node/prefer-global/text-decoder": 0,
+
+        /**
+         * Enforce either `TextEncoder` or `require("util").TextEncoder`
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-encoder.md
+         */
+        "node/prefer-global/text-encoder": 0,
+
+        /**
          * Enforce either `URLSearchParams` or `require("url").URLSearchParams`.
          * 
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/url-search-params.md
