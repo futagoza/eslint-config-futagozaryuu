@@ -554,7 +554,18 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/padding-line-between-statements
          */
-        "padding-line-between-statements": 0,
+        "padding-line-between-statements": [ "error",
+
+            { blankLine: "always", prev: "directive", next: "*" },
+            { blankLine: "any", prev: "directive", next: "directive" },
+
+            { blankLine: "always", prev: "import", next: "*" },
+            { blankLine: "any", prev: "import", next: "import" },
+
+            { blankLine: "always", prev: "*", next: "case" },
+            { blankLine: "always", prev: "case", next: "*" },
+
+        ],
 
         /**
          * 📝 disallow using Object.assign with an object literal as the first argument and prefer
