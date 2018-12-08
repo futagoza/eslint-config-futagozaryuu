@@ -1,3 +1,13 @@
+<a name="5.5.0"></a>
+## [v5.5.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.4.0...v5.5.0) (2018-12-08)
+
+* Confirmed compatibility with ESLint v5.10
+* Enable rule `padding-line-between-statements`, setting it to
+  - Expect a blank line after `"use *";` directives
+  - Expect a blank line after import statements
+  - Expect case blocks to be surrounded by empty lines
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.5.0
+
 <a name="5.4.0"></a>
 ## [v5.4.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.3.0...v5.4.0) (2018-12-03)
 
