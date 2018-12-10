@@ -564,6 +564,7 @@ module.exports = {
 
             { blankLine: "always", prev: "*", next: "case" },
             { blankLine: "always", prev: "case", next: "*" },
+            { blankLine: "never", prev: "case", next: "case" },
 
         ],
 
