@@ -1,3 +1,9 @@
+<a name="5.5.1"></a>
+## [v5.5.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.5.0...v5.5.1) (2018-12-10)
+
+* Fix: `padding-line-between-statements` should never allow a newline between 2 case statements
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.5.1
+
 <a name="5.5.0"></a>
 ## [v5.5.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.4.0...v5.5.0) (2018-12-08)
 
