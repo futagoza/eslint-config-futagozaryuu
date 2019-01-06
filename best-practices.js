@@ -428,6 +428,13 @@ module.exports = {
         "no-useless-call": 0,
 
         /**
+         * disallow unnecessary `catch` clauses
+         *
+         * @see http://eslint.org/docs/rules/no-useless-catch
+         */
+        "no-useless-catch": "error",
+
+        /**
          * disallow unnecessary concatenation of literals or template literals
          *
          * @see http://eslint.org/docs/rules/no-useless-concat
