@@ -1,3 +1,13 @@
+<a name="5.6.0"></a>
+## [v5.6.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.5.1...v5.6.0) (2019-01-06)
+
+* Disable rule `padding-line-between-statements` (see [eslint/eslint#11178](https://github.com/eslint/eslint/issues/11178))
+* Added new rule `no-useless-catch` to `futagozaryuu/best-practices`
+* Use `"VariableDeclarator": "first"` option in the `indent` rule
+* Set minimum ESLint required to `v5.12`
+* DEV: Updated `yarn.lock`
+* Released: https://github.com/futagoza/eslint-config-futagozaryuu/releases/tag/v5.6.0
+
 <a name="5.5.1"></a>
 ## [v5.5.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.5.0...v5.5.1) (2018-12-10)
 
