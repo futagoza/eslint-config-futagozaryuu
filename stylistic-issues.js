@@ -554,6 +554,8 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/padding-line-between-statements
          */
+        "padding-line-between-statements": 0,
+        /*
         "padding-line-between-statements": [ "error",
 
             { blankLine: "always", prev: "directive", next: "*" },
@@ -567,6 +569,7 @@ module.exports = {
             { blankLine: "never", prev: "case", next: "case" },
 
         ],
+        */
 
         /**
          * 📝 disallow using Object.assign with an object literal as the first argument and prefer
