@@ -1,3 +1,12 @@
+<a name="5.6.1"></a>
+## [v5.6.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.6.0...v5.6.1) (2019-01-31)
+
+* Confirmed compatibility with ESLint v5.12.1
+* Upgraded dependencies (version locks to latest)
+* DEV: Updated `yarn.lock`
+* Use string based node version range (should fix an edge case with ESLint complaining about incorrect value)
+* DEV: Removed all release links from CHANGELOG.md
+
 <a name="5.6.0"></a>
 ## [v5.6.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.5.1...v5.6.0) (2019-01-06)
 
