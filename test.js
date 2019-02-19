@@ -12,8 +12,8 @@ module.exports = {
 
     "globals": {
 
-        "suite": false,
-        "benchmark": false
+        "suite": "readonly",
+        "benchmark": "readonly"
 
     }
 
