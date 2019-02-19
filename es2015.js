@@ -192,7 +192,7 @@ module.exports = {
         "prefer-rest-params": "error",
 
         /**
-         * 📝 require spread operators instead of `.apply()`
+         * require spread operators instead of `.apply()`
          *
          * @see http://eslint.org/docs/rules/prefer-spread
          */
