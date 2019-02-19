@@ -1,3 +1,14 @@
+<a name="5.7.0"></a>
+## [v5.7.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.6.1...v5.7.0) (2019-02-19)
+
+* Updated dependency `globals` to `^11.11.0`
+* Use `"readonly"` value for `futagozaryuu/test#globals`
+* `prefer-destructuring` is now fixable
+* `prefer-spread` is not fixable anymore
+* Use new option `allowSingleLineBlocks` for `padded-blocks`
+* Set minimum ESLint required to `v5.14`
+* DEV: Updated `yarn.lock`
+
 <a name="5.6.1"></a>
 ## [v5.6.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.6.0...v5.6.1) (2019-01-31)
 
