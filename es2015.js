@@ -171,7 +171,7 @@ module.exports = {
         } ],
 
         /**
-         * require destructuring from arrays and/or objects
+         * 📝 require destructuring from arrays and/or objects
          *
          * @see http://eslint.org/docs/rules/prefer-destructuring
          */
