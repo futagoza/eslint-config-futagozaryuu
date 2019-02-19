@@ -25,7 +25,7 @@
     "dependencies": {
         "babel-eslint": "^10.0.1",
         "eslint-plugin-node": "~8.0.1",
-        "globals": "^11.10.0"
+        "globals": "^11.11.0"
     },
     "devDependencies": {
         "eslint": "~5.12.1"
