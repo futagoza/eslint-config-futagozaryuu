@@ -548,6 +548,10 @@ module.exports = {
             "switches": "always",
             "classes": "always"
 
+        }, {
+
+            "allowSingleLineBlocks": true
+
         } ],
 
         /**
