@@ -477,6 +477,13 @@ module.exports = {
         "no-with": "error",
 
         /**
+         * enforce using named capture group in regular expression
+         *
+         * @see http://eslint.org/docs/rules/prefer-named-capture-group
+         */
+        "prefer-named-capture-group": 0,
+
+        /**
          * require using Error objects as Promise rejection reasons
          *
          * @see http://eslint.org/docs/rules/prefer-promise-reject-errors
