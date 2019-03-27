@@ -28,7 +28,7 @@
         "globals": "^11.11.0"
     },
     "devDependencies": {
-        "eslint": "~5.14.1"
+        "eslint": "~5.15.3"
     },
     "engines": {
         "node": ">= 6"
