@@ -1,3 +1,10 @@
+<a name="5.8.0"></a>
+## [v5.8.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.7.0...v5.8.0) (2019-03-27)
+
+* Added new rule `prefer-named-capture-group` to `futagozaryuu/best-practices`
+* Set minimum ESLint required to `v5.15`
+* DEV: Updated `yarn.lock`
+
 <a name="5.7.0"></a>
 ## [v5.7.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.6.1...v5.7.0) (2019-02-19)
 
