@@ -117,7 +117,7 @@ module.exports = {
         "no-case-declarations": 0,
 
         /**
-         * disallow division operators explicitly at the beginning of regular expressions
+         * 📝 disallow division operators explicitly at the beginning of regular expressions
          *
          * @see http://eslint.org/docs/rules/no-div-regex
          */
@@ -341,7 +341,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-redeclare
          */
-        "no-redeclare": "error",
+        "no-redeclare": [ "error", { "builtinGlobals": false } ],
 
         /**
          * disallow certain properties on certain objects

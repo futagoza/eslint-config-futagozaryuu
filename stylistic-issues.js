@@ -128,7 +128,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/function-paren-newline
          */
-        "function-paren-newline": 0,
+        "function-paren-newline": [ "error", "multiline-arguments" ],
 
         /**
          * disallow specified identifiers
@@ -320,7 +320,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/new-parens
          */
-        "new-parens": "error",
+        "new-parens": [ "error", "always" ],
 
         /**
          * 📝 require a newline after each call in a method chain
