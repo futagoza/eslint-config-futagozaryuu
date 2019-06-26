@@ -554,6 +554,7 @@ module.exports = {
 
         } ],
 
+        // TODO: See https://github.com/eslint/eslint/issues/11178
         /**
          * 📝 require or disallow padding lines between statements
          *
