@@ -195,6 +195,13 @@ module.exports = {
         "node/exports-style": 0,
 
         /**
+         * 📝 Enforce the style of file extensions in `import` declarations.
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md
+         */
+        "node/file-extension-in-import": 0,
+
+        /**
          * Enforce either `Buffer` or `require("buffer").Buffer`.
          * 
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/buffer.md
@@ -242,6 +249,20 @@ module.exports = {
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/url.md
          */
         "node/prefer-global/url": 0,
+
+        /**
+         * Enforce `require("dns").promises`
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-promises/dns.md
+         */
+        "node/prefer-promises/dns": 0,
+
+        /**
+         * Enforce `require("fs").promises`
+         * 
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-promises/fs.md
+         */
+        "node/prefer-promises/fs": 0,
 
     }
 
