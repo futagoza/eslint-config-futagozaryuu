@@ -58,7 +58,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/comma-dangle
          */
-        "comma-dangle": 0,
+        "comma-dangle": [ "warn", "always-multiline" ],
 
         /**
          * 📝 enforce consistent spacing before and after commas
