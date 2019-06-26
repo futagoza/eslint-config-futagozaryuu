@@ -23,7 +23,7 @@
         "test": "eslint *.js"
     },
     "dependencies": {
-        "babel-eslint": "^10.0.1",
+        "babel-eslint": "^10.0.2",
         "eslint-plugin-node": "~9.1.0",
         "globals": "^11.12.0"
     },
