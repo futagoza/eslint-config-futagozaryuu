@@ -1,9 +1,29 @@
+<a name="6.0.0"></a>
+## [v6.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.8.0...v6.0.0) (2019-06-26)
+
+* Set minimum version of Node.js required to `>= 8` _(linting to check if script can run in Node.js v6 is still supported)_
+* DEV: Added Node.js v12 to the list of LTS release's checked against
+* Set rule `comma-dangle` to `[ "warn", "always-multiline" ]`
+* Set rule `no-else-return` to `[ "warn", { allowElseIf: false } ]`
+* Upgraded to ESLint v6
+    - `no-div-regex` is now fixable
+    - Set rule `function-paren-newline` to `[ "error", "multiline-arguments" ]`
+    - Set rule `new-parens` to `[ "error", "always" ]`
+    - Set rule `no-redeclare` to `[ "error", { "builtinGlobals": false } ]`
+* Set minimum ESLint required to `v6`
+* Updated dependency `eslint-plugin-node` to `~9.1.0`
+    - Added new `node/file-extension-in-import` rule _(disabled)_ to `futagozaryuu/node`
+    - Added new `node/prefer-promises/dns` rule _(disabled)_ to `futagozaryuu/node`
+    - Added new `node/prefer-promises/fs` rule _(disabled)_ to `futagozaryuu/node`
+* Updated dependency `globals` to `^11.12.0`
+* DEV: Updated `yarn.lock`
+* DEV: Added TODO for `padding-line-between-statements` (see [eslint/eslint#11178](https://github.com/eslint/eslint/issues/11178))
+
 <a name="5.8.0"></a>
 ## [v5.8.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.7.0...v5.8.0) (2019-03-27)
 
 * Added new rule `prefer-named-capture-group` to `futagozaryuu/best-practices`
 * Set minimum ESLint required to `v5.15`
-* DEV: Updated `yarn.lock`
 
 <a name="5.7.0"></a>
 ## [v5.7.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.6.1...v5.7.0) (2019-02-19)
