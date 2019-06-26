@@ -86,6 +86,6 @@ module.exports = {
          */
         "valid-jsdoc": 0,
 
-    }
+    },
 
 };

@@ -78,7 +78,7 @@ module.exports = {
             "args": "after-used",
             "ignoreRestSiblings": true,
             "argsIgnorePattern": "^_",
-            "caughtErrors": "none"
+            "caughtErrors": "none",
 
         } ],
 
@@ -91,10 +91,10 @@ module.exports = {
 
             "functions": false,
             "classes": false,
-            "variables": true
+            "variables": true,
 
-        } ]
+        } ],
 
-    }
+    },
 
 };

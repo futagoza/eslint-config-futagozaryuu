@@ -7,7 +7,7 @@ module.exports = {
     "extends": [
 
         "./es2017.js",
-        "./node.js"
+        "./node.js",
 
     ],
 
@@ -19,6 +19,6 @@ module.exports = {
         "node/no-unsupported-features/es-syntax": config,
         "node/no-unsupported-features/node-builtins": config,
 
-    }
+    },
 
 };

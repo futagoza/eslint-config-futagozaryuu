@@ -7,8 +7,8 @@ module.exports = {
         "./possible-errors.js",
         "./best-practices.js",
         "./stylistic-issues.js",
-        "./variables.js"
+        "./variables.js",
 
-    ]
+    ],
 
 };

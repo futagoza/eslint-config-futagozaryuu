@@ -12,16 +12,16 @@ module.exports = {
         "ecmaVersion": 5,
         "ecmaFeatures": {
 
-            "globalReturn": false
+            "globalReturn": false,
 
-        }
+        },
 
     },
 
     "rules": {
 
-        "strict": [ "error", "safe" ]
+        "strict": [ "error", "safe" ],
 
-    }
+    },
 
 };

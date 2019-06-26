@@ -6,7 +6,7 @@ module.exports = {
 
         "./es2019.js",
         "./node.js",
-        "./test.js"
+        "./test.js",
 
     ],
 
@@ -18,8 +18,8 @@ module.exports = {
 
     "rules": {
 
-        "strict": 0
+        "strict": 0,
 
-    }
+    },
 
 };

@@ -134,7 +134,7 @@ module.exports = {
             "returnAssign": false,
             "nestedBinaryExpressions": false,
             "ignoreJSX": "none",
-            "enforceForArrowConditionals": false
+            "enforceForArrowConditionals": false,
 
         } ],
 
@@ -176,7 +176,7 @@ module.exports = {
             "skipComments": true,
             "skipRegExps": true,
             "skipStrings": true,
-            "skipTemplates": true
+            "skipTemplates": true,
 
         } ],
 
@@ -269,8 +269,8 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-valid-typeof
          */
-        "valid-typeof": [ "error", { "requireStringLiterals": false } ]
+        "valid-typeof": [ "error", { "requireStringLiterals": false } ],
 
-    }
+    },
 
 };

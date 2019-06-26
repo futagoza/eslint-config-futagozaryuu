@@ -11,7 +11,7 @@ module.exports = {
     "parserOptions": {
 
         "ecmaVersion": 6,
-        "sourceType": "script"
+        "sourceType": "script",
 
     },
 
@@ -24,7 +24,7 @@ module.exports = {
          */
         "arrow-body-style": [ "error", "as-needed", {
 
-            "requireReturnForObjectLiteral": true
+            "requireReturnForObjectLiteral": true,
 
         } ],
 
@@ -35,7 +35,7 @@ module.exports = {
          */
         "arrow-parens": [ "error", "as-needed", {
 
-            "requireForBlockBody": false
+            "requireForBlockBody": false,
 
         } ],
 
@@ -166,7 +166,7 @@ module.exports = {
         "prefer-const": [ "warn", {
 
             "destructuring": "all",
-            "ignoreReadBeforeAssign": true
+            "ignoreReadBeforeAssign": true,
 
         } ],
 
@@ -245,8 +245,8 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/yield-star-spacing
          */
-        "yield-star-spacing": 0
+        "yield-star-spacing": 0,
 
-    }
+    },
 
 };

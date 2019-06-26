@@ -275,8 +275,8 @@ module.exports = {
                 "BinaryExpression": false,
                 "ImportDeclaration": true,
                 "Property": true,
-                "VariableDeclarator": true
-            }
+                "VariableDeclarator": true,
+            },
 
         } ],
 
@@ -537,8 +537,8 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/yoda
          */
-        "yoda": 0
+        "yoda": 0,
 
-    }
+    },
 
 };

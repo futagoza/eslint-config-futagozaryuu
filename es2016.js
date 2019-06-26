@@ -6,8 +6,8 @@ module.exports = {
 
     "parserOptions": {
 
-        "ecmaVersion": 7
+        "ecmaVersion": 7,
 
-    }
+    },
 
 };

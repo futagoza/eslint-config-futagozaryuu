@@ -168,8 +168,8 @@ module.exports = {
             "SwitchCase": 1,
             "VariableDeclarator": "first",
             "ignoredNodes": [
-                "ConditionalExpression"
-            ]
+                "ConditionalExpression",
+            ],
 
         } ],
 
@@ -189,7 +189,7 @@ module.exports = {
 
             "beforeColon": false,
             "afterColon": true,
-            "mode": "minimum"
+            "mode": "minimum",
 
         } ],
 
@@ -204,9 +204,9 @@ module.exports = {
             "after": true,
             "overrides": {
 
-                "super": { "after": false }
+                "super": { "after": false },
 
-            }
+            },
 
         } ],
 
@@ -451,7 +451,7 @@ module.exports = {
         "no-trailing-spaces": [ "error", {
 
             "ignoreComments": true,
-            "skipBlankLines": false
+            "skipBlankLines": false,
 
         } ],
 
@@ -512,7 +512,7 @@ module.exports = {
         "one-var": [ "error", {
 
             "initialized": "never",
-            "uninitialized": "consecutive"
+            "uninitialized": "consecutive",
 
         } ],
 
@@ -546,11 +546,11 @@ module.exports = {
 
             "blocks": "always",
             "switches": "always",
-            "classes": "always"
+            "classes": "always",
 
         }, {
 
-            "allowSingleLineBlocks": true
+            "allowSingleLineBlocks": true,
 
         } ],
 
@@ -643,7 +643,7 @@ module.exports = {
 
             "functions": "always",
             "keywords": "always",
-            "classes": "always"
+            "classes": "always",
 
         } ],
 
@@ -656,7 +656,7 @@ module.exports = {
 
             "anonymous": "always",
             "named": "never",
-            "asyncArrow": "ignore"
+            "asyncArrow": "ignore",
 
         } ],
 
@@ -685,8 +685,8 @@ module.exports = {
             "nonwords": false,
             "overrides": {
                 "!": true,
-                "!!": true
-            }
+                "!!": true,
+            },
 
         } ],
 
@@ -698,7 +698,7 @@ module.exports = {
         "spaced-comment": [ "error", "always", {
 
             "markers": [ "/", "!", "#" ],
-            "exceptions": [ "-", "+", "*" ]
+            "exceptions": [ "-", "+", "*" ],
 
         } ],
 
@@ -710,7 +710,7 @@ module.exports = {
         "switch-colon-spacing": [ "error", {
 
             "after": true,
-            "before": false
+            "before": false,
 
         } ],
 
@@ -733,8 +733,8 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/wrap-regex
          */
-        "wrap-regex": "error"
+        "wrap-regex": "error",
 
-    }
+    },
 
 };

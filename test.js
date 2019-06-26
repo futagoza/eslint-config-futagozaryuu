@@ -6,15 +6,15 @@ module.exports = {
 
         "jasmine": true,
         "jest": true,
-        "mocha": true
+        "mocha": true,
 
     },
 
     "globals": {
 
         "suite": "readonly",
-        "benchmark": "readonly"
+        "benchmark": "readonly",
 
-    }
+    },
 
 };

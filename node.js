@@ -264,6 +264,6 @@ module.exports = {
          */
         "node/prefer-promises/fs": 0,
 
-    }
+    },
 
 };
