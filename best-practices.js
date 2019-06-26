@@ -128,7 +128,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-else-return
          */
-        "no-else-return": "warn",
+        "no-else-return": [ "warn", { allowElseIf: false } ],
 
         /**
          * disallow empty functions
