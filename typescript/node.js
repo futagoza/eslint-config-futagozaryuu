@@ -1,12 +1,14 @@
 "use strict";
 
+const resolve = require.resolve;
+
 module.exports = {
 
     "extends": [
 
-        "./node.js",
-        "./test.js",
-        "./typescript.js",
+        resolve( "../node.js" ),
+        resolve( "../test.js" ),
+        resolve( "./index.js" ),
 
     ],
     "overrides": [ {

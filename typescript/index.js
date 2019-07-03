@@ -1,25 +1,27 @@
 "use strict";
 
+const resolve = require.resolve;
+
 const config = {
-    ...require( "./stylistic-issues" ).rules,
-    ...require( "./variables" ).rules,
-    ...require( "./es2015" ).rules,
+    ...require( "../stylistic-issues" ).rules,
+    ...require( "../variables" ).rules,
+    ...require( "../es2015" ).rules,
 };
 
 module.exports = {
 
-    "extends": "./es2019.js",
+    "extends": resolve( "../es2019.js" ),
     "overrides": [ {
 
         "files": [ "*.ts" ],
-        "parser": require.resolve( "@typescript-eslint/parser" ),
+        "parser": resolve( "@typescript-eslint/parser" ),
         "parserOptions": {
 
-            "project": require.resolve( "./tsconfig.json", { paths: [ process.cwd() ] } ),
+            "project": resolve( "./tsconfig.json", { paths: [ process.cwd() ] } ),
             "sourceType": "module",
 
         },
-        "plugins": [ require.resolve( "@typescript-eslint/eslint-plugin" ) ],
+        "plugins": [ resolve( "@typescript-eslint/eslint-plugin" ) ],
         "rules": {
 
             ...require( "@typescript-eslint/eslint-plugin/dist/configs/recommended.json" ).rules,
