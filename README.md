@@ -65,18 +65,21 @@ If you open the source files for these configurations, you will find each rule h
 
 ## versioning
 
-Since v2 of this package I tried to follow semver versioning, but from v4.17 I will follow these rules:
+Since v7 of this package I will try to follow a semver based versioning:
 
 `4.17.0` = `RELEASE.REVISION.PATCH`
 
-1. `RELEASE` denotes the version of ESLint this package supports
-2. `PATCH` is only incremented when
-    - a bug is fixed
-    - docs are updated between revisions
-    - dependency updates between revisions
-    - confirmed compatibility with minor ESLint release's
-3. `REVISION` is incremented for all other changes (e.g. changes to the configurations)
-4. `PATCH` is reset when `REVISION` increments
+* `RELEASE`
+  - a new configuration has been added
+  - a new dependency is required
+* `REVISION`
+  - confirmed compatibility with ESLint release's
+  - changes to existing configurations
+* `PATCH`
+  - a bug is fixed
+  - docs are updated
+  - dependency upgrades _(without configuration updates)_
+  - is reset when `REVISION` increments
 
 Also to note on dependencies; before 4.17 my dependencies were always fixed (on any package), but since I've started to embrace tools like Yarn, I thought why not also use practices like tildes (e.g. `~`) and carets (e.g. `^`). See [this answer on StackOverflow](https://stackoverflow.com/a/22345808/1518408) for a clear explanation about the two.
 
