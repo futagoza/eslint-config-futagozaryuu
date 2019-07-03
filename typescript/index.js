@@ -21,7 +21,7 @@ module.exports = {
             "sourceType": "module",
 
         },
-        "plugins": [ resolve( "@typescript-eslint/eslint-plugin" ) ],
+        "plugins": [ "@typescript-eslint" ],
         "rules": {
 
             ...require( "@typescript-eslint/eslint-plugin/dist/configs/recommended.json" ).rules,
