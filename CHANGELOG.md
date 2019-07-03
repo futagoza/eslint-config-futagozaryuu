@@ -1,3 +1,9 @@
+<a name="7.0.1"></a>
+## [v7.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.0...v7.0.1) (2019-07-03)
+
+* Add TypeScript requirement to header note's in `README.md`
+* Remove header for about section in `README.md`
+
 <a name="7.0.0"></a>
 ## [v7.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v6.0.0...v7.0.0) (2019-07-03)
 
