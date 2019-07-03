@@ -1,3 +1,8 @@
+<a name="7.0.2"></a>
+## [v7.0.2](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.1...v7.0.2) (2019-07-03)
+
+* Fix `@typescript-eslint` plugin reference
+
 <a name="7.0.1"></a>
 ## [v7.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.0...v7.0.1) (2019-07-03)
 
