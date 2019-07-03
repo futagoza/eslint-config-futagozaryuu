@@ -6,9 +6,9 @@ module.exports = {
 
     "extends": [
 
+        resolve( "./index.js" ),
         resolve( "../node.js" ),
         resolve( "../test.js" ),
-        resolve( "./index.js" ),
 
     ],
 
