@@ -46,6 +46,14 @@ A list of usable configurations as well the configurations they use:
 - __`futagozaryuu/node-v6`__ (includes: _es2015_ and _node_)
 - __`futagozaryuu/node-v8`__ (includes: _es2017_ and _node_)
 - __`futagozaryuu/node-v10`__ (includes: _es2018_ and _node_)
+- __`futagozaryuu/node-v12`__ (includes: _es2019_ and _node_)
+- __`futagozaryuu/typescript`__ (includes: _es2019_)
+- __`futagozaryuu/typescript/node`__ (includes: _node_, _test_ and _typescript_)
+- __`futagozaryuu/typescript/node-v4`__ (includes: _node-v4_, _test_ and _typescript_)
+- __`futagozaryuu/typescript/node-v6`__ (includes: _node-v6_, _test_ and _typescript_)
+- __`futagozaryuu/typescript/node-v8`__ (includes: _node-v8_, _test_ and _typescript_)
+- __`futagozaryuu/typescript/node-v10`__ (includes: _node-v10_, _test_ and _typescript_)
+- __`futagozaryuu/typescript/node-v12`__ (includes: _node-v12_, _test_ and _typescript_)
 - __`futagozaryuu/deprecated`__
 - __`futagozaryuu/test`__
 - __`futagozaryuu/dev`__ (includes: _es2019_, _node_ and _test_)
