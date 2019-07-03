@@ -1,3 +1,8 @@
+<a name="7.0.4"></a>
+## [v7.0.4](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.3...v7.0.4) (2019-07-03)
+
+* Ensure Node configs are loaded after the ES2019 config
+
 <a name="7.0.3"></a>
 ## [v7.0.3](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.2...v7.0.3) (2019-07-03)
 
