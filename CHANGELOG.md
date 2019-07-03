@@ -1,3 +1,8 @@
+<a name="7.0.3"></a>
+## [v7.0.3](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.2...v7.0.3) (2019-07-03)
+
+* Fix ES2019 config overwriting Node LTS configs
+
 <a name="7.0.2"></a>
 ## [v7.0.2](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.1...v7.0.2) (2019-07-03)
 
