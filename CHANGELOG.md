@@ -1,3 +1,13 @@
+<a name="7.0.0"></a>
+## [v7.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v6.0.0...v7.0.0) (2019-07-03)
+
+* TypeScript Support (again)
+* Move TypeScript configs to own directory
+* Add TypeScript configs for Node LTS versions
+* Update configurations section in `README.md`
+* Update versioning section in `README.md`
+* Use tildes for some dependencies
+
 <a name="6.0.0"></a>
 ## [v6.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.8.0...v6.0.0) (2019-06-26)
 
