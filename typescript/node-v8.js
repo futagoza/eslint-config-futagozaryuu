@@ -6,11 +6,18 @@ module.exports = {
 
     "extends": [
 
-        resolve( "../node-v8.js" ),
+        resolve( "../node.js" ),
         resolve( "../test.js" ),
         resolve( "./index.js" ),
 
     ],
+
+    "rules": {
+
+        ...require( "../node-v8" ).rules,
+
+    },
+
     "overrides": [ {
 
         "files": [ "*.ts" ],

@@ -6,11 +6,18 @@ module.exports = {
 
     "extends": [
 
-        resolve( "../node-v10.js" ),
+        resolve( "../node.js" ),
         resolve( "../test.js" ),
         resolve( "./index.js" ),
 
     ],
+
+    "rules": {
+
+        ...require( "../node-v10" ).rules,
+
+    },
+
     "overrides": [ {
 
         "files": [ "*.ts" ],
