@@ -1,0 +1,20 @@
+{
+    "publishConfig": {
+        "access": "public",
+        "tag": "next"
+    },
+    "name": "@futagoza/eslint-config-core",
+    "version": "8.0.0-alpha.0",
+    "description": "Futago-za Ryuu's basic ESLint configurations",
+    "keywords": [
+        "eslint",
+        "style"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-core",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "engines": {
+        "node": ">= 8"
+    }
+}
