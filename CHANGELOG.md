@@ -1,32 +1,32 @@
 <a name="7.0.4"></a>
 ## [v7.0.4](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.3...v7.0.4) (2019-07-03)
 
-* Ensure Node configs are loaded after the ES2019 config
+* Ensured Node configs are loaded after the ES2019 config
 
 <a name="7.0.3"></a>
 ## [v7.0.3](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.2...v7.0.3) (2019-07-03)
 
-* Fix ES2019 config overwriting Node LTS configs
+* Fixed ES2019 config overwriting Node LTS configs
 
 <a name="7.0.2"></a>
 ## [v7.0.2](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.1...v7.0.2) (2019-07-03)
 
-* Fix `@typescript-eslint` plugin reference
+* Fixed `@typescript-eslint` plugin reference
 
 <a name="7.0.1"></a>
 ## [v7.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.0...v7.0.1) (2019-07-03)
 
-* Add TypeScript requirement to header note's in `README.md`
-* Remove header for about section in `README.md`
+* Added TypeScript requirement to header note's in `README.md`
+* Removed header for about section in `README.md`
 
 <a name="7.0.0"></a>
 ## [v7.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v6.0.0...v7.0.0) (2019-07-03)
 
 * TypeScript Support (again)
-* Move TypeScript configs to own directory
-* Add TypeScript configs for Node LTS versions
-* Update configurations section in `README.md`
-* Update versioning section in `README.md`
+* Moved TypeScript configs to own directory
+* Added TypeScript configs for Node LTS versions
+* Updated configurations section in `README.md`
+* Updated versioning section in `README.md`
 * Use tildes for some dependencies
 
 <a name="6.0.0"></a>
