@@ -6,7 +6,7 @@
 
 This is a configuration file for ESLint that is used to lint my TypeScript projects.
 
-**NOTE:** This configuration will only check for [@typescript-eslint/*](https://github.com/typescript-eslint/typescript-eslint) rules, therefore it is recommended to also use [@futagoza/eslint-config-javascript](https://www.npmjs.com/package/@futagoza/eslint-config-javascript) or something similar alongside this configuration.
+**NOTE:** This configuration will only check for [@typescript-eslint/*][TETE] rules, therefore it is recommended to also use [@futagoza/eslint-config-javascript][ECJ] or something similar alongside this configuration.
 
 ## installation
 
@@ -28,7 +28,10 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/typescript`__ (_default_, extends _[@typescript-eslint/*](https://github.com/typescript-eslint/typescript-eslint)_ and _test_)
+- __`@futagoza/typescript`__ (_default_, extends _[plugin:typescript-eslint/*][TETE]_)
+
+[TETE]: https://github.com/typescript-eslint/typescript-eslint
+[ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 
 ## license
 

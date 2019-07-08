@@ -6,7 +6,7 @@
 
 This is a configuration file for ESLint that is used to lint my Vue.js projects.
 
-**NOTE:** This configuration will only check for [@vue/*][VUE] rules, therefore it is recommended to also use [@futagoza/eslint-config-javascript](https://www.npmjs.com/package/@futagoza/eslint-config-javascript) or something similar alongside this configuration.
+**NOTE:** This configuration will only check for [@vue/*][VUE] rules, therefore it is recommended to also use [@futagoza/eslint-config-javascript][ECJ] or something similar alongside this configuration.
 
 ## installation
 
@@ -31,6 +31,7 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/vue`__ (_default_, extends _[plugin:vue/recommended][VUE]_)
 
 [VUE]: https://eslint.vuejs.org
+[ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 
 ## license
 
