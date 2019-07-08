@@ -1,0 +1,26 @@
+{
+    "publishConfig": {
+        "access": "public",
+        "tag": "next"
+    },
+    "name": "@futagoza/eslint-config-vue",
+    "version": "8.0.0-alpha.0",
+    "description": "Futago-za Ryuu's ESLint configurations for Vue.js projects.",
+    "keywords": [
+        "eslint",
+        "configuration",
+        "vue",
+        "vue.js",
+        "jsx"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-vue",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "eslint-plugin-vue": "~5.2.3"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}
