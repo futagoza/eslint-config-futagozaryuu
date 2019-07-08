@@ -1,0 +1,27 @@
+{
+    "publishConfig": {
+        "access": "public",
+        "tag": "next"
+    },
+    "name": "@futagoza/eslint-config-dev",
+    "version": "8.0.0-alpha.0",
+    "description": "Futago-za Ryuu's ESLint configurations for Node.js based development on esnext source files.",
+    "keywords": [
+        "eslint",
+        "configuration",
+        "javascript",
+        "esnext",
+        "test"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-dev",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "@futagoza/eslint-config-javascript": "8.0.0-alpha.0",
+        "@futagoza/eslint-config-node": "8.0.0-alpha.0"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}
