@@ -6,7 +6,7 @@
 
 These are configuration files for ESLint that are used to lint my Node.js projects.
 
-**NOTE:** Apart from the default configuration, all configurations extend [@futagoza/eslint-config-javascript](https://www.npmjs.com/package/@futagoza/eslint-config-javascript) (which itself extends [@futagoza/eslint-config-core](https://www.npmjs.com/package/@futagoza/eslint-config-core)), so you don't have to include either as a dependency when using this package.
+**NOTE:** Apart from the default configuration, all configurations extend [@futagoza/eslint-config-javascript][ECJ] (which itself extends [@futagoza/eslint-config-core][ECC]), so you don't have to include either as a dependency when using this package.
 
 ## installation
 
@@ -35,6 +35,7 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/node/10`__ (extends: _[@futagoza/javascript/es2018][ECJ]_ and _default_)
 - __`@futagoza/node/12`__ (extends: _[@futagoza/javascript/es2019][ECJ]_ and _default_)
 
+[ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 
 ## license
