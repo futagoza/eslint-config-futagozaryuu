@@ -21,4 +21,6 @@ module.exports = {
 
     },
 
+    ...require( "./typescript" ),
+
 };

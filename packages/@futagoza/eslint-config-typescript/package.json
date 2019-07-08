@@ -1,0 +1,29 @@
+{
+    "publishConfig": {
+        "access": "public",
+        "tag": "next"
+    },
+    "name": "@futagoza/eslint-config-typescript",
+    "version": "8.0.0-alpha.0",
+    "description": "Futago-za Ryuu's ESLint configurations for TypeScript projects.",
+    "keywords": [
+        "eslint",
+        "configuration",
+        "typescript",
+        "ts"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-typescript",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "@futagoza/eslint-config-core": "8.0.0-alpha.0",
+        "@futagoza/eslint-config-javascript": "8.0.0-alpha.0",
+        "@typescript-eslint/eslint-plugin": "~1.11.0",
+        "@typescript-eslint/parser": "~1.11.0",
+        "typescript": "3.x"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}
