@@ -7,6 +7,22 @@ module.exports = {
     "globals": globals.node,
     "plugins": [ "node" ],
 
+    "overrides": [ {
+
+        "files": [ "*.mjs" ],
+        "parserOptions": {
+
+            "sourceType": "module",
+
+        },
+        "rules": {
+
+            "strict": "off",
+
+        },
+
+    } ],
+
     "rules": {
 
         /* --------------- ESLint Core Rules --------------- */
