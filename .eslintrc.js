@@ -2,7 +2,7 @@
 
 module.exports = {
 
-    "extends": "./packages/@futagoza/eslint-config/node-v8.js",
+    "extends": "@futagoza/node/8",
     "root": true,
 
 };

@@ -1,0 +1,28 @@
+{
+    "publishConfig": {
+        "access": "public",
+        "tag": "next"
+    },
+    "name": "@futagoza/eslint-config-node",
+    "version": "8.0.0-alpha.0",
+    "description": "Futago-za Ryuu's ESLint configurations for Node.js",
+    "keywords": [
+        "eslint",
+        "configuration",
+        "javascript",
+        "node",
+        "lts"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-node",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "@futagoza/eslint-config-javascript": "8.0.0-alpha.0",
+        "eslint-plugin-node": "~9.1.0",
+        "globals": "^11.12.0"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}
