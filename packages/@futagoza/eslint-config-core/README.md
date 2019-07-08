@@ -28,7 +28,7 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/core`__ (_default_, includes: _possible-errors_, _best-practices_, _stylistic-issues_ and _variables_)
+- __`@futagoza/core`__ (_default_, extends: _possible-errors_, _best-practices_, _stylistic-issues_ and _variables_)
 - __`@futagoza/core/possible-errors`__
 - __`@futagoza/core/best-practices`__
 - __`@futagoza/core/stylistic-issues`__

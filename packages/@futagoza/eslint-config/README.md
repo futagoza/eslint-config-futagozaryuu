@@ -27,34 +27,34 @@ Put the following into your configuration (`.eslintrc.json` file or the _"eslint
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza`__ (_default_, includes: _possible-errors_, _best-practices_, _stylistic-issues_ and _variables_)
+- __`@futagoza`__ (_default_, extends: _possible-errors_, _best-practices_, _stylistic-issues_ and _variables_)
 - __`@futagoza/eslint-config/possible-errors`__
 - __`@futagoza/eslint-config/best-practices`__
 - __`@futagoza/eslint-config/stylistic-issues`__
 - __`@futagoza/eslint-config/variables`__
-- __`@futagoza/eslint-config/es5`__ (includes: _default_)
-- __`@futagoza/eslint-config/es2015`__ (includes: _es5_)
-- __`@futagoza/eslint-config/es2016`__ (includes: _es2015_)
-- __`@futagoza/eslint-config/es2017`__ (includes: _es2016_)
-- __`@futagoza/eslint-config/es2018`__ (includes: _es2017_)
-- __`@futagoza/eslint-config/es2019`__ (includes: _es2018_)
+- __`@futagoza/eslint-config/es5`__ (extends: _default_)
+- __`@futagoza/eslint-config/es2015`__ (extends: _es5_)
+- __`@futagoza/eslint-config/es2016`__ (extends: _es2015_)
+- __`@futagoza/eslint-config/es2017`__ (extends: _es2016_)
+- __`@futagoza/eslint-config/es2018`__ (extends: _es2017_)
+- __`@futagoza/eslint-config/es2019`__ (extends: _es2018_)
 - __`@futagoza/eslint-config/node`__
-- __`@futagoza/eslint-config/node-v4`__ (includes: _es2015_ and _node_)
-- __`@futagoza/eslint-config/node-v6`__ (includes: _es2015_ and _node_)
-- __`@futagoza/eslint-config/node-v8`__ (includes: _es2017_ and _node_)
-- __`@futagoza/eslint-config/node-v10`__ (includes: _es2018_ and _node_)
-- __`@futagoza/eslint-config/node-v12`__ (includes: _es2019_ and _node_)
-- __`@futagoza/eslint-config/typescript`__ (includes: _es2019_)
-- __`@futagoza/eslint-config/typescript/node`__ (includes: _node_, _test_ and _typescript_)
-- __`@futagoza/eslint-config/typescript/node-v4`__ (includes: _node-v4_, _test_ and _typescript_)
-- __`@futagoza/eslint-config/typescript/node-v6`__ (includes: _node-v6_, _test_ and _typescript_)
-- __`@futagoza/eslint-config/typescript/node-v8`__ (includes: _node-v8_, _test_ and _typescript_)
-- __`@futagoza/eslint-config/typescript/node-v10`__ (includes: _node-v10_, _test_ and _typescript_)
-- __`@futagoza/eslint-config/typescript/node-v12`__ (includes: _node-v12_, _test_ and _typescript_)
+- __`@futagoza/eslint-config/node-v4`__ (extends: _es2015_ and _node_)
+- __`@futagoza/eslint-config/node-v6`__ (extends: _es2015_ and _node_)
+- __`@futagoza/eslint-config/node-v8`__ (extends: _es2017_ and _node_)
+- __`@futagoza/eslint-config/node-v10`__ (extends: _es2018_ and _node_)
+- __`@futagoza/eslint-config/node-v12`__ (extends: _es2019_ and _node_)
+- __`@futagoza/eslint-config/typescript`__ (extends: _es2019_)
+- __`@futagoza/eslint-config/typescript/node`__ (extends: _node_, _test_ and _typescript_)
+- __`@futagoza/eslint-config/typescript/node-v4`__ (extends: _node-v4_, _test_ and _typescript_)
+- __`@futagoza/eslint-config/typescript/node-v6`__ (extends: _node-v6_, _test_ and _typescript_)
+- __`@futagoza/eslint-config/typescript/node-v8`__ (extends: _node-v8_, _test_ and _typescript_)
+- __`@futagoza/eslint-config/typescript/node-v10`__ (extends: _node-v10_, _test_ and _typescript_)
+- __`@futagoza/eslint-config/typescript/node-v12`__ (extends: _node-v12_, _test_ and _typescript_)
 - __`@futagoza/eslint-config/vue`__
 - __`@futagoza/eslint-config/deprecated`__
 - __`@futagoza/eslint-config/test`__
-- __`@futagoza/eslint-config/dev`__ (includes: _es2019_, _node_ and _test_)
+- __`@futagoza/eslint-config/dev`__ (extends: _es2019_, _node_ and _test_)
 
 If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have icons:
 

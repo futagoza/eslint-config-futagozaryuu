@@ -28,13 +28,13 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/javascript`__ (_default_, includes: _es2019_)
-- __`@futagoza/javascript/es5`__ (includes [@futagoza/eslint-config-core](https://www.npmjs.com/package/@futagoza/eslint-config-core))
-- __`@futagoza/javascript/es2015`__ (includes: _es5_)
-- __`@futagoza/javascript/es2016`__ (includes: _es2015_)
-- __`@futagoza/javascript/es2017`__ (includes: _es2016_)
-- __`@futagoza/javascript/es2018`__ (includes: _es2017_)
-- __`@futagoza/javascript/es2019`__ (includes: _es2018_)
+- __`@futagoza/javascript`__ (_default_, extends: _es2019_)
+- __`@futagoza/javascript/es5`__ (extends [@futagoza/eslint-config-core](https://www.npmjs.com/package/@futagoza/eslint-config-core))
+- __`@futagoza/javascript/es2015`__ (extends: _es5_)
+- __`@futagoza/javascript/es2016`__ (extends: _es2015_)
+- __`@futagoza/javascript/es2017`__ (extends: _es2016_)
+- __`@futagoza/javascript/es2018`__ (extends: _es2017_)
+- __`@futagoza/javascript/es2019`__ (extends: _es2018_)
 
 ## license
 
