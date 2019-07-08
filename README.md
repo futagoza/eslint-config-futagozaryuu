@@ -53,6 +53,7 @@ A list of usable configurations as well the configurations they use:
 - __`futagozaryuu/typescript/node-v8`__ (includes: _node-v8_, _test_ and _typescript_)
 - __`futagozaryuu/typescript/node-v10`__ (includes: _node-v10_, _test_ and _typescript_)
 - __`futagozaryuu/typescript/node-v12`__ (includes: _node-v12_, _test_ and _typescript_)
+- __`futagozaryuu/vue`__
 - __`futagozaryuu/deprecated`__
 - __`futagozaryuu/test`__
 - __`futagozaryuu/dev`__ (includes: _es2019_, _node_ and _test_)
