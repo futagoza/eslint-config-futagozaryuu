@@ -8,6 +8,7 @@
     "description": "Futago-za Ryuu's basic ESLint configurations",
     "keywords": [
         "eslint",
+        "configuration",
         "style"
     ],
     "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-core",
