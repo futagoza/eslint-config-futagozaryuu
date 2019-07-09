@@ -3,7 +3,6 @@
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
 > This package contains configuration files for ESLint v6+<br>
-> TypeScript configurations require TypeScript v3+
 
 These are configurations for ESLint that I use in my JavaScript and TypeScript projects. Most of the configurations assume development in ES2015+ compatible environments, but the default configuration does not do this.
 

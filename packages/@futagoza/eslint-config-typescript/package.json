@@ -21,7 +21,7 @@
         "@futagoza/eslint-config-javascript": "8.0.0-alpha.0",
         "@typescript-eslint/eslint-plugin": "~1.11.0",
         "@typescript-eslint/parser": "~1.11.0",
-        "typescript": "3.x"
+        "typescript": "*"
     },
     "engines": {
         "node": ">= 8"
