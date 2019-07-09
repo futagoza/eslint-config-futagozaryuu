@@ -20,15 +20,12 @@ try {
 
 module.exports = {
 
+    "extends": "plugin:@typescript-eslint/eslint-recommended",
+
     "overrides": [ {
 
         "files": [ "*.ts", "*.tsx" ],
-        "extends": [
-
-            "plugin:@typescript-eslint/eslint-recommended",
-            "plugin:@typescript-eslint/recommended",
-
-        ],
+        "extends": "plugin:@typescript-eslint/recommended",
 
         "parserOptions": { project },
 
