@@ -4,10 +4,9 @@ module.exports = {
 
     "extends": [
 
-        "./possible-errors.js",
-        "./best-practices.js",
-        "./stylistic-issues.js",
-        "./variables.js",
+        "@futagoza/node/8",
+        "@futagoza/typescript",
+        "@futagoza/vue",
 
     ],
 

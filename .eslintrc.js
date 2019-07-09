@@ -2,7 +2,7 @@
 
 module.exports = {
 
-    "extends": "@futagoza/node/8",
+    "extends": "@futagoza",
     "root": true,
 
 };

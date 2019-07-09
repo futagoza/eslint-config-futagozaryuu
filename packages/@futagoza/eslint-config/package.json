@@ -4,29 +4,25 @@
         "tag": "next"
     },
     "name": "@futagoza/eslint-config",
-    "version": "8.0.0-alpha.0",
-    "description": "Futago-za Ryuu's ESLint configurations",
+    "version": "8.0.0-beta.0",
+    "description": "Futago-za Ryuu's default ESLint configuration",
     "keywords": [
         "eslint",
         "configuration",
-        "babel",
-        "nodejs",
-        "es2015",
-        "es2016",
-        "es2017",
-        "es2018"
+        "style",
+        "javascript",
+        "node",
+        "typescript",
+        "vue"
     ],
     "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config",
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "~1.11.0",
-        "@typescript-eslint/parser": "~1.11.0",
-        "babel-eslint": "^10.0.2",
-        "eslint-plugin-node": "~9.1.0",
-        "eslint-plugin-vue": "~5.2.3",
-        "globals": "^11.12.0"
+        "@futagoza/eslint-config-node": "8.0.0-alpha.0",
+        "@futagoza/eslint-config-typescript": "8.0.0-alpha.0",
+        "@futagoza/eslint-config-vue": "8.0.0-alpha.0"
     },
     "engines": {
         "node": ">= 8"
