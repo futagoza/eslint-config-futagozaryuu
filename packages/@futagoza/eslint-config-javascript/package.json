@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-javascript",
-    "version": "8.0.0",
+    "version": "8.1.0",
     "description": "Futago-za Ryuu's ESLint configurations for JavaScript",
     "keywords": [
         "eslint",
@@ -18,7 +18,7 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-core": "8.0.0",
+        "@futagoza/eslint-config-core": "8.1.0",
         "babel-eslint": "^10.0.2",
         "globals": "^11.12.0"
     },
