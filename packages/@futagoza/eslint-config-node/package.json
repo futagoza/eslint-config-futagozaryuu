@@ -1,8 +1,4 @@
 {
-    "publishConfig": {
-        "access": "public",
-        "tag": "next"
-    },
     "name": "@futagoza/eslint-config-node",
     "version": "8.0.0",
     "description": "Futago-za Ryuu's ESLint configurations for Node.js",

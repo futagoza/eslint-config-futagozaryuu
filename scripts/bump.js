@@ -68,7 +68,7 @@ function forEach( $command, $cb ) {
     await spawn( `git tag v${ $newVersion } -m ${ $newVersion }` );
 
     // 08. Publish every workspace package to NPM
-    await forEach( `npm publish --tag latest` );
+    await forEach( `npm publish --access public` );
 
     // 09. Push the changes to `https://github.com/futagoza/eslint-config-futagozaryuu/`
     await spawn( `git push --follow-tags` );
