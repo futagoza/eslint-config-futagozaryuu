@@ -35,5 +35,5 @@ A list of usable configurations as well the configurations they use:
 
 ## license
 
-Copyright © 2017+ Futago-za Ryuu<br>
+Copyright © 2019+ Futago-za Ryuu<br>
 Released under the MIT License, [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
