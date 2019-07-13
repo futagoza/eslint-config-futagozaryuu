@@ -2,6 +2,17 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="8.1.0"></a>
+## [v8.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v8.0.0...v8.1.0) (2019-07-13)
+
+* Update `@typescript-eslint/*` dependencies to `~1.12.0`
+* Added all existing `@typescript-eslint/*` rules
+* Added `@futagoza/typescript/eslint-overrides` configuration (used by `@futagoza/typescript`)
+* Correct copyright years (Use `2019+` instead of `2017+` in the newest configurations)
+* DEV: Removed the ugly `publishConfig` field in `@futagoza/eslint-*` packages
+* DEV: Use `--access public` directly in the bump script
+* DEV: Updated `yarn.lock`
+
 <a name="8.0.0"></a>
 ## [v8.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.4...v8.0.0) (2019-07-13)
 
