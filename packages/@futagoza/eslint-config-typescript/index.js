@@ -37,7 +37,8 @@ module.exports = {
             "@typescript-eslint/ban-types": "off",
             "@typescript-eslint/camelcase": "off",
             "@typescript-eslint/explicit-function-return-type": [ "error", {
-                allowExpressions: true,
+                "allowExpressions": true,
+                "allowTypedFunctionExpressions": true,
             } ],
             "@typescript-eslint/explicit-member-accessibility": "off",
             "@typescript-eslint/indent": config.indent,
