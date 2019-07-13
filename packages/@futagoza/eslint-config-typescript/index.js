@@ -22,18 +22,15 @@ try {
 
 module.exports = {
 
-    "extends": "plugin:@typescript-eslint/eslint-recommended",
-
     "overrides": [ {
 
         "files": [ "*.ts", "*.tsx" ],
 
+        "extends": "./eslint-overrides.js",
+
         "parserOptions": { project },
 
         "rules": {
-
-            "no-duplicate-imports": [ "error", { "includeExports": false } ],
-            "strict": "off",
 
             /**
              * Require that member overloads be consecutive
@@ -101,7 +98,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/camelcase.md
              */
             "@typescript-eslint/camelcase": config[ "camelcase" ],
-            "camelcase": "off",
 
             /**
              * Require PascalCased class and interface names
@@ -143,7 +139,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
              */
             "@typescript-eslint/func-call-spacing": config[ "func-call-spacing" ],
-            "func-call-spacing": "off",
 
             /**
              * Enforces naming of generic type variables
@@ -158,7 +153,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
              */
             "@typescript-eslint/indent": config[ "indent" ],
-            "indent": "off",
 
             /**
              * Require that interface names be prefixed with `I`
@@ -217,7 +211,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
              */
             "@typescript-eslint/no-array-constructor": config[ "no-array-constructor" ],
-            "no-array-constructor": "off",
 
             /**
              * Disallow empty functions
@@ -251,7 +244,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
              */
             "@typescript-eslint/no-extra-parens": config[ "no-extra-parens" ],
-            "no-extra-parens": "off",
 
             /**
              * Forbids the use of classes as namespaces
@@ -293,7 +285,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
              */
             "@typescript-eslint/no-magic-numbers": config[ "no-magic-numbers" ],
-            "no-magic-numbers": "off",
 
             /**
              * Enforce valid definition of `new` and `constructor`
@@ -388,7 +379,6 @@ module.exports = {
              * @see 
              */
             "@typescript-eslint/no-unused-vars": config[ "no-unused-vars" ],
-            "no-unused-vars": "off",
 
             /**
              * Disallow the use of variables before they are defined
@@ -411,7 +401,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-useless-constructor.md
              */
             "@typescript-eslint/no-useless-constructor": config[ "no-useless-constructor" ],
-            "no-useless-constructor": "off",
 
             /**
              * Disallows the use of require statements except in import statements
@@ -496,7 +485,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
              */
             "@typescript-eslint/semi": config[ "semi" ],
-            "semi": "off",
 
             /**
              * Restricts the types allowed in boolean expressions
