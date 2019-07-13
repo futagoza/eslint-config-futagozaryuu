@@ -26,7 +26,10 @@ module.exports = {
 
         "files": [ "*.ts", "*.tsx" ],
 
-        "extends": "./eslint-overrides.js",
+        "extends": [
+            "plugin:@typescript-eslint/base",
+            "./eslint-overrides.js",
+        ],
 
         "parserOptions": { project },
 
