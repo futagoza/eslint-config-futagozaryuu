@@ -4,7 +4,7 @@
         "tag": "next"
     },
     "name": "@futagoza/eslint-config",
-    "version": "8.0.0-beta.0",
+    "version": "8.0.0",
     "description": "Futago-za Ryuu's default ESLint configuration",
     "keywords": [
         "eslint",
@@ -20,9 +20,9 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-node": "8.0.0-alpha.0",
-        "@futagoza/eslint-config-typescript": "8.0.0-alpha.0",
-        "@futagoza/eslint-config-vue": "8.0.0-alpha.0"
+        "@futagoza/eslint-config-node": "8.0.0",
+        "@futagoza/eslint-config-typescript": "8.0.0",
+        "@futagoza/eslint-config-vue": "8.0.0"
     },
     "engines": {
         "node": ">= 8"

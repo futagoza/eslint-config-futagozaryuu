@@ -4,7 +4,7 @@
         "tag": "next"
     },
     "name": "@futagoza/eslint-config-core",
-    "version": "8.0.0-alpha.0",
+    "version": "8.0.0",
     "description": "Futago-za Ryuu's basic ESLint configurations",
     "keywords": [
         "eslint",
