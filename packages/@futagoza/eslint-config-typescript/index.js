@@ -236,7 +236,7 @@ module.exports = {
              */
             "@typescript-eslint/no-explicit-any": [ "warn", {
 
-                // "fixToUnknown": true,
+                "fixToUnknown": true,
                 "ignoreRestArgs": true,
 
             } ],
