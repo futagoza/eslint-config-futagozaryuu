@@ -526,7 +526,7 @@ module.exports = {
         /**
          * 📝 require or disallow assignment operator shorthand where possible
          *
-         * @see http://eslint.org/docs/rules/
+         * @see http://eslint.org/docs/rules/operator-assignment
          */
         "operator-assignment": [ "error", "always" ],
 
