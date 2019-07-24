@@ -487,7 +487,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md
              */
-            "@typescript-eslint/restrict-plus-operands": "error",
+            "@typescript-eslint/restrict-plus-operands": "off",
 
             /**
              * 📝 Require or disallow semicolons instead of ASI
