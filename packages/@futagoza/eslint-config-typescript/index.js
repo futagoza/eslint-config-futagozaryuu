@@ -483,6 +483,13 @@ module.exports = {
             "@typescript-eslint/require-array-sort-compare": "warn",
 
             /**
+             * Disallow async functions which have no `await` expression
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-await.md
+             */
+            "@typescript-eslint/require-await": config[ "require-await" ],
+
+            /**
              * When adding two variables, operands must both be of type number or of type string
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md

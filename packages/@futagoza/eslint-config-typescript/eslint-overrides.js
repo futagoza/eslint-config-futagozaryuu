@@ -71,6 +71,9 @@ module.exports = {
         // Use `@typescript-eslint/no-useless-constructor` instead
         "no-useless-constructor": "off",
 
+        // Use `@typescript-eslint/require-await` instead
+        "require-await": "off",
+
         // Use `@typescript-eslint/semi` instead
         "semi": "off",
 
