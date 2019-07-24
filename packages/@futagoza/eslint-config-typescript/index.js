@@ -360,14 +360,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-type-alias.md
              */
-            "@typescript-eslint/no-type-alias": [ "error", {
-
-                "allowAliases": "in-unions-and-intersections",
-                "allowCallbacks": "always",
-                "allowLiterals": "in-unions-and-intersections",
-                "allowMappedTypes": "always",
-
-            } ],
+            "@typescript-eslint/no-type-alias": "off",
 
             /**
              * 📝 Warns when a namespace qualifier is unnecessary
