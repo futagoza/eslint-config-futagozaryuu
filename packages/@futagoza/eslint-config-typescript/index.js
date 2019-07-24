@@ -334,7 +334,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-parameter-properties.md
              */
-            "@typescript-eslint/no-parameter-properties": "error",
+            "@typescript-eslint/no-parameter-properties": "off",
 
             /**
              * Disallows invocation of `require()`
