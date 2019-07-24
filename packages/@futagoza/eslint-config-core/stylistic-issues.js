@@ -329,7 +329,7 @@ module.exports = {
          * 
          * @see http://eslint.org/docs/rules/newline-per-chained-call
          */
-        "newline-per-chained-call": [ "warn", { "ignoreChainWithDepth": 3 } ],
+        "newline-per-chained-call": [ "warn", { "ignoreChainWithDepth": 5 } ],
 
         /**
          * disallow `Array` constructors
