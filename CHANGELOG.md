@@ -2,6 +2,28 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="8.3.0"></a>
+## [v8.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v8.2.0...v8.3.0) (2019-07-24)
+
+* Update _@futagoza/core_
+    - Increase allowed chain depth in `newline-per-chained-call` to _5_
+    - Fix documentation link in source file for `operator-assignment`
+* Update _@futagoza/javascript_
+    - Upgrade `globals` dependency to `^12.0.0`
+* Update _@futagoza/node_
+    - Upgrade `globals` dependency to `^12.0.0`
+* Update _@futagoza/typescript_
+    - Update `@typescript-eslint/*` dependencies to `~1.13.0`
+    - Added new rule `@typescript-eslint/no-misused-promises`
+    - Added new rule `@typescript-eslint/require-await`
+    - Disable rule `@typescript-eslint/no-object-literal-type-assertion`
+    - Disable rule `@typescript-eslint/no-parameter-properties`
+    - Disable rule `@typescript-eslint/no-type-alias`
+    - Disable rule `@typescript-eslint/restrict-plus-operands`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v6.1.0
+    - DEV: Ignore node_modules from anywhere when testing/linting the whole repository
+
 <a name="8.2.0"></a>
 ## [v8.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v8.1.1...v8.2.0) (2019-07-15)
 
