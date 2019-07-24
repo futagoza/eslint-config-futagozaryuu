@@ -327,7 +327,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-object-literal-type-assertion.md
              */
-            "@typescript-eslint/no-object-literal-type-assertion": [ "error", { "allowAsParameter": true } ],
+            "@typescript-eslint/no-object-literal-type-assertion": "off",
 
             /**
              * Disallow the use of parameter properties in class constructors
