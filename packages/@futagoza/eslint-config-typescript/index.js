@@ -297,6 +297,13 @@ module.exports = {
             "@typescript-eslint/no-misused-new": "warn",
 
             /**
+             * Avoid using promises in places not designed to handle them
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-promises.md
+             */
+            "@typescript-eslint/no-misused-promises": "error",
+
+            /**
              * Disallow the use of custom TypeScript modules and namespaces
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md
