@@ -124,6 +124,13 @@ module.exports = {
         "func-style": 0,
 
         /**
+         * 📝 enforce line breaks between arguments of a function call
+         *
+         * @see http://eslint.org/docs/rules/function-call-argument-newline
+         */
+        "function-call-argument-newline": [ "error", "consistent" ],
+
+        /**
          * 📝 enforce consistent line breaks inside function parentheses
          *
          * @see http://eslint.org/docs/rules/function-paren-newline
