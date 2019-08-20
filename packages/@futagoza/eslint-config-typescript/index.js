@@ -110,6 +110,13 @@ module.exports = {
             "@typescript-eslint/class-name-casing": "error",
 
             /**
+             * Enforces consistent usage of type assertions.
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
+             */
+            "@typescript-eslint/consistent-type-assertions": "off",
+
+            /**
              * 📝 Consistent with type definition either `interface` or `type`
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
