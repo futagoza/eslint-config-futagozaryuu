@@ -16,7 +16,7 @@
         "bluebird": "3.5.5",
         "eslint": "~6.2.1",
         "get-yarn-workspaces": "1.0.2",
-        "prompts": "2.1.0"
+        "prompts": "2.2.1"
     },
     "engines": {
         "node": ">= 8"
