@@ -1,0 +1,31 @@
+name: Lint
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 8.x, 10.x, 12.x ]
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install Yarn
+      run: |
+        curl -o- -L https://yarnpkg.com/install.sh | bash
+        export PATH=$HOME/.yarn/bin:$PATH
+
+    - name: Install dependencies
+      run: yarn --ignore-engines
+
+    - name: Lint JavaScript files using ESLint
+      run: npm test
