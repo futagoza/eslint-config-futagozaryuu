@@ -377,6 +377,13 @@ module.exports = {
             "@typescript-eslint/no-unnecessary-qualifier": "warn",
 
             /**
+             * 📝 Warns if an explicitly specified type argument is the default for that type parameter
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-arguments.md
+             */
+            "@typescript-eslint/no-unnecessary-type-arguments": "off",
+
+            /**
              * 📝 Warns if a type assertion does not change the type of an expression
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-assertion.md
