@@ -223,13 +223,6 @@ module.exports = {
             "@typescript-eslint/member-ordering": "off",
 
             /**
-             * Enforces the use of `as Type` assertions instead of `<Type>` assertions
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-angle-bracket-type-assertion.md
-             */
-            "@typescript-eslint/no-angle-bracket-type-assertion": "error",
-
-            /**
              * 📝 Disallow generic Array constructors
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
@@ -342,13 +335,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
              */
             "@typescript-eslint/no-non-null-assertion": "error",
-
-            /**
-             * Forbids an object literal to appear in a type assertion expression
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-object-literal-type-assertion.md
-             */
-            "@typescript-eslint/no-object-literal-type-assertion": "off",
 
             /**
              * Disallow the use of parameter properties in class constructors
