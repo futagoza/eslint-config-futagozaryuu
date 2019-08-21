@@ -2,6 +2,24 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="9.0.0"></a>
+## [v9.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v8.3.0...v9.0.0) (2019-08-21)
+
+* Update _@futagoza/core_
+    - Added new rule `function-call-argument-newline`
+* Update _@futagoza/javascript_
+    - Add support for ES2020 (`@futagoza/javascript/es2020`)
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `~2.0.0`
+    - Added new rule `@typescript-eslint/consistent-type-assertions`
+    - Enable `allowUnderscorePrefix` option for `@typescript-eslint/class-name-casing`
+    - Added new rule `@typescript-eslint/typedef`
+    - Added new rule `@typescript-eslint/no-unnecessary-type-arguments`
+    - Fix options for rule `@typescript-eslint/array-type`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v6.2.1
+    - DEV: Upgrade `prompts` devDependency to `2.2.1`
+
 <a name="8.3.0"></a>
 ## [v8.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v8.2.0...v8.3.0) (2019-07-24)
 
