@@ -107,7 +107,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-name-casing.md
              */
-            "@typescript-eslint/class-name-casing": "error",
+            "@typescript-eslint/class-name-casing": [ "error", { "allowUnderscorePrefix": true } ],
 
             /**
              * Enforces consistent usage of type assertions.
