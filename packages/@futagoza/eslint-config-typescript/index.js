@@ -525,6 +525,13 @@ module.exports = {
             "@typescript-eslint/type-annotation-spacing": "error",
 
             /**
+             * Requires type annotations to exist
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/typedef.md
+             */
+            "@typescript-eslint/typedef": "off",
+
+            /**
              * Enforces unbound methods are called with their expected scope
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unbound-method.md
