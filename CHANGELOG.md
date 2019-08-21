@@ -2,6 +2,13 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="9.1.0"></a>
+## [v9.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.0.0...v9.1.0) (2019-08-21)
+
+* Update _@futagoza/typescript_
+    - Also look for `tsconfig.eslint.json` (as shown by typescript-eslint)
+    - Disable deprecated rules
+
 <a name="9.0.0"></a>
 ## [v9.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v8.3.0...v9.0.0) (2019-08-21)
 
