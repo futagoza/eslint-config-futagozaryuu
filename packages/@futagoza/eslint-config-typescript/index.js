@@ -47,7 +47,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
              */
-            "@typescript-eslint/array-type": [ "error", "array-simple" ],
+            "@typescript-eslint/array-type": [ "error", { "default": "array-simple" } ],
 
             /**
              * Disallows awaiting a value that is not a Thenable
