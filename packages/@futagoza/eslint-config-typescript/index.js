@@ -8,18 +8,6 @@ const config = {
     ...require( "@futagoza/eslint-config-javascript/es2015" ).rules,
 };
 
-let project;
-
-try {
-
-    project = require.resolve( "./tsconfig.json", { paths: [ process.cwd() ] } );
-
-} catch ( _err ) {
-
-    project = require.resolve( "./tsconfig.default.json" );
-
-}
-
 module.exports = {
 
     "overrides": [ {
@@ -31,7 +19,33 @@ module.exports = {
             "./eslint-overrides.js",
         ],
 
-        "parserOptions": { project },
+        "parserOptions": {
+
+            "project": ( () => {
+
+                const options = { paths: [ process.cwd() ] };
+
+                try {
+
+                    return require.resolve( "./tsconfig.json", options );
+
+                } catch ( _error ) {
+
+                    try {
+
+                        return require.resolve( "./tsconfig.eslint.json", options );
+
+                    } catch ( _error ) {
+
+                        return require.resolve( "./tsconfig.default.json" );
+
+                    }
+
+                }
+
+            } )(),
+
+        },
 
         "rules": {
 
