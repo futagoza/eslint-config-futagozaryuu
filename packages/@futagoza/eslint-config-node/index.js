@@ -116,6 +116,13 @@ module.exports = {
         "node/no-callback-literal": 0,
 
         /**
+         * Disallow the assignment to `exports`.
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-exports-assign.md
+         */
+        "node/no-exports-assign": "error",
+
+        /**
          * Disallow `import` declarations of extraneous packages.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md
