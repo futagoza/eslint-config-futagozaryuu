@@ -5,7 +5,7 @@ module.exports = {
     "rules": {
 
         /**
-         * 📝 legacy version of `indent`
+         * 🔧 legacy version of `indent`
          *
          * Was originally called `indent`, a stylistic rule, but after the rule was rewrote, the
          * original was renamed so developers can opt-in to the original behaviour of the rule.
@@ -16,7 +16,7 @@ module.exports = {
         "indent-legacy": 0,
 
         /**
-         * 📝 require or disallow newlines around directives
+         * 🔧 require or disallow newlines around directives
          *
          * This rule was deprecated in favor of `padding-line-between-statements`,
          * a new stylistic rule introduced in ESLint 4.0.0.
@@ -27,7 +27,7 @@ module.exports = {
         "lines-around-directive": 0,
 
         /**
-         * 📝 require or disallow an empty line after variable declarations
+         * 🔧 require or disallow an empty line after variable declarations
          *
          * This rule was deprecated in favor of `padding-line-between-statements`,
          * a new stylistic rule introduced in ESLint 4.0.0.
@@ -38,7 +38,7 @@ module.exports = {
         "newline-after-var": 0,
 
         /**
-         * 📝 require an empty line before `return` statements
+         * 🔧 require an empty line before `return` statements
          *
          * This rule was deprecated in favor of `padding-line-between-statements`,
          * a new stylistic rule introduced in ESLint 4.0.0.
@@ -68,7 +68,7 @@ module.exports = {
         "require-jsdoc": 0,
 
         /**
-         * 📝 enforce valid JSDoc comments
+         * 🔧 enforce valid JSDoc comments
          *
          * @deprecated https://eslint.org/blog/2018/11/jsdoc-end-of-life
          * @see http://eslint.org/docs/rules/valid-jsdoc

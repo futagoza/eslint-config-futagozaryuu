@@ -18,7 +18,7 @@ module.exports = {
     "rules": {
 
         /**
-         * 📝 require braces around arrow function bodies
+         * 🔧 require braces around arrow function bodies
          *
          * @see http://eslint.org/docs/rules/arrow-body-style
          */
@@ -29,7 +29,7 @@ module.exports = {
         } ],
 
         /**
-         * 📝 require parentheses around arrow function arguments
+         * 🔧 require parentheses around arrow function arguments
          *
          * @see http://eslint.org/docs/rules/arrow-parens
          */
@@ -40,7 +40,7 @@ module.exports = {
         } ],
 
         /**
-         * 📝 enforce consistent spacing before and after the arrow in arrow functions
+         * 🔧 enforce consistent spacing before and after the arrow in arrow functions
          *
          * @see http://eslint.org/docs/rules/arrow-spacing
          */
@@ -54,7 +54,7 @@ module.exports = {
         "constructor-super": "error",
 
         /**
-         * 📝 enforce consistent spacing around `*` operators in generator functions
+         * 🔧 enforce consistent spacing around `*` operators in generator functions
          *
          * @see http://eslint.org/docs/rules/generator-star-spacing
          */
@@ -68,7 +68,7 @@ module.exports = {
         "no-class-assign": "error",
 
         /**
-         * 📝 disallow arrow functions where they could be confused with comparisons
+         * 🔧 disallow arrow functions where they could be confused with comparisons
          *
          * @see http://eslint.org/docs/rules/no-confusing-arrow
          */
@@ -117,7 +117,7 @@ module.exports = {
         "no-this-before-super": "error",
 
         /**
-         * 📝 disallow unnecessary computed property keys in object literals
+         * 🔧 disallow unnecessary computed property keys in object literals
          *
          * @see http://eslint.org/docs/rules/no-useless-computed-key
          */
@@ -131,35 +131,35 @@ module.exports = {
         "no-useless-constructor": "warn",
 
         /**
-         * 📝 disallow renaming import, export, and destructured assignments to the same name
+         * 🔧 disallow renaming import, export, and destructured assignments to the same name
          *
          * @see http://eslint.org/docs/rules/no-useless-rename
          */
         "no-useless-rename": "error",
 
         /**
-         * 📝 require `let` or `const` instead of `var`
+         * 🔧 require `let` or `const` instead of `var`
          *
          * @see http://eslint.org/docs/rules/no-var
          */
         "no-var": "error",
 
         /**
-         * 📝 require or disallow method and property shorthand syntax for object literals
+         * 🔧 require or disallow method and property shorthand syntax for object literals
          *
          * @see http://eslint.org/docs/rules/object-shorthand
          */
         "object-shorthand": 0,
 
         /**
-         * 📝 require arrow functions as callbacks
+         * 🔧 require arrow functions as callbacks
          *
          * @see http://eslint.org/docs/rules/prefer-arrow-callback
          */
         "prefer-arrow-callback": 0,
 
         /**
-         * 📝 require `const` declarations for variables that are never reassigned after declared
+         * 🔧 require `const` declarations for variables that are never reassigned after declared
          *
          * @see http://eslint.org/docs/rules/prefer-const
          */
@@ -171,14 +171,14 @@ module.exports = {
         } ],
 
         /**
-         * 📝 require destructuring from arrays and/or objects
+         * 🔧 require destructuring from arrays and/or objects
          *
          * @see http://eslint.org/docs/rules/prefer-destructuring
          */
         "prefer-destructuring": 0,
 
         /**
-         * 📝 disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
+         * 🔧 disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
          *
          * @see http://eslint.org/docs/rules/prefer-numeric-literals
          */
@@ -199,7 +199,7 @@ module.exports = {
         "prefer-spread": "warn",
 
         /**
-         * 📝 require template literals instead of string concatenation
+         * 🔧 require template literals instead of string concatenation
          *
          * @see http://eslint.org/docs/rules/prefer-template
          */
@@ -213,14 +213,14 @@ module.exports = {
         "require-yield": "error",
 
         /**
-         * 📝 enforce spacing between rest and spread operators and their expressions
+         * 🔧 enforce spacing between rest and spread operators and their expressions
          *
          * @see http://eslint.org/docs/rules/rest-spread-spacing
          */
         "rest-spread-spacing": [ "error", "never" ],
 
         /**
-         * 📝 enforce sorted import declarations within modules
+         * 🔧 enforce sorted import declarations within modules
          *
          * @see http://eslint.org/docs/rules/sort-imports
          */
@@ -234,14 +234,14 @@ module.exports = {
         "symbol-description": "error",
 
         /**
-         * 📝 require or disallow spacing around embedded expressions of template strings
+         * 🔧 require or disallow spacing around embedded expressions of template strings
          *
          * @see http://eslint.org/docs/rules/template-curly-spacing
          */
         "template-curly-spacing": [ "error", "always" ],
 
         /**
-         * 📝 require or disallow spacing around the `*` in `yield*` expressions
+         * 🔧 require or disallow spacing around the `*` in `yield*` expressions
          *
          * @see http://eslint.org/docs/rules/yield-star-spacing
          */

@@ -200,7 +200,7 @@ module.exports = {
         "node/process-exit-as-throw": 0,
 
         /**
-         * 📝 Suggest correct usage of shebang.
+         * 🔧 Suggest correct usage of shebang.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md
          */
@@ -225,7 +225,7 @@ module.exports = {
         "node/exports-style": 0,
 
         /**
-         * 📝 Enforce the style of file extensions in `import` declarations.
+         * 🔧 Enforce the style of file extensions in `import` declarations.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md
          */

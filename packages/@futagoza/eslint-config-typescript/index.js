@@ -57,7 +57,7 @@ module.exports = {
             "@typescript-eslint/adjacent-overload-signatures": "warn",
 
             /**
-             * 📝 Requires using either `T[]` or `Array<T>` for arrays
+             * 🔧 Requires using either `T[]` or `Array<T>` for arrays
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
              */
@@ -78,7 +78,7 @@ module.exports = {
             "@typescript-eslint/ban-ts-ignore": "warn",
 
             /**
-             * 📝 Enforces that types will not to be used
+             * 🔧 Enforces that types will not to be used
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/await-thenable.md
              */
@@ -110,7 +110,7 @@ module.exports = {
             } ],
 
             /**
-             * 📝 Enforce consistent brace style for blocks
+             * 🔧 Enforce consistent brace style for blocks
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
              */
@@ -138,7 +138,7 @@ module.exports = {
             "@typescript-eslint/consistent-type-assertions": "off",
 
             /**
-             * 📝 Consistent with type definition either `interface` or `type`
+             * 🔧 Consistent with type definition either `interface` or `type`
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
              */
@@ -165,7 +165,7 @@ module.exports = {
             "@typescript-eslint/explicit-member-accessibility": "off",
 
             /**
-             * 📝 Require or disallow spacing between function identifiers and their invocations
+             * 🔧 Require or disallow spacing between function identifiers and their invocations
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
              */
@@ -179,7 +179,7 @@ module.exports = {
             "@typescript-eslint/generic-type-naming": [ "error", "^[A-Z]([0-9]+)?$" ],
 
             /**
-             * 📝 Enforce consistent indentation
+             * 🔧 Enforce consistent indentation
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
              */
@@ -193,7 +193,7 @@ module.exports = {
             "@typescript-eslint/interface-name-prefix": "off",
 
             /**
-             * 📝 Require a specific member delimiter style for interfaces and type literals
+             * 🔧 Require a specific member delimiter style for interfaces and type literals
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md
              */
@@ -230,7 +230,7 @@ module.exports = {
             "@typescript-eslint/member-ordering": "off",
 
             /**
-             * 📝 Disallow generic Array constructors
+             * 🔧 Disallow generic Array constructors
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
              */
@@ -251,7 +251,7 @@ module.exports = {
             "@typescript-eslint/no-empty-interface": "warn",
 
             /**
-             * 📝 Disallow usage of the `any` type
+             * 🔧 Disallow usage of the `any` type
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-explicit-any.md
              */
@@ -263,7 +263,7 @@ module.exports = {
             } ],
 
             /**
-             * 📝 Disallow unnecessary parentheses
+             * 🔧 Disallow unnecessary parentheses
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
              */
@@ -297,7 +297,7 @@ module.exports = {
             "@typescript-eslint/no-for-in-array": "error",
 
             /**
-             * 📝 Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean
+             * 🔧 Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md
              */
@@ -377,21 +377,21 @@ module.exports = {
             "@typescript-eslint/no-type-alias": "off",
 
             /**
-             * 📝 Warns when a namespace qualifier is unnecessary
+             * 🔧 Warns when a namespace qualifier is unnecessary
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-qualifier.md
              */
             "@typescript-eslint/no-unnecessary-qualifier": "warn",
 
             /**
-             * 📝 Warns if an explicitly specified type argument is the default for that type parameter
+             * 🔧 Warns if an explicitly specified type argument is the default for that type parameter
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-arguments.md
              */
             "@typescript-eslint/no-unnecessary-type-arguments": "off",
 
             /**
-             * 📝 Warns if a type assertion does not change the type of an expression
+             * 🔧 Warns if a type assertion does not change the type of an expression
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-assertion.md
              */
@@ -441,28 +441,28 @@ module.exports = {
             "@typescript-eslint/prefer-for-of": "error",
 
             /**
-             * 📝 Use function types instead of interfaces with call signatures
+             * 🔧 Use function types instead of interfaces with call signatures
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-function-type.md
              */
             "@typescript-eslint/prefer-function-type": "error",
 
             /**
-             * 📝 Enforce `includes` method over `indexOf` method
+             * 🔧 Enforce `includes` method over `indexOf` method
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-includes.md
              */
             "@typescript-eslint/prefer-includes": "error",
 
             /**
-             * 📝 Require the use of the `namespace` keyword instead of the `module` keyword to declare custom TypeScript modules
+             * 🔧 Require the use of the `namespace` keyword instead of the `module` keyword to declare custom TypeScript modules
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md
              */
             "@typescript-eslint/prefer-namespace-keyword": "warn",
 
             /**
-             * 📝 Requires that private members are marked as `readonly` if they're never modified outside of the constructor
+             * 🔧 Requires that private members are marked as `readonly` if they're never modified outside of the constructor
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
              */
@@ -476,7 +476,7 @@ module.exports = {
             "@typescript-eslint/prefer-regexp-exec": "off",
 
             /**
-             * 📝 Enforce the use of `String#startsWith` and `String#endsWith` instead of other equivalent methods of checking substrings
+             * 🔧 Enforce the use of `String#startsWith` and `String#endsWith` instead of other equivalent methods of checking substrings
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-string-starts-ends-with.md
              */
@@ -490,7 +490,7 @@ module.exports = {
             "@typescript-eslint/promise-function-async": "off",
 
             /**
-             * 📝 Enforce the consistent use of either backticks, double, or single quotes
+             * 🔧 Enforce the consistent use of either backticks, double, or single quotes
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
              */
@@ -518,7 +518,7 @@ module.exports = {
             "@typescript-eslint/restrict-plus-operands": "off",
 
             /**
-             * 📝 Require or disallow semicolons instead of ASI
+             * 🔧 Require or disallow semicolons instead of ASI
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
              */
@@ -539,7 +539,7 @@ module.exports = {
             "@typescript-eslint/triple-slash-reference": "off",
 
             /**
-             * 📝 Require consistent spacing around type annotations
+             * 🔧 Require consistent spacing around type annotations
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/type-annotation-spacing.md
              */

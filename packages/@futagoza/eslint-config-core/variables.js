@@ -54,7 +54,7 @@ module.exports = {
         "no-undef": "error",
 
         /**
-         * 📝 disallow initializing variables to `undefined`
+         * 🔧 disallow initializing variables to `undefined`
          *
          * @see http://eslint.org/docs/rules/no-undef-init
          */

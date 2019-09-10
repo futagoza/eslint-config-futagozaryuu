@@ -117,14 +117,14 @@ module.exports = {
         "no-ex-assign": "error",
 
         /**
-         * 📝 disallow unnecessary boolean casts
+         * 🔧 disallow unnecessary boolean casts
          *
          * @see http://eslint.org/docs/rules/no-extra-boolean-cast
          */
         "no-extra-boolean-cast": "error",
 
         /**
-         * 📝 disallow unnecessary parentheses
+         * 🔧 disallow unnecessary parentheses
          *
          * @see http://eslint.org/docs/rules/no-extra-parens
          */
@@ -139,7 +139,7 @@ module.exports = {
         } ],
 
         /**
-         * 📝 disallow unnecessary semicolons
+         * 🔧 disallow unnecessary semicolons
          *
          * @see http://eslint.org/docs/rules/no-extra-semi
          */
@@ -202,7 +202,7 @@ module.exports = {
         "no-prototype-builtins": 0,
 
         /**
-         * 📝 disallow multiple spaces in regular expressions
+         * 🔧 disallow multiple spaces in regular expressions
          *
          * @see http://eslint.org/docs/rules/no-regex-spaces
          */
@@ -244,7 +244,7 @@ module.exports = {
         "no-unsafe-finally": "error",
 
         /**
-         * 📝 disallow negating the left operand of relational operators
+         * 🔧 disallow negating the left operand of relational operators
          *
          * @see http://eslint.org/docs/rules/no-unsafe-negation
          */

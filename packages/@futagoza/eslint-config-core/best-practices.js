@@ -47,7 +47,7 @@ module.exports = {
         "consistent-return": 0,
 
         /**
-         * 📝 enforce consistent brace style for all control statements
+         * 🔧 enforce consistent brace style for all control statements
          *
          * @see http://eslint.org/docs/rules/curly
          */
@@ -61,21 +61,21 @@ module.exports = {
         "default-case": 0,
 
         /**
-         * 📝 enforce consistent newlines before and after dots
+         * 🔧 enforce consistent newlines before and after dots
          *
          * @see http://eslint.org/docs/rules/dot-location
          */
         "dot-location": 0,
 
         /**
-         * 📝 enforce dot notation whenever possible
+         * 🔧 enforce dot notation whenever possible
          *
          * @see http://eslint.org/docs/rules/dot-notation
          */
         "dot-notation": 0,
 
         /**
-         * 📝 require the use of `===` and `!==`
+         * 🔧 require the use of `===` and `!==`
          *
          * @see http://eslint.org/docs/rules/eqeqeq
          */
@@ -117,14 +117,14 @@ module.exports = {
         "no-case-declarations": 0,
 
         /**
-         * 📝 disallow division operators explicitly at the beginning of regular expressions
+         * 🔧 disallow division operators explicitly at the beginning of regular expressions
          *
          * @see http://eslint.org/docs/rules/no-div-regex
          */
         "no-div-regex": "warn",
 
         /**
-         * 📝 disallow `else` blocks after `return` statements in `if` statements
+         * 🔧 disallow `else` blocks after `return` statements in `if` statements
          *
          * @see http://eslint.org/docs/rules/no-else-return
          */
@@ -166,14 +166,14 @@ module.exports = {
         "no-extend-native": 0,
 
         /**
-         * 📝 disallow unnecessary calls to `.bind()`
+         * 🔧 disallow unnecessary calls to `.bind()`
          *
          * @see http://eslint.org/docs/rules/no-extra-bind
          */
         "no-extra-bind": "warn",
 
         /**
-         * 📝 disallow unnecessary labels
+         * 🔧 disallow unnecessary labels
          *
          * @see http://eslint.org/docs/rules/no-extra-label
          */
@@ -187,7 +187,7 @@ module.exports = {
         "no-fallthrough": "error",
 
         /**
-         * 📝 disallow leading or trailing decimal points in numeric literals
+         * 🔧 disallow leading or trailing decimal points in numeric literals
          *
          * @see http://eslint.org/docs/rules/no-floating-decimal
          */
@@ -201,7 +201,7 @@ module.exports = {
         "no-global-assign": 0,
 
         /**
-         * 📝 disallow shorthand type conversions
+         * 🔧 disallow shorthand type conversions
          *
          * @see http://eslint.org/docs/rules/no-implicit-coercion
          */
@@ -264,7 +264,7 @@ module.exports = {
         "no-magic-numbers": 0,
 
         /**
-         * 📝 disallow multiple spaces
+         * 🔧 disallow multiple spaces
          *
          * @see http://eslint.org/docs/rules/no-multi-spaces
          */
@@ -414,7 +414,7 @@ module.exports = {
         "no-unused-expressions": 0,
 
         /**
-         * 📝 disallow unused labels
+         * 🔧 disallow unused labels
          *
          * @see http://eslint.org/docs/rules/no-unused-labels
          */
@@ -449,7 +449,7 @@ module.exports = {
         "no-useless-escape": "warn",
 
         /**
-         * 📝 disallow redundant return statements
+         * 🔧 disallow redundant return statements
          *
          * @see http://eslint.org/docs/rules/no-useless-return
          */
@@ -512,7 +512,7 @@ module.exports = {
         "require-unicode-regexp": 0,
 
         /**
-         * 📝 require or disallow strict mode directives
+         * 🔧 require or disallow strict mode directives
          *
          * @see http://eslint.org/docs/rules/strict
          */
@@ -526,14 +526,14 @@ module.exports = {
         "vars-on-top": 0,
 
         /**
-         * 📝 require parentheses around immediate `function` invocations
+         * 🔧 require parentheses around immediate `function` invocations
          *
          * @see http://eslint.org/docs/rules/wrap-iife
          */
         "wrap-iife": [ "error", "any" ],
 
         /**
-         * 📝 require or disallow “Yoda” conditions
+         * 🔧 require or disallow “Yoda” conditions
          *
          * @see http://eslint.org/docs/rules/yoda
          */
