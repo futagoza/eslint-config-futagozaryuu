@@ -11,4 +11,6 @@ module.exports = {
 
     ],
 
+    "reportUnusedDisableDirectives": true,
+
 };
