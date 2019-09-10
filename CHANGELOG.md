@@ -6,6 +6,7 @@
 
 * Miscellaneous
     - DEV: Tidy-up workflow file for GitHub Actions
+    - DEV: Update badge (provided via https://github.com/badges/shields/pull/3898)
 
 <a name="9.2.0"></a>
 ## [v9.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.1.0...v9.2.0) (2019-09-10)
