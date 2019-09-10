@@ -27,13 +27,13 @@ module.exports = {
 
                 try {
 
-                    return require.resolve( "./tsconfig.json", options );
+                    return require.resolve( "./tsconfig.eslint.json", options );
 
                 } catch ( _error ) {
 
                     try {
 
-                        return require.resolve( "./tsconfig.eslint.json", options );
+                        return require.resolve( "./tsconfig.json", options );
 
                     } catch ( _error ) {
 
