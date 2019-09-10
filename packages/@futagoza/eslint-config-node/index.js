@@ -109,6 +109,13 @@ module.exports = {
         /* --------------- eslint-plugin-node | Possible Errors --------------- */
 
         /**
+         * Ensure Node.js-style error-first callback pattern is followed
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-callback-literal.md
+         */
+        "node/no-callback-literal": 0,
+
+        /**
          * Disallow `import` declarations of extraneous packages.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md
