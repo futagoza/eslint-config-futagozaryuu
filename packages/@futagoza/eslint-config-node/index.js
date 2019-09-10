@@ -137,7 +137,7 @@ module.exports = {
         "node/no-extraneous-require": 0,
 
         /**
-         * ⚠️ Disallow `import` declarations for files that don't exist.
+         * Disallow `import` declarations for files that don't exist.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md
          */
@@ -158,7 +158,7 @@ module.exports = {
         "node/no-unpublished-bin": 0,
 
         /**
-         * ⚠️ Disallow `import` declarations for files that npm ignores.
+         * Disallow `import` declarations for files that npm ignores.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md
          */

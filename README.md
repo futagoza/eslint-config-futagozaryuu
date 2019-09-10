@@ -76,7 +76,4 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [07f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-vue
 [07g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-vue
 
-If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have icons:
-
-- ⚠️ means a feature that has not been widely implemented
-- 📝 means a rule that can be fixed using the `--fix` flag
+__NOTE:__ If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have the icon 📝, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.
