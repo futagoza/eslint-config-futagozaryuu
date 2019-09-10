@@ -110,6 +110,13 @@ module.exports = {
             } ],
 
             /**
+             * 📝 Enforce consistent brace style for blocks
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
+             */
+            "@typescript-eslint/brace-style": config[ "brace-style" ],
+
+            /**
              * Enforce camelCase naming convention
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/camelcase.md

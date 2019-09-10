@@ -47,6 +47,9 @@ module.exports = {
 
         /* ---------- Required ---------- */
 
+        // Use `@typescript-eslint/brace-style` instead
+        "brace-style": "off",
+
         // Use `@typescript-eslint/camelcase` instead
         "camelcase": "off",
 
