@@ -74,6 +74,9 @@ module.exports = {
         // Use `@typescript-eslint/no-useless-constructor` instead
         "no-useless-constructor": "off",
 
+        // Use `@typescript-eslint/quotes` instead
+        "quotes": "off",
+
         // Use `@typescript-eslint/require-await` instead
         "require-await": "off",
 

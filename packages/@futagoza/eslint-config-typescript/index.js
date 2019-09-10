@@ -490,6 +490,13 @@ module.exports = {
             "@typescript-eslint/promise-function-async": "off",
 
             /**
+             * 📝 Enforce the consistent use of either backticks, double, or single quotes
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
+             */
+            "@typescript-eslint/quotes": config[ "quotes" ],
+
+            /**
              * Enforce giving `compare` argument to `Array#sort`
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-array-sort-compare.md
