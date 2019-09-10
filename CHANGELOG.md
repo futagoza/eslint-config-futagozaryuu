@@ -2,6 +2,26 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="9.2.0"></a>
+## [v9.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.1.0...v9.2.0) (2019-09-10)
+
+* Update _@futagoza/core_
+    - Enable `reportUnusedDisableDirectives`, a top-level option added in ESLint v6.3
+    - Set minimum ESLint required to `v6.3`
+* Update _@futagoza/node_
+    - Upgrade `eslint-plugin-node` dependency to `~10.0.0`
+    - Added new rule `node/no-exports-assign`
+* Update _@futagoza/typescript_
+    - Look for `tsconfig.eslint.json` first, then `tsconfig.json`
+    - Upgrade `@typescript-eslint/*` dependencies to `~2.2.0`
+    - Added new rule `@typescript-eslint/brace-style`
+    - Added new rule `@typescript-eslint/quotes`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v6.3.0
+    - DEV: Updated `yarn.lock`
+    - DEV: Remove ⚠️, and update source note in root `README.md`
+    - DEV: Replace 📝 with 🔧
+
 <a name="9.1.0"></a>
 ## [v9.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.0.0...v9.1.0) (2019-08-21)
 
