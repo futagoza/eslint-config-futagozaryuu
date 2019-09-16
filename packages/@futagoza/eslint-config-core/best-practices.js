@@ -491,6 +491,13 @@ module.exports = {
         "prefer-promise-reject-errors": 0,
 
         /**
+         * disallow use of the `RegExp` constructor in favor of regular expression literals
+         *
+         * @see https://eslint.org/docs/rules/prefer-regex-literals
+         */
+        "prefer-regex-literals": 0,
+
+        /**
          * enforce the consistent use of the radix argument when using `parseInt()`
          *
          * @see http://eslint.org/docs/rules/radix
