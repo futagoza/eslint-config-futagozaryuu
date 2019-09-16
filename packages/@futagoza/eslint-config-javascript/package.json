@@ -20,7 +20,7 @@
     "dependencies": {
         "@futagoza/eslint-config-core": "9.2.0",
         "babel-eslint": "^10.0.2",
-        "globals": "^12.0.0"
+        "globals": "^12.1.0"
     },
     "engines": {
         "node": ">= 8"
