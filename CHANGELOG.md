@@ -2,11 +2,29 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
-## unreleased
+<a name="9.3.0"></a>
+## [v9.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.2.0...v9.3.0) (2019-09-16)
 
+* Update _@futagoza/core_
+    - Added new rule `no-import-assign`, set to `error`
+    - Added new rule `prefer-regex-literals`, set to `off`
+    - Added new rule `default-param-last`, set to `warn`
+    - Remove fixable icon for `no-unsafe-negation` (https://github.com/eslint/eslint/issues/12157)
+    - Set minimum ESLint required to `v6.3`
+* Update _@futagoza/javascript_
+    - Upgrade `globals` dependency to `^12.1.0`
+* Update _@futagoza/node_
+    - Upgrade `globals` dependency to `^12.1.0`
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `~2.3.0`
+    - Added new rule `@typescript-eslint/no-unnecessary-condition`, set to `warn`
 * Miscellaneous
     - DEV: Tidy-up workflow file for GitHub Actions
     - DEV: Update badge (provided via https://github.com/badges/shields/pull/3898)
+    - Confirmed compatibility with ESLint v6.4.0
+    - DEV: Updated `yarn.lock`
+    - Use `off` instead of `0` to disable rules
+    - Use `void 0` instead of any other value for rules in any `deprecated.js` files
 
 <a name="9.2.0"></a>
 ## [v9.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.1.0...v9.2.0) (2019-09-10)
