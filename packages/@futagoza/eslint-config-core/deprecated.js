@@ -13,7 +13,7 @@ module.exports = {
          * @deprecated ESLint 4.0.0-alpha.0
          * @see http://eslint.org/docs/rules/indent-legacy
          */
-        "indent-legacy": 0,
+        "indent-legacy": void 0,
 
         /**
          * 🔧 require or disallow newlines around directives
@@ -24,7 +24,7 @@ module.exports = {
          * @deprecated ESLint 4.0.0-beta.0
          * @see http://eslint.org/docs/rules/lines-around-directive
          */
-        "lines-around-directive": 0,
+        "lines-around-directive": void 0,
 
         /**
          * 🔧 require or disallow an empty line after variable declarations
@@ -35,7 +35,7 @@ module.exports = {
          * @deprecated ESLint 4.0.0-beta.0
          * @see http://eslint.org/docs/rules/newline-after-var
          */
-        "newline-after-var": 0,
+        "newline-after-var": void 0,
 
         /**
          * 🔧 require an empty line before `return` statements
@@ -46,7 +46,7 @@ module.exports = {
          * @deprecated ESLint 4.0.0-beta.0
          * @see http://eslint.org/docs/rules/newline-before-return
          */
-        "newline-before-return": 0,
+        "newline-before-return": void 0,
 
         /**
          * disallow `catch` clause parameters from shadowing variables in the outer scope
@@ -57,7 +57,7 @@ module.exports = {
          * @deprecated ESLint 5.1.0
          * @see http://eslint.org/docs/rules/no-catch-shadow
          */
-        "no-catch-shadow": 0,
+        "no-catch-shadow": void 0,
 
         /**
          * require JSDoc comments
@@ -65,7 +65,7 @@ module.exports = {
          * @deprecated https://eslint.org/blog/2018/11/jsdoc-end-of-life
          * @see http://eslint.org/docs/rules/require-jsdoc
          */
-        "require-jsdoc": 0,
+        "require-jsdoc": void 0,
 
         /**
          * 🔧 enforce valid JSDoc comments
@@ -73,7 +73,7 @@ module.exports = {
          * @deprecated https://eslint.org/blog/2018/11/jsdoc-end-of-life
          * @see http://eslint.org/docs/rules/valid-jsdoc
          */
-        "valid-jsdoc": 0,
+        "valid-jsdoc": void 0,
 
     },
 

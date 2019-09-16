@@ -13,7 +13,7 @@ module.exports = {
          * @deprecated eslint-plugin-node 7.0.0
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features.md
          */
-        "node/no-unsupported-features": 0,
+        "node/no-unsupported-features": void 0,
 
     },
 
