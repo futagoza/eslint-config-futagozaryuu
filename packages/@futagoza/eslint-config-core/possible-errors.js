@@ -153,6 +153,13 @@ module.exports = {
         "no-func-assign": 0,
 
         /**
+         * disallow assigning to imported bindings
+         *
+         * @see https://eslint.org/docs/rules/no-import-assign
+         */
+        "no-import-assign": "error",
+
+        /**
          * disallow variable or `function` declarations in nested blocks
          *
          * @see http://eslint.org/docs/rules/no-inner-declarations
