@@ -15,8 +15,8 @@
     "dependencies": {
         "@futagoza/eslint-config-core": "9.2.0",
         "@futagoza/eslint-config-javascript": "9.2.0",
-        "@typescript-eslint/eslint-plugin": "~2.2.0",
-        "@typescript-eslint/parser": "~2.2.0",
+        "@typescript-eslint/eslint-plugin": "~2.3.0",
+        "@typescript-eslint/parser": "~2.3.0",
         "typescript": "*"
     },
     "engines": {
