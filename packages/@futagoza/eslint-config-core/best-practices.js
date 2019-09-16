@@ -61,6 +61,13 @@ module.exports = {
         "default-case": 0,
 
         /**
+         * enforce default parameters to be last
+         *
+         * @see https://eslint.org/docs/rules/default-param-last
+         */
+        "default-param-last": "warn",
+
+        /**
          * 🔧 enforce consistent newlines before and after dots
          *
          * @see http://eslint.org/docs/rules/dot-location
