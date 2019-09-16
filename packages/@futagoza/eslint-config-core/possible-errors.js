@@ -251,7 +251,7 @@ module.exports = {
         "no-unsafe-finally": "error",
 
         /**
-         * 🔧 disallow negating the left operand of relational operators
+         * disallow negating the left operand of relational operators
          *
          * @see http://eslint.org/docs/rules/no-unsafe-negation
          */
