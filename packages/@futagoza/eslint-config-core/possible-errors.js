@@ -9,7 +9,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/for-direction
          */
-        "for-direction": 0,
+        "for-direction": "off",
 
         /**
          * enforce `return` statements in getters
@@ -51,7 +51,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-console
          */
-        "no-console": 0,
+        "no-console": "off",
 
         /**
          * disallow constant expressions in conditions
@@ -65,7 +65,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-control-regex
          */
-        "no-control-regex": 0,
+        "no-control-regex": "off",
 
         /**
          * disallow the use of `debugger`
@@ -150,7 +150,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-func-assign
          */
-        "no-func-assign": 0,
+        "no-func-assign": "off",
 
         /**
          * disallow assigning to imported bindings
@@ -164,7 +164,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-inner-declarations
          */
-        "no-inner-declarations": 0,
+        "no-inner-declarations": "off",
 
         /**
          * disallow invalid regular expression strings in `RegExp` constructors
@@ -199,14 +199,14 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-obj-calls
          */
-        "no-obj-calls": 0,
+        "no-obj-calls": "off",
 
         /**
          * disallow calling some `Object.prototype` methods directly on objects
          *
          * @see http://eslint.org/docs/rules/no-prototype-builtins
          */
-        "no-prototype-builtins": 0,
+        "no-prototype-builtins": "off",
 
         /**
          * 🔧 disallow multiple spaces in regular expressions
@@ -227,14 +227,14 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-template-curly-in-string
          */
-        "no-template-curly-in-string": 0,
+        "no-template-curly-in-string": "off",
 
         /**
          * disallow confusing multiline expressions
          *
          * @see http://eslint.org/docs/rules/no-unexpected-multiline
          */
-        "no-unexpected-multiline": 0,
+        "no-unexpected-multiline": "off",
 
         /**
          * disallow unreachable code after `return`, `throw`, `continue`, and `break` statements
@@ -269,7 +269,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/use-isnan
          */
-        "use-isnan": 0,
+        "use-isnan": "off",
 
         /**
          * enforce comparing `typeof` expressions against valid strings

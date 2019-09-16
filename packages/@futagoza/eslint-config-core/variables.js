@@ -9,7 +9,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/init-declarations
          */
-        "init-declarations": 0,
+        "init-declarations": "off",
 
         /**
          * disallow deleting variables
@@ -30,21 +30,21 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-restricted-globals
          */
-        "no-restricted-globals": 0,
+        "no-restricted-globals": "off",
 
         /**
          * disallow variable declarations from shadowing variables declared in the outer scope
          *
          * @see http://eslint.org/docs/rules/no-shadow
          */
-        "no-shadow": 0,
+        "no-shadow": "off",
 
         /**
          * disallow identifiers from shadowing restricted names
          *
          * @see http://eslint.org/docs/rules/no-shadow-restricted-names
          */
-        "no-shadow-restricted-names": 0,
+        "no-shadow-restricted-names": "off",
 
         /**
          * disallow the use of undeclared variables unless mentioned in `/*global ...` comments

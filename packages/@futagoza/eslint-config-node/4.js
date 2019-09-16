@@ -13,8 +13,8 @@ module.exports = {
 
     "rules": {
 
-        "prefer-rest-params": 0,
-        "prefer-spread": 0,
+        "prefer-rest-params": "off",
+        "prefer-spread": "off",
 
         "node/no-unsupported-features/es-builtins": config,
         "node/no-unsupported-features/es-syntax": config,

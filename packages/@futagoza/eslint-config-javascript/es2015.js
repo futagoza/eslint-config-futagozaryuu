@@ -107,7 +107,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-restricted-imports
          */
-        "no-restricted-imports": 0,
+        "no-restricted-imports": "off",
 
         /**
          * disallow `this`/`super` before calling `super()` in constructors
@@ -149,14 +149,14 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/object-shorthand
          */
-        "object-shorthand": 0,
+        "object-shorthand": "off",
 
         /**
          * 🔧 require arrow functions as callbacks
          *
          * @see http://eslint.org/docs/rules/prefer-arrow-callback
          */
-        "prefer-arrow-callback": 0,
+        "prefer-arrow-callback": "off",
 
         /**
          * 🔧 require `const` declarations for variables that are never reassigned after declared
@@ -175,7 +175,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/prefer-destructuring
          */
-        "prefer-destructuring": 0,
+        "prefer-destructuring": "off",
 
         /**
          * 🔧 disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
@@ -203,7 +203,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/prefer-template
          */
-        "prefer-template": 0,
+        "prefer-template": "off",
 
         /**
          * require generator functions to contain `yield`
@@ -224,7 +224,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/sort-imports
          */
-        "sort-imports": 0,
+        "sort-imports": "off",
 
         /**
          * require symbol descriptions
@@ -245,7 +245,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/yield-star-spacing
          */
-        "yield-star-spacing": 0,
+        "yield-star-spacing": "off",
 
     },
 
