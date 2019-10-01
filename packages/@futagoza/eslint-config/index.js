@@ -6,7 +6,7 @@ module.exports = {
 
         "@futagoza/node/8",
         "@futagoza/typescript",
-        "@futagoza/vue",
+        "@futagoza/html",
 
     ],
 

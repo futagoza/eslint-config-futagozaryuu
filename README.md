@@ -7,11 +7,11 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 | ------- | ------- | ----------------- | ------ |
 | [@futagoza/eslint-config][01a] | [![release][01b]][01c] | [![dependencies][01d]][01e] | [![install size][01f]][01g] |
 | [@futagoza/eslint-config-core][02a] | [![release][02b]][02c] | [![dependencies][02d]][02e] | [![install size][02f]][02g] |
+| [@futagoza/eslint-config-html][07a] | [![release][07b]][07c] | [![dependencies][07d]][07e] | [![install size][07f]][07g] |
 | [@futagoza/eslint-config-javascript][03a] | [![release][03b]][03c] | [![dependencies][03d]][03e] | [![install size][03f]][03g] |
 | [@futagoza/eslint-config-node][04a] | [![release][04b]][04c] | [![dependencies][04d]][04e] | [![install size][04f]][04g] |
 | [@futagoza/eslint-config-dev][05a] | [![release][05b]][05c] | [![dependencies][05d]][05e] | [![install size][05f]][05g] |
 | [@futagoza/eslint-config-typescript][06a] | [![release][06b]][06c] | [![dependencies][06d]][06e] | [![install size][06f]][06g] |
-| [@futagoza/eslint-config-vue][07a] | [![release][07b]][07c] | [![dependencies][07d]][07e] | [![install size][07f]][07g] |
 
 <!-- @futagoza/eslint-config -->
 [01a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config
@@ -67,13 +67,13 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [06f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-typescript
 [06g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-typescript
 
-<!-- @futagoza/eslint-config-vue -->
-[07a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-vue
-[07b]: https://img.shields.io/npm/v/@futagoza/eslint-config-vue.svg
-[07c]: https://www.npmjs.com/package/@futagoza/eslint-config-vue
-[07d]: https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg?path=packages/@futagoza/eslint-config-vue
-[07e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-vue
-[07f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-vue
-[07g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-vue
+<!-- @futagoza/eslint-config-html -->
+[07a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-html
+[07b]: https://img.shields.io/npm/v/@futagoza/eslint-config-html.svg
+[07c]: https://www.npmjs.com/package/@futagoza/eslint-config-html
+[07d]: https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg?path=packages/@futagoza/eslint-config-html
+[07e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-html
+[07f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-html
+[07g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-html
 
 __NOTE:__ If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have the icon 🔧, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.

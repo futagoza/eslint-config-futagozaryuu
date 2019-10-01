@@ -9,7 +9,8 @@
         "javascript",
         "node",
         "typescript",
-        "vue"
+        "html",
+        "script"
     ],
     "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config",
     "license": "MIT",
@@ -17,7 +18,8 @@
     "main": "index.js",
     "dependencies": {
         "@futagoza/eslint-config-node": "9.3.0",
-        "@futagoza/eslint-config-typescript": "9.3.0"
+        "@futagoza/eslint-config-typescript": "9.3.0",
+        "@futagoza/eslint-config-html": "9.3.0"
     },
     "engines": {
         "node": ">= 8"

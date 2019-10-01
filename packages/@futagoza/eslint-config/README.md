@@ -4,7 +4,7 @@
 
 > This package contains configuration files for ESLint v6+<br>
 
-These is the default configuration for ESLint that I use in my JavaScript and TypeScript projects. It extends my other ESLint configurations to create a single unified configuration that can easily be used when working with Node v8+ while requiring the use of TypeScript and/or Vue.js source file linting.
+These is the default configuration for ESLint that I use in my JavaScript and TypeScript projects. It extends my other ESLint configurations to create a single unified configuration that can easily be used when working with Node v8+ while requiring the use of TypeScript and/or HTML script linting.
 
 ## installation
 
@@ -26,15 +26,15 @@ Put the following into your configuration (`.eslintrc.json` file or the _"eslint
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza`__ (extends _[@futagoza/node][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/vue][ECV]_)
+- __`@futagoza`__ (extends _[@futagoza/node][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/html][ECH]_)
 
 If you are using this configuration via `yarn install` then the following should be available as well:
 
 - __[`@futagoza/core`][ECC]__
+- __[`@futagoza/html`][ECH]__
 - __[`@futagoza/javascript`][ECJ]__ (extends _[@futagoza/core][ECC]_)
 - __[`@futagoza/node`][ECN]__  (extends _[@futagoza/javascript][ECJ]_)
 - __[`@futagoza/typescript`][ECT]__ (pulls in rule settings from _[@futagoza/core][ECC]_ and _[@futagoza/javascript][ECJ]_)
-- __[`@futagoza/vue`][ECV]__
 
 Working on source files using _esnext_, and/or need a configuration for your test files as well? Try:
 
@@ -42,10 +42,10 @@ Working on source files using _esnext_, and/or need a configuration for your tes
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
 [ECD]: https://www.npmjs.com/package/@futagoza/eslint-config-dev
+[ECH]: https://www.npmjs.com/package/@futagoza/eslint-config-html
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 [ECN]: https://www.npmjs.com/package/@futagoza/eslint-config-node
 [ECT]: https://www.npmjs.com/package/@futagoza/eslint-config-typescript
-[ECV]: https://www.npmjs.com/package/@futagoza/eslint-config-vue
 
 ## license
 

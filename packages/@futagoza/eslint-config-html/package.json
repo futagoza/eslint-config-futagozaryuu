@@ -1,0 +1,23 @@
+{
+    "name": "@futagoza/eslint-config-html",
+    "version": "9.3.0",
+    "description": "Futago-za Ryuu's ESLint configurations for HTML files.",
+    "keywords": [
+        "configuration",
+        "eslint",
+        "javascript",
+        "html",
+        "xml",
+        "script"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-html",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "eslint-plugin-html": "6.0.0"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}
