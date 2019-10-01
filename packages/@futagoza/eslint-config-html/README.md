@@ -6,7 +6,7 @@
 
 This is a configuration file for ESLint that is used to lint JavaScript source embedded within my `.html` files.
 
-**NOTE:** This configuration will is only for [html/*][HTML] rules, therefore it is recommended to also use [@futagoza/eslint-config-javascript][ECJ] or something similar alongside this configuration.
+**NOTE:** This configuration is only for enabling HTML/XML linting, therefore it is recommended to also use [@futagoza/eslint-config-javascript][ECJ] or something similar alongside this configuration.
 
 ## installation
 
