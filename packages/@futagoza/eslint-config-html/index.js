@@ -1,5 +1,7 @@
 "use strict";
 
+const globals = require( "globals" );
+
 module.exports = {
 
     "overrides": [ {
@@ -15,6 +17,8 @@ module.exports = {
         ],
 
         "plugins": [ "html" ],
+
+        "globals": Object.assign( {}, globals.browser, globals.worker ),
 
         "rules": {
 
