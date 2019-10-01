@@ -6,6 +6,7 @@ module.exports = {
 
         "@futagoza/javascript",
         "@futagoza/node",
+        "./test.js"
 
     ],
 
@@ -14,12 +15,5 @@ module.exports = {
         "sourceType": "module",
 
     },
-
-    "overrides": [ {
-
-        "files": [ "*.spec.js", "*.test.js" ],
-        "extends": "./test.js",
-
-    } ],
 
 };

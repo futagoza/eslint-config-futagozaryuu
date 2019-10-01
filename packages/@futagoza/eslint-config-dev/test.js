@@ -2,20 +2,26 @@
 
 module.exports = {
 
-    "env": {
+    "overrides": [ {
 
-        "jasmine": true,
-        "jest": true,
-        "mocha": true,
+        "files": [ "*.benchmark.js", "*.spec.js", "*.test.js" ],
 
-    },
+        "env": {
 
-    "globals": {
+            "jasmine": true,
+            "jest": true,
+            "mocha": true,
 
-        "suite": "readonly",
-        "bench": "readonly",
-        "benchmark": "readonly",
+        },
 
-    },
+        "globals": {
+
+            "suite": "readonly",
+            "bench": "readonly",
+            "benchmark": "readonly",
+
+        },
+
+    } ],
 
 };
