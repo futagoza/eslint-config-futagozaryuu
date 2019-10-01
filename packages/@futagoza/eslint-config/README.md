@@ -26,19 +26,16 @@ Put the following into your configuration (`.eslintrc.json` file or the _"eslint
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza`__ (extends _[@futagoza/node][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/html][ECH]_)
+- __`@futagoza`__ (extends _[@futagoza/node][ECN]_, _[@futagoza/typescript][ECT]_, _[@futagoza/html][ECH]_ and _[@futagoza/dev/test][ECD]_)
 
 If you are using this configuration via `yarn install` then the following should be available as well:
 
 - __[`@futagoza/core`][ECC]__
+- __[`@futagoza/dev`][ECD]__
 - __[`@futagoza/html`][ECH]__
 - __[`@futagoza/javascript`][ECJ]__ (extends _[@futagoza/core][ECC]_)
 - __[`@futagoza/node`][ECN]__  (extends _[@futagoza/javascript][ECJ]_)
 - __[`@futagoza/typescript`][ECT]__ (pulls in rule settings from _[@futagoza/core][ECC]_ and _[@futagoza/javascript][ECJ]_)
-
-Working on source files using _esnext_, and/or need a configuration for your test files as well? Try:
-
-- __[`@futagoza/dev`][ECD]__ (extends _[@futagoza/javascript][ECJ]_ and _[`@futagoza/node`][ECN]_)
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
 [ECD]: https://www.npmjs.com/package/@futagoza/eslint-config-dev

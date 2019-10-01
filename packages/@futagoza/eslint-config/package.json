@@ -9,6 +9,7 @@
         "javascript",
         "node",
         "typescript",
+        "test",
         "html",
         "script"
     ],
@@ -17,9 +18,10 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
+        "@futagoza/eslint-config-dev": "9.3.0",
+        "@futagoza/eslint-config-html": "9.3.0",
         "@futagoza/eslint-config-node": "9.3.0",
-        "@futagoza/eslint-config-typescript": "9.3.0",
-        "@futagoza/eslint-config-html": "9.3.0"
+        "@futagoza/eslint-config-typescript": "9.3.0"
     },
     "engines": {
         "node": ">= 8"

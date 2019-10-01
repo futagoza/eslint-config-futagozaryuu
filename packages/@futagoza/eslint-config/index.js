@@ -7,6 +7,7 @@ module.exports = {
         "@futagoza/node/8",
         "@futagoza/typescript",
         "@futagoza/html",
+        "@futagoza/dev/test",
 
     ],
 
