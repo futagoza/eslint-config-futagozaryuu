@@ -2,6 +2,30 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="10.0.0"></a>
+## [v10.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.3.0...v10.0.0) (2019-10-01)
+
+* Update _@futagoza_
+    - Removed the _@futagoza/vue_ configuration
+    - Include the new _@futagoza/html_ configuration
+    - Include the _@futagoza/dev/test_ configuration
+* Update _@futagoza/core_
+    - Update rule `no-extra-parens`, setting option `enforceForSequenceExpressions` to `false`
+* Update _@futagoza/dev_
+    - Ensure _@futagoza/dev/test_ only works with expected files
+    - Added passive support for `.ts` test files
+* Update _@futagoza/javascript_
+    - Bump `babel-eslint` to `^10.0.3`
+* Update _@futagoza/typescript_
+    - Bump `@typescript-eslint/*` dependencies to `2.3.2`
+* Miscellaneous
+    - DEV: Updated the GitHub Actions badge URL (use official badge)
+    - Removed the _@futagoza/eslint-config-vue_ configuration package
+    - Added the _@futagoza/eslint-config-html_ configuration package for HTML and/or XML files
+    - Added the _@futagoza/eslint-config-svelte_ configuration package for Svelte files
+    - Confirmed compatibility with ESLint v6.5
+    - DEV: Updated `yarn.lock`
+
 <a name="9.3.0"></a>
 ## [v9.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.2.0...v9.3.0) (2019-09-16)
 
@@ -10,7 +34,7 @@
     - Added new rule `prefer-regex-literals`, set to `off`
     - Added new rule `default-param-last`, set to `warn`
     - Remove fixable icon for `no-unsafe-negation` (https://github.com/eslint/eslint/issues/12157)
-    - Set minimum ESLint required to `v6.3`
+    - Set minimum ESLint required to `v6.4`
 * Update _@futagoza/javascript_
     - Upgrade `globals` dependency to `^12.1.0`
 * Update _@futagoza/node_
