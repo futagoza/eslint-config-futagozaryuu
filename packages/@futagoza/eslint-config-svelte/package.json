@@ -1,0 +1,24 @@
+{
+    "name": "@futagoza/eslint-config-svelte",
+    "version": "9.3.0",
+    "description": "Futago-za Ryuu's ESLint configurations for .svelte files.",
+    "keywords": [
+        "configuration",
+        "eslint",
+        "javascript",
+        "svelte",
+        "script"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-svelte",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "eslint-plugin-svelte3": "2.7.3",
+        "globals": "^12.1.0",
+        "svelte": "*"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}
