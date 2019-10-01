@@ -17,8 +17,7 @@
     "main": "index.js",
     "dependencies": {
         "@futagoza/eslint-config-node": "9.3.0",
-        "@futagoza/eslint-config-typescript": "9.3.0",
-        "@futagoza/eslint-config-vue": "9.3.0"
+        "@futagoza/eslint-config-typescript": "9.3.0"
     },
     "engines": {
         "node": ">= 8"
