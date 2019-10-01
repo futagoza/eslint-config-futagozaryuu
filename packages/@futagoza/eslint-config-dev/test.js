@@ -1,6 +1,6 @@
 "use strict";
 
-const entry = postfix => [ `*.${ postfix }.js`, `*.${ postfix }.ts` ]
+const entry = postfix => [ `*.${ postfix }.js`, `*.${ postfix }.ts` ];
 
 module.exports = {
 

@@ -6,7 +6,7 @@ module.exports = {
 
         "@futagoza/javascript",
         "@futagoza/node",
-        "./test.js"
+        "./test.js",
 
     ],
 
