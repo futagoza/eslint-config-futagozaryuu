@@ -35,6 +35,11 @@ A list of usable configurations as well the configurations they use:
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 [ECN]: https://www.npmjs.com/package/@futagoza/eslint-config-node
 
+## @futagoza/dev/test
+
+1. Although included with the default `@futagoza/dev` config, on non-esnext setups it is preferred on it's own.
+2. `.ts` test files will also be linted by this config if they are being checked by the ESLint CLI.
+
 ## license
 
 Copyright © 2017+ Futago-za Ryuu<br>

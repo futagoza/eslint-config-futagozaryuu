@@ -1,10 +1,18 @@
 "use strict";
 
+const entry = postfix => [ `*.${ postfix }.js`, `*.${ postfix }.ts` ]
+
 module.exports = {
 
     "overrides": [ {
 
-        "files": [ "*.benchmark.js", "*.spec.js", "*.test.js" ],
+        "files": [
+
+            ...entry( "benchmark" ),
+            ...entry( "spec" ),
+            ...entry( "test" ),
+
+        ],
 
         "env": {
 
