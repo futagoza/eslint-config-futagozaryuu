@@ -135,6 +135,7 @@ module.exports = {
             "nestedBinaryExpressions": false,
             "ignoreJSX": "none",
             "enforceForArrowConditionals": false,
+            "enforceForSequenceExpressions": false,
 
         } ],
 
