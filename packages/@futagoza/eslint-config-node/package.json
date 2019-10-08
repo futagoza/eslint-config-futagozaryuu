@@ -14,9 +14,9 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
+        "@futagoza/eslint-config-globals": "10.0.0",
         "@futagoza/eslint-config-javascript": "10.0.0",
-        "eslint-plugin-node": "~10.0.0",
-        "globals": "^12.1.0"
+        "eslint-plugin-node": "~10.0.0"
     },
     "engines": {
         "node": ">= 8"

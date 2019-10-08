@@ -30,9 +30,10 @@ A list of usable configurations as well the configurations they use:
 
 - __`@futagoza/dev`__ (_default_, extends _code_ and _test_)
 - __`@futagoza/dev/code`__ (extends _[@futagoza/javascript][ECJ]_ and _[@futagoza/node][ECN]_)
-- __`@futagoza/dev/test`__
+- __`@futagoza/dev/test`__ (extends _[@futagoza/globals/test][ECG]_)
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
+[ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 [ECN]: https://www.npmjs.com/package/@futagoza/eslint-config-node
 

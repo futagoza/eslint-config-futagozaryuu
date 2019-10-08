@@ -14,8 +14,8 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
+        "@futagoza/eslint-config-globals": "10.0.0",
         "eslint-plugin-svelte3": "2.7.3",
-        "globals": "^12.1.0",
         "svelte": "*"
     },
     "engines": {

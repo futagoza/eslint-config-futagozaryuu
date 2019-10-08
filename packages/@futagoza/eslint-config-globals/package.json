@@ -1,0 +1,21 @@
+{
+    "name": "@futagoza/eslint-config-globals",
+    "version": "10.0.0",
+    "description": "ESLint configurations for easier usage of global variables.",
+    "keywords": [
+        "configuration",
+        "eslint",
+        "javascript",
+        "globals"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-globals",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "globals": "12"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}

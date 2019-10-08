@@ -1,10 +1,9 @@
 "use strict";
 
-const globals = require( "globals" );
-
 module.exports = {
 
-    "globals": globals.node,
+    "extends": "@futagoza/globals/node",
+
     "plugins": [ "node" ],
 
     "overrides": [ {

@@ -28,9 +28,9 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/html`__ (_default_)
+- __`@futagoza/html`__ (_default_, extends _[@futagoza/globals/browser][ECG]_)
 
-[HTML]: https://github.com/BenoitZugmeyer/eslint-plugin-html
+[ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 
 ## license

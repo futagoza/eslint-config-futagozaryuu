@@ -1,7 +1,5 @@
 "use strict";
 
-const globals = require( "globals" );
-
 // https://github.com/sveltejs/eslint-plugin-svelte3#configuration
 const settings = {
 
@@ -15,13 +13,32 @@ const settings = {
 
 module.exports = {
 
-    "overrides": [ {
+    "overrides": [
 
-        "files": [ "*.svelte" ],
-        "plugins": [ "svelte3" ],
-        "globals": Object.assign( {}, globals.browser, globals.worker ),
-        settings,
+        {
 
-    } ],
+            "files": [ "*.svelte" ],
+            "extends": [
+
+                "@futagoza/globals/browser",
+
+            ],
+            "plugins": [ "svelte3" ],
+            settings,
+
+        },
+
+        {
+
+            "files": [ "**/src/service-worker.js" ],
+            "extends": [
+
+                "@futagoza/globals/worker",
+
+            ],
+
+        },
+
+    ],
 
 };

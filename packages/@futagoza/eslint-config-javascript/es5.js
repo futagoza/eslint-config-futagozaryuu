@@ -1,11 +1,13 @@
 "use strict";
 
-const globals = require( "globals" );
-
 module.exports = {
 
-    "extends": "@futagoza/core",
-    "globals": globals.es5,
+    "extends": [
+
+        "@futagoza/core",
+        "@futagoza/globals/es5",
+
+    ],
 
     "parserOptions": {
 

@@ -1,7 +1,5 @@
 "use strict";
 
-const globals = require( "globals" );
-
 // https://github.com/BenoitZugmeyer/eslint-plugin-html#settings
 const html = {
 
@@ -30,8 +28,12 @@ module.exports = {
     "overrides": [ {
 
         "files": [ "*.html", "*.htm", "*.phtml", "*.xhtml", "*.xml" ],
+        "extends": [
+
+            "@futagoza/globals/browser",
+
+        ],
         "plugins": [ "html" ],
-        "globals": Object.assign( {}, globals.browser, globals.worker ),
         "settings": { html },
 
     } ],

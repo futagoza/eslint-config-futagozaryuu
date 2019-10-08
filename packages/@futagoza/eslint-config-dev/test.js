@@ -14,21 +14,11 @@ module.exports = {
 
         ],
 
-        "env": {
+        "extends": [
 
-            "jasmine": true,
-            "jest": true,
-            "mocha": true,
+            "@futagoza/globals/test",
 
-        },
-
-        "globals": {
-
-            "suite": "readonly",
-            "bench": "readonly",
-            "benchmark": "readonly",
-
-        },
+        ],
 
     } ],
 

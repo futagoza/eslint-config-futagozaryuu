@@ -2,7 +2,12 @@
 
 module.exports = {
 
-    "extends": "./es2019.js",
+    "extends": [
+
+        "./es2019.js",
+        "@futagoza/globals/es2020",
+
+    ],
 
     "parserOptions": {
 

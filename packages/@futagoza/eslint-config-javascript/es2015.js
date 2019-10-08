@@ -1,13 +1,15 @@
 "use strict";
 
-const globals = require( "globals" );
-
 module.exports = {
 
-    "extends": "./es5.js",
-    "parser": require.resolve( "babel-eslint" ),
-    "globals": globals.es2015,
+    "extends": [
 
+        "./es5.js",
+        "@futagoza/globals/es2015",
+
+    ],
+
+    "parser": require.resolve( "babel-eslint" ),
     "parserOptions": {
 
         "ecmaVersion": 6,

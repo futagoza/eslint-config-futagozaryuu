@@ -28,7 +28,11 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/svelte`__ (_default_)
+- __`@futagoza/svelte`__ (_default_, extends _[@futagoza/globals/browser][ECG]_)
+
+**NOTE:** If you have a `src/service-worker.js` file, _[@futagoza/globals/worker][ECG]_ should be included as well.
+
+[ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
 
 ## license
 

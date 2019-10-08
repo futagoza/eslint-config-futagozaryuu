@@ -28,7 +28,7 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/node`__ (_default_)
+- __`@futagoza/node`__ (_default_ and _[@futagoza/globals/node][ECG]_)
 - __`@futagoza/node/4`__ (extends _[@futagoza/javascript/es2015][ECJ]_ and _default_)
 - __`@futagoza/node/6`__ (extends: _[@futagoza/javascript/es2015][ECJ]_ and _default_)
 - __`@futagoza/node/8`__ (extends: _[@futagoza/javascript/es2017][ECJ]_ and _default_)
@@ -36,6 +36,7 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/node/12`__ (extends: _[@futagoza/javascript/es2019][ECJ]_ and _default_)
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
+[ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 
 ## license
