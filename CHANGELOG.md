@@ -2,6 +2,34 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="11.0.0"></a>
+## [v11.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v10.0.0...v11.0.0) (2019-10-08)
+
+* Update _@futagoza/dev_
+    - Added the configuration _@futagoza/dev/code_ (ESNext and ES modules)
+    - _@futagoza/dev/test_ now enables globals by extending _@futagoza/globals/test_
+    - Added the configuration _@futagoza/dev/node_
+    - Default config now extends _@futagoza/dev/node_ as well as _@futagoza/dev/test_
+* Update _@futagoza/html_
+    - Enables globals by extending _@futagoza/globals/browser_
+* Update _@futagoza/javascript_
+    - Updated the configurations section in README.md, adding _@futagoza/javascript/es2020_
+    - The _es*_ configurations now enable globals by extending their respective _@futagoza/globals/es*_
+    - Added the configuration _@futagoza/javascript/modules_
+* Update _@futagoza/node_
+    - Enables globals by extending _@futagoza/globals/node_
+* Update _@futagoza/svelte_
+    - Default configuration now enables globals by extending _@futagoza/globals/browser_
+    - Added the configuration _@futagoza/svelte/sapper_
+    - Fixed parsing error for `*.svelte` files by adding the `svelte3/svelte3` processor
+* Update _@futagoza/typescript_
+    - Bump `@typescript-eslint/*` dependencies to `2.3.3`
+    - TS: Include `**/*.(ts|tsx)` in bundled fall-back `tsconfig.json`
+* Miscellaneous
+    - DEV: Bump `bluebird` to `3.7.0`
+    - Added the _@futagoza/eslint-config-globals_ configuration package
+    - DEV: Add package information and badge for _@futagoza/eslint-config-globals_ to repository's `README.md`
+
 <a name="10.0.0"></a>
 ## [v10.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.3.0...v10.0.0) (2019-10-01)
 
