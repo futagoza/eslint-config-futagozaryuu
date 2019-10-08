@@ -13,7 +13,7 @@
         "@futagoza/child-process": "1.0.0",
         "@futagoza/cli-utils": "1.5.1",
         "@futagoza/sync-yarn-workspaces": "1.0.0",
-        "bluebird": "3.5.5",
+        "bluebird": "3.7.0",
         "eslint": "6.5.1",
         "get-yarn-workspaces": "1.0.2",
         "prompts": "2.2.1"
