@@ -4,8 +4,8 @@ module.exports = {
 
     "extends": [
 
-        "./node.js",
-        "./test.js",
+        "./code.js",
+        "@futagoza/node",
 
     ],
 
