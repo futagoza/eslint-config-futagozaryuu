@@ -28,7 +28,8 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/dev`__ (_default_, extends _[@futagoza/javascript][ECJ]_, _[@futagoza/node][ECN]_ and _test_)
+- __`@futagoza/dev`__ (_default_, extends _code_ and _test_)
+- __`@futagoza/dev/code`__ (extends _[@futagoza/javascript][ECJ]_ and _[@futagoza/node][ECN]_)
 - __`@futagoza/dev/test`__
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core

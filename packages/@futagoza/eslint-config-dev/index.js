@@ -4,16 +4,9 @@ module.exports = {
 
     "extends": [
 
-        "@futagoza/javascript",
-        "@futagoza/node",
+        "./code.js",
         "./test.js",
 
     ],
-
-    "parserOptions": {
-
-        "sourceType": "module",
-
-    },
 
 };
