@@ -20,22 +20,12 @@ module.exports = {
             "files": [ "*.svelte" ],
             "extends": [
 
+                "@futagoza/dev/code",
                 "@futagoza/globals/browser",
 
             ],
             "plugins": [ "svelte3" ],
             settings,
-
-        },
-
-        {
-
-            "files": [ "**/src/service-worker.js" ],
-            "extends": [
-
-                "@futagoza/globals/worker",
-
-            ],
 
         },
 

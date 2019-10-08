@@ -28,10 +28,20 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/svelte`__ (_default_, extends _[@futagoza/globals/browser][ECG]_)
+- __`@futagoza/svelte`__ (_default_, extends _[@futagoza/dev/code][ECD]_ and _[@futagoza/globals/browser][ECG]_)
+- __`@futagoza/svelte/sapper`__ (extends _default_ and optionally more (see below))
 
-**NOTE:** If you have a `src/service-worker.js` file, _[@futagoza/globals/worker][ECG]_ should be included as well.
+## sapper configuration
 
+The _@futagoza/svelte/sapper_ configuration will optionally extend other configurations:
+
+- Having a `src/client.js` file will use _[@futagoza/dev/code][ECD]_ and _[@futagoza/globals/browser][ECG]_
+- Having a `src/server.js` file will use _[@futagoza/dev/node][ECD]_
+- Having a `src/service-worker.js` file will use _[@futagoza/dev/code][ECD]_ and _[@futagoza/globals/worker][ECG]_
+
+**NOTE:** [Sapper](https://sapper.svelte.dev/) load's other `src/**/*.js` files, but these don't have expectations like the above.
+
+[ECD]: https://www.npmjs.com/package/@futagoza/eslint-config-dev
 [ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
 
 ## license

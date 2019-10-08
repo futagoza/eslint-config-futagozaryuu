@@ -14,6 +14,7 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
+        "@futagoza/eslint-config-dev": "10.0.0",
         "@futagoza/eslint-config-globals": "10.0.0",
         "eslint-plugin-svelte3": "2.7.3",
         "svelte": "*"
