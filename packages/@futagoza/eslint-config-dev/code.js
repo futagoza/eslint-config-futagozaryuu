@@ -6,13 +6,8 @@ module.exports = {
 
         "@futagoza/javascript",
         "@futagoza/node",
+        "@futagoza/javascript/modules",
 
     ],
-
-    "parserOptions": {
-
-        "sourceType": "module",
-
-    },
 
 };
