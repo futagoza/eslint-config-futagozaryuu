@@ -88,12 +88,12 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [08g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-svelte
 
 <!-- @futagoza/eslint-config-globals -->
-[08a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-globals
-[08b]: https://img.shields.io/npm/v/@futagoza/eslint-config-globals.svg
-[08c]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
-[08d]: https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg?path=packages/@futagoza/eslint-config-globals
-[08e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-globals
-[08f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-globals
-[08g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-globals
+[09a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-globals
+[09b]: https://img.shields.io/npm/v/@futagoza/eslint-config-globals.svg
+[09c]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
+[09d]: https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg?path=packages/@futagoza/eslint-config-globals
+[09e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-globals
+[09f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-globals
+[09g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-globals
 
 __NOTE:__ If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have the icon 🔧, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.
