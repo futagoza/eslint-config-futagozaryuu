@@ -7,10 +7,11 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 | ------- | ------- | ----------------- | ------ |
 | [@futagoza/eslint-config][01a] | [![release][01b]][01c] | [![dependencies][01d]][01e] | [![install size][01f]][01g] |
 | [@futagoza/eslint-config-core][02a] | [![release][02b]][02c] | [![dependencies][02d]][02e] | [![install size][02f]][02g] |
+| [@futagoza/eslint-config-dev][05a] | [![release][05b]][05c] | [![dependencies][05d]][05e] | [![install size][05f]][05g] |
+| [@futagoza/eslint-config-globals][09a] | [![release][09b]][09c] | [![dependencies][09d]][09e] | [![install size][09f]][09g] |
 | [@futagoza/eslint-config-html][07a] | [![release][07b]][07c] | [![dependencies][07d]][07e] | [![install size][07f]][07g] |
 | [@futagoza/eslint-config-javascript][03a] | [![release][03b]][03c] | [![dependencies][03d]][03e] | [![install size][03f]][03g] |
 | [@futagoza/eslint-config-node][04a] | [![release][04b]][04c] | [![dependencies][04d]][04e] | [![install size][04f]][04g] |
-| [@futagoza/eslint-config-dev][05a] | [![release][05b]][05c] | [![dependencies][05d]][05e] | [![install size][05f]][05g] |
 | [@futagoza/eslint-config-svelte][08a] | [![release][08b]][08c] | [![dependencies][08d]][08e] | [![install size][08f]][08g] |
 | [@futagoza/eslint-config-typescript][06a] | [![release][06b]][06c] | [![dependencies][06d]][06e] | [![install size][06f]][06g] |
 
@@ -85,5 +86,14 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [08e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-svelte
 [08f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-svelte
 [08g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-svelte
+
+<!-- @futagoza/eslint-config-globals -->
+[08a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-globals
+[08b]: https://img.shields.io/npm/v/@futagoza/eslint-config-globals.svg
+[08c]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
+[08d]: https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg?path=packages/@futagoza/eslint-config-globals
+[08e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-globals
+[08f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-globals
+[08g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-globals
 
 __NOTE:__ If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have the icon 🔧, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.
