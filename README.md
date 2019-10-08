@@ -1,4 +1,4 @@
-[![GitHub Actions](https://github.com/futagoza/eslint-config-futagozaryuu/workflows/CI/badge.svg)](https://github.com/futagoza/eslint-config-futagozaryuu/actions)
+[![GitHub Actions](https://github.com/futagoza/eslint-config-futagozaryuu/workflows/ci/badge.svg)](https://github.com/pegjs/pegjs/actions?workflow=ci)
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
 These are configurations for ESLint that I use in my JavaScript and TypeScript projects. Check each package for any configurations that are available (for example, [@futagoza/node][04a] has 6 configurations!)
