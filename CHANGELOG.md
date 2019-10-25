@@ -2,6 +2,19 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="11.0.1"></a>
+## [v11.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.0.0...v11.0.1) (2019-10-25)
+
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `2.5.0`
+* Miscellaneous
+    - DEV: Removed configuration file for Travis CI
+    - DEV: Renamed GitHub Actions workflow to 'ci'
+    - DEV: Fix package information row for _@futagoza/eslint-config-globals_
+    - DEV: Fix the link for GitHub Actions workflow badge
+    - DEV: Lock `typescript` dependency to `3.6.4` (for easier testing)
+    - DEV: Updated `yarn.lock`
+
 <a name="11.0.0"></a>
 ## [v11.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v10.0.0...v11.0.0) (2019-10-08)
 
