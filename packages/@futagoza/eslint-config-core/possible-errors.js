@@ -136,6 +136,7 @@ module.exports = {
             "ignoreJSX": "none",
             "enforceForArrowConditionals": false,
             "enforceForSequenceExpressions": false,
+            "enforceForNewInMemberExpressions": false,
 
         } ],
 
