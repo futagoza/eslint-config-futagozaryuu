@@ -2,6 +2,15 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="11.1.0"></a>
+## [v11.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.0.1...v11.1.0) (2019-10-27)
+
+* Update _@futagoza/core_
+    - Update rule `no-extra-parens`, setting option `enforceForNewInMemberExpressions` to `false`
+* Miscellaneous
+    - DEV: Bump `bluebird` to `3.7.1`
+    - Confirmed compatibility with ESLint v6.6
+
 <a name="11.0.1"></a>
 ## [v11.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.0.0...v11.0.1) (2019-10-25)
 
