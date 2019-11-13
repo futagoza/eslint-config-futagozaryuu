@@ -4,7 +4,7 @@
 
 > This package contains configuration files for ESLint v6+<br>
 
-These is the default configuration for ESLint that I use in my JavaScript and TypeScript projects. It extends my other ESLint configurations to create a single unified configuration that can easily be used when working with Node v8+ while requiring the use of TypeScript and/or HTML script linting.
+These is the default configuration for ESLint that I use in my JavaScript and TypeScript projects. It extends my other ESLint configurations to create a single unified configuration that can easily be used when working with Node v10+ while requiring the use of TypeScript and/or HTML script linting.
 
 ## installation
 
