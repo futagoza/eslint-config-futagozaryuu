@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config",
-    "version": "11.1.0",
+    "version": "11.2.0",
     "description": "Futago-za Ryuu's default ESLint configuration",
     "keywords": [
         "eslint",
@@ -18,10 +18,10 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-dev": "11.1.0",
-        "@futagoza/eslint-config-html": "11.1.0",
-        "@futagoza/eslint-config-node": "11.1.0",
-        "@futagoza/eslint-config-typescript": "11.1.0"
+        "@futagoza/eslint-config-dev": "11.2.0",
+        "@futagoza/eslint-config-html": "11.2.0",
+        "@futagoza/eslint-config-node": "11.2.0",
+        "@futagoza/eslint-config-typescript": "11.2.0"
     },
     "engines": {
         "node": ">= 8"
