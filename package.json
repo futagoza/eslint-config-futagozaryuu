@@ -16,8 +16,8 @@
         "bluebird": "3.7.1",
         "eslint": "6.6.0",
         "get-yarn-workspaces": "1.0.2",
-        "prompts": "2.2.1",
-        "typescript": "3.6.4"
+        "prompts": "2.3.0",
+        "typescript": "3.7.2"
     },
     "engines": {
         "node": ">= 8"
