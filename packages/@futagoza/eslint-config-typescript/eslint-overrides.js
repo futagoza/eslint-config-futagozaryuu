@@ -68,6 +68,9 @@ module.exports = {
         // Use `@typescript-eslint/no-magic-numbers` instead
         "no-magic-numbers": "off",
 
+        // Use `@typescript-eslint/no-unused-expressions` instead
+        "no-unused-expressions": "off",
+
         // Use `@typescript-eslint/no-unused-vars` instead
         "no-unused-vars": "off",
 

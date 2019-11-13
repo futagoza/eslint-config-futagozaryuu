@@ -405,9 +405,16 @@ module.exports = {
             "@typescript-eslint/no-unnecessary-type-assertion": "error",
 
             /**
+             * Disallow unused expressions
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
+             */
+            "@typescript-eslint/no-unused-expressions": config[ "no-unused-expressions" ],
+
+            /**
              * Disallow unused variables
              * 
-             * @see 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
              */
             "@typescript-eslint/no-unused-vars": config[ "no-unused-vars" ],
 
