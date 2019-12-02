@@ -194,9 +194,21 @@ module.exports = {
          */
         "key-spacing": [ "error", {
 
-            "beforeColon": false,
-            "afterColon": true,
-            "mode": "minimum",
+            "singleLine": {
+
+                "beforeColon": false,
+                "afterColon": true,
+                "mode": "strict",
+
+            },
+
+            "multiLine": {
+
+                "beforeColon": false,
+                "afterColon": true,
+                "mode": "minimum",
+
+            },
 
         } ],
 
