@@ -561,15 +561,17 @@ module.exports = {
 
         } ],
 
-        // TODO: See https://github.com/eslint/eslint/issues/11178
         /**
          * 🔧 require or disallow padding lines between statements
          *
          * @see http://eslint.org/docs/rules/padding-line-between-statements
          */
-        "padding-line-between-statements": "off",
-        /*
         "padding-line-between-statements": [ "error",
+
+            { blankLine: "always", prev: "*", next: "case" },
+            { blankLine: "never", prev: "case", next: "case" },
+
+            { blankLine: "always", prev: "*", next: "default" },
 
             { blankLine: "always", prev: "directive", next: "*" },
             { blankLine: "any", prev: "directive", next: "directive" },
@@ -577,12 +579,7 @@ module.exports = {
             { blankLine: "always", prev: "import", next: "*" },
             { blankLine: "any", prev: "import", next: "import" },
 
-            { blankLine: "always", prev: "*", next: "case" },
-            { blankLine: "always", prev: "case", next: "*" },
-            { blankLine: "never", prev: "case", next: "case" },
-
         ],
-        */
 
         /**
          * 🔧 disallow the use of `Math.pow` in favor of the `**` operator
