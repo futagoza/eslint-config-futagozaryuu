@@ -82,6 +82,13 @@ module.exports = {
         "no-dupe-args": "error",
 
         /**
+         * disallow duplicate conditions in if-else-if chains
+         *
+         * @see http://eslint.org/docs/rules/no-dupe-else-if
+         */
+        "no-dupe-else-if": "error",
+
+        /**
          * disallow duplicate keys in object literals
          *
          * @see http://eslint.org/docs/rules/no-dupe-keys
