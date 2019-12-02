@@ -131,6 +131,13 @@ module.exports = {
         "no-case-declarations": "off",
 
         /**
+         * disallow returning value from constructor
+         *
+         * @see http://eslint.org/docs/rules/no-constructor-return
+         */
+        "no-constructor-return": "error",
+
+        /**
          * 🔧 disallow division operators explicitly at the beginning of regular expressions
          *
          * @see http://eslint.org/docs/rules/no-div-regex
