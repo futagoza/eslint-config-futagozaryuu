@@ -225,6 +225,13 @@ module.exports = {
         "no-regex-spaces": "warn",
 
         /**
+         * disallow returning values from setters
+         *
+         * @see http://eslint.org/docs/rules/no-setter-return
+         */
+        "no-setter-return": "error",
+
+        /**
          * disallow sparse arrays
          *
          * @see http://eslint.org/docs/rules/no-sparse-arrays
