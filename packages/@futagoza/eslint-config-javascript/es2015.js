@@ -123,7 +123,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-useless-computed-key
          */
-        "no-useless-computed-key": "error",
+        "no-useless-computed-key": [ "error", { "enforceForClassMembers": true } ],
 
         /**
          * disallow unnecessary constructors
