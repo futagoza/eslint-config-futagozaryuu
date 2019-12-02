@@ -89,6 +89,13 @@ module.exports = {
         "eqeqeq": [ "error", "always", { "null": "ignore" } ],
 
         /**
+         * require grouped accessor pairs in object literals and classes
+         *
+         * @see https://eslint.org/docs/rules/grouped-accessor-pairs
+         */
+        "grouped-accessor-pairs": [ "warn", "getBeforeSet" ],
+
+        /**
          * require `for-in` loops to include an `if` statement
          *
          * @see http://eslint.org/docs/rules/guard-for-in
