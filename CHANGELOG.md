@@ -2,6 +2,24 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="12.0.0"></a>
+## [v12.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.3.0...v12.0.0) (2019-12-04)
+
+* Update _@futagoza_
+    - Removed _@futagoza/html_ from the configuration
+    - Include the new _@futagoza/ignore_ configuration
+    - Updated the configurations section in the packages `README.md` file
+* Update _@futagoza/typescript_
+    - Added `sanitize-filename` dependency
+    - Reverted [`Relax requirements of a tsconfig.json`](https://github.com/futagoza/eslint-config-futagozaryuu/commit/950e6b28514868f55ce7510b5f5b9e81c54be698)
+    - Changed auto-setup of the `project` property for `parserOptions`:
+        * First try's requiring a `tsconfig.eslint.json` in the current working directory
+        * Then try's requiring a `tsconfig.json` in the current working directory
+        * Finally create's a unique `tsconfig.*.json` in the temp directory and returns it's path
+    - Added an expanded `tsconfig.default.json` which is used to create the unique `tsconfig.*.json`
+* Miscellaneous
+    - Added the _@futagoza/eslint-config-ignore_ configuration package
+
 <a name="11.3.0"></a>
 ## [v11.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.2.0...v11.3.0) (2019-12-04)
 
