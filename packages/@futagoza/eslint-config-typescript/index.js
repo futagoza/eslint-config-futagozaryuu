@@ -21,29 +21,16 @@ module.exports = {
 
         "parserOptions": {
 
-            "project": ( () => {
+            "createDefaultProgram": true,
 
-                const options = { paths: [ process.cwd() ] };
+            "project": [
 
-                try {
+                "./tsconfig.eslint.json",
+                "./**/tsconfig.json",
 
-                    return require.resolve( "./tsconfig.eslint.json", options );
+            ],
 
-                } catch ( _error ) {
-
-                    try {
-
-                        return require.resolve( "./tsconfig.json", options );
-
-                    } catch ( _error ) {
-
-                        return require.resolve( "./tsconfig.default.json" );
-
-                    }
-
-                }
-
-            } )(),
+            "tsconfigRootDir": process.cwd(),
 
         },
 

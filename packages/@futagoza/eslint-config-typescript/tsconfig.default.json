@@ -1,7 +1,0 @@
-{
-    "include": [ "**/*.ts", "**/*.tsx" ],
-    "compilerOptions": {
-        "noUnusedLocals": true,
-        "suppressImplicitAnyIndexErrors": false,
-    }
-}
