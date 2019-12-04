@@ -243,7 +243,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
              */
-            "@typescript-eslint/no-empty-function": "off",
+            "@typescript-eslint/no-empty-function": config[ "no-empty-function" ],
 
             /**
              * 🔧 Disallow the declaration of empty interfaces
