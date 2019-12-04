@@ -511,6 +511,13 @@ module.exports = {
             } ],
 
             /**
+             * 🔧 Prefer using concise optional chain expressions instead of chained logical ands
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
+             */
+            "@typescript-eslint/prefer-optional-chain": "warn",
+
+            /**
              * 🔧 Requires that private members are marked as `readonly` if they're never modified outside of the constructor
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
