@@ -176,7 +176,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/generic-type-naming.md
              */
-            "@typescript-eslint/generic-type-naming": [ "error", "^[A-Z]([0-9]+)?$" ],
+            "@typescript-eslint/generic-type-naming": "off",
 
             /**
              * 🔧 Enforce consistent indentation
