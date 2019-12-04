@@ -436,6 +436,13 @@ module.exports = {
             "@typescript-eslint/no-unused-vars": config[ "no-unused-vars" ],
 
             /**
+             * Disallow unused variables and arguments
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars-experimental.md
+             */
+            "@typescript-eslint/no-unused-vars-experimental": "off",
+
+            /**
              * Disallow the use of variables before they are defined
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
