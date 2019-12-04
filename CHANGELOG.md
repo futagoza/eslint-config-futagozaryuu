@@ -2,6 +2,64 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="11.3.0"></a>
+## [v11.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.2.0...v11.3.0) (2019-12-04)
+
+* Update _@futagoza_
+    - Adopt the new `ignorePatterns` property for ESLint configurations
+* Update _@futagoza/core_
+    - Added new rule `grouped-accessor-pairs`, set to `[ "warn", "getBeforeSet" ]`
+    - Added new rule `no-constructor-return`, set to `error`
+    - Added new rule `no-dupe-else-if`, set to `error`
+    - Added new rule `no-setter-return`, set to `error`
+    - Added new rule `prefer-exponentiation-operator`, set to `warn`
+    - Re-enable rule `padding-line-between-statements`, setting it to
+        * Expect a blank line before `case *:` labels
+        * Expect no blank lines between `case *:` labels (multi-cases)
+        * Expect a blank line before `default:` labels
+        * Expect a blank line after `"use *";` directives
+        * Make blank lines between `"use *";` directives optional
+        * Expect a blank line after `import` statements
+        * Make blank lines between `import` statements optional
+    - Update `key-spacing` options to change `mode` for single and multi line object literals
+    - Set minimum ESLint required to `v6.7`
+* Update _@futagoza/javascript_
+    - Enable the `enforceForClassMembers` option for the `no-useless-computed-key` rule
+    - Set minimum ESLint required to `v6.7`
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `2.10.0`
+    - Set rule `@typescript-eslint/no-unnecessary-condition` to `off`
+    - Set rule `@typescript-eslint/generic-type-naming` to `off`
+    - Updated `@typescript-eslint/ban-types`: added a `fixWith` option for `Function`
+    - Set rule `@typescript-eslint/explicit-function-return-type` to `off`
+    - Fixed rule `@typescript-eslint/no-use-before-define` to follow my ESLint configurations convention
+    - Added new rule `@typescript-eslint/restrict-template-expressions`, set to `warn` on nullable's only
+    - Added new rule `@typescript-eslint/space-before-function-paren`, use's base `space-before-function-paren` rule
+    - Added new rule `@typescript-eslint/no-dynamic-delete`, set to `off`
+    - Added new rule `@typescript-eslint/no-untyped-public-signature`, set to `off`
+    - Rule `typescript-eslint/no-empty-interface` updated:
+        * Is now a fixable rule via the `--fix` flag
+        * Enabled it's `allowSingleExtends` option
+    - Enable the `allowWithDecorator` option for the `@typescript-eslint/no-extraneous-class` rule
+    - Added new rule `@typescript-eslint/no-extra-non-null-assertion`, set to `warn`
+    - Added new rule `@typescript-eslint/no-unused-vars-experimental`, set to `off`
+    - Added new rule `@typescript-eslint/prefer-nullish-coalescing`, set to `warn` and disabling `ignoreMixedLogicalExpressions`
+    - Added new rule `@typescript-eslint/prefer-optional-chain`, set to `warn`
+    - Added new rule `@typescript-eslint/return-await`, set to `off`
+    - Fixed `@typescript-eslint/no-empty-function` to use base `no-empty-function` rule
+    - Relax requirements of a `tsconfig.json`
+        * Removed built-in use of finding a `tsconfig.json` or `./tsconfig.eslint.json`, letting `@typescript-eslint/parser` handle it
+        * The relative search directory is set to the current working directory
+        * A `./tsconfig.eslint.json` file is looked for first
+        * The glob `./**/tsconfig.json` is used to get all `tsconfig.json` files (if any)
+        * If any `.ts(x)` files are not in any `tsconfig.json` files, they are now still linted
+* Miscellaneous
+    - DEV: Bump `bluebird` to `3.7.2`
+    - DEV: Upgrade `eslint` to `6.7.2`
+    - DEV: Bump `typescript` to `3.7.3`
+    - Confirmed compatibility with ESLint v6.7.2
+    - DEV: Updated `yarn.lock`
+
 <a name="11.2.0"></a>
 ## [v11.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.1.0...v11.2.0) (2019-11-13)
 
