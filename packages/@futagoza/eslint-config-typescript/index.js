@@ -232,6 +232,13 @@ module.exports = {
             "@typescript-eslint/no-array-constructor": config[ "no-array-constructor" ],
 
             /**
+             * 🔧 Bans usage of the delete operator with computed key expressions
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
+             */
+            "@typescript-eslint/no-dynamic-delete": "off",
+
+            /**
              * Disallow empty functions
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
