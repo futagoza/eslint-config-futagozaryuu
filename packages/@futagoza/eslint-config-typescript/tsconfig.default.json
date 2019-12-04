@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/tsconfig",
+    "exclude": [
+        "dist",
+        "node_modules",
+        "out",
+        "temp"
+    ],
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "compilerOptions": {
+        "baseUrl": "__CWD__",
+        "disableSizeLimit": true,
+        "noEmit": true,
+        "rootDir": "__CWD__",
+        "strict": false,
+        "suppressImplicitAnyIndexErrors": true
+    }
+}
