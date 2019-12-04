@@ -150,13 +150,7 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
              */
-            "@typescript-eslint/explicit-function-return-type": [ "error", {
-
-                "allowExpressions": true,
-                "allowTypedFunctionExpressions": true,
-                "allowHigherOrderFunctions": true,
-
-            } ],
+            "@typescript-eslint/explicit-function-return-type": "off",
 
             /**
              * Require explicit accessibility modifiers on class properties and methods
