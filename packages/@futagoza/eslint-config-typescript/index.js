@@ -407,6 +407,13 @@ module.exports = {
             "@typescript-eslint/no-unnecessary-type-assertion": "error",
 
             /**
+             * Requires that all public method arguments and return type will be explicitly typed
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-untyped-public-signature.md
+             */
+            "@typescript-eslint/no-untyped-public-signature": "off",
+
+            /**
              * Disallow unused expressions
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
