@@ -89,6 +89,9 @@ module.exports = {
         // Use `@typescript-eslint/semi` instead
         "semi": "off",
 
+        // Use `@typescript-eslint/space-before-function-paren` instead
+        "space-before-function-paren": "off",
+
     },
 
 };

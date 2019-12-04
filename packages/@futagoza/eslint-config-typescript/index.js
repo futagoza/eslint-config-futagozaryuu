@@ -545,6 +545,13 @@ module.exports = {
             "@typescript-eslint/semi": config[ "semi" ],
 
             /**
+             * 🔧 Enforce consistent spacing before function definition opening parenthesis
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-function-paren.md
+             */
+            "@typescript-eslint/space-before-function-paren": config[ "space-before-function-paren" ],
+
+            /**
              * Restricts the types allowed in boolean expressions
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
