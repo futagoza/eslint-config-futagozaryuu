@@ -498,6 +498,19 @@ module.exports = {
             "@typescript-eslint/prefer-namespace-keyword": "warn",
 
             /**
+             * 🔧 Enforce the usage of the nullish coalescing operator instead of logical chaining
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
+             */
+            "@typescript-eslint/prefer-nullish-coalescing": [ "warn", {
+
+                "ignoreConditionalTests": true,
+                "ignoreMixedLogicalExpressions": false,
+                "forceSuggestionFixer": false,
+
+            } ],
+
+            /**
              * 🔧 Requires that private members are marked as `readonly` if they're never modified outside of the constructor
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
