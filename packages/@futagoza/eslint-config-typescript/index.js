@@ -525,6 +525,19 @@ module.exports = {
             "@typescript-eslint/restrict-plus-operands": "off",
 
             /**
+             * Enforce template literal expressions to be of string type
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-template-expressions.md
+             */
+            "@typescript-eslint/restrict-template-expressions": [ "warn", {
+
+                "allowNumber": true,
+                "allowBoolean": true,
+                "allowNullable": false,
+
+            } ],
+
+            /**
              * 🔧 Require or disallow semicolons instead of ASI
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
