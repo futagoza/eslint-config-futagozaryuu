@@ -246,11 +246,11 @@ module.exports = {
             "@typescript-eslint/no-empty-function": "off",
 
             /**
-             * Disallow the declaration of empty interfaces
+             * 🔧 Disallow the declaration of empty interfaces
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md
              */
-            "@typescript-eslint/no-empty-interface": "warn",
+            "@typescript-eslint/no-empty-interface": [ "warn", { "allowSingleExtends": true } ],
 
             /**
              * 🔧 Disallow usage of the `any` type
