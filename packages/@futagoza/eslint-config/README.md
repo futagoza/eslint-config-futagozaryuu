@@ -46,7 +46,7 @@ If you are using this configuration via `yarn install` then the following should
 
 ## ignored patterns
 
-This configuration includes a set of ignored patterns using the `ignorePatterns` property.
+This configuration includes a set of file-path globs (mostly recursively) to ignore files using the `ignorePatterns` property.
 
 - See ignored patterns: [github.com/futagoza/eslint-config-futagozaryuu/packages/@futagoza/eslint-config/index.js](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/packages/%40futagoza/eslint-config/index.js)
 - See documentation: [eslint.org/docs/user-guide/configuring#ignoring-files-and-directories](https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories)

@@ -13,14 +13,14 @@ module.exports = {
 
     "ignorePatterns": [
 
-        "!.eslintrc.js",
+        "!**/.eslintrc.js",
         ".idea/*",
         ".nyc_output/*",
-        "assets/*",
+        "**/assets/*",
         "coverage/*",
-        "dist/*",
-        "node_modules/*",
-        "out/*",
+        "**/dist/*",
+        "**/node_modules/*",
+        "**/out/*",
 
     ],
 
