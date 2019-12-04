@@ -418,15 +418,13 @@ module.exports = {
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
              */
-            "@typescript-eslint/no-use-before-define": [ "warn", {
+            "@typescript-eslint/no-use-before-define": [ config[ "no-use-before-define" ][ 0 ], {
 
-                "functions": false,
-                "classes": true,
-                "variables": true,
+                ...config[ "no-use-before-define" ][ 1 ],
+
                 "typedefs": false,
 
             } ],
-            "no-use-before-define": "off",
 
             /**
              * Disallow unnecessary constructors

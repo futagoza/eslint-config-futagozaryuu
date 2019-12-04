@@ -74,6 +74,9 @@ module.exports = {
         // Use `@typescript-eslint/no-unused-vars` instead
         "no-unused-vars": "off",
 
+        // Use `@typescript-eslint/no-use-before-define` instead
+        "no-use-before-define": "off",
+
         // Use `@typescript-eslint/no-useless-constructor` instead
         "no-useless-constructor": "off",
 
