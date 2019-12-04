@@ -265,6 +265,13 @@ module.exports = {
             } ],
 
             /**
+             * Disallow extra non-null assertion
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md
+             */
+            "@typescript-eslint/no-extra-non-null-assertion": "warn",
+
+            /**
              * 🔧 Disallow unnecessary parentheses
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
