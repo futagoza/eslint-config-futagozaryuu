@@ -87,7 +87,8 @@ module.exports = {
                 "types": {
 
                     "Function": {
-                        "message": "Use something like `() => any` instead",
+                        "message": "Use something like `() => unknown` instead",
+                        "fixWith": "( ...args: unknown[] ) => unknown",
                     },
 
                     "Object": {
