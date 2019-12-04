@@ -587,6 +587,13 @@ module.exports = {
             } ],
 
             /**
+             * Rules for awaiting returned promises
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/return-await.md
+             */
+            "@typescript-eslint/return-await": "off",
+
+            /**
              * 🔧 Require or disallow semicolons instead of ASI
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
