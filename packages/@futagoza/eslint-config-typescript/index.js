@@ -281,6 +281,7 @@ module.exports = {
                 "allowConstructorOnly": true,
                 "allowEmpty": true,
                 "allowStaticOnly": true,
+                "allowWithDecorator": true,
 
             } ],
 
