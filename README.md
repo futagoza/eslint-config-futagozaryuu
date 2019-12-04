@@ -10,6 +10,7 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 | [@futagoza/eslint-config-dev][05a] | [![release][05b]][05c] | [![dependencies][05d]][05e] | [![install size][05f]][05g] |
 | [@futagoza/eslint-config-globals][09a] | [![release][09b]][09c] | [![dependencies][09d]][09e] | [![install size][09f]][09g] |
 | [@futagoza/eslint-config-html][07a] | [![release][07b]][07c] | [![dependencies][07d]][07e] | [![install size][07f]][07g] |
+| [@futagoza/eslint-config-ignore][10a] | [![release][10b]][10c] | [![dependencies][10d]][10e] | [![install size][10f]][10g] |
 | [@futagoza/eslint-config-javascript][03a] | [![release][03b]][03c] | [![dependencies][03d]][03e] | [![install size][03f]][03g] |
 | [@futagoza/eslint-config-node][04a] | [![release][04b]][04c] | [![dependencies][04d]][04e] | [![install size][04f]][04g] |
 | [@futagoza/eslint-config-svelte][08a] | [![release][08b]][08c] | [![dependencies][08d]][08e] | [![install size][08f]][08g] |
@@ -95,5 +96,14 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [09e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-globals
 [09f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-globals
 [09g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-globals
+
+<!-- @futagoza/eslint-config-ignore -->
+[10a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-ignore
+[10b]: https://img.shields.io/npm/v/@futagoza/eslint-config-ignore.svg
+[10c]: https://www.npmjs.com/package/@futagoza/eslint-config-ignore
+[10d]: https://img.shields.io/david/futagoza/eslint-config-futagozaryuu.svg?path=packages/@futagoza/eslint-config-ignore
+[10e]: https://david-dm.org/futagoza/eslint-config-futagozaryuu?path=packages/@futagoza/eslint-config-ignore
+[10f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-ignore
+[10g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-ignore
 
 __NOTE:__ If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have the icon 🔧, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.

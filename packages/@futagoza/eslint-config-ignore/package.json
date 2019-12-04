@@ -1,0 +1,16 @@
+{
+    "name": "@futagoza/eslint-config-ignore",
+    "version": "11.3.0",
+    "description": "Adds a general purpose ignorePatterns property to your configuration.",
+    "keywords": [
+        "configuration",
+        "ignore"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-ignore",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "engines": {
+        "node": ">= 8"
+    }
+}
