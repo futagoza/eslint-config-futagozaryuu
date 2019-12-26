@@ -110,7 +110,7 @@ module.exports = {
 
                     "Function": {
                         "message": "Use something like `() => unknown` instead",
-                        "fixWith": "( ...args: unknown[] ) => unknown",
+                        "fixWith": "( ...args: any[] ) => unknown",
                     },
 
                     "Object": {
