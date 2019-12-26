@@ -65,7 +65,10 @@ module.exports = {
         // Use `@typescript-eslint/no-extra-parens` instead
         "no-extra-parens": "off",
 
-        // Use `@typescript-eslint/no-extra-parens` instead
+        // Use `@typescript-eslint/no-extra-semi` instead
+        "no-extra-semi": "off",
+
+        // Use `@typescript-eslint/no-extra-function` instead
         "no-empty-function": "off",
 
         // Use `@typescript-eslint/no-magic-numbers` instead

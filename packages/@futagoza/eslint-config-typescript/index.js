@@ -301,6 +301,13 @@ module.exports = {
             "@typescript-eslint/no-extra-parens": config[ "no-extra-parens" ],
 
             /**
+             * 🔧 Disallow unnecessary semicolons
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
+             */
+            "@typescript-eslint/no-extra-semi": config[ "no-extra-semi" ],
+
+            /**
              * Forbids the use of classes as namespaces
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extraneous-class.md
