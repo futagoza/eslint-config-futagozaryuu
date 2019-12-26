@@ -2,6 +2,24 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="12.1.0"></a>
+## [v12.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v12.0.0...v12.1.0) (2019-12-26)
+
+* Update _@futagoza/ignore_
+    - Ensure `.eslintrc.cjs` files are excluded from ignore patterns
+* Update _@futagoza/typescript_
+    - Upgraded `@typescript-eslint/*` dependencies to `2.13.0`
+    - `@typescript-eslint/no-unnecessary-condition`: now fixable via the `--fix` flag
+    - `@typescript-eslint/ban-types`: update fix for the type `Function`
+    - `@typescript-eslint/no-use-before-define`: Add disabled `enum` option
+    - Added new rule `@typescript-eslint/no-extra-semi`, use's base `no-extra-semi` rule
+    - Added new rule `@typescript-eslint/no-throw-literal`, use's base `no-throw-literal` rule
+* Miscellaneous
+    - DEV: Bumped `@futagoza/child-process` to `1.1.0`
+    - DEV: Bumped `typescript` to `3.7.4`
+    - Confirmed compatibility with ESLint v6.8.0
+    - DEV: Updated `yarn.lock`
+
 <a name="12.0.0"></a>
 ## [v12.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.3.0...v12.0.0) (2019-12-04)
 
