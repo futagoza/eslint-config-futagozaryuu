@@ -473,6 +473,7 @@ module.exports = {
 
                 ...config[ "no-use-before-define" ][ 1 ],
 
+                "enums": false,
                 "typedefs": false,
 
             } ],
