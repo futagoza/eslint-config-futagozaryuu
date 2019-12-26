@@ -409,6 +409,13 @@ module.exports = {
             } ],
 
             /**
+             * Disallow throwing literals as exceptions
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
+             */
+            "@typescript-eslint/no-throw-literal": config[ "no-throw-literal" ],
+
+            /**
              * Disallow the use of type aliases
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-type-alias.md
