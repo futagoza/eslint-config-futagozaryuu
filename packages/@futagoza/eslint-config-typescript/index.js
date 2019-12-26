@@ -409,7 +409,7 @@ module.exports = {
             "@typescript-eslint/no-type-alias": "off",
 
             /**
-             * Prevents conditionals where the type is always truthy or always falsy
+             * 🔧 Prevents conditionals where the type is always truthy or always falsy
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-condition.md
              */
