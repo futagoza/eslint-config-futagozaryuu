@@ -75,6 +75,94 @@ module.exports = {
          */
         "valid-jsdoc": void 0,
 
+        /**
+         * require `return` statements after callbacks
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/callback-return
+         */
+        "callback-return": void 0,
+
+        /**
+         * require `require()` calls to be placed at top-level module scope
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/global-require
+         */
+        "global-require": void 0,
+
+        /**
+         * require error handling in callbacks
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/handle-callback-err
+         */
+        "handle-callback-err": void 0,
+
+        /**
+         * disallow use of the Buffer() constructor
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-buffer-constructor
+         */
+        "no-buffer-constructor": void 0,
+
+        /**
+         * disallow `require` calls to be mixed with regular variable declarations
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-mixed-requires
+         */
+        "no-mixed-requires": void 0,
+
+        /**
+         * disallow `new` operators with calls to `require`
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-new-require
+         */
+        "no-new-require": void 0,
+
+        /**
+         * disallow string concatenation with `__dirname` and `__filename`
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-path-concat
+         */
+        "no-path-concat": void 0,
+
+        /**
+         * disallow the use of `process.env`
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-process-env
+         */
+        "no-process-env": void 0,
+
+        /**
+         * disallow the use of `process.exit()`
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-process-exit
+         */
+        "no-process-exit": void 0,
+
+        /**
+         * disallow specified modules when loaded by `require`
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-restricted-modules
+         */
+        "no-restricted-modules": void 0,
+
+        /**
+         * disallow synchronous methods
+         *
+         * @deprecated ESLint 7.0.0
+         * @see http://eslint.org/docs/rules/no-sync
+         */
+        "no-sync": void 0,
+
     },
 
 };

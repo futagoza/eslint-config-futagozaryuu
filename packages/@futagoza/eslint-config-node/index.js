@@ -23,86 +23,14 @@ module.exports = {
 
     "rules": {
 
-        /* --------------- ESLint Core Rules --------------- */
-
-        /**
-         * require `return` statements after callbacks
-         *
-         * @see http://eslint.org/docs/rules/callback-return
-         */
-        "callback-return": "off",
-
-        /**
-         * require `require()` calls to be placed at top-level module scope
-         *
-         * @see http://eslint.org/docs/rules/global-require
-         */
-        "global-require": "off",
+        /* --------------- eslint-plugin-node | Possible Errors --------------- */
 
         /**
          * require error handling in callbacks
          *
-         * @see http://eslint.org/docs/rules/handle-callback-err
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/handle-callback-err.md
          */
-        "handle-callback-err": "off",
-
-        /**
-         * disallow use of the Buffer() constructor
-         *
-         * @see http://eslint.org/docs/rules/no-buffer-constructor
-         */
-        "no-buffer-constructor": "off",
-
-        /**
-         * disallow `require` calls to be mixed with regular variable declarations
-         *
-         * @see http://eslint.org/docs/rules/no-mixed-requires
-         */
-        "no-mixed-requires": "off",
-
-        /**
-         * disallow `new` operators with calls to `require`
-         *
-         * @see http://eslint.org/docs/rules/no-new-require
-         */
-        "no-new-require": "off",
-
-        /**
-         * disallow string concatenation with `__dirname` and `__filename`
-         *
-         * @see http://eslint.org/docs/rules/no-path-concat
-         */
-        "no-path-concat": "warn",
-
-        /**
-         * disallow the use of `process.env`
-         *
-         * @see http://eslint.org/docs/rules/no-process-env
-         */
-        "no-process-env": "off",
-
-        /**
-         * disallow the use of `process.exit()`
-         *
-         * @see http://eslint.org/docs/rules/no-process-exit
-         */
-        "no-process-exit": "off",
-
-        /**
-         * disallow specified modules when loaded by `require`
-         *
-         * @see http://eslint.org/docs/rules/no-restricted-modules
-         */
-        "no-restricted-modules": "off",
-
-        /**
-         * disallow synchronous methods
-         *
-         * @see http://eslint.org/docs/rules/no-sync
-         */
-        "no-sync": "off",
-
-        /* --------------- eslint-plugin-node | Possible Errors --------------- */
+        "node/handle-callback-err": "off",
 
         /**
          * Ensure Node.js-style error-first callback pattern is followed
@@ -145,6 +73,27 @@ module.exports = {
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-require.md
          */
         "node/no-missing-require": "off",
+
+        /**
+         * disallow `new` operators with calls to `require`
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-new-require.md
+         */
+        "node/no-new-require": "off",
+
+        /**
+         * disallow string concatenation with `__dirname` and `__filename`
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-path-concat.md
+         */
+        "node/no-path-concat": "warn",
+
+        /**
+         * disallow the use of `process.exit()`
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-exit.md
+         */
+        "node/no-process-exit": "off",
 
         /**
          * Disallow `bin` files that npm ignores.
@@ -214,6 +163,13 @@ module.exports = {
         /* --------------- eslint-plugin-node | Stylistic Issues --------------- */
 
         /**
+         * require `return` statements after callbacks
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/callback-return.md
+         */
+        "node/callback-return": "off",
+
+        /**
          * Enforce either `module.exports` or `exports`.
          *
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
@@ -226,6 +182,48 @@ module.exports = {
          * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md
          */
         "node/file-extension-in-import": "off",
+
+        /**
+         * require `require()` calls to be placed at top-level module scope
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/global-require.md
+         */
+        "node/global-require": "off",
+
+        /**
+         * disallow `require` calls to be mixed with regular variable declarations
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-mixed-requires.md
+         */
+        "node/no-mixed-requires": "off",
+
+        /**
+         * disallow the use of `process.env`
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-env.md
+         */
+        "node/no-process-env": "off",
+
+        /**
+         * disallow specified modules when loaded by `import` declarations
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-import.md
+         */
+        "node/no-restricted-import": "off",
+
+        /**
+         * disallow specified modules when loaded by `require`
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-require.md
+         */
+        "node/no-restricted-require": "off",
+
+        /**
+         * disallow synchronous methods
+         *
+         * @see https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-sync.md
+         */
+        "node/no-sync": "off",
 
         /**
          * Enforce either `Buffer` or `require("buffer").Buffer`.
