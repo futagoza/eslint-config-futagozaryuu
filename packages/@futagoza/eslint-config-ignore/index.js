@@ -4,8 +4,9 @@ module.exports = {
 
     "ignorePatterns": [
 
-        "!**/.eslintrc.cjs",
-        "!**/.eslintrc.js",
+        "!**/.*rc.cjs",
+        "!**/.*rc.js",
+        "!**/.*rc.mjs",
         ".idea/*",
         ".nyc_output/*",
         "**/assets/*",
