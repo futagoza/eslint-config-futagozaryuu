@@ -16,7 +16,10 @@
     "dependencies": {
         "@futagoza/eslint-config-dev": "12.1.0",
         "@futagoza/eslint-config-globals": "12.1.0",
-        "eslint-plugin-svelte3": "2.7.3",
+        "eslint-plugin-svelte3": "2.7.3"
+    },
+    "peerDependencies": {
+        "eslint": "*",
         "svelte": "*"
     },
     "engines": {

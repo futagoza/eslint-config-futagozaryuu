@@ -23,6 +23,10 @@
         "@futagoza/eslint-config-node": "12.1.0",
         "@futagoza/eslint-config-typescript": "12.1.0"
     },
+    "peerDependencies": {
+        "eslint": "*",
+        "typescript": "*"
+    },
     "engines": {
         "node": ">= 8"
     }

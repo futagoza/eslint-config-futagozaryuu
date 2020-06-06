@@ -8,7 +8,7 @@ This is a configuration file for ESLint that is used to lint my TypeScript proje
 
 **NOTE 1:** This configuration will only check for [@typescript-eslint/*][TETE] rules, therefore it is recommended to also use [@futagoza/eslint-config-javascript][ECJ] or something similar alongside this configuration.
 
-**NOTE 2:** This configuration require's TypeScript, which is included by default, but set as `"typescript": "*"` so that if another module require's a specific version of TypeScript, that will be used instead.
+**NOTE 2:** This configuration require's TypeScript, but the `peerDependencies` field is set as `"typescript": "*"` so that any version of TypeScript supported by the [Typescript-ESLint][TETE] project can be used.
 
 ## installation
 

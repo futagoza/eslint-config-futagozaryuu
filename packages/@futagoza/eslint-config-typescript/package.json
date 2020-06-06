@@ -17,7 +17,10 @@
         "@futagoza/eslint-config-javascript": "12.1.0",
         "@typescript-eslint/eslint-plugin": "2.13.0",
         "@typescript-eslint/parser": "2.13.0",
-        "sanitize-filename": "1.6.3",
+        "sanitize-filename": "1.6.3"
+    },
+    "peerDependencies": {
+        "eslint": "*",
         "typescript": "*"
     },
     "engines": {

@@ -18,6 +18,9 @@
         "@futagoza/eslint-config-javascript": "12.1.0",
         "@futagoza/eslint-config-node": "12.1.0"
     },
+    "peerDependencies": {
+        "eslint": "*"
+    },
     "engines": {
         "node": ">= 8"
     }
