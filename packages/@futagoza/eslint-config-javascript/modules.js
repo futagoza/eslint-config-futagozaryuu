@@ -7,5 +7,10 @@ module.exports = {
         "sourceType": "module",
 
     },
+    "rules": {
+
+        "strict": [ "error", "never" ],
+
+    },
 
 };

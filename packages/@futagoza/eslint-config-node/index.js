@@ -6,27 +6,24 @@ module.exports = {
 
     "plugins": [ "node" ],
 
-    "overrides": [ {
+    "overrides": [
+        {
 
-        "files": [ "*.mjs" ],
-        "parserOptions": {
-
-            "sourceType": "module",
-
-        },
-        "rules": {
-
-            "strict": "off",
+            "files": [ "*.cjs", "*.js" ],
+            "rules": { "strict": [ "error", "global" ] },
 
         },
+        {
 
-    } ],
+            "files": [ "*.mjs" ],
+            "extends": "@futagoza/javascript/modules",
+
+        },
+    ],
 
     "rules": {
 
         /* --------------- ESLint Core Rules --------------- */
-
-        "strict": [ "error", "global" ],
 
         /**
          * require `return` statements after callbacks
