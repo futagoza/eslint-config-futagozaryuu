@@ -26,9 +26,9 @@ Put the following into your configuration (`.eslintrc.json` file or the _"eslint
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza`__ (extends _[@futagoza/ignore][ECI]_, _[@futagoza/node][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/dev/test][ECD]_)
+- __`@futagoza`__ (extends _[@futagoza/ignore][ECI]_, _[@futagoza/node/10][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/dev/test][ECD]_)
 
-If you are using this configuration via `yarn install` then the following should be available as well:
+If you are using this configuration via `yarn install` (Yarn 1 only) then the following should be available as well:
 
 - __[`@futagoza/core`][ECC]__
 - __[`@futagoza/dev`][ECD]__ (extends _[@futagoza/globals][ECG]_, _[@futagoza/javascript][ECJ]_ and _[@futagoza/node][ECN]_)
