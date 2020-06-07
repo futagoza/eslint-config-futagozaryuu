@@ -168,6 +168,13 @@ module.exports = {
             "@typescript-eslint/consistent-type-definitions": "off",
 
             /**
+             * Enforce default parameters to be last
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/default-param-last.md
+             */
+            "@typescript-eslint/default-param-last": config[ "default-param-last" ],
+
+            /**
              * Require explicit return types on functions and class methods
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md

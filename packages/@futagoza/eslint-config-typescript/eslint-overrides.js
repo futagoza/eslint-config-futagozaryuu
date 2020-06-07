@@ -53,6 +53,9 @@ module.exports = {
         // Use `@typescript-eslint/camelcase` instead
         "camelcase": "off",
 
+        // Use `@typescript-eslint/default-param-last` instead
+        "default-param-last": "off",
+
         // Use `@typescript-eslint/func-call-spacing` instead
         "func-call-spacing": "off",
 
