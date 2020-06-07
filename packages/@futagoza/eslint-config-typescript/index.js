@@ -142,6 +142,13 @@ module.exports = {
             "@typescript-eslint/brace-style": config[ "brace-style" ],
 
             /**
+             * 🔧 Enforces consistent spacing before and after commas
+             *
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
+             */
+            "@typescript-eslint/comma-spacing": config[ "comma-spacing" ],
+
+            /**
              * Enforces consistent usage of type assertions.
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
