@@ -1,24 +1,12 @@
 "use strict";
 
-const config = [ "error", { "version": ">= 8" } ];
+const CreateNodeConfig = require( "./lib/create-node-config" );
 
-module.exports = {
+module.exports = CreateNodeConfig( {
 
-    "extends": [
-
-        "@futagoza/javascript/es2017",
-        "./index.js",
-
-    ],
-
-    "rules": {
-
-        "node/no-unsupported-features/es-builtins": config,
-        "node/no-unsupported-features/es-syntax": config,
-        "node/no-unsupported-features/node-builtins": config,
-
+    versions: {
+        es: 2017,
+        node: 8,
     },
 
-    ...require( "./typescript" ),
-
-};
+} );

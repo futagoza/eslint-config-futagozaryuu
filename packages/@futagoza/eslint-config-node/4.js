@@ -1,27 +1,19 @@
 "use strict";
 
-const config = [ "error", { "version": ">= 4" } ];
+const CreateNodeConfig = require( "./lib/create-node-config" );
 
-module.exports = {
+module.exports = CreateNodeConfig( {
 
-    "extends": [
+    versions: {
+        es: 2015,
+        node: 4,
+    },
 
-        "@futagoza/javascript/es2015",
-        "./index.js",
-
-    ],
-
-    "rules": {
+    rules: {
 
         "prefer-rest-params": "off",
         "prefer-spread": "off",
 
-        "node/no-unsupported-features/es-builtins": config,
-        "node/no-unsupported-features/es-syntax": config,
-        "node/no-unsupported-features/node-builtins": config,
-
     },
 
-    ...require( "./typescript" ),
-
-};
+} );
