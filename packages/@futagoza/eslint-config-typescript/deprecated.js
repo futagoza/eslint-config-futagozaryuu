@@ -40,6 +40,51 @@ module.exports = {
          */
         "@typescript-eslint/no-object-literal-type-assertion": void 0,
 
+        /**
+         * Enforce camelCase naming convention
+         *
+         * This rule has been deprecated in favour of  `@typescript-eslint/naming-convention`
+         *
+         * @deprecated typescript-eslint/eslint-plugin 2.16.0
+         */
+        "@typescript-eslint/camelcase": void 0,
+
+        /**
+         * Require PascalCased class and interface names
+         * 
+         * This rule has been deprecated in favour of  `@typescript-eslint/naming-convention`
+         *
+         * @deprecated typescript-eslint/eslint-plugin 2.16.0
+         */
+        "@typescript-eslint/class-name-casing": void 0,
+
+        /**
+         * Enforces naming of generic type variables
+         * 
+         * This rule has been deprecated in favour of  `@typescript-eslint/naming-convention`
+         *
+         * @deprecated typescript-eslint/eslint-plugin 2.16.0
+         */
+        "@typescript-eslint/generic-type-naming": void 0,
+
+        /**
+         * Require that interface names be prefixed with `I`
+         * 
+         * This rule has been deprecated in favour of  `@typescript-eslint/naming-convention`
+         *
+         * @deprecated typescript-eslint/eslint-plugin 2.16.0
+         */
+        "@typescript-eslint/interface-name-prefix": void 0,
+
+        /**
+         * Enforces naming conventions for class members by visibility
+         * 
+         * This rule has been deprecated in favour of  `@typescript-eslint/naming-convention`
+         *
+         * @deprecated typescript-eslint/eslint-plugin 2.16.0
+         */
+        "@typescript-eslint/member-naming": void 0,
+
     },
 
 };

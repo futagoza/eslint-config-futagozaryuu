@@ -140,20 +140,6 @@ module.exports = {
             "@typescript-eslint/brace-style": config[ "brace-style" ],
 
             /**
-             * Enforce camelCase naming convention
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/camelcase.md
-             */
-            "@typescript-eslint/camelcase": config[ "camelcase" ],
-
-            /**
-             * Require PascalCased class and interface names
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-name-casing.md
-             */
-            "@typescript-eslint/class-name-casing": [ "error", { "allowUnderscorePrefix": true } ],
-
-            /**
              * Enforces consistent usage of type assertions.
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
@@ -196,25 +182,11 @@ module.exports = {
             "@typescript-eslint/func-call-spacing": config[ "func-call-spacing" ],
 
             /**
-             * Enforces naming of generic type variables
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/generic-type-naming.md
-             */
-            "@typescript-eslint/generic-type-naming": "off",
-
-            /**
              * 🔧 Enforce consistent indentation
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
              */
             "@typescript-eslint/indent": config[ "indent" ],
-
-            /**
-             * Require that interface names be prefixed with `I`
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/interface-name-prefix.md
-             */
-            "@typescript-eslint/interface-name-prefix": "off",
 
             /**
              * 🔧 Require a specific member delimiter style for interfaces and type literals
@@ -236,22 +208,39 @@ module.exports = {
             } ],
 
             /**
-             * Enforces naming conventions for class members by visibility
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-naming.md
-             */
-            "@typescript-eslint/member-naming": [ "error", {
-
-                "private": "^_",
-
-            } ],
-
-            /**
              * Require a consistent member declaration order
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md
              */
             "@typescript-eslint/member-ordering": "off",
+
+            /**
+             * Enforces naming conventions for everything across a codebase
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
+             */
+            "@typescript-eslint/naming-convention": [ "error",
+
+                {
+                    "selector": "default",
+                    "format": null,
+                    "leadingUnderscore": "allow",
+                },
+
+                {
+                    "selector": "memberLike",
+                    "format": null,
+                    "modifiers": [ "private" ],
+                    "leadingUnderscore": "require",
+                },
+
+                {
+                    "selector": "typeLike",
+                    "format": [ "StrictPascalCase", "UPPER_CASE" ],
+                    "leadingUnderscore": "forbid",
+                },
+
+            ],
 
             /**
              * 🔧 Disallow generic Array constructors

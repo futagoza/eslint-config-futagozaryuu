@@ -50,7 +50,7 @@ module.exports = {
         // Use `@typescript-eslint/brace-style` instead
         "brace-style": "off",
 
-        // Use `@typescript-eslint/camelcase` instead
+        // Use `@typescript-eslint/naming-convention` instead
         "camelcase": "off",
 
         // Use `@typescript-eslint/default-param-last` instead
