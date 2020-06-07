@@ -44,6 +44,8 @@ module.exports = {
 
                     } catch ( _fallback_2 ) {
 
+                        // See the `tsconfig.json` section in `README.md` for what is happening here
+
                         const tmpdir = fs.realpathSync( os.tmpdir() );
                         const id = sanitize( cwd, { replacement: "-" } );
 

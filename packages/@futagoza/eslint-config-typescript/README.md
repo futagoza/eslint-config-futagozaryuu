@@ -35,6 +35,16 @@ A list of usable configurations as well the configurations they use:
 
 > The _eslint-overrides_ configuration is tailored either to switch off or alter core ESLint rules so that [@typescript-eslint/eslint-plugin][TETE] can do it's job and no unnecessary checks are made. _It is not recommended to use this!_
 
+## tsconfig.json
+
+[@typescript-eslint/eslint-plugin][TETE] requires a `tsconfig.json` in the current working directory to function correctly, but I believe in zero-config, so what this configuration does is the following in order:
+
+1. Try to load `tsconfig.eslint.json` from the current working directory
+2. Try to load `tsconfig.json` from the current working directory
+3. Create and load a temporary `tsconfig.json` for the current working directory
+
+If the third choice is reached, this configuration will create a temporary `tsconfig.json` (based on the built-in [`tsconfig.default.json`](./tsconfig.default.json)) in the user's temporary directory with path's linked to the current working directory so that it functions like a normal `tsconfig.json` (albiet _slighly opionated_). This is a great alternative to the `createDeafultProgram` option provided by [@typescript-eslint/eslint-plugin][TETE] as it can have performance issues (e.g. I've had VS Code slow down on me).
+
 [TETE]: https://github.com/typescript-eslint/typescript-eslint
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 
