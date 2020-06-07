@@ -388,6 +388,13 @@ module.exports = {
             } ],
 
             /**
+             * Disallows using a non-null assertion after an optional chain expression
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md
+             */
+            "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+
+            /**
              * Disallows non-null assertions using the `!` postfix operator
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
