@@ -198,6 +198,13 @@ module.exports = {
         } ],
 
         /**
+         * disallow literal numbers that lose precision
+         *
+         * @see http://eslint.org/docs/rules/no-loss-of-precision
+         */
+        "no-loss-of-precision": "warn",
+
+        /**
          * disallow characters which are made with multiple code points in character class syntax
          *
          * @see http://eslint.org/docs/rules/no-misleading-character-class
