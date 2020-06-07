@@ -177,6 +177,13 @@ module.exports = {
             "@typescript-eslint/explicit-member-accessibility": "off",
 
             /**
+             * Require explicit return and argument types on exported functions' and classes' public class methods
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
+             */
+            "@typescript-eslint/explicit-module-boundary-types": "off",
+
+            /**
              * 🔧 Require or disallow spacing between function identifiers and their invocations
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
@@ -454,13 +461,6 @@ module.exports = {
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-assertion.md
              */
             "@typescript-eslint/no-unnecessary-type-assertion": "error",
-
-            /**
-             * Requires that all public method arguments and return type will be explicitly typed
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-untyped-public-signature.md
-             */
-            "@typescript-eslint/no-untyped-public-signature": "off",
 
             /**
              * Disallow unused expressions

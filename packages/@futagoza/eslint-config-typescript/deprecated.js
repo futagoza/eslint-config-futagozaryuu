@@ -85,6 +85,15 @@ module.exports = {
          */
         "@typescript-eslint/member-naming": void 0,
 
+        /**
+         * Requires that all public method arguments and return type will be explicitly typed
+         * 
+         * This rule has been deprecated in favour of  `@typescript-eslint/explicit-module-boundary-types`
+         *
+         * @deprecated typescript-eslint/eslint-plugin 2.17.0
+         */
+        "@typescript-eslint/no-untyped-public-signature": void 0,
+
     },
 
 };
