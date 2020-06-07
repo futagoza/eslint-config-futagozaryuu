@@ -144,6 +144,7 @@ module.exports = {
             "enforceForArrowConditionals": false,
             "enforceForSequenceExpressions": false,
             "enforceForNewInMemberExpressions": false,
+            "enforceForFunctionPrototypeMethods": false,
 
         } ],
 
