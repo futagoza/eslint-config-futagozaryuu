@@ -12,6 +12,6 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "engines": {
-        "node": ">= 8"
+        "node": ">=10.0.0"
     }
 }
