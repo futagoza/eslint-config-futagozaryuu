@@ -526,6 +526,13 @@ module.exports = {
             "@typescript-eslint/no-var-requires": "off",
 
             /**
+             * 🔧 Prefer usage of `as const` over literal type
+             *
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md
+             */
+            "@typescript-eslint/prefer-as-const": "error",
+
+            /**
              * Prefer a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-for-of.md
