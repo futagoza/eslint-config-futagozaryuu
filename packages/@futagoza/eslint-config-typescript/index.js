@@ -110,6 +110,13 @@ module.exports = {
             } ],
 
             /**
+             * 🔧 Bans `// tslint:<rule-flag>` comments from being used
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-tslint-comment.md
+             */
+            "@typescript-eslint/ban-tslint-comment": "error",
+
+            /**
              * 🔧 Enforces that types will not to be used
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
