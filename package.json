@@ -17,7 +17,7 @@
         "eslint": "7.2.0",
         "get-yarn-workspaces": "1.0.2",
         "prompts": "2.3.2",
-        "svelte": "3.23.0",
+        "svelte": "3.23.1",
         "typescript": "3.9.5"
     },
     "engines": {
