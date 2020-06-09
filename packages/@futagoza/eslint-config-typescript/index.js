@@ -702,6 +702,13 @@ module.exports = {
             "@typescript-eslint/strict-boolean-expressions": "off",
 
             /**
+             * Exhaustiveness checking in switch with union type
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/switch-exhaustiveness-check.md
+             */
+            "@typescript-eslint/switch-exhaustiveness-check": "off",
+
+            /**
              * Sets preference level for triple slash directives versus ES6-style import declarations
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/triple-slash-reference.md
