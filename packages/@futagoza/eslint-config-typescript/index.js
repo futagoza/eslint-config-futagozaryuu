@@ -651,6 +651,13 @@ module.exports = {
             "@typescript-eslint/prefer-readonly": "error",
 
             /**
+             * Requires that function parameters are typed as readonly to prevent accidental mutation of inputs
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md
+             */
+            "@typescript-eslint/prefer-readonly-parameter-types": "off",
+
+            /**
              * Prefer RegExp#exec() over String#match() if no global flag is provided
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-regexp-exec.md
