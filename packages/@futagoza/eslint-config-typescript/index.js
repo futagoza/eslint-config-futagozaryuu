@@ -355,6 +355,13 @@ module.exports = {
             "@typescript-eslint/no-base-to-string": "off",
 
             /**
+             * 🔧 Disallow non-null assertion in locations that may be confusing
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md
+             */
+            "@typescript-eslint/no-confusing-non-null-assertion": "error",
+
+            /**
              * 🔧 Disallow generic Array constructors
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
