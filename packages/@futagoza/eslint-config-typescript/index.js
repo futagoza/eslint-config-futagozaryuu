@@ -175,6 +175,13 @@ module.exports = {
             } ],
 
             /**
+             * 🔧 Ensures that literals on classes are exposed in a consistent style
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md
+             */
+            "@typescript-eslint/class-literal-property-style": "off",
+
+            /**
              * 🔧 Enforce consistent brace style for blocks
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
