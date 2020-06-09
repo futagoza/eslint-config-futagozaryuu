@@ -30,10 +30,11 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/typescript`__ (_default_, extends _eslint-overrides_)
+- __`@futagoza/typescript`__ (_default_, extends _extension-rules_)
+- __`@futagoza/typescript/extension-rules`__ (extends _eslint-overrides_)
 - __`@futagoza/typescript/eslint-overrides`__
 
-> The _eslint-overrides_ configuration is tailored either to switch off or alter core ESLint rules so that [@typescript-eslint/eslint-plugin][TETE] can do it's job and no unnecessary checks are made. _It is not recommended to use this!_
+> The _eslint-overrides_ configuration is tailored either to switch off or alter core ESLint rules so that [@typescript-eslint/eslint-plugin][TETE] can do it's job and no unnecessary checks are made. _It is not recommended to use this directly!_
 
 ## tsconfig.json
 
