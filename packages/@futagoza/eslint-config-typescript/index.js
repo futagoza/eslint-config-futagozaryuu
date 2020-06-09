@@ -217,6 +217,13 @@ module.exports = {
             "@typescript-eslint/default-param-last": config[ "default-param-last" ],
 
             /**
+             * 🔧 Enforce dot notation whenever possible
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md
+             */
+            "@typescript-eslint/dot-notation": config[ "dot-notation" ],
+
+            /**
              * Require explicit return types on functions and class methods
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md

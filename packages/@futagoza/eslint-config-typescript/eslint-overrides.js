@@ -59,6 +59,9 @@ module.exports = {
         // Use `@typescript-eslint/default-param-last` instead
         "default-param-last": "off",
 
+        // Use `@typescript-eslint/dot-notation` instead
+        "dot-notation": "off",
+
         // Use `@typescript-eslint/func-call-spacing` instead
         "func-call-spacing": "off",
 
