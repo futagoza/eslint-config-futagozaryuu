@@ -712,7 +712,7 @@ module.exports = {
             "@typescript-eslint/prefer-namespace-keyword": "warn",
 
             /**
-             * 🔧 Enforce the usage of the nullish coalescing operator instead of logical chaining
+             * Enforce the usage of the nullish coalescing operator instead of logical chaining
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
              */
@@ -725,7 +725,7 @@ module.exports = {
             } ],
 
             /**
-             * 🔧 Prefer using concise optional chain expressions instead of chained logical ands
+             * Prefer using concise optional chain expressions instead of chained logical ands
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
              */
