@@ -273,6 +273,13 @@ module.exports = {
             "@typescript-eslint/keyword-spacing": config[ "keyword-spacing" ],
 
             /**
+             * 🔧 Require or disallow an empty line between class members
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
+             */
+            "@typescript-eslint/lines-between-class-members": config[ "lines-between-class-members" ],
+
+            /**
              * 🔧 Require a specific member delimiter style for interfaces and type literals
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md
