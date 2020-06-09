@@ -700,6 +700,13 @@ module.exports = {
             "@typescript-eslint/prefer-readonly-parameter-types": "off",
 
             /**
+             * 🔧 Prefer using type parameter when calling `Array#reduce` instead of casting
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-reduce-type-parameter.md
+             */
+            "@typescript-eslint/prefer-reduce-type-parameter": "off",
+
+            /**
              * Prefer RegExp#exec() over String#match() if no global flag is provided
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-regexp-exec.md
