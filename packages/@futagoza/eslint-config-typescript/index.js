@@ -721,6 +721,13 @@ module.exports = {
             "@typescript-eslint/prefer-string-starts-ends-with": "error",
 
             /**
+             * 🔧 Recommends using `// @ts-expect-error` over `// @ts-ignore`
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-ts-expect-error.md
+             */
+            "@typescript-eslint/prefer-ts-expect-error": "off",
+
+            /**
              * Requires any function or method that returns a Promise to be marked async
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/promise-function-async.md
