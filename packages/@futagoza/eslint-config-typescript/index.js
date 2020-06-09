@@ -278,6 +278,13 @@ module.exports = {
             "@typescript-eslint/member-ordering": "off",
 
             /**
+             * 🔧 Enforces using a particular method signature syntax.
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md
+             */
+            "@typescript-eslint/method-signature-style": "off",
+
+            /**
              * Enforces naming conventions for everything across a codebase
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
