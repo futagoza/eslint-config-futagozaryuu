@@ -453,6 +453,17 @@ module.exports = {
             "@typescript-eslint/no-inferrable-types": "off",
 
             /**
+             * Disallows usage of `void` type outside of generic or return types
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-void-type.md
+             */
+            "@typescript-eslint/no-invalid-void-type": [ "error", {
+
+                "allowInGenericTypeArguments": true,
+
+            } ],
+
+            /**
              * Disallows magic numbers
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
