@@ -65,6 +65,9 @@ module.exports = {
         // Use `@typescript-eslint/indent` instead
         "indent": "off",
 
+        // Use `@typescript-eslint/init-declarations` instead
+        "init-declarations": "off",
+
         // Use `@typescript-eslint/no-array-constructor` instead
         "no-array-constructor": "off",
 

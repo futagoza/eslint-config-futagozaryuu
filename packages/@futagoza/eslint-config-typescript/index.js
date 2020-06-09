@@ -252,6 +252,13 @@ module.exports = {
             "@typescript-eslint/indent": config[ "indent" ],
 
             /**
+             * Require or disallow initialization in variable declarations
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/init-declarations.md
+             */
+            "@typescript-eslint/init-declarations": config[ "init-declarations" ],
+
+            /**
              * 🔧 Require a specific member delimiter style for interfaces and type literals
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md
