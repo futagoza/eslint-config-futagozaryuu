@@ -80,6 +80,9 @@ module.exports = {
         // Use `@typescript-eslint/no-extra-parens` instead
         "no-extra-parens": "off",
 
+        // Use `@typescript-eslint/no-invalid-this` instead
+        "no-invalid-this": "off",
+
         // Use `@typescript-eslint/no-extra-semi` instead
         "no-extra-semi": "off",
 

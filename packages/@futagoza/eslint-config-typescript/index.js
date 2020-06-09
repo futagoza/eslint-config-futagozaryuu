@@ -411,6 +411,13 @@ module.exports = {
             "@typescript-eslint/no-extra-semi": config[ "no-extra-semi" ],
 
             /**
+             * disallow `this` keywords outside of classes or class-like objects
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-this.md
+             */
+            "@typescript-eslint/no-invalid-this": config[ "no-invalid-this" ],
+
+            /**
              * Forbids the use of classes as namespaces
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extraneous-class.md
