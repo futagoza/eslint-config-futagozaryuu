@@ -259,6 +259,13 @@ module.exports = {
             "@typescript-eslint/init-declarations": config[ "init-declarations" ],
 
             /**
+             * 🔧 Enforce consistent spacing before and after keywords
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
+             */
+            "@typescript-eslint/keyword-spacing": config[ "keyword-spacing" ],
+
+            /**
              * 🔧 Require a specific member delimiter style for interfaces and type literals
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md

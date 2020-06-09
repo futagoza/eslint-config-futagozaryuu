@@ -68,6 +68,9 @@ module.exports = {
         // Use `@typescript-eslint/init-declarations` instead
         "init-declarations": "off",
 
+        // Use `@typescript-eslint/keyword-spacing` instead
+        "keyword-spacing": "off",
+
         // Use `@typescript-eslint/no-array-constructor` instead
         "no-array-constructor": "off",
 
