@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-html",
-    "version": "12.1.0",
+    "version": "13.0.0",
     "description": "Futago-za Ryuu's ESLint configurations for HTML files.",
     "keywords": [
         "configuration",
@@ -15,7 +15,7 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-globals": "12.1.0",
+        "@futagoza/eslint-config-globals": "13.0.0",
         "eslint-plugin-html": "6.0.2"
     },
     "engines": {
