@@ -299,6 +299,13 @@ module.exports = {
             ],
 
             /**
+             * Requires that `.toString()` is only called on objects which provide useful information when stringified
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
+             */
+            "@typescript-eslint/no-base-to-string": "off",
+
+            /**
              * 🔧 Disallow generic Array constructors
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
