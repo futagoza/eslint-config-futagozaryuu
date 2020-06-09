@@ -94,6 +94,15 @@ module.exports = {
          */
         "@typescript-eslint/no-untyped-public-signature": void 0,
 
+        /**
+         * Bans “// @ts-ignore” comments from being used
+         * 
+         * This rule has been deprecated in favour of  `@typescript-eslint/ban-ts-comment`
+         *
+         * @deprecated typescript-eslint/eslint-plugin 2.18.0
+         */
+        "@typescript-eslint/ban-ts-ignore": void 0,
+
     },
 
 };

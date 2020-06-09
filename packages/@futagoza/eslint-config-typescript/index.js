@@ -95,16 +95,24 @@ module.exports = {
             "@typescript-eslint/await-thenable": "error",
 
             /**
-             * Bans “// @ts-ignore” comments from being used
+             * Bans `// @ts-<directive>` comments from being used
              * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/await-thenable.md
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-ts-comment.md
              */
-            "@typescript-eslint/ban-ts-ignore": "warn",
+            "@typescript-eslint/ban-ts-comment": [ "warn", {
+
+                "ts-expect-error": "allow-with-description",
+                "ts-ignore": "allow-with-description",
+                "ts-nocheck": "allow-with-description",
+                "ts-check": false,
+                "minimumDescriptionLength": 1,
+
+            } ],
 
             /**
              * 🔧 Enforces that types will not to be used
              * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/await-thenable.md
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
              */
             "@typescript-eslint/ban-types": [ "error", {
 
