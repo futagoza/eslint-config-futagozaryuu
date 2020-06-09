@@ -307,7 +307,7 @@ module.exports = {
             } ],
 
             /**
-             * Disallow extra non-null assertion
+             * 🔧 Disallow extra non-null assertion
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md
              */
