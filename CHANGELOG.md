@@ -2,6 +2,144 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="13.0.0"></a>
+## [v13.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v12.1.0...v13.0.0) (2020-06-09)
+
+* Update _@futagoza_
+    - Enforce requirement of ESLint via `peerDependencies`
+    - Enforce requirement of TypeScript via `peerDependencies`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - In `README.md` clarify node configuration being used as well as Yarn 1 only feature
+    - Set minimum ESLint required to `v7.2`
+* Update _@futagoza/core_
+    - Deprecate 11 rules for Node.js (see [ESLint 7's migration guide](https://eslint.org/docs/user-guide/migrating-to-7.0.0#node-js-commonjs-rules-have-been-deprecated) for details)
+        * `callback-return`
+        * `global-require`
+        * `handle-callback-err`
+        * `no-buffer-constructor` (not mentioned in the documents, but also deprecated)
+        * `no-mixed-requires`
+        * `no-new-require`
+        * `no-path-concat`
+        * `no-process-env`
+        * `no-process-exit`
+        * `no-restricted-modules`
+        * `no-sync`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - Update rule `no-extra-parens` and set option `enforceForFunctionPrototypeMethods` to `false`
+    - Add new rule `no-loss-of-precision` and set it to `warn`
+    - Set minimum ESLint required to `v7.2`
+* Update _@futagoza/dev_
+    - Enforce requirement of ESLint via `peerDependencies`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - Set minimum ESLint required to `v7.2`
+* Update _@futagoza/globals_
+    - Upgrade `globals` dependency to `13`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+* Update _@futagoza/html_
+    - Bump `eslint-plugin-html` dependency to `6.0.2`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - Move plugin settings into main configuration object (instead of pulling it in via a short hand variable)
+    - Use `html/[key]: [value]` to define plugin settings instead of `html: { [key]: [value] }`
+* Update _@futagoza/ignore_
+    - Don't ignore `.*rc.(cjs|js|mjs)` files (e.g. `.eslintrc.js`)
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+* Update _@futagoza/javascript_
+    - Enforce requirement of ESLint via `peerDependencies`
+    - Upgrade `babel-eslint` dependency to `^10.1.0`
+    - Enable rule `"strict": [ "error", "never" ]` when using the _@futagoza/javascript/modules_ configuration
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - Set minimum ESLint required to `v7.2`
+* Update _@futagoza/node_
+    - Enforce requirement of ESLint via `peerDependencies`
+    - Upgrade `eslint-plugin-node` dependency to `11.1.0`
+    - Change `strict` rule settings based on file extensions
+        * Ensure the rule `"strict": [ "error", "global" ]` is used with `*.cjs` and `*.js` files
+        * When `.mjs` files are being linted the _@futagoza/javascript/modules_ configuration is used
+    - Add 11 new rules (migrated from the core rules that were deprecated in ESLint 7)
+        * `node/callback-return`
+        * `node/global-require`
+        * `node/handle-callback-err`
+        * `node/no-mixed-requires`
+        * `node/no-new-require`
+        * `node/no-path-concat`
+        * `node/no-process-env`
+        * `node/no-process-exit`
+        * `node/no-restricted-import` (A variant of `node/no-restricted-require` for ES modules)
+        * `node/no-restricted-require`
+        * `node/no-sync`
+    - INTERNAL: Simplify creation of node version based configurations
+    - Add _@futagoza/node/14_ configuration (_not working until support for Node.js 14 is implemented in eslint-plugin-node_)
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - Set minimum ESLint required to `v7.2`
+* Update _@futagoza/svelte_
+    - Enforce requirement of ESLint via `peerDependencies`
+    - Enforce requirement of TypeScript via `peerDependencies`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - Set minimum ESLint required to `v7.2`
+    - Move plugin settings into main configuration object (instead of pulling it in via a short hand variable)
+* Update _@futagoza/typescript_
+    - Enforce requirement of ESLint via `peerDependencies`
+    - Enforce requirement of TypeScript via `peerDependencies`
+    - Upgrade `@typescript-eslint/*` dependencies to `3.2.0`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+    - Set minimum ESLint required to `v7.2`
+    - Add new rule `@typescript-eslint/no-implied-eval` and set to `off`
+    - Add new rule `@typescript-eslint/default-param-last`, using the base `default-param-last` rule as value
+    - Add new rule `@typescript-eslint/naming-convention`, which replaces the following rules (deprecating them):
+        * `@typescript-eslint/camelcase`
+        * `@typescript-eslint/class-name-casing`
+        * `@typescript-eslint/generic-type-naming`
+        * `@typescript-eslint/interface-name-prefix`
+        * `@typescript-eslint/member-naming`
+    - [typeLike](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md#group-selectors)'s are now required to either be `StrictPascalCase` or `UPPER_CASE` (see [format options](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md#format))
+    - Add a `tsconfig.json` section in `README.md` to explain my mitigation (or rather zero-config) strategy
+    - Add new rule `@typescript-eslint/explicit-module-boundary-types` and set to `off`
+    - Add new rule `@typescript-eslint/no-non-null-asserted-optional-chain` and set to `error`
+    - Add new rule `@typescript-eslint/comma-spacing`, using the base `comma-spacing` rule as value
+    - Add new rule `@typescript-eslint/prefer-as-const` and set to `error`
+    - Add new rule `@typescript-eslint/ban-ts-comment` and set to `warn`
+    - Update comment for `@typescript-eslint/no-extra-non-null-assertion` to indicate that the rule is fixable now
+    - Add new rule `@typescript-eslint/no-dupe-class-members` and set to `off`
+    - Add new rule `@typescript-eslint/no-unnecessary-boolean-literal-compare` and set to `warn`
+    - Add new rule `@typescript-eslint/switch-exhaustiveness-check` and set to `off`
+    - Update `@typescript-eslint/ban-types` to also ban the default types that are banned when this rule is not set by the consumer
+    - Add new rule `@typescript-eslint/no-base-to-string` and set to `off`
+    - Add new rule `@typescript-eslint/prefer-readonly-parameter-types` and set to `off`
+    - Add 4 new rules that deal with the `any` type, all set to `warn`
+        * `@typescript-eslint/no-unsafe-assignment`
+        * `@typescript-eslint/no-unsafe-call`
+        * `@typescript-eslint/no-unsafe-member-access`
+        * `@typescript-eslint/no-unsafe-return`
+    - Add new rule `@typescript-eslint/class-literal-property-style` and set to `off`
+    - Add new rule `@typescript-eslint/method-signature-style` and set to `off`
+    - Add the (disabled) `allowAny` option to `@typescript-eslint/restrict-template-expressions` rule
+    - Add new rule `@typescript-eslint/prefer-reduce-type-parameter` and set to `off`
+    - Add new rule `@typescript-eslint/prefer-ts-expect-error` and set to `off`
+    - Add new rule `@typescript-eslint/init-declarations`, using the base `init-declarations` rule as value
+    - Add new rule `@typescript-eslint/keyword-spacing`, using the base `keyword-spacing` rule as value
+    - Add new rule `@typescript-eslint/dot-notation`, using the base `dot-notation` rule as value
+    - Add new rule `@typescript-eslint/no-invalid-void-type` and set to `error`
+    - Add new rule `@typescript-eslint/no-invalid-this`, using the base `no-invalid-this` rule as value
+    - Add new rule `@typescript-eslint/lines-between-class-members`, using the base `lines-between-class-members` rule as value
+    - Update comment for `@typescript-eslint/prefer-nullish-coalescing` to indicate that the rule is not fixable now
+    - Update comment for `@typescript-eslint/prefer-optional-chain` to indicate that the rule is not fixable now
+    - Rename option `allowNullable` to `allowNullish` for rule `@typescript-eslint/restrict-template-expressions`
+    - Enable the `ignoreStringArrays` option for the `@typescript-eslint/require-array-sort-compare` rule
+    - Add new rule `@typescript-eslint/ban-tslint-comment` and set to `error`
+    - Add new rule `@typescript-eslint/no-confusing-non-null-assertion` and set to `error`
+    - Separate `tsconfig.json` loading logic into [@futagoza/eslint-config-typescript/utils.js](./utils.js)
+    - Move [extension rules](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules) to _[@futagoza/typescript/extension-rules](./extension-rules.js)_
+        * Also fix `@typescript-eslint/return-await` by extending base rules value and enabling option `never`
+* Miscellaneous
+    - Reintroduce usage of `peerDependencies` to satisfy child dependency requirements
+    - DEV: Bump `prompts` to `2.3.2`
+    - DEV: Upgrade `svelte` to `3.23.1`
+    - DEV: Upgrade `typescript` to `3.9.5`
+    - DEV: Add CI support for Node.js 14
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0` in all `package.json` files
+    - DEV: Drop CI support for Node.js 8
+    - Confirmed compatibility with ESLint v7.2.0
+
 <a name="12.1.0"></a>
 ## [v12.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v12.0.0...v12.1.0) (2019-12-26)
 

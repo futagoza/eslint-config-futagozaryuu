@@ -10,4 +10,4 @@ Here's a brief overview of important changes:
 - On _03/07/2019_ I once again changed my versioning strategy, relaxing it to make it easier for my self.
 - A few days later I decided to deprecate `eslint-config-futagozaryuu` in favour of [npm scoped configuration](https://eslint.org/docs/developer-guide/shareable-configs#npm-scoped-modules).
 - On _13/07/2019_ I released v8, which is technically v1 of the scoped configuration packages (7 of them!)
-- On _06/06/2020_ I released v13, reintroducing `peerDependencies` (removed in v4.17.2) to satisfy child dependency requirements
+- On _09/06/2020_ I released v13, reintroducing `peerDependencies` (removed in v4.17.2) to satisfy child dependency requirements
