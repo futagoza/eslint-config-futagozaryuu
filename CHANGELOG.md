@@ -2,7 +2,9 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
-* DEV: Update `yarn.lock`
+* Miscellaneous
+    - DEV: Update `yarn.lock`
+    - Remove broken links in `CHANGELOG.md`
 
 <a name="13.0.0"></a>
 ## [v13.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v12.1.0...v13.0.0) (2020-06-09)
@@ -129,8 +131,8 @@
     - Enable the `ignoreStringArrays` option for the `@typescript-eslint/require-array-sort-compare` rule
     - Add new rule `@typescript-eslint/ban-tslint-comment` and set to `error`
     - Add new rule `@typescript-eslint/no-confusing-non-null-assertion` and set to `error`
-    - Separate `tsconfig.json` loading logic into [@futagoza/eslint-config-typescript/utils.js](./utils.js)
-    - Move [extension rules](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules) to _[@futagoza/typescript/extension-rules](./extension-rules.js)_
+    - Separate `tsconfig.json` loading logic into _@futagoza/eslint-config-typescript/utils.js_
+    - Move [extension rules](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules) to _@futagoza/typescript/extension-rules_
         * Also fix `@typescript-eslint/return-await` by extending base rules value and enabling option `never`
 * Miscellaneous
     - Reintroduce usage of `peerDependencies` to satisfy child dependency requirements
