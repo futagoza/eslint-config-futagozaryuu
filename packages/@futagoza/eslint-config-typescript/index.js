@@ -540,6 +540,34 @@ module.exports = {
             "@typescript-eslint/no-unnecessary-type-assertion": "error",
 
             /**
+             * Disallows assigning `any` to variables and properties
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
+             */
+            "@typescript-eslint/no-unsafe-assignment": "warn",
+
+            /**
+             * Disallows calling an `any` type value
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-call.md
+             */
+            "@typescript-eslint/no-unsafe-call": "warn",
+
+            /**
+             * Disallows member access on `any` typed variables
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-member-access.md
+             */
+            "@typescript-eslint/no-unsafe-member-access": "warn",
+
+            /**
+             * Disallows returning `any` from a function
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-return.md
+             */
+            "@typescript-eslint/no-unsafe-return": "warn",
+
+            /**
              * Disallow unused expressions
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
