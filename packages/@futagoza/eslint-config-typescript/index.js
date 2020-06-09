@@ -274,6 +274,15 @@ module.exports = {
             "@typescript-eslint/no-array-constructor": config[ "no-array-constructor" ],
 
             /**
+             * Disallow duplicate class members
+             * 
+             * __NOTE:__ If your not using ESlint/TypeScript via an Editor plugin for VS Code, I recomend enabling this rule.
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dupe-class-members.md
+             */
+            "@typescript-eslint/no-dupe-class-members": "off",
+
+            /**
              * 🔧 Bans usage of the delete operator with computed key expressions
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
