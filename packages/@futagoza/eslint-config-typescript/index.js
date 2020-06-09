@@ -788,11 +788,15 @@ module.exports = {
             "@typescript-eslint/quotes": config[ "quotes" ],
 
             /**
-             * Enforce giving `compare` argument to `Array#sort`
+             * Requires `Array#sort` calls to always provide a `compareFunction`
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-array-sort-compare.md
              */
-            "@typescript-eslint/require-array-sort-compare": "warn",
+            "@typescript-eslint/require-array-sort-compare": [ "warn", {
+
+                "ignoreStringArrays": true,
+
+            } ],
 
             /**
              * Disallow async functions which have no `await` expression
