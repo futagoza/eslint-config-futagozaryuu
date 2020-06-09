@@ -466,6 +466,13 @@ module.exports = {
             "@typescript-eslint/no-type-alias": "off",
 
             /**
+             * 🔧 Flags unnecessary equality comparisons against boolean literals
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-boolean-literal-compare.md
+             */
+            "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
+
+            /**
              * 🔧 Prevents conditionals where the type is always truthy or always falsy
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-condition.md
