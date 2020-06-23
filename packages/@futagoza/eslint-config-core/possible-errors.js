@@ -275,6 +275,13 @@ module.exports = {
         "no-unreachable": "warn",
 
         /**
+         * disallow loops with a body that allows only one iteration
+         *
+         * @see http://eslint.org/docs/rules/no-unreachable-loop
+         */
+        "no-unreachable-loop": "off",
+
+        /**
          * disallow control flow statements in `finally` blocks
          *
          * @see http://eslint.org/docs/rules/no-unsafe-finally
