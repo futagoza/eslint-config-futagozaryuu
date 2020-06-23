@@ -219,6 +219,13 @@ module.exports = {
         "no-obj-calls": "off",
 
         /**
+         * disallow returning values from Promise executor functions
+         *
+         * @see http://eslint.org/docs/rules/no-promise-executor-return
+         */
+        "no-promise-executor-return": "error",
+
+        /**
          * disallow calling some `Object.prototype` methods directly on objects
          *
          * @see http://eslint.org/docs/rules/no-prototype-builtins
