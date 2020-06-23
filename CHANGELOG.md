@@ -2,19 +2,33 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="13.1.0"></a>
+## [v13.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.0.0...v13.1.0) (2020-06-23)
+
+* Update _@futagoza/*_
+    - Set minimum ESLint required to `v7.3`
+    - Clean-up recent changes to `CHANGELOG.md`
+* Update _@futagoza/core_
+    - Add new rule `no-promise-executor-return` and set it to `error`
+    - Add new rule `no-unreachable-loop` and set it to `off`
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `3.4.0`
+    - Add new rule `@typescript-eslint/no-loss-of-precision`, using the base `no-loss-of-precision` rule as value
 * Miscellaneous
     - DEV: Update `yarn.lock`
-    - Remove broken links in `CHANGELOG.md`
+    - DEV: Bump `svelte` to `3.23.2`
+    - Confirmed compatibility with ESLint v7.3.1
 
 <a name="13.0.0"></a>
 ## [v13.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v12.1.0...v13.0.0) (2020-06-09)
 
-* Update _@futagoza_
-    - Enforce requirement of ESLint via `peerDependencies`
-    - Enforce requirement of TypeScript via `peerDependencies`
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
-    - In `README.md` clarify node configuration being used as well as Yarn 1 only feature
+* Update _@futagoza/*_
     - Set minimum ESLint required to `v7.2`
+    - Enforce requirement of ESLint via `peerDependencies`
+    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
+* Update _@futagoza_
+    - Enforce requirement of TypeScript via `peerDependencies`
+    - In `README.md` clarify node configuration being used as well as Yarn 1 only feature
 * Update _@futagoza/core_
     - Deprecate 11 rules for Node.js (see [ESLint 7's migration guide](https://eslint.org/docs/user-guide/migrating-to-7.0.0#node-js-commonjs-rules-have-been-deprecated) for details)
         * `callback-return`
@@ -28,33 +42,20 @@
         * `no-process-exit`
         * `no-restricted-modules`
         * `no-sync`
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
     - Update rule `no-extra-parens` and set option `enforceForFunctionPrototypeMethods` to `false`
     - Add new rule `no-loss-of-precision` and set it to `warn`
-    - Set minimum ESLint required to `v7.2`
-* Update _@futagoza/dev_
-    - Enforce requirement of ESLint via `peerDependencies`
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
-    - Set minimum ESLint required to `v7.2`
 * Update _@futagoza/globals_
     - Upgrade `globals` dependency to `13`
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
 * Update _@futagoza/html_
     - Bump `eslint-plugin-html` dependency to `6.0.2`
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
     - Move plugin settings into main configuration object (instead of pulling it in via a short hand variable)
     - Use `html/[key]: [value]` to define plugin settings instead of `html: { [key]: [value] }`
 * Update _@futagoza/ignore_
     - Don't ignore `.*rc.(cjs|js|mjs)` files (e.g. `.eslintrc.js`)
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
 * Update _@futagoza/javascript_
-    - Enforce requirement of ESLint via `peerDependencies`
     - Upgrade `babel-eslint` dependency to `^10.1.0`
     - Enable rule `"strict": [ "error", "never" ]` when using the _@futagoza/javascript/modules_ configuration
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
-    - Set minimum ESLint required to `v7.2`
 * Update _@futagoza/node_
-    - Enforce requirement of ESLint via `peerDependencies`
     - Upgrade `eslint-plugin-node` dependency to `11.1.0`
     - Change `strict` rule settings based on file extensions
         * Ensure the rule `"strict": [ "error", "global" ]` is used with `*.cjs` and `*.js` files
@@ -73,20 +74,12 @@
         * `node/no-sync`
     - INTERNAL: Simplify creation of node version based configurations
     - Add _@futagoza/node/14_ configuration (_not working until support for Node.js 14 is implemented in eslint-plugin-node_)
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
-    - Set minimum ESLint required to `v7.2`
 * Update _@futagoza/svelte_
-    - Enforce requirement of ESLint via `peerDependencies`
-    - Enforce requirement of TypeScript via `peerDependencies`
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
-    - Set minimum ESLint required to `v7.2`
+    - Enforce requirement of Svelte via `peerDependencies`
     - Move plugin settings into main configuration object (instead of pulling it in via a short hand variable)
 * Update _@futagoza/typescript_
-    - Enforce requirement of ESLint via `peerDependencies`
     - Enforce requirement of TypeScript via `peerDependencies`
     - Upgrade `@typescript-eslint/*` dependencies to `3.2.0`
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0`
-    - Set minimum ESLint required to `v7.2`
     - Add new rule `@typescript-eslint/no-implied-eval` and set to `off`
     - Add new rule `@typescript-eslint/default-param-last`, using the base `default-param-last` rule as value
     - Add new rule `@typescript-eslint/naming-convention`, which replaces the following rules (deprecating them):
@@ -140,7 +133,6 @@
     - DEV: Upgrade `svelte` to `3.23.1`
     - DEV: Upgrade `typescript` to `3.9.5`
     - DEV: Add CI support for Node.js 14
-    - Set minimum Node.js requirement via `engines.node` to `>=10.0.0` in all `package.json` files
     - DEV: Drop CI support for Node.js 8
     - Confirmed compatibility with ESLint v7.2.0
 
