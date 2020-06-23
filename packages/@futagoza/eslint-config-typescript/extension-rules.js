@@ -132,6 +132,13 @@ module.exports = {
         "@typescript-eslint/no-invalid-this": config[ "no-invalid-this" ],
 
         /**
+         * Disallow literal numbers that lose precision
+         * 
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md
+         */
+        "@typescript-eslint/no-loss-of-precision": config[ "no-loss-of-precision" ],
+
+        /**
          * Disallows magic numbers
          * 
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
