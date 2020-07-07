@@ -15,6 +15,7 @@
         "disableSizeLimit": true,
         "noEmit": true,
         "rootDir": "__CWD__",
+        "rootDirs": [ "__CWD__" ],
         "strict": false,
         "suppressImplicitAnyIndexErrors": true
     }
