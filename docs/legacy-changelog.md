@@ -51,7 +51,6 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
     - Added new `node/prefer-promises/dns` rule _(disabled)_ to `futagozaryuu/node`
     - Added new `node/prefer-promises/fs` rule _(disabled)_ to `futagozaryuu/node`
 * Updated dependency `globals` to `^11.12.0`
-* DEV: Updated `yarn.lock`
 * DEV: Added TODO for `padding-line-between-statements` (see [eslint/eslint#11178](https://github.com/eslint/eslint/issues/11178))
 
 <a name="5.8.0"></a>
@@ -69,14 +68,12 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 * `prefer-spread` is not fixable anymore
 * Use new option `allowSingleLineBlocks` for `padded-blocks`
 * Set minimum ESLint required to `v5.14`
-* DEV: Updated `yarn.lock`
 
 <a name="5.6.1"></a>
 ## [v5.6.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.6.0...v5.6.1) (2019-01-31)
 
 * Confirmed compatibility with ESLint v5.12.1
 * Upgraded dependencies (version locks to latest)
-* DEV: Updated `yarn.lock`
 * Use string based node version range (should fix an edge case with ESLint complaining about incorrect value)
 * DEV: Removed all release links from CHANGELOG.md
 
@@ -87,7 +84,6 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 * Added new rule `no-useless-catch` to `futagozaryuu/best-practices`
 * Use `"VariableDeclarator": "first"` option in the `indent` rule
 * Set minimum ESLint required to `v5.12`
-* DEV: Updated `yarn.lock`
 
 <a name="5.5.1"></a>
 ## [v5.5.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.5.0...v5.5.1) (2018-12-10)
@@ -121,7 +117,6 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 * Confirmed compatibility with ESLint v5.6
 * Updated dependency `babel-eslint` to `^10.0.0`
 * Removed support for TypeScript, use [eslint-config-typescript](https://www.npmjs.com/package/eslint-config-typescript) instead
-* DEV: Updated `yarn.lock`
 
 <a name="5.2.0"></a>
 ## [v5.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.1.0...v5.2.0) (2018-08-24)
@@ -129,7 +124,6 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 * Updated dependency `typescript` to `~3.0.0`
 * Updated dependency `typescript-eslint-parser` to `^18.0.0`
 * Confirmed compatibility with ESLint v5.4
-* DEV: Updated `yarn.lock`
 
 <a name="5.1.0"></a>
 ## [v5.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v5.0.0...v5.1.0) (2018-08-05)
@@ -140,7 +134,6 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 * Added new rule `require-unicode-regexp` to `futagozaryuu/best-practices`
 * Set minimum ESLint requirement to `v5.3`
 * Updated dependency `typescript-eslint-parser` to `^17.0.0`
-* DEV: Updated `yarn.lock`
 
 <a name="5.0.0"></a>
 ## [v5.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.18.1...v5.0.0) (2018-07-22)
@@ -163,7 +156,7 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
   * Updated option `requireReturnType` for rule `valid-jsdoc` to be `true` (`requireReturn` is still `false`)
   * Added new rule `max-lines-per-function` to `stylistic-issues.js` (`futagozaryuu/stylistic-issues`)
   * Moved `no-catch-shadow` from `variables.js` (`futagozaryuu/variables`) to `deprecated.js` (`futagozaryuu/deprecated`)
-  * Removed the autofixer icon in the comment for `no-debugger`; It is not fixable anymore
+  * Removed the auto fixer icon in the comment for `no-debugger`; It is not fixable anymore
   * Update options for `no-implied-eval` and `no-eval` to throw a warning
 * Added support for ES2019 (`futagozaryuu/es2019`), and updated dev (`futagozaryuu/dev`)
 * Updated dependency `eslint-plugin-node` to `~7.0.0`
@@ -171,7 +164,6 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 * Added configuration file for Node.js v10 (`futagozaryuu/node-v10`)
 * Confirmed compatibility with _ESLint v5.2_
 * Added note to `README.md` about minimum ESLint required to `v5.1`
-* DEV: Updated `yarn.lock`
 * Updated the `configurations` section in `README.md`
 
 <a name="4.18.1"></a>
@@ -187,14 +179,12 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 * Updated dependency `typescript-eslint-parser` to `^15.0.0`
 * Updated dependency `typescript` to `~2.8.0`
 * Updated the `versioning` section in `README.md` to include a note about tildes and carets
-* DEV: Updated `yarn.lock`
 
 <a name="4.17.2"></a>
 ## [v4.17.2](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v4.17.1...v4.17.2) (2018-03-23)
 
 * Switch to use of tildes (`~`) and carets (`^`) in `dependencies` and `devDependencies`
 * Removed `peerDependencies`, fixes annoying warning from NPM/Yarn
-* DEV: Updated `yarn.lock`
 * Confirmed compatibility with ESLint v4.19.1
 
 <a name="4.17.1"></a>
@@ -220,7 +210,7 @@ This is the changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/pac
 <a name="4.0.0"></a>
 ## [v4.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v3.9.0...v4.0.0) (2018-02-14)
 
-* DEV: Only run travis on master branch
+* DEV: Only run Travis on master branch
 * Confirmed compatibility with ESLint v4.17
 * Updated dependency `eslint-plugin-node` to `6.0.x`
 * Removed configurations for non-LTS versions of Node.js

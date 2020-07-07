@@ -2,6 +2,21 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="13.2.0"></a>
+## [v13.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.1.0...v13.2.0) (2020-07-07)
+
+* Update _@futagoza/*_
+    - Set minimum ESLint required to `v7.4`
+    - Clean-up changelogs (e.g. removing unrequired points, spelling, etc)
+* Update _@futagoza/core_
+    - Rename `id-blacklist` to `id-denylist`
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `3.6.0`
+    - Add new rule `@typescript-eslint/prefer-literal-enum-member` and set it to `warn`
+* Miscellaneous
+    - DEV: Bump `svelte` to `3.24.0`
+    - DEV: Bump `typescript` to `3.9.6`
+
 <a name="13.1.0"></a>
 ## [v13.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.0.0...v13.1.0) (2020-06-23)
 
@@ -15,9 +30,7 @@
     - Upgrade `@typescript-eslint/*` dependencies to `3.4.0`
     - Add new rule `@typescript-eslint/no-loss-of-precision`, using the base `no-loss-of-precision` rule as value
 * Miscellaneous
-    - DEV: Update `yarn.lock`
     - DEV: Bump `svelte` to `3.23.2`
-    - Confirmed compatibility with ESLint v7.3.1
 
 <a name="13.0.0"></a>
 ## [v13.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v12.1.0...v13.0.0) (2020-06-09)
@@ -134,7 +147,6 @@
     - DEV: Upgrade `typescript` to `3.9.5`
     - DEV: Add CI support for Node.js 14
     - DEV: Drop CI support for Node.js 8
-    - Confirmed compatibility with ESLint v7.2.0
 
 <a name="12.1.0"></a>
 ## [v12.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v12.0.0...v12.1.0) (2019-12-26)
@@ -152,14 +164,13 @@
     - DEV: Bumped `@futagoza/child-process` to `1.1.0`
     - DEV: Bumped `typescript` to `3.7.4`
     - Confirmed compatibility with ESLint v6.8.0
-    - DEV: Updated `yarn.lock`
 
 <a name="12.0.0"></a>
 ## [v12.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.3.0...v12.0.0) (2019-12-04)
 
 * Update _@futagoza_
     - Removed _@futagoza/html_ from the configuration
-    - Include the new _@futagoza/ignore_ configuration
+    - Include the new _@futagoza/ignore_ configuration (which exports the `ignorePatterns` config property)
     - Updated the configurations section in the packages `README.md` file
 * Update _@futagoza/typescript_
     - Added `sanitize-filename` dependency
@@ -175,6 +186,8 @@
 <a name="11.3.0"></a>
 ## [v11.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.2.0...v11.3.0) (2019-12-04)
 
+* Update _@futagoza/*_
+    - Set minimum ESLint required to `v6.7`
 * Update _@futagoza_
     - Adopt the new `ignorePatterns` property for ESLint configurations
 * Update _@futagoza/core_
@@ -192,10 +205,8 @@
         * Expect a blank line after `import` statements
         * Make blank lines between `import` statements optional
     - Update `key-spacing` options to change `mode` for single and multi line object literals
-    - Set minimum ESLint required to `v6.7`
 * Update _@futagoza/javascript_
     - Enable the `enforceForClassMembers` option for the `no-useless-computed-key` rule
-    - Set minimum ESLint required to `v6.7`
 * Update _@futagoza/typescript_
     - Upgrade `@typescript-eslint/*` dependencies to `2.10.0`
     - Set rule `@typescript-eslint/no-unnecessary-condition` to `off`
@@ -227,8 +238,6 @@
     - DEV: Bump `bluebird` to `3.7.2`
     - DEV: Upgrade `eslint` to `6.7.2`
     - DEV: Bump `typescript` to `3.7.3`
-    - Confirmed compatibility with ESLint v6.7.2
-    - DEV: Updated `yarn.lock`
 
 <a name="11.2.0"></a>
 ## [v11.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.1.0...v11.2.0) (2019-11-13)
@@ -243,7 +252,6 @@
     - DEV: Avoid running CI on `git tag ...`
     - DEV: Bump `prompts` to `2.3.0`
     - DEV: Bump `typescript` to `3.7.2`
-    - DEV: Updated `yarn.lock`
 
 <a name="11.1.0"></a>
 ## [v11.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v11.0.1...v11.1.0) (2019-10-27)
@@ -265,7 +273,6 @@
     - DEV: Fix package information row for _@futagoza/eslint-config-globals_
     - DEV: Fix the link for GitHub Actions workflow badge
     - DEV: Lock `typescript` dependency to `3.6.4` (for easier testing)
-    - DEV: Updated `yarn.lock`
 
 <a name="11.0.0"></a>
 ## [v11.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v10.0.0...v11.0.0) (2019-10-08)
@@ -317,7 +324,6 @@
     - Added the _@futagoza/eslint-config-html_ configuration package for HTML and/or XML files
     - Added the _@futagoza/eslint-config-svelte_ configuration package for Svelte files
     - Confirmed compatibility with ESLint v6.5
-    - DEV: Updated `yarn.lock`
 
 <a name="9.3.0"></a>
 ## [v9.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v9.2.0...v9.3.0) (2019-09-16)
@@ -338,8 +344,6 @@
 * Miscellaneous
     - DEV: Tidy-up workflow file for GitHub Actions
     - DEV: Update badge (provided via https://github.com/badges/shields/pull/3898)
-    - Confirmed compatibility with ESLint v6.4.0
-    - DEV: Updated `yarn.lock`
     - Use `off` instead of `0` to disable rules
     - Use `void 0` instead of any other value for rules in any `deprecated.js` files
 
@@ -358,8 +362,6 @@
     - Added new rule `@typescript-eslint/brace-style`
     - Added new rule `@typescript-eslint/quotes`
 * Miscellaneous
-    - Confirmed compatibility with ESLint v6.3.0
-    - DEV: Updated `yarn.lock`
     - DEV: Remove ⚠️, and update source note in root `README.md`
     - DEV: Replace 📝 with 🔧
 
@@ -429,7 +431,6 @@
 * Correct copyright years (Use `2019+` instead of `2017+` in the newest configurations)
 * DEV: Removed the ugly `publishConfig` field in `@futagoza/eslint-*` packages
 * DEV: Use `--access public` directly in the bump script
-* DEV: Updated `yarn.lock`
 
 <a name="8.0.0"></a>
 ## [v8.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v7.0.4...v8.0.0) (2019-07-13)
