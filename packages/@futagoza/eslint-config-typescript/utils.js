@@ -13,7 +13,7 @@ const resolve = require.resolve;
 
 exports.GetProjectConfig = function GetProjectConfig( cwd = process.cwd(), options = {} ) {
 
-    options.paths = options.paths || { paths: [ cwd ] };
+    options.paths = options.paths || [ cwd ];
 
     try {
 
