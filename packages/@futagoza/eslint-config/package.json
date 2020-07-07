@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config",
-    "version": "13.1.0",
+    "version": "13.2.0",
     "description": "Futago-za Ryuu's default ESLint configuration",
     "keywords": [
         "eslint",
@@ -18,10 +18,10 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-dev": "13.1.0",
-        "@futagoza/eslint-config-ignore": "13.1.0",
-        "@futagoza/eslint-config-node": "13.1.0",
-        "@futagoza/eslint-config-typescript": "13.1.0"
+        "@futagoza/eslint-config-dev": "13.2.0",
+        "@futagoza/eslint-config-ignore": "13.2.0",
+        "@futagoza/eslint-config-node": "13.2.0",
+        "@futagoza/eslint-config-typescript": "13.2.0"
     },
     "peerDependencies": {
         "eslint": "*",
