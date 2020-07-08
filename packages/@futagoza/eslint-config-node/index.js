@@ -2,17 +2,16 @@
 
 module.exports = {
 
-    "extends": "@futagoza/globals/node",
+    "extends": [
+
+        "@futagoza/globals/node",
+        "@futagoza/javascript/strict",
+
+    ],
 
     "plugins": [ "node" ],
 
     "overrides": [
-        {
-
-            "files": [ "*.cjs", "*.js" ],
-            "rules": { "strict": [ "error", "global" ] },
-
-        },
         {
 
             "files": [ "*.mjs" ],
