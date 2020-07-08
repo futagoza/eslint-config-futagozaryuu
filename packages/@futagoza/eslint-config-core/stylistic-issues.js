@@ -580,10 +580,10 @@ module.exports = {
          */
         "padding-line-between-statements": [ "error",
 
-            { blankLine: "always", prev: "*", next: "case" },
-            { blankLine: "never", prev: "case", next: "case" },
-
             { blankLine: "always", prev: "*", next: "default" },
+
+            { blankLine: "always", prev: "case", next: "*" },
+            { blankLine: "any", prev: "case", next: "case" },
 
             { blankLine: "always", prev: "directive", next: "*" },
             { blankLine: "any", prev: "directive", next: "directive" },
