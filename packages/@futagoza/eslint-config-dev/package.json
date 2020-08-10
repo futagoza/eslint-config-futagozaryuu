@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-dev",
-    "version": "14.0.0",
+    "version": "14.0.1",
     "description": "Futago-za Ryuu's ESLint configurations for Node.js based development on esnext source files.",
     "keywords": [
         "eslint",
