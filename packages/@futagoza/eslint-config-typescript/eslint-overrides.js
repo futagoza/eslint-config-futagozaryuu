@@ -98,6 +98,9 @@ module.exports = {
         // Use `@typescript-eslint/no-magic-numbers` instead
         "no-magic-numbers": "off",
 
+        // Use `@typescript-eslint/no-shadow` instead
+        "no-shadow": "off",
+
         // Use `@typescript-eslint/no-throw-literal` instead
         "no-throw-literal": "off",
 

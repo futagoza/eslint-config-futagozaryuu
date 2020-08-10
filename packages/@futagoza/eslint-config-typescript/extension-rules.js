@@ -153,6 +153,13 @@ module.exports = {
         "@typescript-eslint/no-magic-numbers": config[ "no-magic-numbers" ],
 
         /**
+         * disallow variable declarations from shadowing variables declared in the outer scope
+         *
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+         */
+        "@typescript-eslint/no-shadow": config[ "no-shadow" ],
+
+        /**
          * Disallow throwing literals as exceptions
          * 
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
