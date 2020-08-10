@@ -2,6 +2,35 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="14.0.0"></a>
+## [v14.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.2.0...14.0.0) (2020-08-10)
+
+* Update _@futagoza_
+    - Confirmed compatibility with ESLint v7.6.0
+    - Disable `@typescript-eslint/no-unsafe-*` rules (until TS 4 only hopefully)
+* Update _@futagoza/core_
+    - Update rule `padding-line-between-statements` to ignore lines between case statements
+    - Deprecate rule `id-blacklist` (which was replaced by `id-denylist` in ESLint v7.4.0)
+    - Update rule `no-use-before-define` to allow the use of classes before they are defined
+* Update _@futagoza/html_
+    - Bump `eslint-plugin-html` dependency to `6.0.3`
+* Update _@futagoza/javascript_
+    - Add internally used configuration `@futagoza/javascript/strict`
+* Update _@futagoza/node_
+    - Extends from `@futagoza/javascript/strict` by default to fix `use strict` detection issues
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `4.0.0-alpha.7`
+    - Fix `tsconfig.json` resolving issue
+    - Add `rootDirs` compiler option to `tsconfig.default.json` as an additional help to resolve modules
+    - Move `@typescript-eslint/no-implied-eval` to _@futagoza/typescript/extension-rules_
+    - Add new rule `@typescript-eslint/prefer-enum-initializers` and set it to `off`
+    - Add new rule `@typescript-eslint/no-shadow`, and extension rule of `no-shadow`
+    - Add new rule `@typescript-eslint/no-redeclare`, and extension rule of `no-redeclare`
+* Miscellaneous
+    - Updated versioning and publishing script to only publish changed packages
+    - DEV: Bump `svelte` to `3.24.1`
+    - DEV: Bump `typescript` to `4.0.1-rc`
+
 <a name="13.2.0"></a>
 ## [v13.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.1.0...v13.2.0) (2020-07-07)
 
