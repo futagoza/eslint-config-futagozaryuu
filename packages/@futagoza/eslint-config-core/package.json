@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-core",
-    "version": "13.2.0",
+    "version": "14.0.0",
     "description": "Futago-za Ryuu's basic ESLint configurations",
     "keywords": [
         "eslint",

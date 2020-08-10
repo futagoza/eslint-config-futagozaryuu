@@ -15,8 +15,8 @@
     "main": "index.js",
     "dependencies": {
         "@futagoza/eslint-config-globals": "13.2.0",
-        "@futagoza/eslint-config-javascript": "13.2.0",
-        "@futagoza/eslint-config-node": "13.2.0"
+        "@futagoza/eslint-config-javascript": "14.0.0",
+        "@futagoza/eslint-config-node": "14.0.0"
     },
     "peerDependencies": {
         "eslint": "*"
