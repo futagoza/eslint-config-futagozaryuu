@@ -153,6 +153,13 @@ module.exports = {
         "@typescript-eslint/no-magic-numbers": config[ "no-magic-numbers" ],
 
         /**
+         * disallow variable redeclaration
+         *
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-redeclare.md
+         */
+        "@typescript-eslint/no-redeclare": "off",
+
+        /**
          * disallow variable declarations from shadowing variables declared in the outer scope
          *
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
