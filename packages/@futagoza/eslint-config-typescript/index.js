@@ -483,6 +483,13 @@ module.exports = {
             "@typescript-eslint/prefer-as-const": "error",
 
             /**
+             * Prefer initializing each enums member value
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
+             */
+            "@typescript-eslint/prefer-enum-initializers": "off",
+
+            /**
              * Prefer a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-for-of.md
