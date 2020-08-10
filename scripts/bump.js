@@ -24,6 +24,7 @@ if ( path.sep === "/" ) {
 const $all = process.argv.includes( "--all" );
 const $dry = process.argv.includes( "--dry" );
 const $repository = process.cwd();
+let $tag; // <-- TO DEFINE LATER, UNLESS THE `--all` OPTION IS USED
 const $workspaces = GetYarnWorkspaces( $repository );
 const $packages = [];
 
@@ -36,35 +37,51 @@ function spawn( $command, $cb, cwd = $repository ) {
 
 }
 
-async function DefineUpdatedPackages() {
+function forEachWorkspace( $workspaces, $command, $iterator ) {
 
-    await spawn( "git describe --abbrev=0", async $result => {
-
-        const $tag = $result.stdout.trim();
-        if ( $tag === "" ) return;
-
-        ( await spawn( `git diff ${ $tag } --name-only`, true ) )
-            .stdout.toString()
-            .trim()
-            .split( "\n" )
-            .forEach( $file => {
-
-                $file = path.join( $repository, $file );
-                const $dir = $workspaces.find( $workspace =>
-
-                    $file.includes( $workspace.replace( $regexp, $replacement ) + $replacement ) );
-
-                if ( $dir && ! $packages.includes( $dir ) ) $packages.push( $dir );
-
-            } );
-
-    } );
+    return EachSerially( $workspaces, $cwd => spawn( $command, $iterator, $cwd ) );
 
 }
 
 function forEachUpdatedWorkspace( $command, $iterator ) {
 
-    return EachSerially( $packages, $cwd => spawn( $command, $iterator, $cwd ) );
+    return forEachWorkspace( $packages, $command, $iterator );
+
+}
+
+async function DefineUpdatedPackages( $cb ) {
+
+    if ( $tag === "" ) return;
+
+    ( await spawn( `git diff ${ $tag } --name-only`, true ) )
+        .stdout.toString()
+        .trim()
+        .split( "\n" )
+        .forEach( $file => {
+
+            $file = path.join( $repository, $file );
+            const $dir = $workspaces.find( $workspace =>
+
+                $file.includes( $workspace.replace( $regexp, $replacement ) + $replacement ) );
+
+            if ( $dir && ! $packages.includes( $dir ) ) {
+
+                $packages.push( $dir );
+
+                if ( $cb ) $cb( $dir );
+
+            }
+
+        } );
+
+}
+
+function LogWorkspaceUpdate( $result ) {
+
+    const $name = require( $result.options.cwd + "/package.json" ).name;
+    const $version = $result.stdout.trim();
+
+    log.info( "Bumped", color.cyan( $name ), "to", color.green( $version ) );
 
 }
 
@@ -89,7 +106,12 @@ function forEachUpdatedWorkspace( $command, $iterator ) {
     } else {
 
         // Check if any workspaces were updated since the latest tag was commited
-        await DefineUpdatedPackages();
+        await spawn( "git describe --abbrev=0", async $result => {
+
+            $tag = $result.stdout.trim();
+            await DefineUpdatedPackages();
+
+        } );
         if ( $packages.length === 0 ) {
 
             log.info( "No workspaces were updated." );
@@ -107,18 +129,27 @@ function forEachUpdatedWorkspace( $command, $iterator ) {
     } );
 
     // Update the version field in every workspace package
-    await forEachUpdatedWorkspace( `npm --no-git-tag-version version ${ $newVersion }`, $result => {
-
-        const $name = require( $result.options.cwd + "/package.json" ).name;
-        const $version = $result.stdout.trim();
-
-        log.info( "Bumped", color.cyan( $name ), "to", color.green( $version ) );
-
-    } );
+    await forEachUpdatedWorkspace( `npm --no-git-tag-version version ${ $newVersion }`, LogWorkspaceUpdate );
 
     // Sync the version of any dependency that is also a workspace package
-    SyncYarnWorkspaces( $repository );
-    if ( ! $all ) await DefineUpdatedPackages();
+    await ( async function DeepsyncDependencies() {
+
+        SyncYarnWorkspaces( $repository );
+        if ( ! $all ) {
+
+            const $updatedpackages = [];
+            await DefineUpdatedPackages( $updated => $updatedpackages.push( $updated ) );
+
+            if ( $updatedpackages.length ) {
+
+                await forEachWorkspace( $updatedpackages, `npm --no-git-tag-version version ${ $newVersion }`, LogWorkspaceUpdate );
+                await DeepsyncDependencies();
+
+            }
+
+        }
+
+    } )();
 
     // If this is a dry run, stop here (no 'npm publish' or 'git commit')
     if ( $dry ) {
