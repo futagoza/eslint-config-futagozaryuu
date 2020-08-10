@@ -90,7 +90,7 @@ module.exports = {
         "no-use-before-define": [ "warn", {
 
             "functions": false,
-            "classes": true,
+            "classes": false,
             "variables": true,
 
         } ],
