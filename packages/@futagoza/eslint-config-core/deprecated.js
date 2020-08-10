@@ -163,6 +163,14 @@ module.exports = {
          */
         "no-sync": void 0,
 
+        /**
+         * disallow specified identifiers
+         *
+         * @deprecated ESLint 7.5.0
+         * @see http://eslint.org/docs/rules/id-blacklist
+         */
+        "id-blacklist": void 0,
+
     },
 
 };
