@@ -308,13 +308,6 @@ module.exports = {
             "@typescript-eslint/no-for-in-array": "error",
 
             /**
-             * Disallow the use of `eval()`-like methods.
-             * 
-             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
-             */
-            "@typescript-eslint/no-implied-eval": "off",
-
-            /**
              * 🔧 Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md

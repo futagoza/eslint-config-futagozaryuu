@@ -125,6 +125,13 @@ module.exports = {
         "@typescript-eslint/no-extra-semi": config[ "no-extra-semi" ],
 
         /**
+         * Disallow the use of `eval()`-like methods.
+         * 
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
+         */
+        "@typescript-eslint/no-implied-eval": config[ "no-implied-eval" ],
+
+        /**
          * disallow `this` keywords outside of classes or class-like objects
          * 
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-this.md
