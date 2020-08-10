@@ -2,8 +2,16 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="14.0.1"></a>
+## [v14.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v14.0.0...v14.0.1) (2020-08-10)
+
+* Update _@futagoza/typescript_
+    - Bump `@typescript-eslint/*` dependencies to `4.0.0-alpha.11`
+* Miscellaneous
+    - Fix versioning and publishing script to correctly publish changed _and affected_ workspace packages
+
 <a name="14.0.0"></a>
-## [v14.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.2.0...14.0.0) (2020-08-10)
+## [v14.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.2.0...v14.0.0) (2020-08-10)
 
 * Update _@futagoza_
     - Confirmed compatibility with ESLint v7.6.0
