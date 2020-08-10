@@ -16,7 +16,7 @@
     "main": "index.js",
     "dependencies": {
         "@futagoza/eslint-config-globals": "13.2.0",
-        "eslint-plugin-html": "6.0.2"
+        "eslint-plugin-html": "6.0.3"
     },
     "engines": {
         "node": ">=10.0.0"
