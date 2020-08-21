@@ -2,6 +2,21 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="14.1.0"></a>
+## [v14.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v14.0.1...v14.1.0) (2020-08-21)
+
+* Update _@futagoza/*_
+    - Set minimum ESLint required to `v7.5+`
+* Update _@futagoza/globals_
+    - Upgrade `globals` dependency to `13.2.0`
+    - Auto-build ES2020 globals using the `globals` package _(was previously built using a custom array)_
+* Update _@futagoza/typescript_
+    - Bump `@typescript-eslint/*` dependencies to `4.0.0-alpha.12`
+    - Add new rule `@typescript-eslint/consistent-type-imports` and set it to `off`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v7.7.0
+    - DEV: Bump `typescript` to `4.0.2`
+
 <a name="14.0.1"></a>
 ## [v14.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v14.0.0...v14.0.1) (2020-08-10)
 
