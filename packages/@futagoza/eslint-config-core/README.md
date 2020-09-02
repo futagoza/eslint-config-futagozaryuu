@@ -33,6 +33,7 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/core/best-practices`__
 - __`@futagoza/core/stylistic-issues`__
 - __`@futagoza/core/variables`__
+- __`@futagoza/core/ecmascript-6`__
 
 ## license
 

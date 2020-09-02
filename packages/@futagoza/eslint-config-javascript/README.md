@@ -30,7 +30,7 @@ A list of usable configurations as well the configurations they use:
 
 - __`@futagoza/javascript`__ (_default_, extends: _es2020_)
 - __`@futagoza/javascript/es5`__ (extends [@futagoza/core][ECC] and _[@futagoza/globals/es5][ECG]_)
-- __`@futagoza/javascript/es2015`__ (extends: _es5_ and _[@futagoza/globals/es2015][ECG]_)
+- __`@futagoza/javascript/es2015`__ (extends: _es5_, _[@futagoza/globals/es2015][ECG]_ and [@futagoza/core/ecmascript-6][ECC])
 - __`@futagoza/javascript/es2016`__ (extends: _es2015_)
 - __`@futagoza/javascript/es2017`__ (extends: _es2016_ and _[@futagoza/globals/es2017][ECG]_)
 - __`@futagoza/javascript/es2018`__ (extends: _es2017_)
