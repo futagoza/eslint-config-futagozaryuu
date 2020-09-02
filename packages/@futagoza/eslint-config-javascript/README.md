@@ -6,7 +6,7 @@
 
 These are configuration files for ESLint that are used to lint my JavaScript projects.
 
-**NOTE:** All configurations include [@futagoza/eslint-config-core][ECC], so you don't have to include it as a dependency when using this package.
+**NOTE:** Since the base configuration includes [@futagoza/eslint-config-core][ECC], all the configurations also include it; this ensures you don't have to include [@futagoza/eslint-config-core][ECC] as a dependency when using this package.
 
 ## installation
 
@@ -28,7 +28,7 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza/javascript`__ (_default_, extends: _es2020_)
+- __`@futagoza/javascript`__ (_default_, extends: _esnext_)
 - __`@futagoza/javascript/es5`__ (extends [@futagoza/core][ECC] and _[@futagoza/globals/es5][ECG]_)
 - __`@futagoza/javascript/es2015`__ (extends: _es5_, _[@futagoza/globals/es2015][ECG]_ and [@futagoza/core/ecmascript-6][ECC])
 - __`@futagoza/javascript/es2016`__ (extends: _es2015_)
@@ -37,6 +37,7 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/javascript/es2019`__ (extends: _es2018_)
 - __`@futagoza/javascript/es2020`__ (extends: _es2019_ and _[@futagoza/globals/es2020][ECG]_)
 - __`@futagoza/javascript/es2021`__ (extends: _es2020_ and _[@futagoza/globals/es2021][ECG]_)
+- __`@futagoza/javascript/esnext`__ (extends: _es2021_)
 - __`@futagoza/javascript/modules`__
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
