@@ -10,13 +10,7 @@
 
 */
 
-const config = {
-    ...require( "@futagoza/eslint-config-core/best-practices" ).rules,
-    ...require( "@futagoza/eslint-config-core/possible-errors" ).rules,
-    ...require( "@futagoza/eslint-config-core/stylistic-issues" ).rules,
-    ...require( "@futagoza/eslint-config-core/variables" ).rules,
-    ...require( "@futagoza/eslint-config-core/ecmascript-6" ).rules,
-};
+const { config } = require( "@futagoza/eslint-config-core/internal" );
 
 module.exports = {
 

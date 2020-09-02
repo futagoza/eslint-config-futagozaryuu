@@ -1,6 +1,6 @@
 "use strict";
 
-const CreateNodeConfig = require( "./lib/create-node-config" );
+const { CreateNodeConfig } = require( "./internal" );
 
 module.exports = CreateNodeConfig( {
 

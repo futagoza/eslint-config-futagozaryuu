@@ -44,10 +44,11 @@ A list of usable configurations as well the configurations they use:
 2. Try to load `tsconfig.json` from the current working directory
 3. Create and load a temporary `tsconfig.json` for the current working directory
 
-If the third choice is reached, this configuration will create a temporary `tsconfig.json` (based on the built-in [`tsconfig.default.json`](./tsconfig.default.json)) in the user's temporary directory with path's linked to the current working directory so that it functions like a normal `tsconfig.json` (albiet _slighly opionated_). This is a great alternative to the `createDeafultProgram` option provided by [@typescript-eslint/eslint-plugin][TETE] as it can have performance issues (e.g. I've had VS Code slow down on me).
+If the third choice is reached, this configuration will create a temporary `tsconfig.json` (based on the built-in [`tsconfig.default.json`][CONFIG]) in the user's temporary directory with path's linked to the current working directory so that it functions like a normal `tsconfig.json` (albeit _slightly opinionated_). This is a great alternative to the `createDeafultProgram` option provided by [@typescript-eslint/eslint-plugin][TETE] as it can have performance issues (e.g. I've had VS Code slow down).
 
 [TETE]: https://github.com/typescript-eslint/typescript-eslint
 [ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
+[CONFIG]: https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/packages/%40futagoza/eslint-config-typescript/internal/tsconfig.default.json
 
 ## license
 

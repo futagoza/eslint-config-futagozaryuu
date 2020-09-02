@@ -4,14 +4,13 @@ const fs = require( "fs" );
 const os = require( "os" );
 const path = require( "path" );
 const sanitize = require( "sanitize-filename" );
-
 const resolve = require.resolve;
 
 /**
  * See the `tsconfig.json` section in `README.md`
  */
 
-exports.GetProjectConfig = function GetProjectConfig( cwd = process.cwd(), options = {} ) {
+module.exports = function GetProjectConfig( cwd = process.cwd(), options = {} ) {
 
     options.paths = options.paths || [ cwd ];
 

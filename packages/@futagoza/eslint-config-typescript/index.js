@@ -1,6 +1,6 @@
 "use strict";
 
-const { GetProjectConfig } = require( "./utils" );
+const { GetProjectConfig } = require( "./internal" );
 
 module.exports = {
 

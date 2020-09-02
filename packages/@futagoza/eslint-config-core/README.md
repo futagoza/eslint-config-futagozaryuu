@@ -35,6 +35,8 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/core/variables`__
 - __`@futagoza/core/ecmascript-6`__
 
+You can also use `import { config } from "@futagoza/eslint-config-core/internal"` to get the default options for these rules.
+
 ## license
 
 Copyright © 2017+ Futago-za Ryuu<br>
