@@ -32,6 +32,7 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/globals/es2015`__ (extends _es5_)
 - __`@futagoza/globals/es2017`__ (extends _es2015_)
 - __`@futagoza/globals/es2020`__ (extends _es2017_)
+- __`@futagoza/globals/es2021`__ (extends _es2020_)
 - __`@futagoza/globals/gui`__ (extends _browser_ and _node_)
 - __`@futagoza/globals/loaders`__
 - __`@futagoza/globals/node`__

@@ -4,7 +4,7 @@ module.exports = {
 
     "extends": [
 
-        "./es2020.js",
+        "./es2021.js",
 
     ],
 
