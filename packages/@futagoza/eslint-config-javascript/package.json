@@ -1,19 +1,26 @@
 {
     "name": "@futagoza/eslint-config-javascript",
-    "version": "14.1.0",
+    "version": "15.0.0",
     "description": "Futago-za Ryuu's ESLint configurations for JavaScript",
     "keywords": [
         "eslint",
         "configuration",
         "javascript",
         "es5",
-        "es6", "es2015",
-        "es7", "es2016",
-        "es8", "es2017",
-        "es9", "es2018",
-        "es10", "es2019",
-        "es11", "es2020",
-        "es12", "es2021",
+        "es6",
+        "es2015",
+        "es7",
+        "es2016",
+        "es8",
+        "es2017",
+        "es9",
+        "es2018",
+        "es10",
+        "es2019",
+        "es11",
+        "es2020",
+        "es12",
+        "es2021",
         "esnext"
     ],
     "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-javascript",
@@ -24,8 +31,8 @@
         "@babel/core": "7.11.5",
         "@babel/eslint-parser": "7.11.5",
         "@babel/eslint-plugin": "7.11.5",
-        "@futagoza/eslint-config-core": "14.1.0",
-        "@futagoza/eslint-config-globals": "14.1.0"
+        "@futagoza/eslint-config-core": "15.0.0",
+        "@futagoza/eslint-config-globals": "15.0.0"
     },
     "peerDependencies": {
         "eslint": "*"
