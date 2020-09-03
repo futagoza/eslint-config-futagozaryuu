@@ -2,6 +2,33 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="15.0.0"></a>
+## [v15.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v14.1.0...v15.0.0) (2020-09-03)
+
+* Update _@futagoza/*_
+    - Move rules from _`@futagoza/javascript/es2015`_ to _`@futagoza/core/ecmascript-6`_
+    - Added exports for some internal code, importable from the `CONFIG-NAME/internal` module paths
+* Update _@futagoza_
+    - Update the blurb, better explaining my usage of this configuration
+    - Update the _ignore patterns_ section and it's links
+* Update _@futagoza/core_
+    - Added the _`@futagoza/core/ecmascript-6`_ configuration
+    - Added importable internal: `config` _(an object that contains options for all rules in this configuration)_
+* Update _@futagoza/globals_
+    - Added the _`@futagoza/globals/es2021`_ configuration
+* Update _@futagoza/javascript_
+    - Removed the `babel-eslint` dependency, replacing it with `@babel/*` dependencies
+    - Added the _`@futagoza/javascript/es2021`_ configuration
+    - Updated _`@futagoza/javascript/es2015`_ to extend the new _`@futagoza/core/ecmascript-6`_ configuration
+    - Added the _`@futagoza/javascript/esnext`_ configuration (now the default for _`@futagoza/javascript`_)
+* Update _@futagoza/node_
+    - Added importable internals: `CreateNodeConfig` and `typescriptOverrides`
+* Update _@futagoza/typescript_
+    - Bump `@typescript-eslint/*` dependencies to `4.0.1`
+    - Added importable internals: `GetProjectConfig` and `tsconfig`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v7.8.1
+
 <a name="14.1.0"></a>
 ## [v14.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v14.0.1...v14.1.0) (2020-08-21)
 
@@ -29,7 +56,6 @@
 ## [v14.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v13.2.0...v14.0.0) (2020-08-10)
 
 * Update _@futagoza_
-    - Confirmed compatibility with ESLint v7.6.0
     - Disable `@typescript-eslint/no-unsafe-*` rules (until TS 4 only hopefully)
 * Update _@futagoza/core_
     - Update rule `padding-line-between-statements` to ignore lines between case statements
@@ -50,6 +76,7 @@
     - Add new rule `@typescript-eslint/no-shadow`, and extension rule of `no-shadow`
     - Add new rule `@typescript-eslint/no-redeclare`, and extension rule of `no-redeclare`
 * Miscellaneous
+    - Confirmed compatibility with ESLint v7.6.0
     - Updated versioning and publishing script to only publish changed packages
     - DEV: Bump `svelte` to `3.24.1`
     - DEV: Bump `typescript` to `4.0.1-rc`
