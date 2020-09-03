@@ -4,7 +4,11 @@
 
 > This package contains configuration files for ESLint v7.5+<br>
 
-These is the default configuration for ESLint that I use in my JavaScript and TypeScript projects. It extends my other ESLint configurations to create a single unified configuration that can easily be used when working with Node v10+ while requiring the use of TypeScript and/or HTML script linting.
+These is the default configuration for ESLint that I use in my JavaScript and/or TypeScript projects. It extends my other ESLint configurations to create a single unified configuration that can easily be used when working with:
+
+- Node LTS release's
+- TypeScript
+- Test files
 
 ## installation
 
@@ -48,9 +52,9 @@ If you are using this configuration via `yarn install` (Yarn 1 only) then the fo
 
 ## ignored patterns
 
-This configuration includes a set of file-path globs (mostly recursively) to ignore files using the `ignorePatterns` property.
+This configuration includes _[@futagoza/ignore][ECI]_, which exports a set of file-path globs (mostly recursively) to ignore files using the `ignorePatterns` property (a top-level configuration property for ESLint configuration files).
 
-- See ignored patterns: [github.com/futagoza/eslint-config-futagozaryuu/packages/@futagoza/eslint-config/index.js](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/packages/%40futagoza/eslint-config/index.js)
+- See ignored patterns: [@futagoza/eslint-config-ignore/index.js](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/packages/%40futagoza/eslint-config-ignore/index.js)
 - See documentation: [eslint.org/docs/user-guide/configuring#ignoring-files-and-directories](https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories)
 
 ## license
