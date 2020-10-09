@@ -53,6 +53,9 @@ module.exports = {
         // Use `@typescript-eslint/naming-convention` instead
         "camelcase": "off",
 
+        // Use `@typescript-eslint/comma-dangle` instead
+        "comma-dangle": "off",
+
         // Use `@typescript-eslint/comma-spacing` instead
         "comma-spacing": "off",
 

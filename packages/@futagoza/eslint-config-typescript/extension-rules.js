@@ -26,6 +26,13 @@ module.exports = {
         "@typescript-eslint/brace-style": config[ "brace-style" ],
 
         /**
+         * 🔧 Require or disallow trailing comma
+         *
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-dangle.md
+         */
+        "@typescript-eslint/comma-dangle": config[ "comma-dangle" ],
+
+        /**
          * 🔧 Enforces consistent spacing before and after commas
          *
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
