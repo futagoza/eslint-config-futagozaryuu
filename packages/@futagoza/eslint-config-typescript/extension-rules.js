@@ -105,6 +105,15 @@ module.exports = {
         "@typescript-eslint/no-dupe-class-members": "off",
 
         /**
+         * Disallow duplicate imports
+         * 
+         * __NOTE:__ Unlike my core ESlint config, this does not include `export *` statements
+         * 
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
+         */
+        "@typescript-eslint/no-duplicate-imports": [ "error", { "includeExports": false } ],
+
+        /**
          * Disallow empty functions
          * 
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md

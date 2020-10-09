@@ -6,9 +6,6 @@ module.exports = {
 
         /* ---------- Optional ---------- */
 
-        // Do not include `export *` statements
-        "no-duplicate-imports": [ "error", { "includeExports": false } ],
-
         // Not really required when checking `.ts` or `.tsx` files
         "strict": "off",
 
@@ -82,6 +79,9 @@ module.exports = {
 
         // Use `@typescript-eslint/no-array-constructor` instead
         "no-array-constructor": "off",
+
+        // Use `@typescript-eslint/no-duplicate-imports` instead
+        "no-duplicate-imports": "off",
 
         // Use `@typescript-eslint/no-extra-function` instead
         "no-empty-function": "off",
