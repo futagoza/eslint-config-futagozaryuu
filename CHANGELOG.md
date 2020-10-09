@@ -2,6 +2,25 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="15.1.0"></a>
+## [v15.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.0.0...v15.1.0) (2020-10-09)
+
+* Update _@futagoza/html_
+    - Upgrade `eslint-plugin-html` dependency to `6.1.0`
+* Update _@futagoza/javascript_
+    - Bump `@babel/core` dependency to `7.11.6`
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `4.4.0`
+    - Add new rule `@typescript-eslint/no-loop-func`, an extension rule of `no-duplicate-imports`
+    - Add new rule `@typescript-eslint/comma-dangle`, an extension rule of `comma-dangle`
+    - Enable `allowAsThisParameter` option for `@typescript-eslint/no-invalid-void-type`
+    - Add new rule `@typescript-eslint/consistent-indexed-object-style` and set it to `off`
+    - Add new rule `@typescript-eslint/no-duplicate-imports`, an extension rule of `no-duplicate-imports`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v7.11.0
+    - DEV: Bump `svelte` to `3.29.0`
+    - DEV: Bump `typescript` to `4.0.3`
+
 <a name="15.0.0"></a>
 ## [v15.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v14.1.0...v15.0.0) (2020-09-03)
 
@@ -73,8 +92,8 @@
     - Add `rootDirs` compiler option to `tsconfig.default.json` as an additional help to resolve modules
     - Move `@typescript-eslint/no-implied-eval` to _@futagoza/typescript/extension-rules_
     - Add new rule `@typescript-eslint/prefer-enum-initializers` and set it to `off`
-    - Add new rule `@typescript-eslint/no-shadow`, and extension rule of `no-shadow`
-    - Add new rule `@typescript-eslint/no-redeclare`, and extension rule of `no-redeclare`
+    - Add new rule `@typescript-eslint/no-shadow`, an extension rule of `no-shadow`
+    - Add new rule `@typescript-eslint/no-redeclare`, an extension rule of `no-redeclare`
 * Miscellaneous
     - Confirmed compatibility with ESLint v7.6.0
     - Updated versioning and publishing script to only publish changed packages
