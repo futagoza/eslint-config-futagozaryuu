@@ -137,6 +137,13 @@ module.exports = {
             "@typescript-eslint/class-literal-property-style": "off",
 
             /**
+             * 🔧 Enforce or disallow the use of the record type
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-indexed-object-style.md
+             */
+            "@typescript-eslint/consistent-indexed-object-style": "off",
+
+            /**
              * Enforces consistent usage of type assertions.
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
