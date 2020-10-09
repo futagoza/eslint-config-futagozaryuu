@@ -133,6 +133,13 @@ module.exports = {
         "@typescript-eslint/no-invalid-this": config[ "no-invalid-this" ],
 
         /**
+         * Disallow function declarations that contain unsafe references inside loop statements
+         * 
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loop-func.md
+         */
+        "@typescript-eslint/no-loop-func": config[ "no-loop-func" ],
+
+        /**
          * Disallow literal numbers that lose precision
          * 
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md

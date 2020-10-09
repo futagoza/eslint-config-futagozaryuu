@@ -80,8 +80,14 @@ module.exports = {
         // Use `@typescript-eslint/no-array-constructor` instead
         "no-array-constructor": "off",
 
+        // Use `@typescript-eslint/no-extra-function` instead
+        "no-empty-function": "off",
+
         // Use `@typescript-eslint/no-extra-parens` instead
         "no-extra-parens": "off",
+
+        // Use `@typescript-eslint/no-extra-semi` instead
+        "no-extra-semi": "off",
 
         // Use `@typescript-eslint/no-implied-eval` instead
         "no-implied-eval": "off",
@@ -89,11 +95,11 @@ module.exports = {
         // Use `@typescript-eslint/no-invalid-this` instead
         "no-invalid-this": "off",
 
-        // Use `@typescript-eslint/no-extra-semi` instead
-        "no-extra-semi": "off",
+        // Use `@typescript-eslint/no-loop-func` instead
+        "no-loop-func": "off",
 
-        // Use `@typescript-eslint/no-extra-function` instead
-        "no-empty-function": "off",
+        // Use `@typescript-eslint/no-loss-of-precision` instead
+        "no-loss-of-precision": "off",
 
         // Use `@typescript-eslint/no-magic-numbers` instead
         "no-magic-numbers": "off",
