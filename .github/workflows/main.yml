@@ -24,13 +24,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install Yarn
-      run: |
-        curl -o- -L https://yarnpkg.com/install.sh | bash
-        export PATH=$HOME/.yarn/bin:$PATH
+    - name: Install NPM 7
+      run: npm install npm@7 -g
 
     - name: Install dependencies
-      run: yarn --ignore-engines
+      run: npm i
 
     - name: Lint JavaScript files using ESLint
       run: npm test
