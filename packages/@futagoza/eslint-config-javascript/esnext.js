@@ -31,7 +31,7 @@ module.exports = {
          * - http://eslint.org/docs/rules/new-cap
          * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules
          */
-        "babel/new-cap": config[ "new-cap" ],
+        "@babel/new-cap": config[ "new-cap" ],
 
         /**
          * disallow `this` keywords outside of classes or class-like objects
@@ -40,7 +40,7 @@ module.exports = {
          * - http://eslint.org/docs/rules/no-invalid-this
          * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules
          */
-        "babel/no-invalid-this": config[ "no-invalid-this" ],
+        "@babel/no-invalid-this": config[ "no-invalid-this" ],
 
         /**
          * disallow unused expressions
@@ -49,7 +49,7 @@ module.exports = {
          * - http://eslint.org/docs/rules/no-unused-expressions
          * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules
          */
-        "babel/no-unused-expressions": config[ "no-unused-expressions" ],
+        "@babel/no-unused-expressions": config[ "no-unused-expressions" ],
 
         /**
          * 🔧 enforce consistent spacing inside braces
@@ -58,7 +58,7 @@ module.exports = {
          * - http://eslint.org/docs/rules/object-curly-spacing
          * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules
          */
-        "babel/object-curly-spacing": config[ "object-curly-spacing" ],
+        "@babel/object-curly-spacing": config[ "object-curly-spacing" ],
 
         /**
          * 🔧 require or disallow semicolons instead of ASI
@@ -67,7 +67,7 @@ module.exports = {
          * - http://eslint.org/docs/rules/semi
          * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules
          */
-        "babel/semi": config[ "semi" ],
+        "@babel/semi": config[ "semi" ],
 
     },
 
