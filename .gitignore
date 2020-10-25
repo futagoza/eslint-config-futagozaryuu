@@ -1,4 +1,3 @@
 node_modules
 .eslintcache
 *.log
-package-lock.json
