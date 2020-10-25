@@ -2,6 +2,19 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="15.2.0"></a>
+## [v15.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.1.0...v15.2.0) (2020-10-25)
+
+* Update _@futagoza/javascript_
+    - Upgrade `@babel/*` dependencies to `7.12.x`
+    - Fix rule config names for the plugin rules (they were named without the `@` symbol at the start)
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `4.5.0`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v7.12.0
+    - DEV: Bump `svelte` to `3.29.4`
+    - DEV: Removed `yarn.lock` (and dropped Yarn) as I try out NPM 7 and it's improved `package-lock.json` file
+
 <a name="15.1.0"></a>
 ## [v15.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.0.0...v15.1.0) (2020-10-09)
 
