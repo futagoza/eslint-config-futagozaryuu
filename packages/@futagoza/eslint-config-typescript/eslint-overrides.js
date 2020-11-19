@@ -137,6 +137,9 @@ module.exports = {
         // Use `@typescript-eslint/space-before-function-paren` instead
         "space-before-function-paren": "off",
 
+        // Use `@typescript-eslint/space-infix-ops` instead
+        "space-infix-ops": "off",
+
     },
 
 };

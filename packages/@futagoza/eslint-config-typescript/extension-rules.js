@@ -260,6 +260,13 @@ module.exports = {
          */
         "@typescript-eslint/space-before-function-paren": config[ "space-before-function-paren" ],
 
+        /**
+         * 🔧 This rule is aimed at ensuring there are spaces around infix operators
+         * 
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-infix-ops.md
+         */
+        "@typescript-eslint/space-infix-ops": config[ "space-infix-ops" ],
+
     },
 
 };
