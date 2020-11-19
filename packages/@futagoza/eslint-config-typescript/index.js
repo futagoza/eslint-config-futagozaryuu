@@ -449,6 +449,13 @@ module.exports = {
             "@typescript-eslint/no-unnecessary-type-assertion": "error",
 
             /**
+             * 🔧 Disallows unnecessary constraints on generic types
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-constraint.md
+             */
+            "@typescript-eslint/no-unnecessary-type-constraint": "warn",
+
+            /**
              * Disallows assigning `any` to variables and properties
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
