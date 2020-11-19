@@ -15,11 +15,11 @@
         "@futagoza/cli-utils": "1.5.1",
         "@futagoza/sync-yarn-workspaces": "1.0.0",
         "bluebird": "3.7.2",
-        "eslint": "7.12.0",
+        "eslint": "7.13.0",
         "get-yarn-workspaces": "1.0.2",
-        "prompts": "2.3.2",
-        "svelte": "3.29.4",
-        "typescript": "4.0.3"
+        "prompts": "2.4.0",
+        "svelte": "3.29.7",
+        "typescript": "4.0.5"
     },
     "engines": {
         "node": ">=10.0.0"
