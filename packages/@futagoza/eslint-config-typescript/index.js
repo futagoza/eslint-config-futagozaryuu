@@ -261,6 +261,13 @@ module.exports = {
             "@typescript-eslint/no-confusing-non-null-assertion": "error",
 
             /**
+             * 🔧 Requires expressions of type void to appear in statement position
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md
+             */
+            "@typescript-eslint/no-confusing-void-expression": "off",
+
+            /**
              * 🔧 Bans usage of the delete operator with computed key expressions
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
