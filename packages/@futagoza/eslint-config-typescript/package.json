@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-typescript",
-    "version": "15.2.0",
+    "version": "15.3.0",
     "description": "Futago-za Ryuu's ESLint configurations for TypeScript projects.",
     "keywords": [
         "eslint",

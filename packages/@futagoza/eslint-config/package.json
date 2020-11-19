@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config",
-    "version": "15.2.0",
+    "version": "15.3.0",
     "description": "Futago-za Ryuu's default ESLint configuration",
     "keywords": [
         "eslint",
@@ -21,7 +21,7 @@
         "@futagoza/eslint-config-dev": "15.2.0",
         "@futagoza/eslint-config-ignore": "13.2.0",
         "@futagoza/eslint-config-node": "15.2.0",
-        "@futagoza/eslint-config-typescript": "15.2.0"
+        "@futagoza/eslint-config-typescript": "15.3.0"
     },
     "peerDependencies": {
         "eslint": "*",
