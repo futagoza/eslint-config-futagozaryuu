@@ -2,6 +2,22 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="15.3.0"></a>
+## [v15.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.2.0...v15.3.0) (2020-11-19)
+
+* Update _@futagoza/html_
+    - Bump the `eslint-plugin-html` dependency to `6.1.1`
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `4.8.1`
+    - Add new rule `@typescript-eslint/no-unnecessary-type-constraint` and set it to `warn`
+    - Add new rule `@typescript-eslint/space-infix-ops`, an extension rule of `space-infix-ops`
+    - Add new rule `@typescript-eslint/no-confusing-void-expression` and set it to `off`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v7.13.0
+    - DEV: Bump `prompts` to `2.4.0`
+    - DEV: Bump `svelte` to `3.29.7`
+    - DEV: Bump `typescript` to `4.0.5`
+
 <a name="15.2.0"></a>
 ## [v15.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.1.0...v15.2.0) (2020-10-25)
 
