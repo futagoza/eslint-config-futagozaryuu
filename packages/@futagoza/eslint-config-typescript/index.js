@@ -505,6 +505,13 @@ module.exports = {
             "@typescript-eslint/no-var-requires": "off",
 
             /**
+             * 🔧 Prefers a non-null assertion over explicit type cast when possible
+             *
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/non-nullable-type-assertion-style.md
+             */
+            "@typescript-eslint/non-nullable-type-assertion-style": "off",
+
+            /**
              * 🔧 Prefer usage of `as const` over literal type
              *
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md
