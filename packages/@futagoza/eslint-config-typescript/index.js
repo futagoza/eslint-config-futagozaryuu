@@ -662,6 +662,13 @@ module.exports = {
             } ],
 
             /**
+             * 🔧 Enforces that members of a type union/intersection are sorted alphabetically
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md
+             */
+            "@typescript-eslint/sort-type-union-intersection-members": "off",
+
+            /**
              * Restricts the types allowed in boolean expressions
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
