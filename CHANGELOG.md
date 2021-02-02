@@ -2,6 +2,32 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="15.4.0"></a>
+## [v15.4.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.3.0...v15.4.0) (2021-02-01)
+
+* Update _@futagoza/*_
+    - Set minimum ESLint required to `v7.15+`
+    - Update some source-code comments for rules
+* Update _@futagoza/core_
+    - Added new rule `no-nonoctal-decimal-escape`, set to `off`
+    - Added new rule `no-useless-backreference`, set to `warn`
+    - Added new rule `no-unsafe-optional-chaining`, set to `error`
+* Update _@futagoza/globals_
+    - Upgrade `globals` dependency to `13.5.0`
+* Update _@futagoza/javascript_
+    - Bump `@babel/core` dependency to `7.12.10`
+* Update _@futagoza/svelte_
+    - Upgrade `eslint-plugin-svelte3` dependency to `3.0.0`
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `4.14.2`
+    - Add new rule `@typescript-eslint/non-nullable-type-assertion-style` and set it to `off`
+    - Add new rule `@typescript-eslint/sort-type-union-intersection-members` and set it to `off`
+    - Add new rule `@typescript-eslint/object-curly-spacing`, an extension rule of `object-curly-spacing`
+* Miscellaneous
+    - Confirmed compatibility with ESLint v7.19.0
+    - DEV: Bump `svelte` to `3.32.1`
+    - DEV: Bump `typescript` to `4.1.3`
+
 <a name="15.3.0"></a>
 ## [v15.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.2.0...v15.3.0) (2020-11-19)
 
