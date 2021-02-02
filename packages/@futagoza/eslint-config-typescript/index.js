@@ -623,7 +623,7 @@ module.exports = {
             "@typescript-eslint/prefer-ts-expect-error": "off",
 
             /**
-             * Requires any function or method that returns a Promise to be marked async
+             * 🔧 Requires any function or method that returns a Promise to be marked async
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/promise-function-async.md
              */
