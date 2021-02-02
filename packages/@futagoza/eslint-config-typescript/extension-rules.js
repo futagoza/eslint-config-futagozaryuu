@@ -226,6 +226,13 @@ module.exports = {
         "@typescript-eslint/no-useless-constructor": config[ "no-useless-constructor" ],
 
         /**
+         * 🔧 Enforce consistent spacing inside braces
+         * 
+         * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/object-curly-spacing.md
+         */
+        "@typescript-eslint/object-curly-spacing": config[ "object-curly-spacing" ],
+
+        /**
          * 🔧 Enforce the consistent use of either backticks, double, or single quotes
          * 
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
