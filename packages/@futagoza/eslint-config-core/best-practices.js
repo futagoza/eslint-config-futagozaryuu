@@ -330,6 +330,13 @@ module.exports = {
         "no-new-wrappers": "warn",
 
         /**
+         * disallow `\8` and `\9` escape sequences in string literals
+         *
+         * @see https://eslint.org/docs/rules/no-nonoctal-decimal-escape
+         */
+        "no-nonoctal-decimal-escape": "off",
+
+        /**
          * disallow octal literals
          *
          * @see http://eslint.org/docs/rules/no-octal
