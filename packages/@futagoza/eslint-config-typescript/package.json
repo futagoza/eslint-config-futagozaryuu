@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-typescript",
-    "version": "15.3.0",
+    "version": "15.4.0",
     "description": "Futago-za Ryuu's ESLint configurations for TypeScript projects.",
     "keywords": [
         "eslint",
@@ -13,7 +13,7 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-core": "15.0.0",
+        "@futagoza/eslint-config-core": "15.4.0",
         "@typescript-eslint/eslint-plugin": "4.14.2",
         "@typescript-eslint/parser": "4.14.2",
         "sanitize-filename": "1.6.3"
