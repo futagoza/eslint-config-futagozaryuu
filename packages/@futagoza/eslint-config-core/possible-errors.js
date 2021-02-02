@@ -296,6 +296,20 @@ module.exports = {
         "no-unsafe-negation": "error",
 
         /**
+         * disallow use of optional chaining in contexts where the `undefined` value is not allowed
+         *
+         * @see https://eslint.org/docs/rules/no-unsafe-optional-chaining
+         */
+        "no-unsafe-optional-chaining": "error",
+
+        /**
+         * disallow useless backreferences in regular expressions
+         *
+         * @see https://eslint.org/docs/rules/no-useless-backreference
+         */
+        "no-useless-backreference": "warn",
+
+        /**
          * disallow assignments that can lead to race conditions due to usage of `await` or `yield`
          *
          * @see http://eslint.org/docs/rules/require-atomic-updates
