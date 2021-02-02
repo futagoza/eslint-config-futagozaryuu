@@ -321,7 +321,7 @@ module.exports = {
         "multiline-comment-style": "off",
 
         /**
-         * enforce newlines between operands of ternary expressions
+         * 🔧 enforce newlines between operands of ternary expressions
          *
          * @see http://eslint.org/docs/rules/multiline-ternary
          */
