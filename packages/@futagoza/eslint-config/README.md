@@ -2,7 +2,7 @@
 [![History](https://img.shields.io/badge/history-CHANGELOG.md-orange.svg)](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
-> This package contains configuration files for ESLint v7.5+<br>
+> This package contains configuration files for ESLint v7.15+<br>
 
 These is the default configuration for ESLint that I use in my JavaScript and/or TypeScript projects. It extends my other ESLint configurations to create a single unified configuration that can easily be used when working with:
 
