@@ -2,6 +2,23 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="16.0.0"></a>
+## [v16.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.4.0...v16.0.0) (2021-03-04)
+
+* Update _@futagoza/globals_
+    - Upgrade `globals` dependency to `13.6.0`
+* Update _@futagoza/javascript_
+    - Upgrade `@babel/*` dependencies to `7.13.x`
+* Update _@futagoza/svelte_
+    - Added a note redirecting TypeScript users to the new _@futagoza/eslint-config-svelte.ts_ configuration package
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `4.16.1`
+* Miscellaneous
+    - DEV: Bump `svelte` to `3.35.0`
+    - DEV: Bump `typescript` to `4.2.2`
+    - Added the _@futagoza/eslint-config-svelte.ts_ configuration package
+    - Confirmed compatibility with ESLint v7.21.0
+
 <a name="15.4.0"></a>
 ## [v15.4.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.3.0...v15.4.0) (2021-02-01)
 
