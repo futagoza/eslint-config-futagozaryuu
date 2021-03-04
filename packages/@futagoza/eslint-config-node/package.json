@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-node",
-    "version": "15.4.0",
+    "version": "16.0.0",
     "description": "Futago-za Ryuu's ESLint configurations for Node.js",
     "keywords": [
         "eslint",
@@ -14,8 +14,8 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-globals": "15.4.0",
-        "@futagoza/eslint-config-javascript": "15.4.0",
+        "@futagoza/eslint-config-globals": "16.0.0",
+        "@futagoza/eslint-config-javascript": "16.0.0",
         "eslint-plugin-node": "11.1.0"
     },
     "peerDependencies": {

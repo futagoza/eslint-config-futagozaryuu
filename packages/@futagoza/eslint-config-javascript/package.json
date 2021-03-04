@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-javascript",
-    "version": "15.4.0",
+    "version": "16.0.0",
     "description": "Futago-za Ryuu's ESLint configurations for JavaScript",
     "keywords": [
         "eslint",
@@ -32,7 +32,7 @@
         "@babel/eslint-parser": "7.13.8",
         "@babel/eslint-plugin": "7.13.0",
         "@futagoza/eslint-config-core": "15.4.0",
-        "@futagoza/eslint-config-globals": "15.4.0"
+        "@futagoza/eslint-config-globals": "16.0.0"
     },
     "peerDependencies": {
         "eslint": "*"
