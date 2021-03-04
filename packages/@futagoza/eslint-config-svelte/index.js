@@ -23,6 +23,7 @@ module.exports = {
                 // "svelte3/compiler-options": { generate: false },
                 // "svelte3/ignore-styles": () => false,
                 // "svelte3/named-blocks": false,
+                // "svelte3/typescript": null,
                 // "svelte3/compiler": require( "svelte/compiler" ),
 
             },

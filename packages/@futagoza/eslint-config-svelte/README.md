@@ -8,7 +8,9 @@ This is a configuration file for ESLint that is used to lint JavaScript source e
 
 **NOTE 1:** This configuration is only for enabling `.svelte` linting, therefore it is recommended to also use [@futagoza/eslint-config-javascript](https://www.npmjs.com/package/@futagoza/eslint-config-javascript) or something similar alongside this configuration.
 
-**NOTE 2:** This configuration require's Svelte 3+, but the `peerDependencies` field is set as `"svelte": "*"` so that any version of Svelte supported by [eslint-plugin-svelte3](https://github.com/sveltejs/eslint-plugin-svelte3#readme) can be used.
+**NOTE 2:** To lint `.svelte` files that contain TypeScript code blocks use [@futagoza/eslint-config-svelte.ts](https://www.npmjs.com/package/@futagoza/eslint-config-svelte.ts) instead of this package.
+
+**NOTE 3:** This configuration require's Svelte 3+, but the `peerDependencies` field is set as `"svelte": "*"` so that any version of Svelte supported by [eslint-plugin-svelte3](https://github.com/sveltejs/eslint-plugin-svelte3#readme) can be used.
 
 ## installation
 

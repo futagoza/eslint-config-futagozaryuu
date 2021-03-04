@@ -1,0 +1,28 @@
+{
+    "name": "@futagoza/eslint-config-svelte.ts",
+    "version": "15.4.0",
+    "description": "Futago-za Ryuu's ESLint configurations for .svelte files that contain TypeScript code blocks.",
+    "keywords": [
+        "configuration",
+        "eslint",
+        "javascript",
+        "svelte",
+        "typescript"
+    ],
+    "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-svelte.ts",
+    "license": "MIT",
+    "author": "Futago-za Ryuu",
+    "main": "index.js",
+    "dependencies": {
+        "@futagoza/eslint-config-svelte": "15.4.0",
+        "@futagoza/eslint-config-typescript": "15.4.0"
+    },
+    "peerDependencies": {
+        "eslint": "*",
+        "svelte": "*",
+        "typescript": "*"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}
