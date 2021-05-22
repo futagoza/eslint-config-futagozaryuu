@@ -24,11 +24,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install NPM 7
-      run: npm install npm@7 -g
+    - name: Install Yarn
+      run: npm install yarn -g
 
     - name: Install dependencies
-      run: npm i
+      run: yarn --ignore-engines
 
     - name: Lint JavaScript files using ESLint
       run: npm test
