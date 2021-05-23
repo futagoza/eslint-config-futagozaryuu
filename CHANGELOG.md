@@ -2,6 +2,9 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+* Miscellaneous
+    - DEV: Update CI script not to use Yarn's `--ignore-engines` option as it is now deprecated and produces an error
+
 <a name="16.1.0"></a>
 ## [v16.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v16.0.0...v16.1.0) (2021-05-23)
 

@@ -28,7 +28,7 @@ jobs:
       run: npm install yarn -g
 
     - name: Install dependencies
-      run: yarn --ignore-engines
+      run: yarn
 
     - name: Lint JavaScript files using ESLint
       run: npm test
