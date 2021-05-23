@@ -463,6 +463,13 @@ module.exports = {
             "@typescript-eslint/no-unnecessary-type-constraint": "warn",
 
             /**
+             * Disallows calling a function with an `any` type value
+             * 
+             * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-argument.md
+             */
+            "@typescript-eslint/no-unsafe-argument": "warn",
+
+            /**
              * Disallows assigning `any` to variables and properties
              * 
              * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
