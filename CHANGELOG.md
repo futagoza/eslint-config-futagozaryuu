@@ -2,6 +2,33 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="16.1.0"></a>
+## [v16.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v16.0.0...v16.1.0) (2021-05-23)
+
+* Update _@futagoza/*_
+    - Set minimum Node.js requirement via `engines.node` to `>=12.0.0`
+* Update _@futagoza/globals_
+    - Upgrade `globals` dependency to `13.8.0`
+* Update _@futagoza/html_
+    - Upgrade `eslint-plugin-html` dependency to `6.1.2`
+* Update _@futagoza/javascript_
+    - Upgrade `@babel/*` dependencies to `7.14.3`
+    - Bump `@babel/eslint-plugin` dependency to `7.13.16`
+* Update _@futagoza/svelte_
+    - Upgrade `eslint-plugin-svelte3` dependency to `3.2.0`
+    - Support lazy-loading TypeScript compiler
+* Update _@futagoza/typescript_
+    - Upgrade `@typescript-eslint/*` dependencies to `4.24.0`
+    - Add new rule `@typescript-eslint/no-unsafe-argument` and set it to `warn`
+* Miscellaneous
+    - DEV: Bump `prompts` to `2.4.1`
+    - DEV: Bump `svelte` to `3.38.2`
+    - DEV: Bump `typescript` to `4.2.4`
+    - DEV: Drop NPM 7 (tested since in _v15.2.0_) and use Yarn 2 _(with PnP disabled)_ instead
+    - DEV: Drop CI support for Node.js 10
+    - DEV: Add CI support for Node.js 16
+    - Confirmed compatibility with ESLint v7.27.0
+
 <a name="16.0.0"></a>
 ## [v16.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v15.4.0...v16.0.0) (2021-03-04)
 
