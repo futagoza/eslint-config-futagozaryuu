@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-svelte.ts",
-    "version": "16.0.0",
+    "version": "16.1.0",
     "description": "Futago-za Ryuu's ESLint configurations for .svelte files that contain TypeScript code blocks.",
     "keywords": [
         "configuration",
@@ -14,8 +14,8 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@futagoza/eslint-config-svelte": "16.0.0",
-        "@futagoza/eslint-config-typescript": "16.0.0"
+        "@futagoza/eslint-config-svelte": "16.1.0",
+        "@futagoza/eslint-config-typescript": "16.1.0"
     },
     "peerDependencies": {
         "eslint": "*",

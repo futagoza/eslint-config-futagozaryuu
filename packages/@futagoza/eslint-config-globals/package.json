@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-globals",
-    "version": "16.0.0",
+    "version": "16.1.0",
     "description": "ESLint configurations for easier usage of global variables.",
     "keywords": [
         "configuration",
