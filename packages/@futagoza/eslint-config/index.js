@@ -5,7 +5,7 @@ module.exports = {
     "extends": [
 
         "@futagoza/ignore",
-        "@futagoza/node/12",
+        "@futagoza/node/14",
         "@futagoza/typescript",
         "@futagoza/dev/test",
 
