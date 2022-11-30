@@ -205,7 +205,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/no-fallthrough
          */
-        "no-fallthrough": "error",
+        "no-fallthrough": [ "error", { "allowEmptyCase": true } ],
 
         /**
          * 🔧 disallow leading or trailing decimal points in numeric literals
