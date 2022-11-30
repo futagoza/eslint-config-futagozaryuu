@@ -4,7 +4,7 @@ const { config } = require( "@futagoza/eslint-config-core/internal" );
 
 module.exports = {
 
-    "extends": "./es2021.js",
+    "extends": "./es2022.js",
 
     "parser": "@babel/eslint-parser",
     "parserOptions": {

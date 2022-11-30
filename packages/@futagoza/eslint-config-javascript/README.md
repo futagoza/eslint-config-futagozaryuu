@@ -37,7 +37,8 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/javascript/es2019`__ (extends: _es2018_)
 - __`@futagoza/javascript/es2020`__ (extends: _es2019_ and _[@futagoza/globals/es2020][ECG]_)
 - __`@futagoza/javascript/es2021`__ (extends: _es2020_ and _[@futagoza/globals/es2021][ECG]_)
-- __`@futagoza/javascript/esnext`__ (extends: _es2021_)
+- __`@futagoza/javascript/es2022`__ (extends: _es2021_)
+- __`@futagoza/javascript/esnext`__ (extends: _es2022_)
 - __`@futagoza/javascript/modules`__
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
