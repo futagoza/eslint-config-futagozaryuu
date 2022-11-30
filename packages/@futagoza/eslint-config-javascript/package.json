@@ -21,6 +21,10 @@
         "es2020",
         "es12",
         "es2021",
+        "es13",
+        "es2022",
+        "es14",
+        "es2022",
         "esnext"
     ],
     "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-javascript",
