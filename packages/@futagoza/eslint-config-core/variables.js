@@ -78,6 +78,7 @@ module.exports = {
             "args": "after-used",
             "ignoreRestSiblings": true,
             "argsIgnorePattern": "^_",
+            "destructuredArrayIgnorePattern": "^_",
             "caughtErrors": "none",
 
         } ],
