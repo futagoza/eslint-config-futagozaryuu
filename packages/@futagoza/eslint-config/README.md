@@ -30,7 +30,7 @@ Put the following into your configuration (`.eslintrc.json` file or the _"eslint
 
 A list of usable configurations as well the configurations they use:
 
-- __`@futagoza`__ (extends _[@futagoza/ignore][ECI]_, _[@futagoza/node/10][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/dev/test][ECD]_)
+- __`@futagoza`__ (extends _[@futagoza/ignore][ECI]_, _[@futagoza/node/14][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/dev/test][ECD]_)
 
 If you are using this configuration via `yarn install` (Yarn 1 only) then the following should be available as well:
 
