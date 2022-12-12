@@ -6,7 +6,6 @@ module.exports = {
 
         "./es5.js",
         "@futagoza/globals/es2015",
-        "@futagoza/core/ecmascript-6",
 
     ],
 

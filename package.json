@@ -7,6 +7,8 @@
     "scripts": {
         "test": "eslint .",
         "fix": "eslint . --fix",
+        "rc-test": "node scripts/rebuild-core.mjs --test",
+        "rc": "node scripts/rebuild-core.mjs",
         "bump-dry": "node scripts/bump --dry",
         "bump": "node scripts/bump"
     },
@@ -17,7 +19,9 @@
         "bluebird": "3.7.2",
         "eslint": "8.29.0",
         "get-yarn-workspaces": "1.0.2",
+        "make-dir": "3.1.0",
         "prompts": "2.4.2",
+        "strip-indent": "4.0.0",
         "svelte": "3.54.0",
         "typescript": "4.9.4"
     },

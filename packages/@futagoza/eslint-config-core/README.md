@@ -6,7 +6,7 @@
 
 These are configuration files for ESLint that are mostly extended upon by my other ESLint configurations.
 
-The rules set in these files are the core set of built in rules separated by 4 categories: _possible-errors_, _best-practices_, _stylistic-issues_ and _variables_.
+The rules found (and set) in these files are the core set of built-in ESLint rules.
 
 ## installation
 
@@ -26,14 +26,7 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 ## configurations
 
-A list of usable configurations as well the configurations they use:
-
-- __`@futagoza/core`__ (_default_, extends: _possible-errors_, _best-practices_, _stylistic-issues_ and _variables_)
-- __`@futagoza/core/possible-errors`__
-- __`@futagoza/core/best-practices`__
-- __`@futagoza/core/stylistic-issues`__
-- __`@futagoza/core/variables`__
-- __`@futagoza/core/ecmascript-6`__
+For a list of configuration files please refer to [@futagoza/eslint-config-core/internal/config.js](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/packages/%40futagoza/eslint-config-core/internal/config.js), a file which is auto-generated each time an internal script is run on the repository to regenerate the configuration files for _@futagoza/core_.
 
 You can also use `import { config } from "@futagoza/eslint-config-core/internal"` to get the default options for these rules.
 
