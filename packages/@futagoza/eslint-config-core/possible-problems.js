@@ -281,7 +281,10 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-inner-declarations
      */
-    "no-inner-declarations": "off",
+    "no-inner-declarations": [
+        "warn",
+        "both"
+    ],
 
 
 
