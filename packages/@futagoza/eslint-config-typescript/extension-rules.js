@@ -98,7 +98,7 @@ module.exports = {
         /**
          * Disallow duplicate class members
          * 
-         * __NOTE:__ If your not using ESlint/TypeScript via an Editor plugin for VS Code, I recomend enabling this rule.
+         * __NOTE:__ If your not using ESlint/TypeScript via an Editor plugin for VS Code, I recommend enabling this rule.
          * 
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dupe-class-members.md
          */

@@ -87,7 +87,7 @@ function LogWorkspaceUpdate( $result ) {
 
 ( async () => {
 
-    // All tracked files are required to be commited if the `--dry` flag is not used
+    // All tracked files are required to be committed if the `--dry` flag is not used
     if ( ! $dry )
         await spawn( "git status --untracked-files=no --porcelain", $result => {
 
@@ -105,7 +105,7 @@ function LogWorkspaceUpdate( $result ) {
 
     } else {
 
-        // Check if any workspaces were updated since the latest tag was commited
+        // Check if any workspaces were updated since the latest tag was committed
         await spawn( "git describe --abbrev=0", async $result => {
 
             $tag = $result.stdout.trim();
