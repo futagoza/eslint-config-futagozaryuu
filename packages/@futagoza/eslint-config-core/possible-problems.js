@@ -510,7 +510,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-unused-private-class-members
      */
-    "no-unused-private-class-members": void 0,
+    "no-unused-private-class-members": "warn",
 
 
 
