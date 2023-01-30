@@ -543,7 +543,8 @@ module.exports = {
         {
             "functions": false,
             "classes": false,
-            "variables": true
+            "variables": true,
+            "allowNamedExports": true
         }
     ],
 
