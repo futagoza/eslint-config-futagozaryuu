@@ -337,7 +337,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-new-native-nonconstructor
      */
-    "no-new-native-nonconstructor": void 0,
+    "no-new-native-nonconstructor": "error",
 
 
 
