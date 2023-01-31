@@ -628,7 +628,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-lone-blocks
      */
-    "no-lone-blocks": "off",
+    "no-lone-blocks": "warn",
 
 
 
