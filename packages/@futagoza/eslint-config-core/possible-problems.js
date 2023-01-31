@@ -355,7 +355,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-obj-calls
      */
-    "no-obj-calls": "off",
+    "no-obj-calls": "error",
 
 
 
