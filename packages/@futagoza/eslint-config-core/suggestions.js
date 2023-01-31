@@ -249,7 +249,10 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/logical-assignment-operators
      */
-    "logical-assignment-operators": void 0,
+    "logical-assignment-operators": [
+        "error",
+        "always"
+    ],
 
 
 
