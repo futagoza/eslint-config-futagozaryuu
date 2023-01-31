@@ -1224,7 +1224,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/prefer-object-has-own
      */
-    "prefer-object-has-own": void 0,
+    "prefer-object-has-own": "off",
 
 
 

@@ -10,4 +10,10 @@ module.exports = {
 
     },
 
+    "rules": {
+
+        "prefer-object-has-own": "error",
+
+    },
+
 };
