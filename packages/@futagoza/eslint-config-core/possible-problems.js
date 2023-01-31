@@ -113,7 +113,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-constant-binary-expression
      */
-    "no-constant-binary-expression": void 0,
+    "no-constant-binary-expression": "error",
 
 
 
