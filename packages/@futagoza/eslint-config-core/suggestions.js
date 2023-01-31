@@ -120,7 +120,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/default-case-last
      */
-    "default-case-last": void 0,
+    "default-case-last": "off",
 
 
 
@@ -830,7 +830,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-restricted-exports
      */
-    "no-restricted-exports": void 0,
+    "no-restricted-exports": "off",
 
 
 
