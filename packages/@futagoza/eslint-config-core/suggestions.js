@@ -469,7 +469,7 @@ module.exports = {
      *
      * @see http://eslint.org/docs/rules/no-empty-static-block
      */
-    "no-empty-static-block": void 0,
+    "no-empty-static-block": "warn",
 
 
 
