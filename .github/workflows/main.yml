@@ -24,8 +24,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Install corepack
+      if: (matrix.node-version != '14.x')
+      run: npm i -g corepack
+
     - name: Install Yarn
-      run: npm install yarn -g
+      run: corepack prepare yarn@stable --activate
 
     - name: Install dependencies
       run: yarn
