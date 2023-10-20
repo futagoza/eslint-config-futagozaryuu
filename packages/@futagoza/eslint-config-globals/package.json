@@ -13,7 +13,7 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "globals": "13.20.0"
+        "globals": "13.23.0"
     },
     "engines": {
         "node": ">=14.0.0"

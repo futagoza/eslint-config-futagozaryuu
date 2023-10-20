@@ -17,13 +17,13 @@
         "@futagoza/cli-utils": "1.5.1",
         "@futagoza/sync-yarn-workspaces": "1.0.0",
         "bluebird": "3.7.2",
-        "eslint": "8.36.0",
+        "eslint": "8.51.0",
         "get-yarn-workspaces": "1.0.2",
-        "make-dir": "3.1.0",
+        "make-dir": "4.0.0",
         "prompts": "2.4.2",
         "strip-indent": "4.0.0",
-        "svelte": "3.57.0",
-        "typescript": "5.0.2"
+        "svelte": "4.2.2",
+        "typescript": "5.2.2"
     },
     "engines": {
         "node": ">=14.0.0"
