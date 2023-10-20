@@ -245,7 +245,7 @@ module.exports = {
 
 
     /**
-     * 🔧 Require or disallow logical assignment logical operator shorthand
+     * 🔧 Require or disallow logical assignment operator shorthand
      *
      * @see http://eslint.org/docs/rules/logical-assignment-operators
      */
@@ -424,7 +424,7 @@ module.exports = {
 
 
     /**
-     * 🔧 Disallow division operators explicitly at the beginning of regular expressions
+     * 🔧 Disallow equal signs explicitly at the beginning of regular expressions
      *
      * @see http://eslint.org/docs/rules/no-div-regex
      */
@@ -731,15 +731,6 @@ module.exports = {
 
 
     /**
-     * Disallow `Object` constructors
-     *
-     * @see http://eslint.org/docs/rules/no-new-object
-     */
-    "no-new-object": "off",
-
-
-
-    /**
      * Disallow `new` operators with the `String`, `Number`, and `Boolean` objects
      *
      * @see http://eslint.org/docs/rules/no-new-wrappers
@@ -754,6 +745,15 @@ module.exports = {
      * @see http://eslint.org/docs/rules/no-nonoctal-decimal-escape
      */
     "no-nonoctal-decimal-escape": "off",
+
+
+
+    /**
+     * Disallow calls to the `Object` constructor without an argument
+     *
+     * @see http://eslint.org/docs/rules/no-object-constructor
+     */
+    "no-object-constructor": "off",
 
 
 
@@ -879,15 +879,6 @@ module.exports = {
         "warn",
         "always"
     ],
-
-
-
-    /**
-     * Disallow unnecessary `return await`
-     *
-     * @see http://eslint.org/docs/rules/no-return-await
-     */
-    "no-return-await": "error",
 
 
 
@@ -1313,7 +1304,7 @@ module.exports = {
 
 
     /**
-     * Enforce the use of `u` flag on RegExp
+     * Enforce the use of `u` or `v` flag on RegExp
      *
      * @see http://eslint.org/docs/rules/require-unicode-regexp
      */

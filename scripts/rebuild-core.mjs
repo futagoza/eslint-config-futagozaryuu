@@ -27,7 +27,7 @@ function hasOwn( $object, $key ) {
 
 }
 
-function die ( err = void 0 ) {
+function die( err = void 0 ) {
 
     if ( err !== void 0 ) console.error( err );
     process.exit( 1 );
@@ -132,7 +132,7 @@ for ( const $key of [ "deprecated", "removed", "types" ] ) {
 
 }
 
-for ( const $rule of $response.deprecated.rules ) {
+for ( const $rule of $response.deprecated ) {
 
     const $name = $rule.name;
     if ( $existingRules.includes( $name ) ) {
@@ -144,7 +144,7 @@ for ( const $rule of $response.deprecated.rules ) {
 
 }
 
-for ( const $rule of $response.removed.rules ) {
+for ( const $rule of $response.removed ) {
 
     const $name = $rule.removed;
     if ( $existingRules.includes( $name ) ) {
@@ -156,13 +156,32 @@ for ( const $rule of $response.removed.rules ) {
 
 }
 
-for ( const $type of $response.types ) {
+const ESLINT_RULE_TYPES = [
+
+    {
+        "displayName": "possible-problems",
+        "description": "These rules relate to possible logic errors in code:",
+        "rules": $response.types.problem,
+    },
+
+    {
+        "displayName": "suggestions",
+        "description": "These rules suggest alternate ways of doing things:",
+        "rules": $response.types.suggestion,
+    },
+
+    {
+        "displayName": "layout-and-formatting",
+        "description": "These rules care about how the code looks rather than how it executes:",
+        "rules": $response.types.layout,
+    },
+
+];
+
+for ( const $type of ESLINT_RULE_TYPES ) {
 
     const $rules = [];
-    const $ruleType = $type.displayName
-        .toLowerCase()
-        .replaceAll( " ", "-" )
-        .replaceAll( "&", "and" );
+    const $ruleType = $type.displayName;
 
     for ( const $rule of $type.rules ) {
 
