@@ -5,6 +5,16 @@ __metadata:
   version: 4
   cacheKey: 7
 
+"@ampproject/remapping@npm:^2.2.1":
+  version: 2.3.0
+  resolution: "@ampproject/remapping@npm:2.3.0"
+  dependencies:
+    "@jridgewell/gen-mapping": ^0.3.5
+    "@jridgewell/trace-mapping": ^0.3.24
+  checksum: 55187d9b3dd811c71ae0300256db03f77750ab7c1893fa7da59c1439da29c5ba38e44e8f3266e06625cf7a1f477e87ed1440f3f4e8bbcd681220004725a206fb
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:7.12.11":
   version: 7.12.11
   resolution: "@babel/code-frame@npm:7.12.11"
@@ -313,25 +323,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@futagoza/eslint-config-core@15.4.0, @futagoza/eslint-config-core@workspace:packages/@futagoza/eslint-config-core":
+"@futagoza/eslint-config-core@16.1.0, @futagoza/eslint-config-core@workspace:packages/@futagoza/eslint-config-core":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-core@workspace:packages/@futagoza/eslint-config-core"
   languageName: unknown
   linkType: soft
 
-"@futagoza/eslint-config-dev@16.0.0, @futagoza/eslint-config-dev@workspace:packages/@futagoza/eslint-config-dev":
+"@futagoza/eslint-config-dev@16.1.0, @futagoza/eslint-config-dev@workspace:packages/@futagoza/eslint-config-dev":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-dev@workspace:packages/@futagoza/eslint-config-dev"
   dependencies:
-    "@futagoza/eslint-config-globals": 16.0.0
-    "@futagoza/eslint-config-javascript": 16.0.0
-    "@futagoza/eslint-config-node": 16.0.0
+    "@futagoza/eslint-config-globals": 16.1.0
+    "@futagoza/eslint-config-javascript": 16.1.0
+    "@futagoza/eslint-config-node": 16.1.0
   peerDependencies:
     eslint: "*"
   languageName: unknown
   linkType: soft
 
-"@futagoza/eslint-config-globals@16.0.0, @futagoza/eslint-config-globals@workspace:packages/@futagoza/eslint-config-globals":
+"@futagoza/eslint-config-globals@16.1.0, @futagoza/eslint-config-globals@workspace:packages/@futagoza/eslint-config-globals":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-globals@workspace:packages/@futagoza/eslint-config-globals"
   dependencies:
@@ -343,37 +353,37 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-html@workspace:packages/@futagoza/eslint-config-html"
   dependencies:
-    "@futagoza/eslint-config-globals": 16.0.0
+    "@futagoza/eslint-config-globals": 16.1.0
     eslint-plugin-html: 6.1.2
   languageName: unknown
   linkType: soft
 
-"@futagoza/eslint-config-ignore@13.2.0, @futagoza/eslint-config-ignore@workspace:packages/@futagoza/eslint-config-ignore":
+"@futagoza/eslint-config-ignore@16.1.0, @futagoza/eslint-config-ignore@workspace:packages/@futagoza/eslint-config-ignore":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-ignore@workspace:packages/@futagoza/eslint-config-ignore"
   languageName: unknown
   linkType: soft
 
-"@futagoza/eslint-config-javascript@16.0.0, @futagoza/eslint-config-javascript@workspace:packages/@futagoza/eslint-config-javascript":
+"@futagoza/eslint-config-javascript@16.1.0, @futagoza/eslint-config-javascript@workspace:packages/@futagoza/eslint-config-javascript":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-javascript@workspace:packages/@futagoza/eslint-config-javascript"
   dependencies:
     "@babel/core": 7.14.3
     "@babel/eslint-parser": 7.14.3
     "@babel/eslint-plugin": 7.13.16
-    "@futagoza/eslint-config-core": 15.4.0
-    "@futagoza/eslint-config-globals": 16.0.0
+    "@futagoza/eslint-config-core": 16.1.0
+    "@futagoza/eslint-config-globals": 16.1.0
   peerDependencies:
     eslint: "*"
   languageName: unknown
   linkType: soft
 
-"@futagoza/eslint-config-node@16.0.0, @futagoza/eslint-config-node@workspace:packages/@futagoza/eslint-config-node":
+"@futagoza/eslint-config-node@16.1.0, @futagoza/eslint-config-node@workspace:packages/@futagoza/eslint-config-node":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-node@workspace:packages/@futagoza/eslint-config-node"
   dependencies:
-    "@futagoza/eslint-config-globals": 16.0.0
-    "@futagoza/eslint-config-javascript": 16.0.0
+    "@futagoza/eslint-config-globals": 16.1.0
+    "@futagoza/eslint-config-javascript": 16.1.0
     eslint-plugin-node: 11.1.0
   peerDependencies:
     eslint: "*"
@@ -384,8 +394,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-svelte.ts@workspace:packages/@futagoza/eslint-config-svelte.ts"
   dependencies:
-    "@futagoza/eslint-config-svelte": 16.0.0
-    "@futagoza/eslint-config-typescript": 16.0.0
+    "@futagoza/eslint-config-svelte": 16.1.0
+    "@futagoza/eslint-config-typescript": 16.1.0
   peerDependencies:
     eslint: "*"
     svelte: "*"
@@ -393,12 +403,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@futagoza/eslint-config-svelte@16.0.0, @futagoza/eslint-config-svelte@workspace:packages/@futagoza/eslint-config-svelte":
+"@futagoza/eslint-config-svelte@16.1.0, @futagoza/eslint-config-svelte@workspace:packages/@futagoza/eslint-config-svelte":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-svelte@workspace:packages/@futagoza/eslint-config-svelte"
   dependencies:
-    "@futagoza/eslint-config-dev": 16.0.0
-    "@futagoza/eslint-config-globals": 16.0.0
+    "@futagoza/eslint-config-dev": 16.1.0
+    "@futagoza/eslint-config-globals": 16.1.0
     eslint-plugin-svelte3: 3.2.0
   peerDependencies:
     eslint: "*"
@@ -406,11 +416,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@futagoza/eslint-config-typescript@16.0.0, @futagoza/eslint-config-typescript@workspace:packages/@futagoza/eslint-config-typescript":
+"@futagoza/eslint-config-typescript@16.1.0, @futagoza/eslint-config-typescript@workspace:packages/@futagoza/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config-typescript@workspace:packages/@futagoza/eslint-config-typescript"
   dependencies:
-    "@futagoza/eslint-config-core": 15.4.0
+    "@futagoza/eslint-config-core": 16.1.0
     "@typescript-eslint/eslint-plugin": 4.24.0
     "@typescript-eslint/parser": 4.24.0
     sanitize-filename: 1.6.3
@@ -424,10 +434,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@futagoza/eslint-config@workspace:packages/@futagoza/eslint-config"
   dependencies:
-    "@futagoza/eslint-config-dev": 16.0.0
-    "@futagoza/eslint-config-ignore": 13.2.0
-    "@futagoza/eslint-config-node": 16.0.0
-    "@futagoza/eslint-config-typescript": 16.0.0
+    "@futagoza/eslint-config-dev": 16.1.0
+    "@futagoza/eslint-config-ignore": 16.1.0
+    "@futagoza/eslint-config-node": 16.1.0
+    "@futagoza/eslint-config-typescript": 16.1.0
   peerDependencies:
     eslint: "*"
     typescript: "*"
@@ -449,6 +459,48 @@ __metadata:
   bin:
     sync-yarn-workspaces: cli.js
   checksum: 67d860f29b0aefd5c42c8fe304fe014f35a868085dddcaa21067447ab49103b2bd01d65406a272fbe5f16c266382d447702e6b7abcebbdcfef821833742da65f
+  languageName: node
+  linkType: hard
+
+"@jridgewell/gen-mapping@npm:^0.3.5":
+  version: 0.3.5
+  resolution: "@jridgewell/gen-mapping@npm:0.3.5"
+  dependencies:
+    "@jridgewell/set-array": ^1.2.1
+    "@jridgewell/sourcemap-codec": ^1.4.10
+    "@jridgewell/trace-mapping": ^0.3.24
+  checksum: c5833e1f1edeee5377bbc0aa6f0d8dc57da4074f4c58775d622ba9a698f1655e72f75e3fec85a6fcae10420a4ba774c1ee416165f7fec8566284b8debd06f9bc
+  languageName: node
+  linkType: hard
+
+"@jridgewell/resolve-uri@npm:^3.1.0":
+  version: 3.1.2
+  resolution: "@jridgewell/resolve-uri@npm:3.1.2"
+  checksum: cb6726e7a338ddc254d1e5d3dce3fff94cc62e6681232ff68544c3539ca6b5a26c2681d0663819e7c5778c2f904ecee6c8b20681a87da91fb7aa62032ff4d9bf
+  languageName: node
+  linkType: hard
+
+"@jridgewell/set-array@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@jridgewell/set-array@npm:1.2.1"
+  checksum: e079fb150642f1654abfed25a36790cc5e0a1b2187be6876c0de82062b82f86e509acaa6e3c8ec6ef23dd5f6ad22436ae359586abf27b8bbf538fbbfab93a5ea
+  languageName: node
+  linkType: hard
+
+"@jridgewell/sourcemap-codec@npm:^1.4.10, @jridgewell/sourcemap-codec@npm:^1.4.14, @jridgewell/sourcemap-codec@npm:^1.4.15, @jridgewell/sourcemap-codec@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@jridgewell/sourcemap-codec@npm:1.5.0"
+  checksum: 6460636a3452dacbb34ab233be2a94b5a8a42eec2a1339c30cc1cabc4ceb52512cb1bd90208a7ece4b4ca6a484645867025cb45ac745a39009474d1d47757947
+  languageName: node
+  linkType: hard
+
+"@jridgewell/trace-mapping@npm:^0.3.18, @jridgewell/trace-mapping@npm:^0.3.24":
+  version: 0.3.25
+  resolution: "@jridgewell/trace-mapping@npm:0.3.25"
+  dependencies:
+    "@jridgewell/resolve-uri": ^3.1.0
+    "@jridgewell/sourcemap-codec": ^1.4.14
+  checksum: 674f1975b2236f4f7f608f1b390db5968328b2c39cd3f093f9c0d6bde04a85bf720044a1c44581169f9f8dd1951705ae0b11c042d3cae01dc79d32b058e83656
   languageName: node
   linkType: hard
 
@@ -476,6 +528,13 @@ __metadata:
     "@nodelib/fs.scandir": 2.1.4
     fastq: ^1.6.0
   checksum: d0503ffd0bb4172d5ac5d23993b14665f5f6d42a460a719ad97743ce71e60588d134cc60df12ca76be0e5e3a93c9a3156904d9296b78a8cdf19425c3423c0b58
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*, @types/estree@npm:^1.0.0, @types/estree@npm:^1.0.1":
+  version: 1.0.5
+  resolution: "@types/estree@npm:1.0.5"
+  checksum: 2c094fc4673e3bdb77443f8bf1d539692f5e1f87f02c572a15d9513b41a064bcd885658a9bc65ea52b1774051bec4e7d734f289190ffcc76468c3eec64d8ba2a
   languageName: node
   linkType: hard
 
@@ -604,6 +663,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"acorn@npm:^8.10.0, acorn@npm:^8.9.0":
+  version: 8.12.1
+  resolution: "acorn@npm:8.12.1"
+  bin:
+    acorn: bin/acorn
+  checksum: a76b5d5fb6a5d84eab12877841746ce39330d9ea9505e45bc074fa47edebca47802a3333eadfbf009b3bbfb67ab531a3f57f98851c693c8d2a70caf6e28f0e4f
+  languageName: node
+  linkType: hard
+
 "ajv@npm:^6.10.0, ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
@@ -669,6 +737,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"aria-query@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "aria-query@npm:5.3.0"
+  dependencies:
+    dequal: ^2.0.3
+  checksum: 15fac8d654f46e9a8d63d84438e92a2b741aeb6abf719be00583cca22096a772b15afa3d8aed05d08df6e9380fb3a3be3bd8713f49bc8407fb2ef4a7663073da
+  languageName: node
+  linkType: hard
+
 "array-union@npm:^2.1.0":
   version: 2.1.0
   resolution: "array-union@npm:2.1.0"
@@ -680,6 +757,13 @@ __metadata:
   version: 2.0.0
   resolution: "astral-regex@npm:2.0.0"
   checksum: bf049ee7048b70af5473580020f98faf09159af31a7fa5e223099966dc90e9e87760bd34030e19a6dcac05b45614b428f559bd71f027344d123555e524cb95ac
+  languageName: node
+  linkType: hard
+
+"axobject-query@npm:^4.0.0":
+  version: 4.1.0
+  resolution: "axobject-query@npm:4.1.0"
+  checksum: c494d2ac2293dea1576719145d6b018d4d7b3ee29b707cfe810b587277f8f2b1d8fee845b36f072664a11c94cf7dadc9898e9bcfb489d8f3fd2483dde82f2f76
   languageName: node
   linkType: hard
 
@@ -777,6 +861,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"code-red@npm:^1.0.3":
+  version: 1.0.4
+  resolution: "code-red@npm:1.0.4"
+  dependencies:
+    "@jridgewell/sourcemap-codec": ^1.4.15
+    "@types/estree": ^1.0.1
+    acorn: ^8.10.0
+    estree-walker: ^3.0.3
+    periscopic: ^3.1.0
+  checksum: 6ccc1d15fefcaa38ad11c6f16ddd756755081e6511698cb163f7f8a5f5729a76bdd4da01447674c03d543583033746e4487a50422729d72c5a4628388c2950c6
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
@@ -843,6 +940,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-tree@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "css-tree@npm:2.3.1"
+  dependencies:
+    mdn-data: 2.0.30
+    source-map-js: ^1.0.1
+  checksum: 6322a678aea20d58daa511db11823917afabaa80abec18354e94d68746efa2c0ed68d0f6c7ceda3485d1016882de56c5b93dd89f31e9da77f5dd79b353c6d16b
+  languageName: node
+  linkType: hard
+
 "dateformat@npm:3.0.3":
   version: 3.0.3
   resolution: "dateformat@npm:3.0.3"
@@ -866,6 +973,13 @@ __metadata:
   version: 0.1.3
   resolution: "deep-is@npm:0.1.3"
   checksum: 3de58f86af4dec86c8be531a5abaf2e6d8ea98fa2f1d81a3a778d0d8df920ee282043a6ef05bfb4eb699c8551df9ac1b808d4dc71d54cc40ab1efa5ce8792943
+  languageName: node
+  linkType: hard
+
+"dequal@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "dequal@npm:2.0.3"
+  checksum: 9140d3b9d36a5a29cb9907800ca2c482ff91cdf55b5e64d56d5951f48a232599373f615c4517238c52acccbcf5b3c562977ada44d0d0a9ba7955b26ccc42d6ca
   languageName: node
   linkType: hard
 
@@ -1008,7 +1122,7 @@ __metadata:
     eslint: 7.27.0
     get-yarn-workspaces: 1.0.2
     prompts: 2.4.1
-    svelte: 3.38.2
+    svelte: 4.2.19
     typescript: 4.2.4
   languageName: unknown
   linkType: soft
@@ -1199,6 +1313,15 @@ __metadata:
   version: 5.2.0
   resolution: "estraverse@npm:5.2.0"
   checksum: 7dc1b027aebf937bab10c3254d9d73ed21672d7382518c9ddb9dc45560cb2f4e6548cc8ff1a07b7f431e94bd0fb0bf5da75b602e2473f966fea141c4c31b31d6
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^3.0.0, estree-walker@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "estree-walker@npm:3.0.3"
+  dependencies:
+    "@types/estree": ^1.0.0
+  checksum: ca4e8779e3d940cd11236ee115a66fff51f3993bdc576de153a0310d0d259777bdfadf68bbe4dc67e7c417e33461552f414a5a1f5d25edd8a074964dbbce4ef8
   languageName: node
   linkType: hard
 
@@ -1525,6 +1648,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-reference@npm:^3.0.0, is-reference@npm:^3.0.1":
+  version: 3.0.2
+  resolution: "is-reference@npm:3.0.2"
+  dependencies:
+    "@types/estree": "*"
+  checksum: 5e416f73748023d31a16094245b0f1c86d1d9b4566923caf35fa1e6ed46945614bab476715ec6d89032ef5ec49f51f9e40215d30fb68d5f9380d1da6dc1bb2e7
+  languageName: node
+  linkType: hard
+
 "isexe@npm:^2.0.0":
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
@@ -1616,6 +1748,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"locate-character@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "locate-character@npm:3.0.0"
+  checksum: 178550069f7fb2dc7c33c1c59532626c2317fa9af46a3292011c8c3d1d616f3499e62b95d0ea01b863ed10578d0e5f8a04135be913fc18786878eb6a5463edc3
+  languageName: node
+  linkType: hard
+
 "lodash.clonedeep@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.clonedeep@npm:4.5.0"
@@ -1650,6 +1789,22 @@ __metadata:
   dependencies:
     yallist: ^4.0.0
   checksum: b8b78353d2391c0f135cdc245c4744ad41c2efb1a6d98f31bc57a2cf48ebf02de96e4876657c3026673576bf1f1f61fc3fdd77ab00ad1ead737537bf17d8019d
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.30.4":
+  version: 0.30.11
+  resolution: "magic-string@npm:0.30.11"
+  dependencies:
+    "@jridgewell/sourcemap-codec": ^1.5.0
+  checksum: 4cf4400efe5f478a641271d772b374ae3a5c3bfa950690eb4d99986d686b4734ed0f6d4604642fa738b868ce84465029276fe98cfd77aa980d34d6aa086e4ff5
+  languageName: node
+  linkType: hard
+
+"mdn-data@npm:2.0.30":
+  version: 2.0.30
+  resolution: "mdn-data@npm:2.0.30"
+  checksum: c84f9d51069772b896969e16e6d3a0c3e52fa0dd9258f7d6e8f6a493a44080766f985068d774cd061538af78111478b38b48847f55e3db6d067d78d9a5053945
   languageName: node
   linkType: hard
 
@@ -1764,6 +1919,17 @@ __metadata:
   version: 4.0.0
   resolution: "path-type@npm:4.0.0"
   checksum: ef5835f2eb47e4d06004c7ec7bd51175c0455eaecd5ee99a9774bca5ef43242616e25b44ccc0ba86a0bf42b9f197550fcc0dfa7580e5ff9dca53c035e9bd86a9
+  languageName: node
+  linkType: hard
+
+"periscopic@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "periscopic@npm:3.1.0"
+  dependencies:
+    "@types/estree": ^1.0.0
+    estree-walker: ^3.0.0
+    is-reference: ^3.0.0
+  checksum: dc6594b290f30f91075787df49049c891b87dba801a4cec02ce55953a09ad8d061ea21ace58a8479f450a6bf5a943016d6a5f58c0c3b53da30fa5640c3332175
   languageName: node
   linkType: hard
 
@@ -1966,6 +2132,13 @@ resolve@^1.10.1:
   languageName: node
   linkType: hard
 
+"source-map-js@npm:^1.0.1":
+  version: 1.2.0
+  resolution: "source-map-js@npm:1.2.0"
+  checksum: 921a2790f5f8b7530955bf17e57bf8f722c6d9b4ed913042e2666850ce80cf0633c8710331afaaed973c5d8e5651654295db4fc86b6f31c0f6cbfe5b1fecc4af
+  languageName: node
+  linkType: hard
+
 "source-map@npm:^0.5.0":
   version: 0.5.7
   resolution: "source-map@npm:0.5.7"
@@ -2032,10 +2205,25 @@ resolve@^1.10.1:
   languageName: node
   linkType: hard
 
-"svelte@npm:3.38.2":
-  version: 3.38.2
-  resolution: "svelte@npm:3.38.2"
-  checksum: e415be40336418f331e3531dfb842ac8298e4fb698702d60e4b7cad3975720e6965c281e435fcc4b94e2abca12121dd71274b23406bfe2aa203beeb8b533e5aa
+"svelte@npm:4.2.19":
+  version: 4.2.19
+  resolution: "svelte@npm:4.2.19"
+  dependencies:
+    "@ampproject/remapping": ^2.2.1
+    "@jridgewell/sourcemap-codec": ^1.4.15
+    "@jridgewell/trace-mapping": ^0.3.18
+    "@types/estree": ^1.0.1
+    acorn: ^8.9.0
+    aria-query: ^5.3.0
+    axobject-query: ^4.0.0
+    code-red: ^1.0.3
+    css-tree: ^2.3.1
+    estree-walker: ^3.0.3
+    is-reference: ^3.0.1
+    locate-character: ^3.0.0
+    magic-string: ^0.30.4
+    periscopic: ^3.1.0
+  checksum: ccfd398eb9f3ca058b7eaba9cc74c8d7de10d0f007183865da6aaba7b613f34bd255ff247d2ea68e45b2784fac71ff05402c59c9b8b8ae963ddad128c83dd697
   languageName: node
   linkType: hard
 
