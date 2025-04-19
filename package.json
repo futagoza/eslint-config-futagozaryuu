@@ -17,15 +17,16 @@
         "@futagoza/cli-utils": "1.5.1",
         "@futagoza/sync-yarn-workspaces": "1.0.0",
         "bluebird": "3.7.2",
-        "eslint": "8.51.0",
+        "eslint": "9.25.0",
         "get-yarn-workspaces": "1.0.2",
-        "make-dir": "4.0.0",
+        "make-dir": "5.0.0",
         "prompts": "2.4.2",
         "strip-indent": "4.0.0",
-        "svelte": "4.2.2",
-        "typescript": "5.2.2"
+        "svelte": "5.28.1",
+        "typescript": "5.8.3"
     },
     "engines": {
         "node": ">=16.0.0"
-    }
+    },
+    "packageManager": "yarn@3.5.0+sha512.2dc70be5fce9f66756d25b00a888f3ca66f86b502b76750e72ba54cec89da767b938c54124595e26f868825688e0fe3552c26c76a330673343057acadd5cfcf2"
 }
