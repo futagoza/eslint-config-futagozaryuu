@@ -10,9 +10,8 @@
 // IMPORTS
 // 
 
-import { access, constants, writeFile, unlink } from "fs/promises";
+import { access, constants, mkdir, writeFile, unlink } from "fs/promises";
 import { dirname } from "path";
-import makedirp from "make-dir";
 import stripIndent from "strip-indent";
 import { log, color } from "@futagoza/cli-utils";
 import { config } from "@futagoza/eslint-config-core/internal/index.js";
@@ -60,7 +59,7 @@ async function saveFile( $filename, $data ) {
 
             try {
 
-                await makedirp( $dir );
+                await mkdir( $dir, { recursive: true } );
 
             } catch ( err ) {
 
