@@ -32,7 +32,7 @@ A list of usable configurations as well the configurations they use:
 
 - __`@futagoza`__ (extends _[@futagoza/ignore][ECI]_, _[@futagoza/node/14][ECN]_, _[@futagoza/typescript][ECT]_ and _[@futagoza/dev/test][ECD]_)
 
-If you are using this configuration via `yarn install` (Yarn 1 only) then the following should be available as well:
+Installing this configuration by some package managers (e.g. Yarn 1) may also give your direct access to the following as well:
 
 - __[`@futagoza/core`][ECC]__
 - __[`@futagoza/dev`][ECD]__ (extends _[@futagoza/globals][ECG]_, _[@futagoza/javascript][ECJ]_ and _[@futagoza/node][ECN]_)

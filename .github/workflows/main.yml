@@ -24,15 +24,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install corepack
-      if: (matrix.node-version != '14.x')
-      run: npm i -g corepack
-
-    - name: Install Yarn
-      run: corepack prepare yarn@stable --activate
+    - name: Install NPM@11
+      run: npm install npm@11 -g
 
     - name: Install dependencies
-      run: yarn
+      run: npm i
 
     - name: Lint JavaScript files using ESLint
       run: npm test
