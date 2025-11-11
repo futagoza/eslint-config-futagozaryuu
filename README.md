@@ -14,8 +14,6 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 | [@futagoza/eslint-config-ignore][10a] | [![release][10b]][10c] | ![dependencies][10d] | [![install size][10f]][10g] |
 | [@futagoza/eslint-config-javascript][03a] | [![release][03b]][03c] | ![dependencies][03d] | [![install size][03f]][03g] |
 | [@futagoza/eslint-config-node][04a] | [![release][04b]][04c] | ![dependencies][04d] | [![install size][04f]][04g] |
-| [@futagoza/eslint-config-svelte][08a] | [![release][08b]][08c] | ![dependencies][08d] | [![install size][08f]][08g] |
-| [@futagoza/eslint-config-svelte.ts][11a] | [![release][11b]][11c] | ![dependencies][11d] | [![install size][11f]][11g] |
 | [@futagoza/eslint-config-typescript][06a] | [![release][06b]][06c] | ![dependencies][06d] | [![install size][06f]][06g] |
 
 <!-- @futagoza/eslint-config -->
@@ -74,14 +72,6 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [07f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-html
 [07g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-html
 
-<!-- @futagoza/eslint-config-svelte -->
-[08a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-svelte
-[08b]: https://img.shields.io/npm/v/@futagoza/eslint-config-svelte.svg
-[08c]: https://www.npmjs.com/package/@futagoza/eslint-config-svelte
-[08d]: https://badgen.net/runkit/futagoza/badgen-checkdeps/@futagoza/eslint-config-svelte?cache=0
-[08f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-svelte
-[08g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-svelte
-
 <!-- @futagoza/eslint-config-globals -->
 [09a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-globals
 [09b]: https://img.shields.io/npm/v/@futagoza/eslint-config-globals.svg
@@ -97,13 +87,5 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [10d]: https://badgen.net/runkit/futagoza/badgen-checkdeps/@futagoza/eslint-config-ignore?cache=0
 [10f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-ignore
 [10g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-ignore
-
-<!-- @futagoza/eslint-config-svelte.ts -->
-[11a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-svelte.ts
-[11b]: https://img.shields.io/npm/v/@futagoza/eslint-config-svelte.ts.svg
-[11c]: https://www.npmjs.com/package/@futagoza/eslint-config-svelte.ts
-[11d]: https://badgen.net/runkit/futagoza/badgen-checkdeps/@futagoza/eslint-config-svelte.ts?cache=0
-[11f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-svelte.ts
-[11g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-svelte.ts
 
 __NOTE:__ If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have the icon 🔧, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.
