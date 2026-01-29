@@ -104,18 +104,17 @@ class Counters {
 // 
 
 const $existingRules = Object.keys( config );
-const $internalConfigImports = [];
-const $request = "https://raw.githubusercontent.com/eslint/eslint/main/docs/src/_data/rules.json";
+const $RULES_METADATA_URL = "https://raw.githubusercontent.com/eslint/eslint/main/docs/src/_data/rules.json";
 let $response;
 
 try {
 
-    $response = await fetch( $request );
+    $response = await fetch( $RULES_METADATA_URL );
     $response = JSON.parse( await $response.text() );
 
 } catch ( err ) {
 
-    log.error( color.red( "error while fetching" ), $request );
+    log.error( color.red( "error while fetching" ), $RULES_METADATA_URL );
     die( err )
 
 }
@@ -158,6 +157,12 @@ for ( const $rule of $response.removed ) {
 const ESLINT_RULE_TYPES = [
 
     {
+        "displayName": "layout-and-formatting",
+        "description": "These rules care about how the code looks rather than how it executes:",
+        "rules": $response.types.layout,
+    },
+
+    {
         "displayName": "possible-problems",
         "description": "These rules relate to possible logic errors in code:",
         "rules": $response.types.problem,
@@ -169,18 +174,11 @@ const ESLINT_RULE_TYPES = [
         "rules": $response.types.suggestion,
     },
 
-    {
-        "displayName": "layout-and-formatting",
-        "description": "These rules care about how the code looks rather than how it executes:",
-        "rules": $response.types.layout,
-    },
-
 ];
 
 for ( const $type of ESLINT_RULE_TYPES ) {
 
     const $rules = [];
-    const $ruleType = $type.displayName;
 
     for ( const $rule of $type.rules ) {
 
@@ -189,16 +187,16 @@ for ( const $type of ESLINT_RULE_TYPES ) {
         const $setting = hasOwn( config, $name ) && config[ $name ] !== void 0
             ? JSON
                 .stringify( config[ $name ], void 0, "    " )
-                .replaceAll( "\n", "\n            " )
+                .replaceAll( "\n", "\n                " )
             : "void 0";
 
         $rules.push( `
-            /**
-             * ${ $fixable }${ $rule.description.replaceAll( "*/`", "...`" ) }
-             *
-             * @see http://eslint.org/docs/rules/${ $name }
-             */
-            "${ $name }": ${ $setting },
+                /**
+                 * ${ $fixable }${ $rule.description.replaceAll( "*/`", "...`" ) }
+                 *
+                 * @see http://eslint.org/docs/rules/${ $name }
+                 */
+                "${ $name }": ${ $setting },
         ` );
 
         if ( ! $existingRules.includes( $name ) ) Counters.increment( "new-rules" );
@@ -206,7 +204,7 @@ for ( const $type of ESLINT_RULE_TYPES ) {
     }
     if ( $rules.length === 0 ) continue;
 
-    await saveFile( $ruleType, `
+    await saveFile( $type.displayName, `
         /*eslint comma-dangle: ["error", "only-multiline"]*/
         "use strict";
 
@@ -225,20 +223,9 @@ for ( const $type of ESLINT_RULE_TYPES ) {
         };
     ` );
 
-    $internalConfigImports.push( `...require( "../${ $ruleType }" ).rules,` );
     Counters.increment( "rules-added", $rules.length );
 
 }
-
-await saveFile( "internal/config", `
-    "use strict";
-
-    module.exports = {
-
-        ${ $internalConfigImports.join( "\n        " ) }
-
-    };
-` );
 
 log.info( "Number of rules before:", color.cyan( $existingRules.length ) );
 log.info( "Number of rules after:", color.cyan( Counters.value( "rules-added" ) ) );

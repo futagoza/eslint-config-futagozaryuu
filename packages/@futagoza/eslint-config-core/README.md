@@ -26,7 +26,13 @@ Put the following into your configuration (`.eslintrc.*` file or the _"eslintCon
 
 ## configurations
 
-For a list of configuration files please refer to [@futagoza/eslint-config-core/internal/config.js](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/packages/%40futagoza/eslint-config-core/internal/config.js), a file which is auto-generated each time an internal script is run on the repository to regenerate the configuration files for _@futagoza/core_.
+A list of usable configurations:
+
+- __`@futagoza/core`__ (_default_, all of the below configurations)
+- __`@futagoza/core/layout-and-formatting`__
+- __`@futagoza/core/possible-problems`__
+- __`@futagoza/core/style`__
+- __`@futagoza/core/suggestions`__
 
 You can also use `import { config } from "@futagoza/eslint-config-core/internal"` to get the default options for these rules.
 
