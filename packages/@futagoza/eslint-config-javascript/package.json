@@ -32,9 +32,9 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@babel/core": "7.26.10",
-        "@babel/eslint-parser": "7.27.0",
-        "@babel/eslint-plugin": "7.27.0",
+        "@babel/core": "7.28.6",
+        "@babel/eslint-parser": "7.28.6",
+        "@babel/eslint-plugin": "7.27.1",
         "@futagoza/eslint-config-core": "16.1.0",
         "@futagoza/eslint-config-globals": "16.1.0"
     },
