@@ -1,7 +1,3 @@
-![dependencies](https://badgen.net/runkit/futagoza/badgen-checkdeps/@futagoza/eslint-config-ignore?cache=0)
-[![History](https://img.shields.io/badge/history-CHANGELOG.md-orange.svg)](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/CHANGELOG.md)
-[![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
-
 > This package contains configuration files for ESLint v6.7+<br>
 
 This configuration includes a set of globs to ignore files (mostly recursively) using the `ignorePatterns` property.
