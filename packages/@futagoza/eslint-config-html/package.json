@@ -19,6 +19,6 @@
         "eslint-plugin-html": "8.1.4"
     },
     "engines": {
-        "node": ">=16.0.0"
+        "node": ">=20.0.0"
     }
 }

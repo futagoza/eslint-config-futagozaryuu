@@ -33,6 +33,7 @@ A list of usable configurations as well the configurations they use:
 - __`@futagoza/node/14`__ (extends: _[@futagoza/javascript/es2020][ECJ]_ and _default_)
 - __`@futagoza/node/16`__ (extends: _[@futagoza/javascript/es2021][ECJ]_ and _default_)
 - __`@futagoza/node/18`__ (extends: _[@futagoza/javascript/es2022][ECJ]_ and _default_)
+- __`@futagoza/node/20`__ (extends: _[@futagoza/javascript/es2023][ECJ]_ and _default_)
 
 [ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
 [ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
