@@ -14,7 +14,7 @@ import { access, constants, mkdir, writeFile, unlink } from "fs/promises";
 import { dirname } from "path";
 import stripIndent from "strip-indent";
 import { log, color } from "@futagoza/cli-utils";
-import { config } from "@futagoza/eslint-config-core/internal/index.js";
+import { eslint as config } from "@futagoza/eslint-config-core/internal/index.js";
 
 // 
 // HELPERS

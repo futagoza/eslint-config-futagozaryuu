@@ -2,9 +2,7 @@
 
 module.exports = {
 
-    ...require( "../layout-and-formatting" ).rules,
-    ...require( "../possible-problems" ).rules,
+    ...require( "./eslint" ),
     ...require( "../style" ).rules,
-    ...require( "../suggestions" ).rules,
 
 };
