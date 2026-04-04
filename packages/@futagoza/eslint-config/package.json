@@ -17,6 +17,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
+    "type": "commonjs",
     "dependencies": {
         "@futagoza/eslint-config-dev": "16.1.0",
         "@futagoza/eslint-config-ignore": "16.1.0",

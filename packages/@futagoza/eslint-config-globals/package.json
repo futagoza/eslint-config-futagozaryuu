@@ -12,6 +12,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
+    "type": "commonjs",
     "dependencies": {
         "globals": "17.4.0"
     },

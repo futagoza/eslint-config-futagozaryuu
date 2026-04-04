@@ -10,6 +10,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
+    "type": "commonjs",
     "engines": {
         "node": ">=20.0.0"
     }

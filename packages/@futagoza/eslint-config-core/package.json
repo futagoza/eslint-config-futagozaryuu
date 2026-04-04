@@ -11,6 +11,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
+    "type": "commonjs",
     "dependencies": {
         "@stylistic/eslint-plugin": "5.10.0"
     },

@@ -31,6 +31,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
+    "type": "commonjs",
     "dependencies": {
         "@babel/core": "8.0.0-rc.3",
         "@babel/eslint-parser": "8.0.0-rc.3",

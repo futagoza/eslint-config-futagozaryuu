@@ -12,6 +12,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
+    "type": "commonjs",
     "dependencies": {
         "@futagoza/eslint-config-core": "16.1.0",
         "@typescript-eslint/eslint-plugin": "8.58.0",
