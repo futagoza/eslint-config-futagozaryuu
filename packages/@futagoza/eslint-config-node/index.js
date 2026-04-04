@@ -9,7 +9,7 @@ module.exports = {
 
     ],
 
-    "plugins": [ "node" ],
+    "plugins": [ "n" ],
 
     "overrides": [
         {
@@ -22,7 +22,33 @@ module.exports = {
 
     "rules": {
 
-        /* --------------- eslint-plugin-node | Possible Errors --------------- */
+        /**
+         * require `return` statements after callbacks
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/callback-return.md
+         */
+        "n/callback-return": "off",
+
+        /**
+         * 🔧 enforce either `module.exports` or `exports`
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/exports-style.md
+         */
+        "n/exports-style": "off",
+
+        /**
+         * 🔧 enforce the style of file extensions in `import` declarations
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/file-extension-in-import.md
+         */
+        "n/file-extension-in-import": "off",
+
+        /**
+         * require `require()` calls to be placed at top-level module scope
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/global-require.md
+         */
+        "n/global-require": "off",
 
         /**
          * require error handling in callbacks
@@ -32,46 +58,75 @@ module.exports = {
         "n/handle-callback-err": "off",
 
         /**
-         * Ensure Node.js-style error-first callback pattern is followed
+         * 🔧 require correct usage of hashbang
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/hashbang.md
+         */
+        "n/hashbang": [ "error", {
+
+            "ignoreUnpublished": true,
+            "executableMap": {
+                ".js": "node",
+                ".ts": "ts-node",
+            }
+
+        } ],
+
+        /**
+         * enforce Node.js-style error-first callback pattern is followed
          *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-callback-literal.md
          */
         "n/no-callback-literal": "off",
 
         /**
-         * Disallow the assignment to `exports`.
+         * disallow deprecated APIs
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-deprecated-api.md
+         */
+        "n/no-deprecated-api": "warn",
+
+        /**
+         * disallow the assignment to `exports`
          *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-exports-assign.md
          */
         "n/no-exports-assign": "error",
 
         /**
-         * Disallow `import` declarations of extraneous packages.
+         * disallow `import` declarations which import extraneous modules
          *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-extraneous-import.md
          */
         "n/no-extraneous-import": "off",
 
         /**
-         * Disallow `require()` expressions of extraneous packages.
+         * disallow `require()` expressions which import extraneous modules
          *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-extraneous-require.md
          */
         "n/no-extraneous-require": "off",
 
         /**
-         * Disallow `import` declarations for files that don't exist.
+         * disallow `import` declarations which import missing modules
          *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-missing-import.md
          */
         "n/no-missing-import": "off",
 
         /**
-         * Disallow `require()`s for files that don't exist.
+         * disallow `require()` expressions which import missing modules
          *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-missing-require.md
          */
         "n/no-missing-require": "off",
+
+        /**
+         * disallow `require` calls to be mixed with regular variable declarations
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-mixed-requires.md
+         */
+        "n/no-mixed-requires": "off",
 
         /**
          * disallow `new` operators with calls to `require`
@@ -88,120 +143,18 @@ module.exports = {
         "n/no-path-concat": "warn",
 
         /**
-         * disallow the use of `process.exit()`
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-process-exit.md
-         */
-        "n/no-process-exit": "off",
-
-        /**
-         * Disallow `bin` files that npm ignores.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-bin.md
-         */
-        "n/no-unpublished-bin": "off",
-
-        /**
-         * Disallow `import` declarations for files that npm ignores.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-import.md
-         */
-        "n/no-unpublished-import": "off",
-
-        /**
-         * Disallow `require()`s for files that npm ignores.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-require.md
-         */
-        "n/no-unpublished-require": "off",
-
-        /**
-         * Disallow unsupported ECMAScript built-ins on the specified version.
-         * 
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/es-builtins.md
-         */
-        "n/no-unsupported-features/es-builtins": "off",
-
-        /**
-         * Disallow unsupported ECMAScript syntax on the specified version.
-         * 
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/es-syntax.md
-         */
-        "n/no-unsupported-features/es-syntax": "off",
-
-        /**
-         * Disallow unsupported Node.js built-in APIs on the specified version.
-         * 
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/node-builtins.md
-         */
-        "n/no-unsupported-features/node-builtins": "off",
-
-        /**
-         * Make the same code path as throw at `process.exit()`.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/process-exit-as-throw.md
-         */
-        "n/process-exit-as-throw": "off",
-
-        /**
-         * 🔧 Suggest correct usage of shebang.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/shebang.md
-         */
-        "n/shebang": "error",
-
-        /* --------------- eslint-plugin-node | Best Practices --------------- */
-
-        /**
-         * Disallow deprecated API.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-deprecated-api.md
-         */
-        "n/no-deprecated-api": "warn",
-
-        /* --------------- eslint-plugin-node | Stylistic Issues --------------- */
-
-        /**
-         * require `return` statements after callbacks
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/callback-return.md
-         */
-        "n/callback-return": "off",
-
-        /**
-         * 🔧 Enforce either `module.exports` or `exports`.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/exports-style.md
-         */
-        "n/exports-style": "off",
-
-        /**
-         * 🔧 Enforce the style of file extensions in `import` declarations.
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/file-extension-in-import.md
-         */
-        "n/file-extension-in-import": "off",
-
-        /**
-         * require `require()` calls to be placed at top-level module scope
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/global-require.md
-         */
-        "n/global-require": "off",
-
-        /**
-         * disallow `require` calls to be mixed with regular variable declarations
-         *
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-mixed-requires.md
-         */
-        "n/no-mixed-requires": "off",
-
-        /**
          * disallow the use of `process.env`
          *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-process-env.md
          */
         "n/no-process-env": "off",
+
+        /**
+         * disallow the use of `process.exit()`
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-process-exit.md
+         */
+        "n/no-process-exit": "off",
 
         /**
          * disallow specified modules when loaded by `import` declarations
@@ -225,67 +178,144 @@ module.exports = {
         "n/no-sync": "off",
 
         /**
-         * Enforce either `Buffer` or `require("buffer").Buffer`.
-         * 
+         * disallow top-level `await` in published modules
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-top-level-await.md
+         */
+        "n/no-top-level-await": "off",
+
+        /**
+         * disallow `bin` files that npm ignores
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-bin.md
+         */
+        "n/no-unpublished-bin": "off",
+
+        /**
+         * disallow `import` declarations which import private modules
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-import.md
+         */
+        "n/no-unpublished-import": "off",
+
+        /**
+         * disallow `require()` expressions which import private modules
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-require.md
+         */
+        "n/no-unpublished-require": "off",
+
+        /**
+         * disallow unsupported ECMAScript built-ins on the specified version
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/es-builtins.md
+         */
+        "n/no-unsupported-features/es-builtins": "off",
+
+        /**
+         * disallow unsupported ECMAScript syntax on the specified version
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/es-syntax.md
+         */
+        "n/no-unsupported-features/es-syntax": "off",
+
+        /**
+         * disallow unsupported Node.js built-in APIs on the specified version
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/node-builtins.md
+         */
+        "n/no-unsupported-features/node-builtins": "off",
+
+        /**
+         * enforce either `Buffer` or `require("buffer").Buffer`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/buffer.md
          */
-        "n/prefer-global/buffer": "off",
+        "n/prefer-global/buffer": "warn",
 
         /**
-         * Enforce either `console` or `require("console")`.
-         * 
+         * enforce either `console` or `require("console")`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/console.md
          */
-        "n/prefer-global/console": "off",
+        "n/prefer-global/console": "warn",
 
         /**
-         * Enforce either `process` or `require("process")`.
-         * 
+         * enforce either `crypto` or `require("crypto").webcrypto`
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/crypto.md
+         */
+        "n/prefer-global/crypto": "warn",
+
+        /**
+         * enforce either `process` or `require("process")`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/process.md
          */
-        "n/prefer-global/process": "off",
+        "n/prefer-global/process": "warn",
 
         /**
-         * Enforce either `TextDecoder` or `require("util").TextDecoder`
-         * 
+         * enforce either `TextDecoder` or `require("util").TextDecoder`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/text-decoder.md
          */
-        "n/prefer-global/text-decoder": "off",
+        "n/prefer-global/text-decoder": "warn",
 
         /**
-         * Enforce either `TextEncoder` or `require("util").TextEncoder`
-         * 
+         * enforce either `TextEncoder` or `require("util").TextEncoder`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/text-encoder.md
          */
-        "n/prefer-global/text-encoder": "off",
+        "n/prefer-global/text-encoder": "warn",
 
         /**
-         * Enforce either `URLSearchParams` or `require("url").URLSearchParams`.
-         * 
-         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/url-search-params.md
+         * enforce either global timer functions or `require("timers")*`
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/timers.md
          */
-        "n/prefer-global/url-search-params": "off",
+        "n/prefer-global/timers": "warn",
 
         /**
-         * Enforce either `URL` or `require("url").URL`.
-         * 
+         * enforce either `URL` or `require("url").URL`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/url.md
          */
-        "n/prefer-global/url": "off",
+        "n/prefer-global/url": "warn",
 
         /**
-         * Enforce `require("dns").promises`
-         * 
+         * enforce either `URLSearchParams` or `require("url").URLSearchParams`
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/url-search-params.md
+         */
+        "n/prefer-global/url-search-params": "warn",
+
+        /**
+         * 🔧 enforce using the `node:` protocol when importing Node.js built-in modules
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-node-protocol.md
+         */
+        "n/prefer-node-protocol": "off",
+
+        /**
+         * enforce `require("dns").promises`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-promises/dns.md
          */
         "n/prefer-promises/dns": "off",
 
         /**
-         * Enforce `require("fs").promises`
-         * 
+         * enforce `require("fs").promises`
+         *
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-promises/fs.md
          */
         "n/prefer-promises/fs": "off",
+
+        /**
+         * require that `process.exit()` expressions use the same code path as `throw`
+         *
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/process-exit-as-throw.md
+         */
+        "n/process-exit-as-throw": "off",
 
     },
 

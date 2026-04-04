@@ -29,6 +29,14 @@ module.exports = function CreateNodeConfig( { action = "error", ignore = {}, ver
 
         ],
 
+        settings: {
+
+            n: {
+                version: versions.node,
+            },
+
+        },
+
         overrides: [
 
             require( "./typescript-overrides" ),
