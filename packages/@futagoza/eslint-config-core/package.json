@@ -12,7 +12,7 @@
     "author": "Futago-za Ryuu",
     "main": "index.js",
     "dependencies": {
-        "@stylistic/eslint-plugin": "5.7.1"
+        "@stylistic/eslint-plugin": "5.10.0"
     },
     "engines": {
         "node": ">=16.0.0"
