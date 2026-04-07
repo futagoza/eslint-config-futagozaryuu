@@ -24,11 +24,19 @@ A list of usable configurations as well the configurations they use:
 
 - __`@futagoza/globals`__ (_default_, enables common built-in ECMAScript variables)
 - __`@futagoza/globals/browser`__
-- __`@futagoza/globals/es5`__ (extends _@futagoza/globals_)
-- __`@futagoza/globals/es2015`__ (extends _es5_)
-- __`@futagoza/globals/es2017`__ (extends _es2015_)
-- __`@futagoza/globals/es2020`__ (extends _es2017_)
-- __`@futagoza/globals/es2021`__ (extends _es2020_)
+- __`@futagoza/globals/es5`__
+- __`@futagoza/globals/es2015`__
+- __`@futagoza/globals/es2016`__
+- __`@futagoza/globals/es2017`__
+- __`@futagoza/globals/es2018`__
+- __`@futagoza/globals/es2019`__
+- __`@futagoza/globals/es2020`__
+- __`@futagoza/globals/es2021`__
+- __`@futagoza/globals/es2022`__
+- __`@futagoza/globals/es2023`__
+- __`@futagoza/globals/es2024`__
+- __`@futagoza/globals/es2025`__
+- __`@futagoza/globals/es2026`__
 - __`@futagoza/globals/gui`__ (extends _browser_ and _node_)
 - __`@futagoza/globals/loaders`__
 - __`@futagoza/globals/node`__
