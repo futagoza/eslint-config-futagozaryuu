@@ -5,13 +5,13 @@ module.exports = {
     "extends": [
 
         "./base.js",
-        "@futagoza/globals/es2017",
+        "@futagoza/globals/es2026",
 
     ],
 
     "parserOptions": {
 
-        "ecmaVersion": 2017,
+        "ecmaVersion": 2026,
 
     },
 

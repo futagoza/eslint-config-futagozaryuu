@@ -4,7 +4,7 @@ module.exports = {
 
     "extends": [
 
-        "@futagoza/core",
+        "./base",
         "@futagoza/globals/es5",
 
     ],
@@ -12,17 +12,6 @@ module.exports = {
     "parserOptions": {
 
         "ecmaVersion": 5,
-        "ecmaFeatures": {
-
-            "globalReturn": false,
-
-        },
-
-    },
-
-    "rules": {
-
-        "strict": [ "error", "safe" ],
 
     },
 

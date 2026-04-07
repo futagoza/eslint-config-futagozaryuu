@@ -4,14 +4,14 @@ module.exports = {
 
     "extends": [
 
-        "./es2019.js",
+        "./base.js",
         "@futagoza/globals/es2020",
 
     ],
 
     "parserOptions": {
 
-        "ecmaVersion": 11,
+        "ecmaVersion": 2020,
 
     },
 

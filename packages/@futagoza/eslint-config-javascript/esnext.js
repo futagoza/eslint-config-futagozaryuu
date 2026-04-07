@@ -4,7 +4,7 @@ const { config } = require( "@futagoza/eslint-config-core/internal" );
 
 module.exports = {
 
-    "extends": "./es2023.js",
+    "extends": "./es2026.js",
 
     "parser": "@babel/eslint-parser",
     "parserOptions": {
@@ -62,7 +62,7 @@ module.exports = {
 
         /**
          * 🔧 require or disallow semicolons instead of ASI
-         * 
+         *
          * @see
          * - http://eslint.org/docs/rules/semi
          * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules

@@ -2,11 +2,16 @@
 
 module.exports = {
 
-    "extends": "./es2022.js",
+    "extends": [
+
+        "./base.js",
+        "@futagoza/globals/es2023",
+
+    ],
 
     "parserOptions": {
 
-        "ecmaVersion": 14,
+        "ecmaVersion": 2023,
 
     },
 

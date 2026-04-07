@@ -4,14 +4,14 @@ module.exports = {
 
     "extends": [
 
-        "./es5.js",
+        "./base.js",
         "@futagoza/globals/es2015",
 
     ],
 
     "parserOptions": {
 
-        "ecmaVersion": 6,
+        "ecmaVersion": 2015,
 
     },
 
