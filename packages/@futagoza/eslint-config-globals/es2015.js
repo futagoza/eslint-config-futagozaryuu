@@ -7,7 +7,6 @@ module.exports = {
     "globals": {
 
         ...globals.builtin,
-        ...globals.es5,
         ...globals.es2015,
 
     },
