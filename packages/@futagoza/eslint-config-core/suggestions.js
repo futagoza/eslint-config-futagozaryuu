@@ -1,15 +1,15 @@
 /*eslint comma-dangle: ["error", "only-multiline"]*/
 "use strict";
 
-// 
+//
 // These rules suggest alternate ways of doing things:
-// 
+//
 
 module.exports = {
 
     "rules": {
 
-        
+
         /**
          * Enforce getter and setter pairs in objects and classes
          *
@@ -1163,7 +1163,7 @@ module.exports = {
          *
          * @see http://eslint.org/docs/rules/prefer-object-spread
          */
-        "prefer-object-spread": "off",
+        "prefer-object-spread": "error",
 
 
 
@@ -1322,4 +1322,3 @@ module.exports = {
     },
 
 };
-    

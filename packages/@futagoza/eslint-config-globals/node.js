@@ -4,6 +4,10 @@ const globals = require( "globals" );
 
 module.exports = {
 
-    "globals": Object.assign( {}, globals.node ),
+    "globals": {
+
+        ...globals.node,
+
+    },
 
 };

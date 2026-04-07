@@ -1,9 +1,15 @@
 "use strict";
 
 const globals = require( "globals" );
+const es2015 = require( "./es2015" );
 
 module.exports = {
 
-    "globals": Object.assign( {}, require( "./es2015" ).globals, globals.es2017 ),
+    "globals": {
+
+        ...es2015.globals,
+        ...globals.es2017,
+
+    },
 
 };

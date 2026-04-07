@@ -2,15 +2,16 @@
 
 const globals = require( "globals" );
 
-const others = {
-
-    "import": false,
-    "System": false,
-
-};
-
 module.exports = {
 
-    "globals": Object.assign( {}, globals.commonjs, globals.amd, others ),
+    "globals": {
+
+        ...globals.commonjs,
+        ...globals.amd,
+
+        "import": false,
+        "System": false,
+
+    },
 
 };
