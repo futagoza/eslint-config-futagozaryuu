@@ -20,6 +20,7 @@ module.exports = {
 
         "new-cap": "off",
         "no-invalid-this": "off",
+        "no-undef": "off",
         "no-unused-expressions": "off",
         "object-curly-spacing": "off",
         "semi": "off",
@@ -32,6 +33,15 @@ module.exports = {
          * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules
          */
         "@babel/new-cap": config[ "new-cap" ],
+
+        /**
+         * disallow the use of undeclared variables unless mentioned in /*global ... comments
+         *
+         * @see
+         * - http://eslint.org/docs/rules/no-undef
+         * - https://github.com/babel/babel/tree/master/eslint/babel-eslint-plugin#rules
+         */
+        "@babel/no-undef": config[ "no-undef" ],
 
         /**
          * disallow `this` keywords outside of classes or class-like objects
