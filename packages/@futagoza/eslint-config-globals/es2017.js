@@ -1,13 +1,14 @@
 "use strict";
 
 const globals = require( "globals" );
-const es2015 = require( "./es2015" );
 
 module.exports = {
 
     "globals": {
 
-        ...es2015.globals,
+        ...globals.builtin,
+        ...globals.es5,
+        ...globals.es2015,
         ...globals.es2017,
 
     },
