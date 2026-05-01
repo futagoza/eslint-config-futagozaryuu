@@ -15,8 +15,8 @@
     "type": "commonjs",
     "dependencies": {
         "@futagoza/eslint-config-core": "16.1.0",
-        "@typescript-eslint/eslint-plugin": "8.58.0",
-        "@typescript-eslint/parser": "8.58.0",
+        "@typescript-eslint/eslint-plugin": "8.59.1",
+        "@typescript-eslint/parser": "8.59.1",
         "sanitize-filename": "1.6.4"
     },
     "peerDependencies": {
