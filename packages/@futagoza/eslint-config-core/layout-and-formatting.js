@@ -1,4 +1,4 @@
-/*eslint comma-dangle: ["error", "only-multiline"]*/
+/*eslint comma-dangle: "off"*/
 "use strict";
 
 // 
@@ -9,16 +9,13 @@ module.exports = {
 
     "rules": {
 
-        
         /**
          * 🔧 Require or disallow Unicode byte order mark (BOM)
-         *
+         * 
          * @see http://eslint.org/docs/rules/unicode-bom
          */
         "unicode-bom": "warn",
 
-
     },
 
 };
-    

@@ -72,9 +72,7 @@ async function saveFile( $filename, $data ) {
 
     }
 
-    if ( $data.startsWith( "\n" ) ) $data = $data.slice( 1 );
-
-    await writeFile( $path, stripIndent( $data ) );
+    await writeFile( $path, stripIndent( $data ).trimStart().trimEnd() + "\r\n" );
 
 }
 
@@ -100,7 +98,6 @@ class Counters {
 
 // 
 // MAIN
-// 
 // 
 
 const $existingRules = Object.keys( config );
@@ -193,7 +190,7 @@ for ( const $type of ESLINT_RULE_TYPES ) {
         $rules.push( `
                 /**
                  * ${ $fixable }${ $rule.description.replaceAll( "*/`", "...`" ) }
-                 *
+                 * 
                  * @see http://eslint.org/docs/rules/${ $name }
                  */
                 "${ $name }": ${ $setting },
@@ -204,8 +201,11 @@ for ( const $type of ESLINT_RULE_TYPES ) {
     }
     if ( $rules.length === 0 ) continue;
 
+    $rules[ 0 ] = $rules[ 0 ].trimStart();
+    $rules.push( $rules.pop().trimEnd() );
+
     await saveFile( $type.displayName, `
-        /*eslint comma-dangle: ["error", "only-multiline"]*/
+        /*eslint comma-dangle: "off"*/
         "use strict";
 
         // 
@@ -216,7 +216,7 @@ for ( const $type of ESLINT_RULE_TYPES ) {
 
             "rules": {
 
-                ${ $rules.join( "\n\n" ) }
+                ${ $rules.join( "" ) }
 
             },
 
