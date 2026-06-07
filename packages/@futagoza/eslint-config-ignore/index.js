@@ -1,20 +1,23 @@
-"use strict";
+export const config = {
 
-module.exports = {
+    name: "@futagoza/eslint-config-ignore",
 
-    "ignorePatterns": [
+    ignores: [
 
-        "!**/.*rc.cjs",
-        "!**/.*rc.js",
-        "!**/.*rc.mjs",
+        // root based ignores
         ".idea/*",
         ".nyc_output/*",
-        "**/assets/*",
         "coverage/*",
+        "temp/*",
+
+        // recursive ignores
+        "**/assets/*",
         "**/dist/*",
         "**/node_modules/*",
         "**/out/*",
 
     ],
 
-};
+}
+
+export default [ config ]

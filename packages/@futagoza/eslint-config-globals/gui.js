@@ -1,16 +1,25 @@
-"use strict";
+import globals from "globals"
 
-const globals = require( "globals" );
-const browser = require( "./browser" );
+export const config = {
 
-module.exports = {
+    name: "@futagoza/eslint-config-globals/gui",
 
-    "globals": {
+    languageOptions: {
 
-        ...browser.globals,
-        ...globals.node,
-        ...globals[ "shared-node-browser" ],
+        globals: {
+
+            ...globals.browser,
+            ...globals.webextensions,
+            ...globals.greasemonkey,
+            ...globals.devtools,
+
+            ...globals.node,
+            ...globals[ "shared-node-browser" ],
+
+        },
 
     },
 
-};
+}
+
+export default [ config ]

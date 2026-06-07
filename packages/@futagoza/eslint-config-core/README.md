@@ -1,8 +1,8 @@
-> This package contains configuration files for ESLint v7.15+<br>
+> This package contains configuration files for ESLint v10+<br>
 
 These are configuration files for ESLint that are mostly extended upon by my other ESLint configurations.
 
-The rules found (and set) in these files are the core set of built-in ESLint rules.
+Most of the rules set in these files are from the core set of built-in ESLint rules, with the rest from the `@stylistic` plugin
 
 ## installation
 
@@ -12,25 +12,55 @@ $ npm i --save-dev @futagoza/eslint-config-core
 
 ## usage
 
-Put the following into your configuration (`.eslintrc.*` file or the _"eslintConfig"_ field in `package.json`):
+Put the following into your eslint configuration file:
 
-```json
-{
-    "extends": "@futagoza/core"
-}
+```js
+import { defineConfig } from "eslint/config"
+import coreConfig from "@futagoza/eslint-config-core"
+
+// Used alongside other configurations:
+export default [
+
+    // ...
+
+    coreConfig,
+
+    // ...
+
+]
+
+// Used as base configuration for other configurations:
+export default defineConfig(
+    {
+
+        // ...
+
+        extends: [ coreConfig ],
+
+        // ...
+
+    },
+)
+
+// direct access to unprocessed config object
+import { config } from "@futagoza/eslint-config-core"
+
+// direct access to core ESLint rules used in this config
+import { EslintRules } from "@futagoza/eslint-config-core"
+
+// or direct access to ALL rules (ESLint + @stylistic) used in this config
+import { ConfigRules } from "@futagoza/eslint-config-core"
 ```
 
 ## configurations
 
 A list of usable configurations:
 
-- __`@futagoza/core`__ (_default_, all of the below configurations)
-- __`@futagoza/core/layout-and-formatting`__
-- __`@futagoza/core/possible-problems`__
-- __`@futagoza/core/style`__
-- __`@futagoza/core/suggestions`__
-
-You can also use `import { config } from "@futagoza/eslint-config-core/internal"` to get the default options for these rules.
+- __`@futagoza/eslint-config-core`__ (_default_, extends the below auto-generated configurations)
+- __`@futagoza/eslint-config-core/rules/layout.js`__
+- __`@futagoza/eslint-config-core/rules/problem.js`__
+- __`@futagoza/eslint-config-core/rules/style.js`__
+- __`@futagoza/eslint-config-core/rules/suggestion.js`__
 
 ## license
 

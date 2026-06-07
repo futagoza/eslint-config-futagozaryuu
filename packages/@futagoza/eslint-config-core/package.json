@@ -5,15 +5,16 @@
     "keywords": [
         "eslint",
         "configuration",
+        "lint",
         "style"
     ],
     "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-core",
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
-    "type": "commonjs",
+    "type": "module",
     "dependencies": {
-        "@stylistic/eslint-plugin": "5.10.0"
+        "@stylistic/eslint-plugin": "6.0.0-beta.5"
     },
     "engines": {
         "node": ">=20.0.0"

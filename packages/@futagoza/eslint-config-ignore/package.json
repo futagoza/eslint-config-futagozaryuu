@@ -1,8 +1,9 @@
 {
     "name": "@futagoza/eslint-config-ignore",
     "version": "16.1.0",
-    "description": "Adds a general purpose ignorePatterns property to your configuration.",
+    "description": "Adds a general purpose global ignore to be used at the top of your ESLint flat config",
     "keywords": [
+        "eslint",
         "configuration",
         "ignore"
     ],
@@ -10,7 +11,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
-    "type": "commonjs",
+    "type": "module",
     "engines": {
         "node": ">=20.0.0"
     }

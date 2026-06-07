@@ -1,16 +1,22 @@
-"use strict";
+import globals from "globals"
 
-const globals = require( "globals" );
+export const config = {
 
-module.exports = {
+    name: "@futagoza/eslint-config-globals/browser",
 
-    "globals": {
+    languageOptions: {
 
-        ...globals.browser,
-        ...globals.webextensions,
-        ...globals.greasemonkey,
-        ...globals.devtools,
+        globals: {
+
+            ...globals.browser,
+            ...globals.webextensions,
+            ...globals.greasemonkey,
+            ...globals.devtools,
+
+        },
 
     },
 
-};
+}
+
+export default [ config ]

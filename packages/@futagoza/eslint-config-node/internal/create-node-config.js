@@ -1,50 +1,102 @@
-"use strict";
+import { defineConfig } from "eslint/config"
+import MainNodeConfig from "../index.js"
+
+const noUnsupportedFeatures = [
+
+    "es-builtins",
+    "es-syntax",
+    "node-builtins",
+
+]
 
 /**
- * A helper function to build configurations that use rules from `eslint-plugin-node`
+ * A helper function to build configurations that use rules from `eslint-plugin-n`
+ * 
+ * @param {{ action: string, ignore: string[], versions: Record<string,string|number>, rules: {} }} param0 
  */
+export default async function CreateNodeConfig( { action = "error", ignore = {}, versions = {}, rules = {} } ) {
 
-module.exports = function CreateNodeConfig( { action = "error", ignore = {}, versions = {}, rules = {} } ) {
+    const esVersion = typeof versions.es === "number"
+        ? `es${ versions.es }`
+        : ( versions.es ?? "es2015" )
 
-    if ( typeof versions.es === "number" ) versions.es = `es${ versions.es }`;
-    if ( typeof versions.node === "number" ) versions.node = `>=${ versions.node }`;
+    const version = typeof versions.node === "number"
+        ? `>=${ versions.node }`
+        : ( versions.node ?? ">=4" )
 
-    for ( const rule of [ "es-builtins", "es-syntax", "node-builtins" ] ) {
+    for ( const rule of noUnsupportedFeatures )
 
-        rules[ "node/no-unsupported-features/" + rule ] = [ action, {
+        rules[ "n/no-unsupported-features/" + rule ] = [ action, {
 
             ignores: ignore[ rule ],
-            version: versions.node,
+            version,
 
-        } ];
+        } ]
+
+    // https://stackoverflow.com/a/67880017
+    const { default: JavascriptConfig } = await import( `@futagoza/eslint-config-javascript/${ esVersion }.js` )
+
+    // the Node.js config
+    const ConfigObject = {
+
+        name: "@futagoza/eslint-config-node/" + version,
+
+        files: [
+            "**/*.cjs",
+            "**/*.mjs",
+            "**/*.js",
+            "**/*.jsx",
+            "**/*.cts",
+            "**/*.mts",
+            "**/*.ts",
+            "**/*.tsx",
+        ],
+
+        extends: [ MainNodeConfig ],
+
+        settings: {
+
+            "n": { version },
+
+        },
+
+        rules,
 
     }
 
     return {
 
-        extends: [
+        ConfigObject,
 
-            "@futagoza/javascript/" + versions.es,
-            require.resolve( "../index.js" ),
-
-        ],
-
-        settings: {
-
-            n: {
-                version: versions.node,
+        ConfigArray: defineConfig(
+            {
+                name: "@futagoza/eslint-config-node/commonjs",
+                files: [
+                    "**/*.cjs",
+                    "**/*.cts",
+                ],
+                languageOptions: {
+                    sourceType: "commonjs",
+                },
             },
+            {
+                name: "@futagoza/eslint-config-node/module",
+                files: [
+                    "**/*.mjs",
+                    "**/*.js",
+                    "**/*.jsx",
+                    "**/*.mts",
+                    "**/*.ts",
+                    "**/*.tsx",
+                ],
+                languageOptions: {
+                    sourceType: "module",
+                },
+            },
+            JavascriptConfig,
+            ConfigObject,
+        ),
 
-        },
+    }
 
-        overrides: [
-
-            require( "./typescript-overrides" ),
-
-        ],
-
-        rules,
-
-    };
-
-};
+}

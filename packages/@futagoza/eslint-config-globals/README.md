@@ -1,4 +1,4 @@
-> This package contains configuration files for ESLint v6+<br>
+> This package contains configuration files for ESLint v10+<br>
 
 This is a configuration file for ESLint that is used to enable [JavaScript global variables](https://github.com/sindresorhus/globals).
 
@@ -10,38 +10,40 @@ $ npm i --save-dev @futagoza/eslint-config-globals
 
 ## usage
 
-Put the following into your configuration (`.eslintrc.*` file or the _"eslintConfig"_ field in `package.json`):
+Put the following into your eslint configuration file:
 
-```json
-{
-    "extends": "@futagoza/globals"
-}
+```js
+// Eslint config array
+import globals from "@futagoza/eslint-config-globals"
+
+// or direct access to the javascript objects used in the config
+import { config as globalsConfig } from "@futagoza/eslint-config-globals"
 ```
 
 ## configurations
 
-A list of usable configurations as well the configurations they use:
+This is a list of importable ESLint configurations:
 
-- __`@futagoza/globals`__ (_default_, enables common built-in ECMAScript variables)
-- __`@futagoza/globals/browser`__
-- __`@futagoza/globals/es5`__
-- __`@futagoza/globals/es2015`__
-- __`@futagoza/globals/es2016`__
-- __`@futagoza/globals/es2017`__
-- __`@futagoza/globals/es2018`__
-- __`@futagoza/globals/es2019`__
-- __`@futagoza/globals/es2020`__
-- __`@futagoza/globals/es2021`__
-- __`@futagoza/globals/es2022`__
-- __`@futagoza/globals/es2023`__
-- __`@futagoza/globals/es2024`__
-- __`@futagoza/globals/es2025`__
-- __`@futagoza/globals/es2026`__
-- __`@futagoza/globals/gui`__ (extends _browser_ and _node_)
-- __`@futagoza/globals/loaders`__
-- __`@futagoza/globals/node`__
-- __`@futagoza/globals/test`__
-- __`@futagoza/globals/worker`__
+- __`@futagoza/eslint-config-globals`__ (_default_, enables common built-in ECMAScript variables)
+- __`@futagoza/eslint-config-globals/browser.js`__
+- __`@futagoza/eslint-config-globals/es5.js`__
+- __`@futagoza/eslint-config-globals/es2015.js`__
+- __`@futagoza/eslint-config-globals/es2016.js`__
+- __`@futagoza/eslint-config-globals/es2017.js`__
+- __`@futagoza/eslint-config-globals/es2018.js`__
+- __`@futagoza/eslint-config-globals/es2019.js`__
+- __`@futagoza/eslint-config-globals/es2020.js`__
+- __`@futagoza/eslint-config-globals/es2021.js`__
+- __`@futagoza/eslint-config-globals/es2022.js`__
+- __`@futagoza/eslint-config-globals/es2023.js`__
+- __`@futagoza/eslint-config-globals/es2024.js`__
+- __`@futagoza/eslint-config-globals/es2025.js`__
+- __`@futagoza/eslint-config-globals/es2026.js`__
+- __`@futagoza/eslint-config-globals/gui.js`__
+- __`@futagoza/eslint-config-globals/loaders.js`__
+- __`@futagoza/eslint-config-globals/node.js`__
+- __`@futagoza/eslint-config-globals/test.js`__
+- __`@futagoza/eslint-config-globals/worker.js`__
 
 ## license
 

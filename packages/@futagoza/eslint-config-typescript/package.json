@@ -5,6 +5,7 @@
     "keywords": [
         "eslint",
         "configuration",
+        "ecmascript",
         "typescript",
         "ts"
     ],
@@ -12,18 +13,17 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
-    "type": "commonjs",
+    "type": "module",
     "dependencies": {
         "@futagoza/eslint-config-core": "16.1.0",
-        "@typescript-eslint/eslint-plugin": "8.59.1",
-        "@typescript-eslint/parser": "8.59.1",
-        "sanitize-filename": "1.6.4"
+        "sanitize-filename": "1.6.4",
+        "typescript-eslint": "8.60.1"
     },
     "peerDependencies": {
         "eslint": "*",
         "typescript": "*"
     },
     "engines": {
-        "node": ">=20.0.0"
+        "node": ">=20.10.0"
     }
 }

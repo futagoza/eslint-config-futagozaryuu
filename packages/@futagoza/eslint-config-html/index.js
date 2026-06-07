@@ -1,42 +1,46 @@
-"use strict";
+import { defineConfig } from "eslint/config"
+import html from "eslint-plugin-html"
+import globals from "@futagoza/eslint-config-globals/browser.js"
 
-module.exports = {
+export const config = {
 
-    "overrides": [ {
+    name: "@futagoza/eslint-config-html",
 
-        "files": [ "*.html", "*.htm", "*.phtml", "*.xhtml", "*.xml" ],
+    files: [ "**/*.html", "**/*.htm", "**/*.phtml", "**/*.xhtml", "**/*.xml" ],
 
-        "extends": [
+    extends: [ globals ],
 
-            "@futagoza/globals/browser",
+    plugins: { html },
+
+    // https://github.com/BenoitZugmeyer/eslint-plugin-html#settings
+    settings: {
+
+        "html/html-extensions": [ ".htm", ".html", ".phtml" ],
+
+        "html/xml-extensions": [ ".xhtml", ".xml" ],
+
+        "html/indent": "+4",
+
+        "html/report-bad-indent": "error",
+
+        "html/javascript-tag-names": [ "script" ],
+
+        "html/javascript-mime-types": [
+
+            "application/javascript",
+            "module",
+            "text/babel",
+            "text/ecmascript-6",
+            "text/javascript",
+            "text/jsx",
+            "text/typescript",
 
         ],
 
-        "plugins": [ "html" ],
+        "html/ignore-tags-without-type": false,
 
-        // https://github.com/BenoitZugmeyer/eslint-plugin-html#settings
-        "settings": {
+    },
 
-            "html/html-extensions": [ ".htm", ".html", ".phtml" ],
-            "html/xml-extensions": [ ".xhtml", ".xml" ],
+}
 
-            "html/indent": "+4",
-            "html/report-bad-indent": "error",
-
-            "html/javascript-mime-types": [
-
-                "application/javascript",
-                "module",
-                "text/babel",
-                "text/ecmascript-6",
-                "text/javascript",
-                "text/jsx",
-                "text/typescript",
-
-            ],
-
-        },
-
-    } ],
-
-};
+export default defineConfig( config )

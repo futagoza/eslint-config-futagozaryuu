@@ -1,17 +1,23 @@
-"use strict";
+import globals from "globals"
 
-const globals = require( "globals" );
+export const config = {
 
-module.exports = {
+    name: "@futagoza/eslint-config-globals/loaders",
 
-    "globals": {
+    languageOptions: {
 
-        ...globals.commonjs,
-        ...globals.amd,
+        globals: {
 
-        "import": false,
-        "System": false,
+            ...globals.commonjs,
+            ...globals.amd,
+
+            "import": false,
+            "System": false,
+
+        },
 
     },
 
-};
+}
+
+export default [ config ]

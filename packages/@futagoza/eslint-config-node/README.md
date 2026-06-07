@@ -1,8 +1,8 @@
-> This package contains configuration files for ESLint v7.15+<br>
+> This package contains configuration files for ESLint v10+<br>
 
 These are configuration files for ESLint that are used to lint my Node.js projects.
 
-**NOTE:** Apart from the default configuration, all configurations extend [@futagoza/eslint-config-javascript][ECJ] (which itself extends [@futagoza/eslint-config-core][ECC]), so you don't have to include either as a dependency when using this package.
+**NOTE:** Apart from the default configuration, all configurations extend [@futagoza/eslint-config-javascript](https://www.npmjs.com/package/@futagoza/eslint-config-javascript) (which itself extends [@futagoza/eslint-config-core](https://www.npmjs.com/package/@futagoza/eslint-config-core)), so you don't have to include either as a dependency when using this package.
 
 ## installation
 
@@ -12,32 +12,68 @@ $ npm i --save-dev @futagoza/eslint-config-node
 
 ## usage
 
-Put the following into your configuration (`.eslintrc.*` file or the _"eslintConfig"_ field in `package.json`):
+Put the following into your eslint configuration file:
 
-```json
-{
-    "extends": "@futagoza/node"
-}
+```js
+import { defineConfig } from "eslint/config"
+import nodeConfig from "@futagoza/eslint-config-node"
+
+// Used alongside other configurations:
+export default [
+
+    // ...
+
+    nodeConfig,
+
+    // ...
+
+]
+
+// Used as base configuration for other configurations:
+export default defineConfig(
+    {
+
+        // ...
+
+        extends: [ nodeConfig ],
+
+        // ...
+
+    },
+)
+
+// direct access to unprocessed config object
+import { config } from "@futagoza/eslint-config-node"
+
+// direct access to `eslint-plugin-n` rules used in this config
+import { configRules } from "@futagoza/eslint-config-node"
 ```
 
 ## configurations
 
-A list of usable configurations as well the configurations they use:
+A list of usable configurations:
 
-- __`@futagoza/node`__ (_default_ and _[@futagoza/globals/node][ECG]_)
-- __`@futagoza/node/4`__ (extends _[@futagoza/javascript/es2015][ECJ]_ and _default_)
-- __`@futagoza/node/6`__ (extends: _[@futagoza/javascript/es2015][ECJ]_ and _default_)
-- __`@futagoza/node/8`__ (extends: _[@futagoza/javascript/es2017][ECJ]_ and _default_)
-- __`@futagoza/node/10`__ (extends: _[@futagoza/javascript/es2018][ECJ]_ and _default_)
-- __`@futagoza/node/12`__ (extends: _[@futagoza/javascript/es2019][ECJ]_ and _default_)
-- __`@futagoza/node/14`__ (extends: _[@futagoza/javascript/es2020][ECJ]_ and _default_)
-- __`@futagoza/node/16`__ (extends: _[@futagoza/javascript/es2021][ECJ]_ and _default_)
-- __`@futagoza/node/18`__ (extends: _[@futagoza/javascript/es2022][ECJ]_ and _default_)
-- __`@futagoza/node/20`__ (extends: _[@futagoza/javascript/es2023][ECJ]_ and _default_)
+- __`@futagoza/eslint-config-node`__ (_default_, extends the below auto-generated _@futagoza/eslint-config-node/rules/*_ configurations)
+- __`@futagoza/eslint-config-node/rules/deprecated.js`__
+- __`@futagoza/eslint-config-node/rules/general.js`__
+- __`@futagoza/eslint-config-node/rules/layout.js`__
+- __`@futagoza/eslint-config-node/rules/problem.js`__
+- __`@futagoza/eslint-config-node/rules/suggestion.js`__
 
-[ECC]: https://www.npmjs.com/package/@futagoza/eslint-config-core
-[ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
-[ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
+These configurations target LTS versions (and from 2026, current versions) of Node:
+
+- __`@futagoza/eslint-config-node/4.js`__
+- __`@futagoza/eslint-config-node/6.js`__
+- __`@futagoza/eslint-config-node/8.js`__
+- __`@futagoza/eslint-config-node/10.js`__
+- __`@futagoza/eslint-config-node/12.js`__
+- __`@futagoza/eslint-config-node/14.js`__
+- __`@futagoza/eslint-config-node/16.js`__
+- __`@futagoza/eslint-config-node/18.js`__
+- __`@futagoza/eslint-config-node/20.js`__
+- __`@futagoza/eslint-config-node/22.js`__
+- __`@futagoza/eslint-config-node/24.js`__
+- __`@futagoza/eslint-config-node/26.js`__
 
 ## license
 

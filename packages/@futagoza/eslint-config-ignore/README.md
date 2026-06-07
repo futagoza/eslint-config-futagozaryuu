@@ -1,9 +1,9 @@
-> This package contains configuration files for ESLint v6.7+<br>
+> This package contains configuration files for ESLint v10+<br>
 
-This configuration includes a set of globs to ignore files (mostly recursively) using the `ignorePatterns` property.
+This configuration includes a set of globs to ignore files (mostly recursively) using the `ignore` property.
 
 - See ignored patterns: [@futagoza/eslint-config-ignore/index.js](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/packages/%40futagoza/eslint-config-ignore/index.js)
-- See documentation: [eslint.org/docs/user-guide/configuring#ignoring-files-and-directories](https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories)
+- See documentation: [eslint.org/docs/latest/use/configure/ignore](https://eslint.org/docs/latest/use/configure/ignore)
 
 ## installation
 
@@ -13,12 +13,31 @@ $ npm i --save-dev @futagoza/eslint-config-ignore
 
 ## usage
 
-Put the following into your configuration (`.eslintrc.json` file or the _"eslintConfig"_ field in `package.json`):
+Put either of the following into your eslint configuration file:
 
-```json
-{
-    "extends": "@futagoza/ignore"
-}
+```js
+import { defineConfig } from "eslint/config"
+import ignore from "@futagoza/eslint-config-ignore"
+
+// Used as a global ignore pattern:
+export default [
+
+    ignore,
+
+    // ...
+
+]
+
+// Used as a local ignore pattern for a single configuration
+export default defineConfig(
+    {
+        files: [ "./**/*.coffee" ],
+        extends: [ ignore ],
+    },
+)
+
+// or direct access to the javascript objects used in the config
+import { config as ignoreConfig } from "@futagoza/eslint-config-ignore"
 ```
 
 ## license

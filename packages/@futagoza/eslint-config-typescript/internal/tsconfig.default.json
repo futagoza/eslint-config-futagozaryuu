@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json.schemastore.org/tsconfig",
+    "$schema": "https://json.schemastore.org/tsconfig",
     "exclude": [
         "dist",
         "node_modules",
@@ -7,8 +7,10 @@
         "temp"
     ],
     "include": [
-        "**/*.ts",
-        "**/*.tsx"
+        "./**/*.cts",
+        "./**/*.mts",
+        "./**/*.ts",
+        "./**/*.tsx"
     ],
     "compilerOptions": {
         "baseUrl": "__CWD__",

@@ -1,14 +1,20 @@
-"use strict";
+import globals from "globals"
 
-const globals = require( "globals" );
+export const config = {
 
-module.exports = {
+    name: "@futagoza/eslint-config-globals/worker",
 
-    "globals": {
+    languageOptions: {
 
-        ...globals.worker,
-        ...globals.serviceworker,
+        globals: {
+
+            ...globals.worker,
+            ...globals.serviceworker,
+
+        },
 
     },
 
-};
+}
+
+export default [ config ]

@@ -3,9 +3,12 @@
     "version": "16.1.0",
     "description": "Futago-za Ryuu's ESLint configurations for HTML files.",
     "keywords": [
-        "configuration",
         "eslint",
+        "configuration",
+        "lint",
+        "ecmascript",
         "javascript",
+        "typescript",
         "html",
         "xml",
         "script"
@@ -14,7 +17,7 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
-    "type": "commonjs",
+    "type": "module",
     "dependencies": {
         "@futagoza/eslint-config-globals": "16.1.0",
         "eslint-plugin-html": "8.1.4"

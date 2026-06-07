@@ -1,13 +1,12 @@
 [![GitHub Actions](https://github.com/futagoza/eslint-config-futagozaryuu/workflows/ci/badge.svg)](https://github.com/futagoza/eslint-config-futagozaryuu/actions?workflow=ci)
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
-These are configurations for ESLint that I use in my JavaScript and TypeScript projects. Check each package for any configurations that are available (for example, [@futagoza/node][04a] has 6 configurations!)
+These are configuration files for ESLint (written as flat configs for ESLint v10+ from @futagoza/eslint-config v17) that I use in my JavaScript and TypeScript projects. Check each package for any configuration files that are available (for example, [@futagoza/eslint-config-node][04a] has 15+ configuration files!)
 
 | package | release | weight |
 | ------- | ------- | ------ |
 | [@futagoza/eslint-config][01a] | [![release][01b]][01c] | [![install size][01f]][01g] |
 | [@futagoza/eslint-config-core][02a] | [![release][02b]][02c] | [![install size][02f]][02g] |
-| [@futagoza/eslint-config-dev][05a] | [![release][05b]][05c] | [![install size][05f]][05g] |
 | [@futagoza/eslint-config-globals][09a] | [![release][09b]][09c] | [![install size][09f]][09g] |
 | [@futagoza/eslint-config-html][07a] | [![release][07b]][07c] | [![install size][07f]][07g] |
 | [@futagoza/eslint-config-ignore][10a] | [![release][10b]][10c] | [![install size][10f]][10g] |
@@ -43,13 +42,6 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [04f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-node
 [04g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-node
 
-<!-- @futagoza/eslint-config-dev -->
-[05a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-dev
-[05b]: https://img.shields.io/npm/v/@futagoza/eslint-config-dev.svg
-[05c]: https://www.npmjs.com/package/@futagoza/eslint-config-dev
-[05f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-dev
-[05g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-dev
-
 <!-- @futagoza/eslint-config-typescript -->
 [06a]: https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config-typescript
 [06b]: https://img.shields.io/npm/v/@futagoza/eslint-config-typescript.svg
@@ -78,4 +70,4 @@ These are configurations for ESLint that I use in my JavaScript and TypeScript p
 [10f]: https://packagephobia.now.sh/badge?p=@futagoza/eslint-config-ignore
 [10g]: https://packagephobia.now.sh/result?p=@futagoza/eslint-config-ignore
 
-__NOTE:__ If you open the source files for these configurations, you will find each rule has a JSDoc description. Some of these descriptions have the icon 🔧, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.
+__NOTE:__ If you open the source files for some configuration files (especially the auto-generated configuration files in `@futagoza/eslint-config-*/rules/*.js`), you will find each rule has a JSDoc description; some of these descriptions have the icon 🔧, which means a rule that can be fixed using the `--fix` flag on ESLint's CLI.

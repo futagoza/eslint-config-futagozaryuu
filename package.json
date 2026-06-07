@@ -5,24 +5,36 @@
         "packages/@futagoza/*"
     ],
     "scripts": {
+        "rebuild.all (preview)": "node scripts/rebuild.all.js -t",
+        "rebuild.all": "node scripts/rebuild.all.js",
         "test": "eslint .",
         "fix": "eslint . --fix",
-        "rc-test": "node scripts/rebuild-core.mjs --test",
-        "rc": "node scripts/rebuild-core.mjs",
-        "bump-dry": "node scripts/bump --dry",
-        "bump": "node scripts/bump"
+        "preview": "npx @eslint/config-inspector@latest",
+        "bump-dry": "node scripts/bump.cjs --dry",
+        "bump": "node scripts/bump.cjs",
+        "rebuild.core (preview)": "node scripts/rebuild.core.js -t",
+        "rebuild.core": "node scripts/rebuild.core.js",
+        "rebuild.n (preview)": "node scripts/rebuild.n.js -t",
+        "rebuild.n": "node scripts/rebuild.n.js",
+        "rebuild.style (preview)": "node scripts/rebuild.style.js -t",
+        "rebuild.style": "node scripts/rebuild.style.js",
+        "rebuild.ts (preview)": "node scripts/rebuild.ts.js -t",
+        "rebuild.ts": "node scripts/rebuild.ts.js"
     },
     "devDependencies": {
         "@futagoza/child-process": "1.1.0",
         "@futagoza/cli-utils": "1.5.1",
         "@futagoza/sync-yarn-workspaces": "1.0.0",
+        "@eslint-stylistic/metadata":"6.0.0-beta.5",
+        "@typescript-eslint/eslint-plugin": "8.60.1",
         "bluebird": "3.7.2",
-        "eslint": "10.3.0",
+        "dedent": "1.7.2",
+        "eslint": "10.4.1",
         "get-yarn-workspaces": "1.0.2",
         "prompts": "2.4.2",
-        "strip-indent": "4.1.1",
         "typescript": "6.0.3"
     },
+    "type": "module",
     "engines": {
         "node": ">=20.0.0"
     }

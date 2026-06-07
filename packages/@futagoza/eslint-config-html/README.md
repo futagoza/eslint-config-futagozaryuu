@@ -1,8 +1,8 @@
-> This package contains configuration files for ESLint v6+<br>
+> This package contains configuration files for ESLint v10+<br>
 
-This is a configuration file for ESLint that is used to lint JavaScript source embedded within my `.html` files.
+This is a configuration file for ESLint that is used to lint JavaScript source (and optionally TypeScript if the required configurations are installed) embedded within `.html` files.
 
-**NOTE:** This configuration is only for enabling HTML/XML linting, therefore it is recommended to also use [@futagoza/eslint-config-javascript][ECJ] or something similar alongside this configuration.
+**NOTE:** This configuration is only for enabling linting of HTML/XML for JavaScript and/or TypeScript, therefore it is recommended to also use [@futagoza/eslint-config-javascript](https://www.npmjs.com/package/@futagoza/eslint-config-javascript), [@futagoza/eslint-config-typescript](https://www.npmjs.com/package/@futagoza/eslint-config-typescript) or something similar alongside this configuration.
 
 ## installation
 
@@ -12,22 +12,39 @@ $ npm i --save-dev @futagoza/eslint-config-html
 
 ## usage
 
-Put the following into your configuration (`.eslintrc.*` file or the _"eslintConfig"_ field in `package.json`):
+Put either of the following into your eslint configuration file:
 
-```json
-{
-    "extends": "@futagoza/html"
-}
+```js
+import { defineConfig } from "eslint/config"
+import html from "@futagoza/eslint-config-html"
+
+// Used alongside other configurations:
+export default [
+
+    // ...
+
+    html,
+
+    // ...
+
+]
+
+// Used as base configuration for other configurations:
+export default defineConfig(
+    {
+
+        // ...
+
+        extends: [ html ],
+
+        // ...
+
+    },
+)
+
+// or direct access to the javascript objects used in the config
+import { config as htmlConfig } from "@futagoza/eslint-config-html"
 ```
-
-## configurations
-
-A list of usable configurations as well the configurations they use:
-
-- __`@futagoza/html`__ (_default_, extends _[@futagoza/globals/browser][ECG]_)
-
-[ECG]: https://www.npmjs.com/package/@futagoza/eslint-config-globals
-[ECJ]: https://www.npmjs.com/package/@futagoza/eslint-config-javascript
 
 ## license
 

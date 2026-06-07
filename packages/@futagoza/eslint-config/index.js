@@ -1,27 +1,6 @@
-"use strict";
+import { defineConfig } from "eslint/config"
+import ignore from "@futagoza/eslint-config-ignore"
+import node from "@futagoza/eslint-config-node/20.js"
+import typescript from "@futagoza/eslint-config-typescript/node.js"
 
-module.exports = {
-
-    "extends": [
-
-        "@futagoza/ignore",
-        "@futagoza/node/16",
-        "@futagoza/typescript",
-        "@futagoza/dev/test",
-
-    ],
-
-    "overrides": [
-        {
-            "files": [ "*.ts", "*.tsx" ],
-            "rules": {
-                "@typescript-eslint/no-unsafe-argument": "off",
-                "@typescript-eslint/no-unsafe-assignment": "off",
-                "@typescript-eslint/no-unsafe-call": "off",
-                "@typescript-eslint/no-unsafe-member-access": "off",
-                "@typescript-eslint/no-unsafe-return": "off",
-            },
-        },
-    ],
-
-};
+export default defineConfig( ignore, node, typescript )

@@ -5,21 +5,20 @@
     "keywords": [
         "eslint",
         "configuration",
+        "lint",
         "style",
+        "ecmascript",
+        "es2023",
         "javascript",
-        "node",
         "typescript",
-        "test",
-        "html",
-        "script"
+        "node"
     ],
     "repository": "https://github.com/futagoza/eslint-config-futagozaryuu/tree/master/packages/@futagoza/eslint-config",
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
-    "type": "commonjs",
+    "type": "module",
     "dependencies": {
-        "@futagoza/eslint-config-dev": "16.1.0",
         "@futagoza/eslint-config-ignore": "16.1.0",
         "@futagoza/eslint-config-node": "16.1.0",
         "@futagoza/eslint-config-typescript": "16.1.0"

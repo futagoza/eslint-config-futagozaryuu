@@ -1,8 +1,6 @@
-"use strict";
+import CreateConfig from "./internal/create-node-config.js"
 
-const { CreateNodeConfig } = require( "./internal" );
-
-module.exports = CreateNodeConfig( {
+const x = await CreateConfig( {
 
     versions: {
         es: 2015,
@@ -16,4 +14,7 @@ module.exports = CreateNodeConfig( {
 
     },
 
-} );
+} )
+
+export const config = x.ConfigObject
+export default x.ConfigArray

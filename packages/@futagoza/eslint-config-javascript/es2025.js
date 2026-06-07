@@ -1,18 +1,6 @@
-"use strict";
+import CreateConfig from "./internal/create-config.js"
 
-module.exports = {
+const x = await CreateConfig( 2025 )
 
-    "extends": [
-
-        "./base.js",
-        "@futagoza/globals/es2025",
-
-    ],
-
-    "parserOptions": {
-
-        "ecmaVersion": 2025,
-
-    },
-
-};
+export const config = x.ConfigObject
+export default x.ConfigArray

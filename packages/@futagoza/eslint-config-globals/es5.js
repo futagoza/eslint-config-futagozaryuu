@@ -1,14 +1,20 @@
-"use strict";
+import globals from "globals"
 
-const globals = require( "globals" );
+export const config = {
 
-module.exports = {
+    name: "@futagoza/eslint-config-globals/es5",
 
-    "globals": {
+    languageOptions: {
 
-        ...globals.builtin,
-        ...globals.es5,
+        globals: {
+
+            ...globals.builtin,
+            ...globals.es5,
+
+        },
 
     },
 
-};
+}
+
+export default [ config ]

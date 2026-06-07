@@ -5,6 +5,7 @@
     "keywords": [
         "eslint",
         "configuration",
+        "ecmascript",
         "javascript",
         "node",
         "lts"
@@ -13,11 +14,11 @@
     "license": "MIT",
     "author": "Futago-za Ryuu",
     "main": "index.js",
-    "type": "commonjs",
+    "type": "module",
     "dependencies": {
         "@futagoza/eslint-config-globals": "16.1.0",
         "@futagoza/eslint-config-javascript": "16.1.0",
-        "eslint-plugin-n": "17.24.0"
+        "eslint-plugin-n": "18.0.1"
     },
     "peerDependencies": {
         "eslint": "*"

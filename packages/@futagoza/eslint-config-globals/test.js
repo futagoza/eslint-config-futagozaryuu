@@ -1,21 +1,28 @@
-"use strict";
+import globals from "globals"
 
-const globals = require( "globals" );
+export const config = {
 
-module.exports = {
+    name: "@futagoza/eslint-config-globals/test",
 
-    "globals": {
+    languageOptions: {
 
-        ...globals.jasmine,
-        ...globals.jest,
-        ...globals.mocha,
-        ...globals.qunit,
-        ...globals.phantomjs,
+        globals: {
 
-        "suite": false,
-        "bench": false,
-        "benchmark": false,
+            ...globals.chai,
+            ...globals.jasmine,
+            ...globals.jest,
+            ...globals.mocha,
+            ...globals.qunit,
+            ...globals.phantomjs,
+
+            "suite": false,
+            "bench": false,
+            "benchmark": false,
+
+        },
 
     },
 
-};
+}
+
+export default [ config ]
