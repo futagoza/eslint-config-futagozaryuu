@@ -328,14 +328,7 @@ export const config = {
          * 
          * @see https://typescript-eslint.io/rules/prefer-nullish-coalescing
          */
-        "@typescript-eslint/prefer-nullish-coalescing": [
-            "warn",
-            {
-                "ignoreConditionalTests": true,
-                "ignoreMixedLogicalExpressions": false,
-                "forceSuggestionFixer": false,
-            },
-        ],
+        "@typescript-eslint/prefer-nullish-coalescing": "warn",
 
         /**
          * 🔧 Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects
