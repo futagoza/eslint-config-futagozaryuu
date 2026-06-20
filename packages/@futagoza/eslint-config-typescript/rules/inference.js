@@ -272,7 +272,7 @@ export const config = {
          * 
          * @see https://typescript-eslint.io/rules/no-unsafe-type-assertion
          */
-        "@typescript-eslint/no-unsafe-type-assertion": "warn",
+        "@typescript-eslint/no-unsafe-type-assertion": "off",
 
         /**
          * Require unary negation to take a number
