@@ -71,7 +71,7 @@ export const config = {
             {
                 "selector": "typeLike",
                 "format": [
-                    "StrictPascalCase",
+                    "PascalCase",
                     "UPPER_CASE",
                 ],
                 "leadingUnderscore": "forbid",
