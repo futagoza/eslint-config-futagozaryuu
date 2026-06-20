@@ -6,6 +6,16 @@ import path from "node:path"
 import url from "node:url"
 import sanitize from "sanitize-filename"
 
+/**
+ * @param {string | URL} base 
+ * @param {string} filename 
+ */
+async function _resolve( base, filename ) {
+
+    return path.join( await fs.realpath( base ), filename )
+
+}
+
 /** @param {string | URL} filename  */
 async function _exists( filename ) {
 
@@ -29,26 +39,17 @@ async function _exists( filename ) {
  */
 export default async function GetProjectConfig( cwd = process.cwd() ) {
 
-    if ( typeof cwd === "string" ) cwd = url.pathToFileURL( cwd )
+    const eslintConfig = await _resolve( cwd, "./tsconfig.eslint.json" )
+    if ( await _exists( eslintConfig ) ) return eslintConfig
 
-    const eslintConfig = new URL( "./tsconfig.eslint.json", cwd )
-    if ( await _exists( eslintConfig ) ) return eslintConfig.href
+    const tsconfig = await _resolve( cwd, "./tsconfig.json" )
+    if ( await _exists( tsconfig ) ) return tsconfig
 
-    const tsconfig = new URL( "./tsconfig.json", cwd )
-    if ( await _exists( tsconfig ) ) return tsconfig.href
-
-    cwd = url
-        .fileURLToPath( cwd )
-        .replace( /\\/g, "/" )
-
-    const tempfile = path.join(
-        await fs.realpath( os.tmpdir() ),
-        `./tsconfig.${ sanitize( cwd, { replacement: "-" } ) }.json`,
-    )
-
+    const tempfile = await _resolve( os.tmpdir(), `./tsconfig.${ sanitize( cwd, { replacement: "-" } ) }.json` )
     if ( ! await _exists( tempfile ) ) {
 
         const config = await fs.readFile( new URL( "./tsconfig.default.json", import.meta.url ), "utf8" )
+        if ( typeof cwd !== "string" ) cwd = url.fileURLToPath( cwd )
 
         await fs.writeFile( tempfile, config.replace( /__CWD__/g, cwd ) )
 

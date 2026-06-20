@@ -7,18 +7,17 @@
         "temp"
     ],
     "include": [
-        "./**/*.cts",
-        "./**/*.mts",
-        "./**/*.ts",
-        "./**/*.tsx"
+        "__CWD__**/*.cts",
+        "__CWD__**/*.mts",
+        "__CWD__**/*.ts",
+        "__CWD__**/*.tsx"
     ],
     "compilerOptions": {
-        "baseUrl": "__CWD__",
         "disableSizeLimit": true,
         "noEmit": true,
         "rootDir": "__CWD__",
-        "rootDirs": [ "__CWD__" ],
         "strict": false,
+        "strictNullChecks": true,
         "suppressImplicitAnyIndexErrors": true
     }
 }
