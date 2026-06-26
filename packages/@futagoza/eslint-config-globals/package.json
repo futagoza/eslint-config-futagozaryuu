@@ -30,7 +30,7 @@
     "main": "index.js",
     "type": "module",
     "dependencies": {
-        "globals": "17.6.0"
+        "globals": "17.7.0"
     },
     "engines": {
         "node": ">=20.0.0"
