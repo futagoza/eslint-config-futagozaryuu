@@ -147,7 +147,7 @@ export function formattedCode( value, options = {} ) {
 
             if ( items.length > 0 ) {
 
-                if ( ! trailingCommas ) items.push( items.pop() + "," )
+                if ( trailingCommas ) items.push( items.pop() + "," )
 
                 return [
 
