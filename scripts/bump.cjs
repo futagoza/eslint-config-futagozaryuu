@@ -129,7 +129,7 @@ function LogWorkspaceUpdate( $result ) {
     } );
 
     // Update the version field in every workspace package
-    await forEachUpdatedWorkspace( `npm --no-git-tag-version version ${ $newVersion }`, LogWorkspaceUpdate );
+    await forEachUpdatedWorkspace( `npm --no-git-tag-version --no-workspaces-update version ${ $newVersion }`, LogWorkspaceUpdate );
 
     // Sync the version of any dependency that is also a workspace package
     await ( async function DeepsyncDependencies() {
