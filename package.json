@@ -10,8 +10,8 @@
         "test": "eslint .",
         "fix": "eslint . --fix",
         "preview": "npx @eslint/config-inspector@latest",
-        "bump-dry": "node scripts/bump.cjs --dry",
-        "bump": "node scripts/bump.cjs",
+        "bump-dry": "bump-updated --dry",
+        "bump": "bump-updated",
         "rebuild.core (preview)": "node scripts/rebuild.core.js -t",
         "rebuild.core": "node scripts/rebuild.core.js",
         "rebuild.n (preview)": "node scripts/rebuild.n.js -t",
@@ -22,15 +22,11 @@
         "rebuild.ts": "node scripts/rebuild.ts.js"
     },
     "devDependencies": {
-        "@futagoza/child-process": "1.1.0",
         "@futagoza/cli-utils": "1.5.1",
-        "@futagoza/sync-yarn-workspaces": "1.0.0",
         "@eslint-stylistic/metadata":"6.0.0-beta.5",
-        "bluebird": "3.7.2",
+        "bump-updated": "2.0.1",
         "dedent": "1.7.2",
         "eslint": "10.6.0",
-        "get-yarn-workspaces": "1.0.2",
-        "prompts": "2.4.2",
         "typescript": "6.0.3"
     },
     "type": "module",
