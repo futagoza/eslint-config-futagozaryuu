@@ -2,8 +2,99 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
-* Miscellaneous
-    - DEV: Update CI script not to use Yarn's `--ignore-engines` option as it is now deprecated and produces an error
+<a name="17.0.0"></a>
+## [v17.0.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v16.1.0...v17.0.0) (2026-07-06)
+
+**NOTE:** Even though I have been inactive for 5 years due to health issues, I occasionally tried to keep my ESLint configurations up to date; but I was never able to publish any of these changes. As such, I've tried including most of these changes here but likely have missed a few; check the git commits if you are really curious but to be honest I don't keep these changelogs for anyone but myself really, so that I can remind myself what I've been doing.
+
+* __@futagoza/eslint-config-*__
+    - Set the minimum LTS version supported to _Node.js 20_
+    - Now auto generating some configuration files with rules before every update to make it easier adding or updating rules
+    - Dropped _@futagoza/eslint-config-svelte_ (along with _@futagoza/eslint-config-svelte.ts_); haven't used Svelte in years
+    - Dropped _@futagoza/eslint-config-dev_ while moving _@futagoza/eslint-config-dev/test.js_ to _@futagoza/eslint-config-node/test.js_
+    - Converted all packages to ESM modules, and explicitly declared `"type": "module"` in all `package.json` files
+    - Fully converted all my [ESLint v7+ configs](https://eslint.org/docs/latest/use/core-concepts/glossary#legacy-config) (a JSON-based config format) to [ESLint v10+ Flat Configs](https://eslint.org/docs/latest/use/core-concepts/glossary#flat-config) (a JavaScript file based format)
+    - Updated all documentation to use configurations with `.js` and their respective packages with `@futagoza/eslint-config-*`
+    - Updated the `keywords` property in most of the `package.json` files
+    - Upgrade dependencies in all packages
+* __@futagoza/eslint-config__
+    - Removed _@futagoza/eslint-config-dev/test.js_ from this preset configuration
+    - Removed dependency _@futagoza/eslint-config-dev_
+* __@futagoza/eslint-config-core__
+    - Removed the _`@futagoza/eslint-config-core/layout-and-formatting.js`_ configuration
+    - Removed the _`@futagoza/eslint-config-core/possible-problems.js`_ configuration
+    - Removed the _`@futagoza/eslint-config-core/style.js`_ configuration
+    - Removed the _`@futagoza/eslint-config-core/suggestions.js`_ configuration
+    - Auto-generating their replacements, the new _`@futagoza/eslint-config-core/rules/*.js`_ configuration files
+    - Replaced stylistic rules that were deprecated in ESLint v8.53.0 with their counter rules from `@stylistic/eslint-plugin`
+    - Since I started using JavaScript (or any programming language in general really) I've always used semicolons (CoffeeScript and Python are exceptions). Up until now I've had my ESLint configurations to always error on no semicolon but coming back into coding after my 5 year break I realized that I now prefer no semicolons as I find it more easily readable this way now; so I switched to relying on automatic semicolon insertion _(ASI)_ and as such:
+        - I've turned off `@stylistic/semi`; I don't plan to use semicolons, but they will still be required sometimes
+        - Enable `"no-unexpected-multiline"` to help catch unexpected ASI errors
+    - Now exporting ESLint core rules as `eslintRules` and all rules in this configuration preset as `configRules`
+    - Added an option for the rule `no-fallthrough` to allow empty case blocks
+    - Enable the `destructuredArrayIgnorePattern` option for the `no-unused-vars` rule
+    - Warn on unused private class members using `"no-unused-private-class-members": "warn`
+    - Allow named exports to be excluded when using the `no-use-before-define` rule
+    - Enable the `no-inner-declarations` rule, warning on both variables and functions
+    - Warn on unnecessarily nested blocks by enabling the `no-lone-blocks` rule
+    - Enable the `no-constant-binary-expression` rule, throwing on expressions where the operation doesn't affect the value
+    - Enable the `logical-assignment-operators` rule, mirroring the `operator-assignment` rule
+    - Enable the `no-new-native-nonconstructor` rule, mirroring the `no-new-symbol` rule
+    - Warn on empty static blocks using `"no-empty-static-block": "warn"`
+    - Enable the `no-obj-calls`, throwing an error when a built-in global object (e.g. Math, JSON, etc) is used like a function
+    - Prefer object spread (e.g `{ ...a, ...b }`) over `Object.assign( {}, a, b )` using `"prefer-object-spread": "error"`
+    - Enable the `no-unassigned-vars` rule, setting it to warn on any `let` or `var` variables that are read but never assigned
+    - Enable the `no-useless-assignment` rule, setting it to warn on variable assignments when the value is not used
+    - Prefer the use of `Object.hasOwn()` (a new global method introduced in ES2022) over the classic `Object.prototype.hasOwnProperty.call()` using `"prefer-object-has-own": "error"`
+    - Disallow losing the caught error when re-throwing custom errors by using `"preserve-caught-error": "error"`
+* __@futagoza/eslint-config-globals__
+    - Remove redundant imports and exports for `es*` configurations; all globals are pre-merged by the imported package `globals`
+    - Added configuration files for ECMAScript versions `ES2016`, `ES2018`, `ES2019`, and `ES2022` to `ES2026`
+* __@futagoza/eslint-config-html__
+    - Enable the `html/report-bad-indent` rule
+    - Enable the `html/javascript-tag-names` rule
+    - Disable the `html/ignore-tags-without-type` rule
+* __@futagoza/eslint-config-ignore__
+    - Removed `"!**/.*rc.*js"` patterns
+    - Updated ignored patterns to be more accurate
+* __@futagoza/eslint-config-javascript__
+    - Added configuration files for ECMAScript versions `ES2022` to `ES2026`
+    - Disable the `prefer-object-has-own` core rule on pre-ES2022 code
+    - Removed the _`@futagoza/eslint-config-javascript/base.js`_ configuration
+    - Removed the _`@futagoza/eslint-config-javascript/esnext.js`_ configuration
+    - Removed `@babel/*` dependencies, not required anymore
+    - Removed the _`@futagoza/eslint-config-javascript/modules.js`_ configuration
+    - Removed the _`@futagoza/eslint-config-javascript/strict.js`_ configuration
+    - Added the _`@futagoza/eslint-config-javascript/common.js`_ configuration
+    - Added the _`@futagoza/eslint-config-javascript/latest.js`_ configuration
+    - Added the _`@futagoza/eslint-config-javascript/module.js`_ configuration
+    - Added the _`@futagoza/eslint-config-javascript/script.js`_ configuration
+* __@futagoza/eslint-config-node__
+    - Replace unmaintained `eslint-plugin-node` package with drop-in replacement `eslint-plugin-n`
+    - Added configuration files for Node versions `16` to `26` _(LTS versions only)_
+    - Added new rule `n/prefer-node-protocol` and set it to `off`
+    - Replaced `n/shebang` with `n/hashbang`, as well as enabling the `ignoreUnpublished` and `executableMap` options for it
+    - Added new rule `n/no-top-level-await` and set it to `off`
+    - Set all `n/prefer-global/*` rules to `warn` including the new `*/crypto` and `*/timers` variants
+    - Added _`@futagoza/eslint-config-node/test.js`_ configuration
+    - Removed all the rules which where previously in `@futagoza/eslint-config-node/index.js`
+    - Auto-generating their replacements, the new _`@futagoza/eslint-config-node/rules/*.js`_ configuration files
+* __@futagoza/eslint-config-typescript__
+    - Removed the _`@futagoza/eslint-config-typescript/deprecated.js`_ configuration
+    - Removed the _`@futagoza/eslint-config-typescript/eslint-overrides.js`_ configuration
+    - Removed the _`@futagoza/eslint-config-typescript/extension-riles.js`_ configuration
+    - Auto-generating their replacements, the new _`@futagoza/eslint-config-typescript/rules/*.js`_ configuration files
+    - 70+ rules were either added, updated or removed (☝️); I forgot to keep track, thank god 🤣
+    - Added the _`@futagoza/eslint-config-typescript/node.js`_ configuration; disables the `n/no-unsupported-features/es-syntax` rule before exporting `@futagoza/eslint-config-typescript`
+* __Miscellaneous__
+    - DEV: Upgrade devDependencies
+    - DEV: Update CI script to use Github Actions _v6_
+    - DEV: Added scripts to generate configuration files for _@futagoza/eslint-config-core_, _@futagoza/eslint-config-node_ and _@futagoza/eslint-config-typescript_
+    - Removed all _david-dm.org_ badges (also removed badges on package README files)
+    - DEV: Drop Yarn, going back to NPM (again 😅)
+    - DEV: Added a `.editorconfig` file
+    - DEV: Replaced `scripts/bump.js` with dedicated package `bump-updated`
+    - Confirmed compatibility with ESLint _v10.6.0_
 
 <a name="16.1.0"></a>
 ## [v16.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v16.0.0...v16.1.0) (2021-05-23)
