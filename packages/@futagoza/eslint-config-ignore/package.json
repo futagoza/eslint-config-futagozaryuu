@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-ignore",
-    "version": "16.1.0",
+    "version": "17.0.0",
     "description": "Adds a general purpose global ignore to be used at the top of your ESLint flat config",
     "keywords": [
         "eslint",
