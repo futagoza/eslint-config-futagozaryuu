@@ -18,7 +18,7 @@
     "dependencies": {
         "@futagoza/eslint-config-globals": "17.0.0",
         "@futagoza/eslint-config-javascript": "17.0.0",
-        "eslint-plugin-n": "18.2.1"
+        "eslint-plugin-n": "18.2.2"
     },
     "peerDependencies": {
         "eslint": "*"
