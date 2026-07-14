@@ -2,6 +2,7 @@ import { defineConfig } from "eslint/config"
 import tseslint from "typescript-eslint"
 import GetProjectConfig from "./internal/get-project-config.js"
 import { config as DeprecatedConfig } from "./rules/deprecated.js"
+import { config as DisableCoreConfig } from "./rules/eslint.js"
 import { config as ExtensionConfig } from "./rules/extension.js"
 import { config as GeneralConfig } from "./rules/general.js"
 import { config as InferenceConfig } from "./rules/inference.js"
@@ -42,6 +43,7 @@ export const config = {
     extends: [
         tseslint.configs.base,
         tseslint.configs.eslintRecommended,
+        DisableCoreConfig,
         DeprecatedConfig,
         ExtensionConfig,
         GeneralConfig,

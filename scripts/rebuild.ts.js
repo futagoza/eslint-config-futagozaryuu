@@ -19,6 +19,7 @@ const { getCounter, setCounter } = utils.createCounterTracker()
 /* #################### EXISTING RULES METADATA #################### */
 
 const $currentRuleNames = Object.keys( ConfigRules )
+const $disableCoreRules = {}
 
 // count the number of rules that are missing
 $currentRuleNames.forEach( $ruleName => {
@@ -157,6 +158,7 @@ for ( const $type of ESLINT_RULE_TYPES ) {
 
             $importCoreConfig = true
             $setting = `EslintRules[ "${ $ruleName }" ]`
+            $disableCoreRules[ $ruleName ] = $ruleId
 
         } // eslint-disable-line @stylistic/brace-style 
         // TODO: suggest an option for @stylistic/brace-style to ignore else-if statements
@@ -225,6 +227,45 @@ for ( const $type of ESLINT_RULE_TYPES ) {
     // increment counter for total rules added
 
     setCounter( "rules-added", $rules.length )
+
+}
+
+if ( Object.keys( $disableCoreRules ).length ) {
+
+    const $rules = []
+    for ( const [ rule, replacement ] of Object.entries( $disableCoreRules ) ) {
+
+        $rules.push( `// ${ replacement }\n"${ rule }": "off",` )
+
+    }
+
+    await saveFile( "eslint", utils.T`
+            // 
+            // WARNING: AUTO-GENERATED USING @typescript-eslint/eslint-plugin
+            // 
+            // This file ensures that ALL extended core rules are disabled properly
+            //
+
+            /**
+             * Raw config for \`@futagoza/eslint-config-typescript/rules/eslint.js\`
+             */
+            export const config = {
+    
+                name: "@futagoza/eslint-config-typescript/disable.core.rules",
+    
+                rules: {
+    
+                    ${ utils.TList( $rules ) }
+    
+                },
+    
+            }
+    
+            /**
+             * ESLint ready config for \`@futagoza/eslint-config-typescript/rules/eslint.js\`
+             */
+            export default [ config ]
+    ` )
 
 }
 
