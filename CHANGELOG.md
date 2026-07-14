@@ -2,6 +2,14 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="17.1.0"></a>
+## [v17.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.0.0...v17.1.0) (2026-07-14)
+
+* __@futagoza/eslint-config-typescript__
+    - Added the `@futagoza/eslint-config-typescript/rules/eslint.js` configuration; This auto-generated configuration is used by the preset (`@futagoza/eslint-config-typescript`) to disable all extended ESLint core rules.
+* __Miscellaneous__
+    - DEV: Updated configuration generator for _@futagoza/eslint-config-typescript_ to generate a config of extended core rules disabled
+
 <a name="17.0.1"></a>
 ## [v17.0.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.0.0...v17.0.1) (2026-07-13)
 
