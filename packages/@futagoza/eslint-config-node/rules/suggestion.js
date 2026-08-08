@@ -63,7 +63,7 @@ export const config = {
         "n/no-new-require": "off",
 
         /**
-         * disallow string concatenation with `__dirname` and `__filename`
+         * disallow string concatenation with `__dirname`, `__filename`, and `import.meta` paths
          * 
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-path-concat.md
          */
@@ -168,11 +168,25 @@ export const config = {
         "n/prefer-global/timers": "warn",
 
         /**
+         * enforce using `node:assert/strict` instead of `node:assert`.
+         * 
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-import/assert-strict.md
+         */
+        "n/prefer-import/assert-strict": "warn",
+
+        /**
          * 🔧 enforce using the `node:` protocol when importing Node.js builtin modules.
          * 
          * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-node-protocol.md
          */
         "n/prefer-node-protocol": "off",
+
+        /**
+         * enforce using `process.getBuiltinModule()` to load Node.js built-in modules
+         * 
+         * @see https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-process-get-builtin-module.md
+         */
+        "n/prefer-process-get-builtin-module": "warn",
 
         /**
          * enforce `require("dns").promises`
