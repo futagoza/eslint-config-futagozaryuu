@@ -13,6 +13,12 @@ export const config = {
 
     rules: {
 
+        // @typescript-eslint/no-loop-func
+        "no-loop-func": "off",
+
+        // @typescript-eslint/no-restricted-imports
+        "no-restricted-imports": "off",
+
         // @typescript-eslint/class-methods-use-this
         "class-methods-use-this": "off",
 
@@ -34,14 +40,8 @@ export const config = {
         // @typescript-eslint/no-invalid-this
         "no-invalid-this": "off",
 
-        // @typescript-eslint/no-loop-func
-        "no-loop-func": "off",
-
         // @typescript-eslint/no-magic-numbers
         "no-magic-numbers": "off",
-
-        // @typescript-eslint/no-restricted-imports
-        "no-restricted-imports": "off",
 
         // @typescript-eslint/no-shadow
         "no-shadow": "off",

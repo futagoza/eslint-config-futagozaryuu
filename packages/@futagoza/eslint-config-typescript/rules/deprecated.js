@@ -4,6 +4,8 @@
 // These rules have been deprecated
 // 
 
+import { EslintRules } from "@futagoza/eslint-config-core"
+
 /**
  * Raw config for `@futagoza/eslint-config-typescript/rules/deprecated.js`
  */
@@ -21,11 +23,25 @@ export const config = {
         "@typescript-eslint/no-empty-interface": "off",
 
         /**
+         * Disallow function declarations that contain unsafe references inside loop statements
+         * 
+         * @see https://typescript-eslint.io/rules/no-loop-func
+         */
+        "@typescript-eslint/no-loop-func": EslintRules[ "no-loop-func" ],
+
+        /**
          * Disallow literal numbers that lose precision
          * 
          * @see https://typescript-eslint.io/rules/no-loss-of-precision
          */
         "@typescript-eslint/no-loss-of-precision": "off",
+
+        /**
+         * Disallow specified modules when loaded by `import`
+         * 
+         * @see https://typescript-eslint.io/rules/no-restricted-imports
+         */
+        "@typescript-eslint/no-restricted-imports": EslintRules[ "no-restricted-imports" ],
 
         /**
          * Disallow type aliases

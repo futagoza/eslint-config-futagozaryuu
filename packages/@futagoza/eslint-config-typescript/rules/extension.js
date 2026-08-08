@@ -72,13 +72,6 @@ export const config = {
         "@typescript-eslint/no-invalid-this": EslintRules[ "no-invalid-this" ],
 
         /**
-         * Disallow function declarations that contain unsafe references inside loop statements
-         * 
-         * @see https://typescript-eslint.io/rules/no-loop-func
-         */
-        "@typescript-eslint/no-loop-func": EslintRules[ "no-loop-func" ],
-
-        /**
          * Disallow magic numbers
          * 
          * @see https://typescript-eslint.io/rules/no-magic-numbers
@@ -91,13 +84,6 @@ export const config = {
          * @see https://typescript-eslint.io/rules/no-redeclare
          */
         "@typescript-eslint/no-redeclare": "off",
-
-        /**
-         * Disallow specified modules when loaded by `import`
-         * 
-         * @see https://typescript-eslint.io/rules/no-restricted-imports
-         */
-        "@typescript-eslint/no-restricted-imports": EslintRules[ "no-restricted-imports" ],
 
         /**
          * Disallow variable declarations from shadowing variables declared in the outer scope
