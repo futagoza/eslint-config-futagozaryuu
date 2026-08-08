@@ -17,7 +17,7 @@
     "dependencies": {
         "@futagoza/eslint-config-core": "17.0.0",
         "sanitize-filename": "1.6.4",
-        "typescript-eslint": "8.63.0"
+        "typescript-eslint": "8.66.0"
     },
     "peerDependencies": {
         "eslint": "*",
