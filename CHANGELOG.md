@@ -2,6 +2,25 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="17.2.0"></a>
+## [v17.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.1.0...v17.2.0) (2026-08-08)
+
+* __@futagoza/eslint-config-*__
+    - Confirmed compatibility with ESLint v10.8.1
+* __@futagoza/eslint-config-globals__
+    - Updated dependency `globals` to `17.9.0`
+* __@futagoza/eslint-config-node__
+    - Updated dependency `eslint-plugin-n` to `18.3.0`
+    - Set the new `prefer-process-get-builtin-module` rule to `warn`
+    - Set the new `prefer-import/assert-strict` rule to `warn`
+* __@futagoza/eslint-config-typescript__
+    - Updated dependency `typescript-eslint` to `8.66.0`
+    - Deprecated `@typescript-eslint/no-loop-func`
+    - Deprecated `@typescript-eslint/no-restricted-imports`
+* __Miscellaneous__
+    - DEV: Updated dependency `bump-updated` to `4.0.1`
+    - DEV: Update bump scripts
+
 <a name="17.1.0"></a>
 ## [v17.1.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.0.0...v17.1.0) (2026-07-14)
 
