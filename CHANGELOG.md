@@ -2,6 +2,17 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="17.2.1"></a>
+## [v17.2.1](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.2.0...v17.2.1) (2026-08-21)
+
+* __@futagoza/eslint-config-globals__
+    - Updated dependency `globals` to `17.11.0`
+* __@futagoza/eslint-config-typescript__
+    - Updated dependency `typescript-eslint` to `8.67.0`
+* __Miscellaneous__
+    - DEV: Updated dependency `bump-updated` to `4.0.4`
+    - Confirmed compatibility with ESLint v10.9.0
+
 <a name="17.2.0"></a>
 ## [v17.2.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.1.0...v17.2.0) (2026-08-08)
 
