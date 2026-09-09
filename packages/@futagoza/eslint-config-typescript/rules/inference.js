@@ -128,6 +128,13 @@ export const config = {
         "@typescript-eslint/no-for-in-array": "error",
 
         /**
+         * Disallow type operations that resolve to the "empty object" type
+         * 
+         * @see https://typescript-eslint.io/rules/no-generated-empty-object-type
+         */
+        "@typescript-eslint/no-generated-empty-object-type": "warn",
+
+        /**
          * Disallow the use of `eval()`-like functions
          * 
          * @see https://typescript-eslint.io/rules/no-implied-eval
