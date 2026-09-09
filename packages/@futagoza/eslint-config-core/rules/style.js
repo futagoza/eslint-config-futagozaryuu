@@ -486,7 +486,7 @@ export const config = {
          * 
          * @see https://eslint.style/rules/list-style
          */
-        "@stylistic/exp-list-style": "off",
+        "@stylistic/list-style": "off",
 
         /**
          * Enforce a maximum line length
