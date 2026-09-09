@@ -20,7 +20,7 @@
     "type": "module",
     "dependencies": {
         "@futagoza/eslint-config-globals": "17.2.1",
-        "eslint-plugin-html": "8.1.4"
+        "eslint-plugin-html": "8.2.0"
     },
     "engines": {
         "node": ">=20.0.0"

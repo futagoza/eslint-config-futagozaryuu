@@ -14,7 +14,7 @@
     "main": "index.js",
     "type": "module",
     "dependencies": {
-        "@stylistic/eslint-plugin": "6.0.0-beta.5"
+        "@stylistic/eslint-plugin": "6.0.0-beta.6"
     },
     "engines": {
         "node": ">=20.0.0"
