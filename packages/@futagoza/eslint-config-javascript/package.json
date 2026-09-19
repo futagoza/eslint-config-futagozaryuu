@@ -1,6 +1,6 @@
 {
     "name": "@futagoza/eslint-config-javascript",
-    "version": "17.3.0",
+    "version": "17.4.0",
     "description": "Futago-za Ryuu's ESLint configurations for JavaScript",
     "keywords": [
         "eslint",
@@ -30,7 +30,7 @@
     "main": "es2023.js",
     "type": "module",
     "dependencies": {
-        "@futagoza/eslint-config-core": "17.3.0",
+        "@futagoza/eslint-config-core": "17.4.0",
         "@futagoza/eslint-config-globals": "17.3.0"
     },
     "peerDependencies": {

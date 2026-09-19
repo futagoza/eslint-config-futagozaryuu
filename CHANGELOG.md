@@ -2,6 +2,16 @@
 > The changelog for [eslint-config-futagozaryuu](https://www.npmjs.com/package/eslint-config-futagozaryuu) has been moved to [docs/legacy-changelog.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/legacy-changelog.md)<br>
 > You may also want to check out [docs/history.md](https://github.com/futagoza/eslint-config-futagozaryuu/blob/master/docs/history.md) (don't worry, I won't bore you with the _gory_ details 😉)
 
+<a name="17.4.0"></a>
+## [v17.4.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.3.0...v17.4.0) (2026-09-19)
+
+* __@futagoza/eslint-config-*__
+    - Confirmed compatibility with ESLint v10.11.0
+* __@futagoza/eslint-config-core__
+    - Turned off the `no-undefined` rule _(I don't use ES5 JavaScript at all anymore)_
+* __Miscellaneous__
+    - Add Node.js v26 to the CI test matrix
+
 <a name="17.3.0"></a>
 ## [v17.3.0](https://github.com/futagoza/eslint-config-futagozaryuu/compare/v17.2.1...v17.3.0) (2026-09-09)
 
