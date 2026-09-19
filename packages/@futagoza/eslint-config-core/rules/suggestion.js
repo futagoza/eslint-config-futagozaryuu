@@ -710,7 +710,7 @@ export const config = {
          * 
          * @see http://eslint.org/docs/rules/no-undefined
          */
-        "no-undefined": "error",
+        "no-undefined": "off",
 
         /**
          * Disallow dangling underscores in identifiers
